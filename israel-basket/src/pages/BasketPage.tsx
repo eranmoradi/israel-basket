@@ -70,15 +70,22 @@ export default function BasketPage() {
       }
     }
 
-    // Find the single cheapest chain (by total, among chains with at least 1 product)
+    // Count how many basket products have a groupId + carrefour price (comparable products)
+    const comparableCount = items.filter(
+      (p) => p.groupId != null && p.price != null && priceByGroup.has(p.groupId)
+    ).length
+
+    // Prefer chains with full coverage; fall back to best-coverage chain
     let cheapestChain: ChainName | null = null
     let cheapestChainTotal = Infinity
     let cheapestChainCount = 0
     let cheapestChainCarrefourTotal = 0
+    let isPartialCoverage = false
 
+    // First pass: only chains with 100% coverage
     for (const chain of CHAINS) {
       const d = chainTotals[chain]
-      if (d.count > 0 && d.total < cheapestChainTotal) {
+      if (d.count === comparableCount && d.total < cheapestChainTotal) {
         cheapestChain = chain
         cheapestChainTotal = d.total
         cheapestChainCount = d.count
@@ -86,12 +93,30 @@ export default function BasketPage() {
       }
     }
 
+    // Second pass: if no chain covers everything, pick best-coverage chain
+    if (cheapestChain === null) {
+      let bestCoverage = 0
+      for (const chain of CHAINS) {
+        const d = chainTotals[chain]
+        if (d.count > bestCoverage || (d.count === bestCoverage && d.total < cheapestChainTotal)) {
+          bestCoverage = d.count
+          cheapestChain = chain
+          cheapestChainTotal = d.total
+          cheapestChainCount = d.count
+          cheapestChainCarrefourTotal = d.carrefourTotal
+        }
+      }
+      if (cheapestChain !== null) isPartialCoverage = true
+    }
+
     return {
       perProduct,
+      comparableCount,
       cheapestChain,
       cheapestChainTotal: cheapestChainTotal === Infinity ? 0 : cheapestChainTotal,
       cheapestChainCount,
       cheapestChainCarrefourTotal,
+      isPartialCoverage,
     }
   }, [items])
 
@@ -141,12 +166,18 @@ export default function BasketPage() {
 
         {/* Cheapest single chain row */}
         {competitorData.cheapestChain && (
-          <div className="bg-green-600 text-white px-5 py-4 flex justify-between items-center">
+          <div
+            className={`text-white px-5 py-4 flex justify-between items-center ${
+              competitorData.isPartialCoverage ? 'bg-gray-500' : 'bg-green-600'
+            }`}
+          >
             <div>
-              <div className="text-green-200 text-xs mb-0.5">הרשת הזולה ביותר לסל זה</div>
-              <div className="font-bold text-sm">
-                {competitorData.cheapestChain} · {competitorData.cheapestChainCount}/{count} מוצרים
+              <div className={`text-xs mb-0.5 ${competitorData.isPartialCoverage ? 'text-gray-300' : 'text-green-200'}`}>
+                {competitorData.isPartialCoverage
+                  ? `השוואה חלקית — רק ${competitorData.cheapestChainCount} מתוך ${competitorData.comparableCount} מוצרים`
+                  : 'הרשת הזולה ביותר לסל זה'}
               </div>
+              <div className="font-bold text-sm">{competitorData.cheapestChain}</div>
             </div>
             <span className="text-3xl font-extrabold">
               {competitorData.cheapestChainTotal.toFixed(2)} ₪
@@ -154,8 +185,8 @@ export default function BasketPage() {
           </div>
         )}
 
-        {/* Saving row */}
-        {saving > 0.01 && (
+        {/* Saving row — only shown for full-coverage chains */}
+        {saving > 0.01 && !competitorData.isPartialCoverage && (
           <div className="bg-amber-50 border-t border-amber-200 px-5 py-3 flex justify-between items-center">
             <span className="text-amber-800 font-semibold text-sm">
               חיסכון לעומת {competitorData.cheapestChain}

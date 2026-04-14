@@ -6,7 +6,7 @@ import type { ChainPricesData, ChainProductPrices, ChainPrice, Product } from '.
 const chainPrices = chainPricesData as ChainPricesData
 const allProducts = productsData as Product[]
 
-const CHAINS = ['שופרסל', 'רמי לוי', 'יוחננוף', 'חצי חינם'] as const
+const CHAINS = ['שופרסל', 'רמי לוי', 'יוחננוף'] as const
 type ChainName = (typeof CHAINS)[number]
 
 // Build department lookup from products.json (groupId → department)
@@ -23,14 +23,12 @@ const CHAIN_COLORS: Record<ChainName, string> = {
   שופרסל: 'bg-orange-50 border-orange-200',
   'רמי לוי': 'bg-blue-50 border-blue-200',
   יוחננוף: 'bg-green-50 border-green-200',
-  'חצי חינם': 'bg-purple-50 border-purple-200',
 }
 
 const CHAIN_HEADER_COLORS: Record<ChainName, string> = {
   שופרסל: 'bg-orange-500 text-white',
   'רמי לוי': 'bg-blue-600 text-white',
   יוחננוף: 'bg-green-600 text-white',
-  'חצי חינם': 'bg-purple-600 text-white',
 }
 
 function getChainPrice(item: ChainProductPrices, chain: ChainName): ChainPrice | null {
@@ -258,7 +256,7 @@ export default function ComparePage() {
       {sorted.length > 1 && (
         <div className="mt-4 p-4 bg-gray-100 rounded-xl border border-gray-200">
           <div className="text-sm font-semibold text-gray-700 mb-3">סכום לסל (מוצרים עם מחיר בלבד)</div>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          <div className="grid grid-cols-3 gap-3">
             {CHAINS.map((chain) => {
               const total = sorted.reduce((sum, item) => {
                 const cp = getChainPrice(item, chain)

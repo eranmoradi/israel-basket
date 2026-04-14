@@ -6,89 +6,95 @@ export default function HomePage() {
   return (
     <main className="max-w-3xl mx-auto px-4 py-8">
       {/* Hero */}
-      <div className="text-center mb-10">
-        <div className="inline-block bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
+      <div className="rounded-3xl bg-gradient-to-bl from-blue-800 to-blue-600 text-white px-8 py-14 sm:py-20 text-center mb-8 shadow-lg">
+        <span className="bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full inline-block mb-5">
           יוזמת משרד הכלכלה והתעשייה
-        </div>
-        <h1 className="text-4xl font-extrabold text-gray-900 mb-3">🛒 הסל של ישראל</h1>
-        <p className="text-gray-600 text-lg max-w-md mx-auto">
-          100 מוצרים מובילים במחיר מוזל של{' '}
-          <span className="font-bold text-blue-700">30% ויותר</span> — ברשת קארפור
-        </p>
-        <p className="text-sm text-gray-400 mt-2">בתוקף מ-15.4.2026 למשך 6 חודשים לפחות</p>
+        </span>
+        <div className="text-7xl sm:text-8xl font-black text-yellow-300 leading-none mb-1">30%+</div>
+        <div className="text-base text-white/80 mb-6">חיסכון ממוצע על 100 מוצרים מובילים</div>
+        <div className="text-2xl font-bold text-white mb-1">🛒 הסל של ישראל</div>
+        <p className="text-base text-white/70">מחיר מוזל קבוע ברשת קארפור — עם פיקוח מדינה</p>
+        <p className="text-xs text-white/50 mt-3">בתוקף מ-15.4.2026 למשך 6 חודשים לפחות</p>
       </div>
 
-      {/* Stats */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
+      {/* CTA — directly below hero */}
+      <div className="grid grid-cols-2 gap-3 mb-8">
+        <button
+          onClick={() => navigate('/products')}
+          className="bg-blue-700 text-white font-bold text-base py-3.5 rounded-xl shadow-md hover:bg-blue-800 active:scale-95 transition-all"
+        >
+          📦 רשימת המוצרים
+        </button>
+        <button
+          onClick={() => navigate('/branches')}
+          className="bg-white text-blue-700 font-bold text-base py-3.5 rounded-xl border-2 border-blue-700 hover:bg-blue-50 active:scale-95 transition-all"
+        >
+          🏪 רשימת הסניפים
+        </button>
+      </div>
+
+      {/* Proof Strip */}
+      <div className="flex justify-around items-center py-6 border-y border-gray-100 mb-8">
         {[
-          { label: 'מוצרים בסל', value: '100', icon: '📦' },
-          { label: 'חיסכון ממוצע', value: '30%+', icon: '💰' },
-          { label: 'סניפים משתתפים', value: '50', icon: '🏪' },
-          { label: 'חיסכון שנתי', value: '~2,000₪', icon: '🎯' },
+          { value: '100', label: 'מוצרים בסל' },
+          { value: '50', label: 'סניפים משתתפים' },
+          { value: '~2,000₪', label: 'חיסכון שנתי' },
         ].map((stat) => (
-          <div key={stat.label} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
-            <div className="text-2xl mb-1">{stat.icon}</div>
-            <div className="text-2xl font-extrabold text-blue-700">{stat.value}</div>
+          <div key={stat.label} className="text-center">
+            <div className="text-2xl font-bold text-blue-700">{stat.value}</div>
             <div className="text-xs text-gray-500 mt-1">{stat.label}</div>
           </div>
         ))}
       </div>
 
-      {/* Info box */}
-      <div className="bg-amber-50 border border-amber-200 rounded-2xl p-5 mb-8">
-        <h2 className="font-bold text-amber-800 mb-2">📌 מה זה הסל של ישראל?</h2>
-        <p className="text-sm text-amber-700 leading-relaxed">
-          משרד הכלכלה פרסם מכרז. קארפור זכתה. התוצאה: 100 מוצרים מובילים ב-30%+ הנחה קבועה —
-          לפחות חצי שנה. סה״כ הסל עולה <strong>1,098 ₪</strong> במקום ~1,700 ₪.
-          ב-50 סניפים + אונליין. עם פיקוח מדינה.
-        </p>
-      </div>
-
-      {/* Price comparison */}
-      <div className="bg-purple-50 border border-purple-200 rounded-2xl p-5 mb-8">
-        <h2 className="font-bold text-purple-800 mb-2">📊 השוואת מחירים בזמן אמת</h2>
-        <p className="text-sm text-purple-700 leading-relaxed">
-          הוסף מוצרים לסל — ותקבל מיד השוואה מול שופרסל, רמי לוי, יוחננוף וחצי חינם.
-          תראה בדיוק כמה חוסך הסל של ישראל לעומת הרשתות האחרות.
-        </p>
-      </div>
-
-      {/* About this app */}
-      <div className="bg-green-50 border border-green-200 rounded-2xl p-5 mb-8">
-        <h2 className="font-bold text-green-800 mb-2">🤝 על האפליקציה הזאת</h2>
-        <p className="text-sm text-green-700 leading-relaxed">
-          הגעת לאפליקציה חברתית ועצמאית — לא של קארפור ולא של משרד הכלכלה והתעשייה.
-          נוצרה כדי להנגיש לציבור את פרטי הסל ולתרום להורדת מחירי המזון בפרט ויוקר המחיה בכלל.
-        </p>
-      </div>
-
-      {/* Limit notice */}
-      <div className="bg-blue-50 border border-blue-200 rounded-2xl p-4 mb-8 text-sm text-blue-700">
-        <strong>⚠️ שים לב:</strong> ניתן לרכוש עד 2 יחידות מכל מוצר בכל קנייה.
-        המחירים תקפים בסניפי קארפור מרקט והיפר בלבד (לא בסניפי קארפור סיטי).
+      {/* Features */}
+      <div className="bg-gray-50 rounded-2xl px-6 py-8 mb-8">
+        <div className="text-xs text-gray-400 font-semibold tracking-widest uppercase mb-5">מה תקבל</div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {[
+            {
+              emoji: '📌',
+              title: 'מה זה הסל של ישראל?',
+              body: 'קארפור זכתה במכרז מדינה: 100 מוצרים מובילים ב-30%+ הנחה קבועה — לפחות חצי שנה. הסל עולה 1,098 ₪ במקום ~1,700 ₪.',
+              border: 'border-r-blue-500',
+            },
+            {
+              emoji: '📊',
+              title: 'השוואת מחירים בזמן אמת',
+              body: 'הוסף מוצרים לסל — ותקבל מיד השוואה מול שופרסל, רמי לוי, יוחננוף וחצי חינם. תראה בדיוק כמה חוסך הסל.',
+              border: 'border-r-purple-500',
+            },
+            {
+              emoji: '🤝',
+              title: 'על האפליקציה הזאת',
+              body: 'אפליקציה חברתית ועצמאית — לא של קארפור. נוצרה כדי להנגיש את פרטי הסל ולתרום להורדת יוקר המחיה.',
+              border: 'border-r-green-500',
+            },
+            {
+              emoji: '⚠️',
+              title: 'מגבלות חשובות',
+              body: 'עד 2 יחידות מכל מוצר בכל קנייה. תקף בסניפי קארפור מרקט והיפר בלבד — לא בסניפי קארפור סיטי.',
+              border: 'border-r-amber-500',
+            },
+          ].map((card) => (
+            <div
+              key={card.title}
+              className={`bg-white rounded-xl p-5 shadow-sm border border-gray-100 border-r-4 ${card.border}`}
+            >
+              <span className="text-2xl mb-2 block">{card.emoji}</span>
+              <div className="text-sm font-bold text-gray-900 mb-1">{card.title}</div>
+              <p className="text-sm text-gray-600 leading-relaxed">{card.body}</p>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Disclaimer */}
-      <div className="bg-gray-50 border border-gray-200 rounded-2xl p-4 mb-8 text-sm text-gray-600">
-        <strong>⚠️ גילוי נאות:</strong> מחירי הרשתות המתחרות נשלפים אוטומטית מהאתרים שלהן ומתעדכנים מדי יום.
-        ייתכנו פערים קטנים בין המחיר המוצג לבין המחיר בפועל בחנות.
-      </div>
+      <p className="text-xs text-gray-400 text-center mb-6 leading-relaxed">
+        מחירי הרשתות המתחרות נשלפים אוטומטית מהאתרים שלהן ומתעדכנים מדי יום. ייתכנו פערים קטנים בין המחיר המוצג לבין המחיר בפועל בחנות.
+      </p>
 
-      {/* CTA */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <button
-          onClick={() => navigate('/products')}
-          className="bg-blue-700 text-white font-bold text-lg py-4 rounded-2xl shadow-md hover:bg-blue-800 transition-colors"
-        >
-          📦 לרשימת המוצרים
-        </button>
-        <button
-          onClick={() => navigate('/branches')}
-          className="bg-white text-blue-700 font-bold text-lg py-4 rounded-2xl border-2 border-blue-700 hover:bg-blue-50 transition-colors"
-        >
-          🏪 לרשימת הסניפים
-        </button>
-      </div>
+      <p className="text-xs text-gray-400 text-center mb-4">ללא הרשמה · מתעדכן מדי שבוע</p>
     </main>
   )
 }

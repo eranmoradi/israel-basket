@@ -38,9 +38,27 @@ export default function HomePage() {
       <div className="bg-amber-50 border border-amber-200 rounded-2xl p-5 mb-8">
         <h2 className="font-bold text-amber-800 mb-2">📌 מה זה הסל של ישראל?</h2>
         <p className="text-sm text-amber-700 leading-relaxed">
-          שיתוף פעולה בין משרד הכלכלה לרשת קארפור — 100 מוצרים מובילים נמכרים במחיר מוזל קבוע.
-          סה"כ הסל עולה <strong>1,098 ₪</strong> לעומת מחיר ממוצע של כ-1,700 ₪.
-          המבצע זמין ב-50 סניפי קארפור מרקט, היפר ומהדרין בכל הארץ.
+          משרד הכלכלה פרסם מכרז. קארפור זכתה. התוצאה: 100 מוצרים מובילים ב-30%+ הנחה קבועה —
+          לפחות חצי שנה. סה״כ הסל עולה <strong>1,098 ₪</strong> במקום ~1,700 ₪.
+          ב-50 סניפים + אונליין. עם פיקוח מדינה.
+        </p>
+      </div>
+
+      {/* Price comparison */}
+      <div className="bg-purple-50 border border-purple-200 rounded-2xl p-5 mb-8">
+        <h2 className="font-bold text-purple-800 mb-2">📊 השוואת מחירים בזמן אמת</h2>
+        <p className="text-sm text-purple-700 leading-relaxed">
+          הוסף מוצרים לסל — ותקבל מיד השוואה מול שופרסל, רמי לוי, יוחננוף וחצי חינם.
+          תראה בדיוק כמה חוסך הסל של ישראל לעומת הרשתות האחרות.
+        </p>
+      </div>
+
+      {/* About this app */}
+      <div className="bg-green-50 border border-green-200 rounded-2xl p-5 mb-8">
+        <h2 className="font-bold text-green-800 mb-2">🤝 על האפליקציה הזאת</h2>
+        <p className="text-sm text-green-700 leading-relaxed">
+          הגעת לאפליקציה חברתית ועצמאית — לא של קארפור ולא של משרד הכלכלה והתעשייה.
+          נוצרה כדי להנגיש לציבור את פרטי הסל ולתרום להורדת מחירי המזון בפרט ויוקר המחיה בכלל.
         </p>
       </div>
 
@@ -48,6 +66,12 @@ export default function HomePage() {
       <div className="bg-blue-50 border border-blue-200 rounded-2xl p-4 mb-8 text-sm text-blue-700">
         <strong>⚠️ שים לב:</strong> ניתן לרכוש עד 2 יחידות מכל מוצר בכל קנייה.
         המחירים תקפים בסניפי קארפור מרקט והיפר בלבד (לא בסניפי קארפור סיטי).
+      </div>
+
+      {/* Disclaimer */}
+      <div className="bg-gray-50 border border-gray-200 rounded-2xl p-4 mb-8 text-sm text-gray-600">
+        <strong>⚠️ גילוי נאות:</strong> מחירי הרשתות המתחרות נשלפים אוטומטית מהאתרים שלהן ומתעדכנים מדי יום.
+        ייתכנו פערים קטנים בין המחיר המוצג לבין המחיר בפועל בחנות.
       </div>
 
       {/* CTA */}

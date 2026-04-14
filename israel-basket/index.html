@@ -7,6 +7,20 @@
     <meta name="description" content="הסל של ישראל — 100 מוצרים במחיר מוזל. יוזמת משרד הכלכלה עם קארפור. חיסכון של מעל 30%." />
     <meta name="theme-color" content="#1d4ed8" />
     <title>הסל של ישראל</title>
+    <script>
+      // Restore path redirected by 404.html for GitHub Pages SPA routing
+      (function(l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search.slice(1).split('&').map(function(s) {
+            return s.replace(/~and~/g, '&');
+          });
+          window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + decoded[0] +
+            (decoded[1] ? '&' + decoded[1] : '') + l.hash
+          );
+        }
+      }(window.location));
+    </script>
   </head>
   <body>
     <div id="root"></div>

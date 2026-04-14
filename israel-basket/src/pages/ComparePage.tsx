@@ -232,7 +232,7 @@ export default function ComparePage() {
                         <div className="text-gray-400 text-[10px] mt-0.5">{dept}</div>
                       )}
                     </td>
-                    {CHAINS.map((chain, ci) => {
+                    {CHAINS.map((chain) => {
                       const cp = getChainPrice(item, chain)
                       const isMin = cp !== null && cp.effective === minPrice
                       return (

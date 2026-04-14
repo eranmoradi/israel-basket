@@ -200,6 +200,18 @@ export default function BasketPage() {
       >
         + הוסף עוד מוצרים
       </button>
+
+      {/* Limit notice */}
+      <div className="bg-blue-50 border border-blue-200 rounded-2xl p-4 mt-6 text-sm text-blue-700">
+        <strong>⚠️ שים לב:</strong> ניתן לרכוש עד 2 יחידות מכל מוצר בכל קנייה.
+        המחירים תקפים בסניפי קארפור מרקט והיפר בלבד (לא בסניפי קארפור סיטי).
+      </div>
+
+      {/* Disclaimer */}
+      <div className="bg-gray-50 border border-gray-200 rounded-2xl p-4 mt-4 text-sm text-gray-600">
+        <strong>⚠️ גילוי נאות:</strong> מחירי הרשתות המתחרות נשלפים אוטומטית מהאתרים שלהן ומתעדכנים מדי יום.
+        ייתכנו פערים קטנים בין המחיר המוצג לבין המחיר בפועל בחנות.
+      </div>
     </div>
   )
 }

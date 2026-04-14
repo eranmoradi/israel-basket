@@ -1,14 +1,15 @@
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 import { useBasketStore } from '../store/basketStore'
 
 export default function BasketBar() {
   const { count, total } = useBasketStore()
   const navigate = useNavigate()
+  const { pathname } = useLocation()
 
-  if (count === 0) return null
+  if (count === 0 || pathname === '/basket') return null
 
   return (
-    <div className="fixed bottom-0 inset-x-0 z-40 bg-blue-700 text-white shadow-2xl">
+    <div className="fixed bottom-[60px] inset-x-0 z-40 bg-blue-700 text-white shadow-2xl">
       <div className="max-w-3xl mx-auto px-4 py-3 flex items-center justify-between">
         <div>
           <span className="font-bold text-lg">{total.toFixed(2)} ₪</span>

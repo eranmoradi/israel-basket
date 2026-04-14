@@ -2,7 +2,6 @@ import { useMemo, useState } from 'react'
 import productsData from '../data/products.json'
 import type { Product } from '../types'
 import ProductCard from '../components/ProductCard'
-import BasketBar from '../components/BasketBar'
 
 const products = productsData as Product[]
 const DEPARTMENTS = ['הכל', ...Array.from(new Set(products.map((p) => p.department))).sort()]
@@ -27,7 +26,7 @@ export default function ProductsPage() {
   }, [search, dept, showBasicOnly])
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-6 pb-28">
+    <div className="max-w-3xl mx-auto px-4 py-6">
       <h1 className="text-2xl font-extrabold text-gray-900 mb-5">מוצרי הסל ({products.length})</h1>
 
       {/* Search */}
@@ -90,7 +89,6 @@ export default function ProductsPage() {
         </div>
       )}
 
-      <BasketBar />
     </div>
   )
 }

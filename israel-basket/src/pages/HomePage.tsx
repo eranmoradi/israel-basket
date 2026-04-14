@@ -10,7 +10,7 @@ export default function HomePage() {
         <span className="bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full inline-block mb-5">
           יוזמת משרד הכלכלה והתעשייה
         </span>
-        <div className="text-7xl sm:text-8xl font-black text-yellow-300 leading-none mb-1">30%+</div>
+        <div className="text-6xl sm:text-8xl font-black text-yellow-300 leading-none mb-1">30%+</div>
         <div className="text-base text-white/80 mb-6">חיסכון ממוצע על 100 מוצרים מובילים</div>
         <div className="text-2xl font-bold text-white mb-1">🛒 הסל של ישראל</div>
         <p className="text-base text-white/70">מחיר מוזל קבוע ברשת קארפור — עם פיקוח מדינה</p>
@@ -18,7 +18,7 @@ export default function HomePage() {
       </div>
 
       {/* CTA — directly below hero */}
-      <div className="grid grid-cols-2 gap-3 mb-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
         <button
           onClick={() => navigate('/products')}
           className="bg-blue-700 text-white font-bold text-base py-3.5 rounded-xl shadow-md hover:bg-blue-800 active:scale-95 transition-all"

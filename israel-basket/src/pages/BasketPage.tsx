@@ -39,25 +39,66 @@ export default function BasketPage() {
   const items = Array.from(selected.values())
 
   const competitorData = useMemo(() => {
-    let cheapestTotal = 0
-    let coveredCount = 0
-
+    // Per-product cheapest (for item-level display)
     const perProduct = items.map((product) => {
       if (product.groupId == null) return { product, best: null }
       const priceItem = priceByGroup.get(product.groupId)
       if (!priceItem) return { product, best: null }
       const best = getCheapest(priceItem)
-      if (best) {
-        cheapestTotal += best.price
-        coveredCount++
-      }
       return { product, best }
     })
 
-    return { perProduct, cheapestTotal, coveredCount }
+    // Cheapest single chain: for each chain, sum all covered products
+    const chainTotals: Record<ChainName, { total: number; carrefourTotal: number; count: number }> = {
+      שופרסל: { total: 0, carrefourTotal: 0, count: 0 },
+      'רמי לוי': { total: 0, carrefourTotal: 0, count: 0 },
+      יוחננוף: { total: 0, carrefourTotal: 0, count: 0 },
+      'חצי חינם': { total: 0, carrefourTotal: 0, count: 0 },
+    }
+
+    for (const { product } of perProduct) {
+      if (product.groupId == null || product.price == null) continue
+      const priceItem = priceByGroup.get(product.groupId)
+      if (!priceItem) continue
+      for (const chain of CHAINS) {
+        const cp = (priceItem.prices as Record<string, ChainPrice | null>)[chain]
+        if (cp) {
+          chainTotals[chain].total += cp.effective
+          chainTotals[chain].carrefourTotal += product.price
+          chainTotals[chain].count++
+        }
+      }
+    }
+
+    // Find the single cheapest chain (by total, among chains with at least 1 product)
+    let cheapestChain: ChainName | null = null
+    let cheapestChainTotal = Infinity
+    let cheapestChainCount = 0
+    let cheapestChainCarrefourTotal = 0
+
+    for (const chain of CHAINS) {
+      const d = chainTotals[chain]
+      if (d.count > 0 && d.total < cheapestChainTotal) {
+        cheapestChain = chain
+        cheapestChainTotal = d.total
+        cheapestChainCount = d.count
+        cheapestChainCarrefourTotal = d.carrefourTotal
+      }
+    }
+
+    return {
+      perProduct,
+      cheapestChain,
+      cheapestChainTotal: cheapestChainTotal === Infinity ? 0 : cheapestChainTotal,
+      cheapestChainCount,
+      cheapestChainCarrefourTotal,
+    }
   }, [items])
 
-  const saving = total - competitorData.cheapestTotal
+  // Saving = Carrefour price for the same covered products vs cheapest chain
+  const saving = competitorData.cheapestChain
+    ? competitorData.cheapestChainCarrefourTotal - competitorData.cheapestChainTotal
+    : 0
 
   if (count === 0) {
     return (
@@ -98,17 +139,17 @@ export default function BasketPage() {
           <span className="text-3xl font-extrabold">{total.toFixed(2)} ₪</span>
         </div>
 
-        {/* Cheapest competitor row */}
-        {competitorData.coveredCount > 0 && (
+        {/* Cheapest single chain row */}
+        {competitorData.cheapestChain && (
           <div className="bg-green-600 text-white px-5 py-4 flex justify-between items-center">
             <div>
-              <div className="text-green-200 text-xs mb-0.5">הזול ביותר (מחיר לכל מוצר)</div>
+              <div className="text-green-200 text-xs mb-0.5">הרשת הזולה ביותר לסל זה</div>
               <div className="font-bold text-sm">
-                {competitorData.coveredCount}/{count} מוצרים נמצאו
+                {competitorData.cheapestChain} · {competitorData.cheapestChainCount}/{count} מוצרים
               </div>
             </div>
             <span className="text-3xl font-extrabold">
-              {competitorData.cheapestTotal.toFixed(2)} ₪
+              {competitorData.cheapestChainTotal.toFixed(2)} ₪
             </span>
           </div>
         )}
@@ -116,7 +157,9 @@ export default function BasketPage() {
         {/* Saving row */}
         {saving > 0.01 && (
           <div className="bg-amber-50 border-t border-amber-200 px-5 py-3 flex justify-between items-center">
-            <span className="text-amber-800 font-semibold text-sm">חיסכון פוטנציאלי</span>
+            <span className="text-amber-800 font-semibold text-sm">
+              חיסכון לעומת {competitorData.cheapestChain}
+            </span>
             <span className="text-amber-700 font-extrabold text-lg">
               {saving.toFixed(2)} ₪ ↓
             </span>

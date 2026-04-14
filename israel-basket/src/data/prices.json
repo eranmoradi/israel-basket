@@ -1,0 +1,3918 @@
+{
+  "fetched_at": "2026-04-14T07:05:13.164731+00:00",
+  "source": "chp.co.il",
+  "product_count": 100,
+  "error_count": 0,
+  "products": [
+    {
+      "groupId": 1,
+      "barcode": "7290000197678",
+      "name": "האגיס פרידום פלוס שלב 6 27 יח",
+      "chp_title": "חיתולים פרידום שלב 6, 29 יחידות",
+      "prices": [
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 46.6,
+          "sale_price": 33.0,
+          "effective_price": 33.0
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 42.9,
+          "sale_price": 33.33,
+          "effective_price": 33.33
+        },
+        {
+          "chain": "סופר פארם אונליין",
+          "store": "סופר פארם אונליין",
+          "website": "https://shop.super-pharm.co.il",
+          "regular_price": 48.9,
+          "sale_price": 35.0,
+          "effective_price": 35.0
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 39.9,
+          "sale_price": null,
+          "effective_price": 39.9
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 43.9,
+          "sale_price": 40.9,
+          "effective_price": 40.9
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 41.5,
+          "sale_price": null,
+          "effective_price": 41.5
+        }
+      ]
+    },
+    {
+      "groupId": 2,
+      "barcode": "7290000195537",
+      "name": "מגבוני האגיס דיילי קר לא מבושם 4*56",
+      "chp_title": "מגבונים לחים ללא בישום, רביעיה ",
+      "prices": [
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 19.9,
+          "sale_price": 14.95,
+          "effective_price": 14.95
+        },
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 21.1,
+          "sale_price": 16.0,
+          "effective_price": 16.0
+        },
+        {
+          "chain": "קוויק אונליין",
+          "store": "קוויק אונליין",
+          "website": "https://quik.co.il/",
+          "regular_price": 25.9,
+          "sale_price": 16.0,
+          "effective_price": 16.0
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 25.9,
+          "sale_price": 16.0,
+          "effective_price": 16.0
+        },
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 19.7,
+          "sale_price": 17.5,
+          "effective_price": 17.5
+        },
+        {
+          "chain": "סופר פארם אונליין",
+          "store": "סופר פארם אונליין",
+          "website": "https://shop.super-pharm.co.il",
+          "regular_price": 28.9,
+          "sale_price": 18.9,
+          "effective_price": 18.9
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 21.9,
+          "sale_price": null,
+          "effective_price": 21.9
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 21.9,
+          "sale_price": null,
+          "effective_price": 21.9
+        },
+        {
+          "chain": "אקספרס מהדרין",
+          "store": "אקספרס מהדרין",
+          "website": "https://www.expressmehadrin.co.il/",
+          "regular_price": 22.9,
+          "sale_price": null,
+          "effective_price": 22.9
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 22.9,
+          "sale_price": null,
+          "effective_price": 22.9
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 23.1,
+          "sale_price": null,
+          "effective_price": 23.1
+        }
+      ]
+    },
+    {
+      "groupId": 3,
+      "barcode": "7290000211442",
+      "name": "סוגת אורז פרסי קלאסי שקית 1 ק\"ג",
+      "chp_title": "אורז פרסי קלאסי, 1 ק\"ג",
+      "prices": []
+    },
+    {
+      "groupId": 4,
+      "barcode": "7290100700372",
+      "name": "סוגת אורז בסמטי מלא 1 ק\"ג",
+      "chp_title": "אורז בסמטי מלא, 1 ק\"ג",
+      "prices": []
+    },
+    {
+      "groupId": 5,
+      "barcode": "7290000060880",
+      "name": "פסטה אסם ספגטי 500גר",
+      "chp_title": "פסטה ספגטי 8, 500 גרם",
+      "prices": [
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 7.0,
+          "sale_price": 3.9,
+          "effective_price": 3.9
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 5.9,
+          "sale_price": 4.17,
+          "effective_price": 4.17
+        },
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 5.9,
+          "sale_price": 5.0,
+          "effective_price": 5.0
+        },
+        {
+          "chain": "אקספרס מהדרין",
+          "store": "אקספרס מהדרין",
+          "website": "https://www.expressmehadrin.co.il/",
+          "regular_price": 6.9,
+          "sale_price": 5.0,
+          "effective_price": 5.0
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 6.9,
+          "sale_price": 5.4,
+          "effective_price": 5.4
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 6.4,
+          "sale_price": null,
+          "effective_price": 6.4
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 6.5,
+          "sale_price": null,
+          "effective_price": 6.5
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 6.8,
+          "sale_price": null,
+          "effective_price": 6.8
+        },
+        {
+          "chain": "שוק העיר אונליין",
+          "store": "שוק העיר אונליין",
+          "website": "https://www.shukcity.co.il/",
+          "regular_price": 6.9,
+          "sale_price": null,
+          "effective_price": 6.9
+        },
+        {
+          "chain": "קוויק אונליין",
+          "store": "קוויק אונליין",
+          "website": "https://quik.co.il/",
+          "regular_price": 7.9,
+          "sale_price": null,
+          "effective_price": 7.9
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 7.9,
+          "sale_price": null,
+          "effective_price": 7.9
+        }
+      ]
+    },
+    {
+      "groupId": 6,
+      "barcode": "8076809529419",
+      "name": "ברילה ספגטי מחיטה מלאה 500 גרם",
+      "chp_title": "ספגטי מחיטה מלאה 5, 500 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 7,
+      "barcode": "7290100700273",
+      "name": "סוגת קינואה 500 גר",
+      "chp_title": "קינואה, 500 גרם",
+      "prices": [
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 17.2,
+          "sale_price": 6.9,
+          "effective_price": 6.9
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 12.9,
+          "sale_price": null,
+          "effective_price": 12.9
+        },
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 14.9,
+          "sale_price": null,
+          "effective_price": 14.9
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 14.9,
+          "sale_price": null,
+          "effective_price": 14.9
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 17.5,
+          "sale_price": null,
+          "effective_price": 17.5
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 15.1,
+          "sale_price": null,
+          "effective_price": 15.1
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 16.9,
+          "sale_price": null,
+          "effective_price": 16.9
+        },
+        {
+          "chain": "שופרסל אונליין",
+          "store": "שופרסל אונליין",
+          "website": "https://www.shufersal.co.il",
+          "regular_price": 17.5,
+          "sale_price": null,
+          "effective_price": 17.5
+        },
+        {
+          "chain": "שוק העיר אונליין",
+          "store": "שוק העיר אונליין",
+          "website": "https://www.shukcity.co.il/",
+          "regular_price": 17.9,
+          "sale_price": null,
+          "effective_price": 17.9
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 18.9,
+          "sale_price": null,
+          "effective_price": 18.9
+        }
+      ]
+    },
+    {
+      "groupId": 8,
+      "barcode": "7290003643752",
+      "name": "סוגת עדשים ירוקים 500 גר",
+      "chp_title": "עדשים ירוקות, 500 גרם",
+      "prices": [
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 3.9,
+          "sale_price": null,
+          "effective_price": 3.9
+        },
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 9.5,
+          "sale_price": 3.9,
+          "effective_price": 3.9
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 6.9,
+          "sale_price": null,
+          "effective_price": 6.9
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 9.5,
+          "sale_price": 8.0,
+          "effective_price": 8.0
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 8.9,
+          "sale_price": null,
+          "effective_price": 8.9
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 9.0,
+          "sale_price": null,
+          "effective_price": 9.0
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 10.9,
+          "sale_price": null,
+          "effective_price": 10.9
+        },
+        {
+          "chain": "שוק העיר אונליין",
+          "store": "שוק העיר אונליין",
+          "website": "https://www.shukcity.co.il/",
+          "regular_price": 9.9,
+          "sale_price": null,
+          "effective_price": 9.9
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 10.1,
+          "sale_price": null,
+          "effective_price": 10.1
+        }
+      ]
+    },
+    {
+      "groupId": 9,
+      "barcode": "7290100704929",
+      "name": "סוגת שעועית לבנה 500 גר",
+      "chp_title": "שעועית לבנה, 500 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 10,
+      "barcode": "7290003643714",
+      "name": "סוגת חומוס 500גר",
+      "chp_title": "חומוס, 500 גרם",
+      "prices": [
+        {
+          "chain": "קוויק אונליין",
+          "store": "קוויק אונליין",
+          "website": "https://quik.co.il/",
+          "regular_price": 10.9,
+          "sale_price": 6.5,
+          "effective_price": 6.5
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 10.9,
+          "sale_price": 6.5,
+          "effective_price": 6.5
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 6.9,
+          "sale_price": null,
+          "effective_price": 6.9
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 8.9,
+          "sale_price": null,
+          "effective_price": 8.9
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 8.9,
+          "sale_price": null,
+          "effective_price": 8.9
+        },
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 9.3,
+          "sale_price": 8.9,
+          "effective_price": 8.9
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 10.5,
+          "sale_price": null,
+          "effective_price": 10.5
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 9.0,
+          "sale_price": null,
+          "effective_price": 9.0
+        }
+      ]
+    },
+    {
+      "groupId": 11,
+      "barcode": "7290010116348",
+      "name": "מיקס מעורב מגדים 390ג",
+      "chp_title": "מיקס פסק זמן כיף כף ומקופלת, 400 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 12,
+      "barcode": "8000500071083",
+      "name": "קינדר אצבעות שוקולד 200ג",
+      "chp_title": "חטיף קינדר שוקולד במילוי קרם חלב, 200 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 13,
+      "barcode": "7290112494313",
+      "name": "קליק קורנפלקס תפזורת 65גר",
+      "chp_title": "קליק קורנפלקס, 65 גרם",
+      "prices": [
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 4.0,
+          "sale_price": null,
+          "effective_price": 4.0
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 7.7,
+          "sale_price": 5.5,
+          "effective_price": 5.5
+        },
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 8.5,
+          "sale_price": 5.5,
+          "effective_price": 5.5
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 7.9,
+          "sale_price": 6.48,
+          "effective_price": 6.48
+        },
+        {
+          "chain": "שופרסל אונליין",
+          "store": "שופרסל אונליין",
+          "website": "https://www.shufersal.co.il",
+          "regular_price": 8.5,
+          "sale_price": 7.0,
+          "effective_price": 7.0
+        },
+        {
+          "chain": "אקספרס מהדרין",
+          "store": "אקספרס מהדרין",
+          "website": "https://www.expressmehadrin.co.il/",
+          "regular_price": 8.7,
+          "sale_price": 7.0,
+          "effective_price": 7.0
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 7.9,
+          "sale_price": 7.45,
+          "effective_price": 7.45
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 8.5,
+          "sale_price": 7.95,
+          "effective_price": 7.95
+        },
+        {
+          "chain": "קוויק אונליין",
+          "store": "קוויק אונליין",
+          "website": "https://quik.co.il/",
+          "regular_price": 9.1,
+          "sale_price": null,
+          "effective_price": 9.1
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 9.1,
+          "sale_price": null,
+          "effective_price": 9.1
+        },
+        {
+          "chain": "סופר פארם אונליין",
+          "store": "סופר פארם אונליין",
+          "website": "https://shop.super-pharm.co.il",
+          "regular_price": 12.0,
+          "sale_price": null,
+          "effective_price": 12.0
+        }
+      ]
+    },
+    {
+      "groupId": 14,
+      "barcode": "7290000137513",
+      "name": "קרמיסימו שוקו ניל חלבי 60יח 630גר",
+      "chp_title": "גלידונית גלידה וניל בציפוי שוקולד, 630 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 15,
+      "barcode": "7290116537351",
+      "name": "כריות נוגט תלמה 686 גרם",
+      "chp_title": "כריות נוגט, 686 גרם",
+      "prices": [
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 22.9,
+          "sale_price": null,
+          "effective_price": 22.9
+        },
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 29.9,
+          "sale_price": 22.9,
+          "effective_price": 22.9
+        },
+        {
+          "chain": "שוק העיר אונליין",
+          "store": "שוק העיר אונליין",
+          "website": "https://www.shukcity.co.il/",
+          "regular_price": 29.9,
+          "sale_price": 24.9,
+          "effective_price": 24.9
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 28.9,
+          "sale_price": 25.0,
+          "effective_price": 25.0
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 27.9,
+          "sale_price": null,
+          "effective_price": 27.9
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 27.9,
+          "sale_price": null,
+          "effective_price": 27.9
+        },
+        {
+          "chain": "שופרסל אונליין",
+          "store": "שופרסל אונליין",
+          "website": "https://www.shufersal.co.il",
+          "regular_price": 28.9,
+          "sale_price": null,
+          "effective_price": 28.9
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 28.9,
+          "sale_price": null,
+          "effective_price": 28.9
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 29.4,
+          "sale_price": null,
+          "effective_price": 29.4
+        },
+        {
+          "chain": "אקספרס מהדרין",
+          "store": "אקספרס מהדרין",
+          "website": "https://www.expressmehadrin.co.il/",
+          "regular_price": 29.9,
+          "sale_price": null,
+          "effective_price": 29.9
+        },
+        {
+          "chain": "קוויק אונליין",
+          "store": "קוויק אונליין",
+          "website": "https://quik.co.il/",
+          "regular_price": 33.9,
+          "sale_price": null,
+          "effective_price": 33.9
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 33.9,
+          "sale_price": null,
+          "effective_price": 33.9
+        }
+      ]
+    },
+    {
+      "groupId": 16,
+      "barcode": "7290112494351",
+      "name": "קורנפלקס אלופים בד\"צ 850 גר",
+      "chp_title": "קורנפלקס של אלופים, 850 גרם",
+      "prices": [
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 21.9,
+          "sale_price": 17.9,
+          "effective_price": 17.9
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 19.9,
+          "sale_price": null,
+          "effective_price": 19.9
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 19.9,
+          "sale_price": null,
+          "effective_price": 19.9
+        },
+        {
+          "chain": "שופרסל אונליין",
+          "store": "שופרסל אונליין",
+          "website": "https://www.shufersal.co.il",
+          "regular_price": 20.9,
+          "sale_price": null,
+          "effective_price": 20.9
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 20.9,
+          "sale_price": null,
+          "effective_price": 20.9
+        },
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 21.9,
+          "sale_price": 20.9,
+          "effective_price": 20.9
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 21.9,
+          "sale_price": 20.9,
+          "effective_price": 20.9
+        },
+        {
+          "chain": "שוק העיר אונליין",
+          "store": "שוק העיר אונליין",
+          "website": "https://www.shukcity.co.il/",
+          "regular_price": 21.9,
+          "sale_price": null,
+          "effective_price": 21.9
+        },
+        {
+          "chain": "אקספרס מהדרין",
+          "store": "אקספרס מהדרין",
+          "website": "https://www.expressmehadrin.co.il/",
+          "regular_price": 21.9,
+          "sale_price": null,
+          "effective_price": 21.9
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 21.9,
+          "sale_price": null,
+          "effective_price": 21.9
+        },
+        {
+          "chain": "קוויק אונליין",
+          "store": "קוויק אונליין",
+          "website": "https://quik.co.il/",
+          "regular_price": 25.9,
+          "sale_price": null,
+          "effective_price": 25.9
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 25.9,
+          "sale_price": null,
+          "effective_price": 25.9
+        }
+      ]
+    },
+    {
+      "groupId": 17,
+      "barcode": "7290000480107",
+      "name": "קוואקר מהיר אטוס לל\"ס 500 גר",
+      "chp_title": "שיבולת שועל להכנה מהירה, 500 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 18,
+      "barcode": "7290000066332",
+      "name": "אפרופו 50 גרם",
+      "chp_title": "חטיף אפרופו קלאסי, 50 גרם",
+      "prices": [
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 4.6,
+          "sale_price": 3.57,
+          "effective_price": 3.57
+        },
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 4.9,
+          "sale_price": 3.57,
+          "effective_price": 3.57
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 4.9,
+          "sale_price": 3.74,
+          "effective_price": 3.74
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 5.0,
+          "sale_price": 3.75,
+          "effective_price": 3.75
+        },
+        {
+          "chain": "שוק העיר אונליין",
+          "store": "שוק העיר אונליין",
+          "website": "https://www.shukcity.co.il/",
+          "regular_price": 5.9,
+          "sale_price": 4.3,
+          "effective_price": 4.3
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 8.1,
+          "sale_price": 4.33,
+          "effective_price": 4.33
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 5.5,
+          "sale_price": 4.63,
+          "effective_price": 4.63
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 5.5,
+          "sale_price": 4.95,
+          "effective_price": 4.95
+        },
+        {
+          "chain": "אקספרס מהדרין",
+          "store": "אקספרס מהדרין",
+          "website": "https://www.expressmehadrin.co.il/",
+          "regular_price": 5.9,
+          "sale_price": 5.0,
+          "effective_price": 5.0
+        },
+        {
+          "chain": "סופר פארם אונליין",
+          "store": "סופר פארם אונליין",
+          "website": "https://shop.super-pharm.co.il",
+          "regular_price": 7.9,
+          "sale_price": null,
+          "effective_price": 7.9
+        }
+      ]
+    },
+    {
+      "groupId": 19,
+      "barcode": "7290000066318",
+      "name": "במבה 80 גרם",
+      "chp_title": "חטיף במבה, 80 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 20,
+      "barcode": "7290008745239",
+      "name": "תפוציפס קראנץ טבעי 50 גר",
+      "chp_title": "חטיף תפוצ'יפס קראנצ' בטעם טבעי, 50 גרם",
+      "prices": [
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 2.4,
+          "sale_price": null,
+          "effective_price": 2.4
+        },
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 4.9,
+          "sale_price": 2.5,
+          "effective_price": 2.5
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 5.0,
+          "sale_price": 3.33,
+          "effective_price": 3.33
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 4.5,
+          "sale_price": 3.45,
+          "effective_price": 3.45
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 4.5,
+          "sale_price": null,
+          "effective_price": 4.5
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 4.5,
+          "sale_price": null,
+          "effective_price": 4.5
+        },
+        {
+          "chain": "אקספרס מהדרין",
+          "store": "אקספרס מהדרין",
+          "website": "https://www.expressmehadrin.co.il/",
+          "regular_price": 4.9,
+          "sale_price": null,
+          "effective_price": 4.9
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 4.9,
+          "sale_price": null,
+          "effective_price": 4.9
+        }
+      ]
+    },
+    {
+      "groupId": 21,
+      "barcode": "7290112492449",
+      "name": "פינוק שמפו לשיער רגיל 700מ\"ל",
+      "chp_title": "שמפו לשיער רגיל בתוספת תמצית רוזמרין, 700 מ\"ל",
+      "prices": []
+    },
+    {
+      "groupId": 22,
+      "barcode": "7290017812571",
+      "name": "תירוש כרמל אדום 1 ליטר",
+      "chp_title": "תירוש מיץ ענבים אדום, 1 ליטר",
+      "prices": []
+    },
+    {
+      "groupId": 23,
+      "barcode": "7290000104676",
+      "name": "אפונה 800 גרם",
+      "chp_title": "אפונת גינה, 800 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 24,
+      "barcode": "7290000107295",
+      "name": "תפרחות ברוקולי 800ג",
+      "chp_title": "תפרחות ברוקולי, 800 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 25,
+      "barcode": "7290000104744",
+      "name": "כרובית 800גר",
+      "chp_title": "כרובית מוקפאת, 800 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 26,
+      "barcode": "7290012884986",
+      "name": "תפוגן ציפס לתנור עד 4% שומן 1.5 קג",
+      "chp_title": "צ'יפס לתנור, 1.5 ק\"ג",
+      "prices": [
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 16.9,
+          "sale_price": null,
+          "effective_price": 16.9
+        },
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 29.2,
+          "sale_price": 16.9,
+          "effective_price": 16.9
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 27.9,
+          "sale_price": 24.5,
+          "effective_price": 24.5
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 27.9,
+          "sale_price": null,
+          "effective_price": 27.9
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 27.9,
+          "sale_price": null,
+          "effective_price": 27.9
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 28.2,
+          "sale_price": null,
+          "effective_price": 28.2
+        },
+        {
+          "chain": "שופרסל אונליין",
+          "store": "שופרסל אונליין",
+          "website": "https://www.shufersal.co.il",
+          "regular_price": 28.9,
+          "sale_price": null,
+          "effective_price": 28.9
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 28.9,
+          "sale_price": null,
+          "effective_price": 28.9
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 35.9,
+          "sale_price": null,
+          "effective_price": 35.9
+        }
+      ]
+    },
+    {
+      "groupId": 27,
+      "barcode": "7290000104836",
+      "name": "שעועית עדינה שלמה 600גר",
+      "chp_title": "שעועית עדינה שלמה, 600 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 28,
+      "barcode": "7290017947891",
+      "name": "לחם אנגל כוסמין וחיטה מלאה 750 גרם",
+      "chp_title": "לחם כוסמין וחיטה מלאה, 750 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 29,
+      "barcode": "7290014940901",
+      "name": "אנג'ל לחם פשוט מלא 750מל",
+      "chp_title": "לחם פשוט מלא, 750 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 30,
+      "barcode": "7290018540329",
+      "name": "פיתה אנגל 8 יח",
+      "chp_title": "פיתה פיתה אנג'ל בלאדי, 880 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 31,
+      "barcode": "7290017947464",
+      "name": "אנגל פיתות כוסמין 8יח 400גר",
+      "chp_title": "פיתות כוסמין, 400 גרם",
+      "prices": [
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 19.9,
+          "sale_price": 9.9,
+          "effective_price": 9.9
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 19.9,
+          "sale_price": 15.0,
+          "effective_price": 15.0
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 16.9,
+          "sale_price": null,
+          "effective_price": 16.9
+        },
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 17.9,
+          "sale_price": 16.9,
+          "effective_price": 16.9
+        },
+        {
+          "chain": "שופרסל אונליין",
+          "store": "שופרסל אונליין",
+          "website": "https://www.shufersal.co.il",
+          "regular_price": 17.9,
+          "sale_price": null,
+          "effective_price": 17.9
+        },
+        {
+          "chain": "שוק העיר אונליין",
+          "store": "שוק העיר אונליין",
+          "website": "https://www.shukcity.co.il/",
+          "regular_price": 17.9,
+          "sale_price": null,
+          "effective_price": 17.9
+        },
+        {
+          "chain": "אקספרס מהדרין",
+          "store": "אקספרס מהדרין",
+          "website": "https://www.expressmehadrin.co.il/",
+          "regular_price": 17.9,
+          "sale_price": null,
+          "effective_price": 17.9
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 17.9,
+          "sale_price": null,
+          "effective_price": 17.9
+        },
+        {
+          "chain": "קוויק אונליין",
+          "store": "קוויק אונליין",
+          "website": "https://quik.co.il/",
+          "regular_price": 19.9,
+          "sale_price": null,
+          "effective_price": 19.9
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 19.9,
+          "sale_price": null,
+          "effective_price": 19.9
+        }
+      ]
+    },
+    {
+      "groupId": 32,
+      "barcode": "7290112495105",
+      "name": "נשנושים שמנת בצל 260 ג",
+      "chp_title": "נשנושים חטיף בטעם שמנת בצל, 260 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 33,
+      "barcode": "8434165466333",
+      "name": "קריט מיני קרקרים עגולים 350גר",
+      "chp_title": "מיני קרקרים עגולים קואטרה קריט, 350 גרם",
+      "prices": [
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 8.2,
+          "sale_price": null,
+          "effective_price": 8.2
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 10.9,
+          "sale_price": 9.45,
+          "effective_price": 9.45
+        },
+        {
+          "chain": "שופרסל אונליין",
+          "store": "שופרסל אונליין",
+          "website": "https://www.shufersal.co.il",
+          "regular_price": 11.9,
+          "sale_price": 10.0,
+          "effective_price": 10.0
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 11.9,
+          "sale_price": 10.0,
+          "effective_price": 10.0
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 11.5,
+          "sale_price": null,
+          "effective_price": 11.5
+        }
+      ]
+    },
+    {
+      "groupId": 34,
+      "barcode": "7622010001858",
+      "name": "אוראו 176 גרם",
+      "chp_title": "אוראו עוגיות סנדוויץ' בטעם שוקולד ממולאות קרם וניל, 176 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 35,
+      "barcode": "46214731552",
+      "name": "עוגיות שוקולד ציפס מובחרות % 37 שוקולד",
+      "chp_title": "עוגיות עם 37% שוקולד צ'יפס, 225 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 36,
+      "barcode": "7290000181103",
+      "name": "עד חצות 200ג",
+      "chp_title": "עד חצות ביסקוויט מצופה שוקולד חלב, 200 גרם",
+      "prices": [
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 11.9,
+          "sale_price": null,
+          "effective_price": 11.9
+        },
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 19.9,
+          "sale_price": 11.9,
+          "effective_price": 11.9
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 17.9,
+          "sale_price": 14.95,
+          "effective_price": 14.95
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 18.9,
+          "sale_price": 16.9,
+          "effective_price": 16.9
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 17.9,
+          "sale_price": null,
+          "effective_price": 17.9
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 17.9,
+          "sale_price": null,
+          "effective_price": 17.9
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 17.9,
+          "sale_price": null,
+          "effective_price": 17.9
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 19.9,
+          "sale_price": null,
+          "effective_price": 19.9
+        },
+        {
+          "chain": "סופר פארם אונליין",
+          "store": "סופר פארם אונליין",
+          "website": "https://shop.super-pharm.co.il",
+          "regular_price": 24.9,
+          "sale_price": null,
+          "effective_price": 24.9
+        }
+      ]
+    },
+    {
+      "groupId": 37,
+      "barcode": "7290000074184",
+      "name": "אסם פתי בר בינוני 500ג",
+      "chp_title": "ביסקוויט פתיבר קלאסי, 500 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 38,
+      "barcode": "7290018091531",
+      "name": "מעדנות חטיפי פיצה 650 גרם",
+      "chp_title": "חטיפי פיצה, 650 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 39,
+      "barcode": "7290000043890",
+      "name": "ריויון 1.5% 1ל",
+      "chp_title": "משקה רויון 1.5%, 1 ליטר",
+      "prices": [
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 13.9,
+          "sale_price": 9.5,
+          "effective_price": 9.5
+        },
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 14.0,
+          "sale_price": 12.9,
+          "effective_price": 12.9
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 13.5,
+          "sale_price": null,
+          "effective_price": 13.5
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 13.5,
+          "sale_price": null,
+          "effective_price": 13.5
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 13.9,
+          "sale_price": null,
+          "effective_price": 13.9
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 13.9,
+          "sale_price": null,
+          "effective_price": 13.9
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 13.9,
+          "sale_price": null,
+          "effective_price": 13.9
+        },
+        {
+          "chain": "שוק העיר אונליין",
+          "store": "שוק העיר אונליין",
+          "website": "https://www.shukcity.co.il/",
+          "regular_price": 14.9,
+          "sale_price": null,
+          "effective_price": 14.9
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 14.9,
+          "sale_price": null,
+          "effective_price": 14.9
+        }
+      ]
+    },
+    {
+      "groupId": 40,
+      "barcode": "7290004584351",
+      "name": "סימפוניה חמישית 200ג",
+      "chp_title": "סימפוניה גבינת במרקם שמנת 5%, 200 גרם",
+      "prices": [
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 11.5,
+          "sale_price": 7.7,
+          "effective_price": 7.7
+        },
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 10.4,
+          "sale_price": 10.0,
+          "effective_price": 10.0
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 10.9,
+          "sale_price": null,
+          "effective_price": 10.9
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 10.9,
+          "sale_price": null,
+          "effective_price": 10.9
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 10.9,
+          "sale_price": null,
+          "effective_price": 10.9
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 10.9,
+          "sale_price": null,
+          "effective_price": 10.9
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 11.0,
+          "sale_price": null,
+          "effective_price": 11.0
+        },
+        {
+          "chain": "שוק העיר אונליין",
+          "store": "שוק העיר אונליין",
+          "website": "https://www.shukcity.co.il/",
+          "regular_price": 12.1,
+          "sale_price": null,
+          "effective_price": 12.1
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 13.5,
+          "sale_price": null,
+          "effective_price": 13.5
+        }
+      ]
+    },
+    {
+      "groupId": 41,
+      "barcode": "7290006492432",
+      "name": "גד בייבי מוצרלה 150גר",
+      "chp_title": "גבינת מוצרלה בייבי 18%, 150 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 42,
+      "barcode": "7290000554532",
+      "name": "גד צפתית מעודנת במלח ים 5% 200ג",
+      "chp_title": "גבינה צפתית מעודנת 5%, 200 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 43,
+      "barcode": "7290102394463",
+      "name": "נעם גבינה צהובה וואקום 28% 500גרם",
+      "chp_title": "נעם פרוסות גבינה חצי קשה קלאסית 28%, 500 גרם",
+      "prices": [
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 35.9,
+          "sale_price": 22.6,
+          "effective_price": 22.6
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 30.9,
+          "sale_price": null,
+          "effective_price": 30.9
+        },
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 31.9,
+          "sale_price": 30.9,
+          "effective_price": 30.9
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 31.2,
+          "sale_price": null,
+          "effective_price": 31.2
+        },
+        {
+          "chain": "שוק העיר אונליין",
+          "store": "שוק העיר אונליין",
+          "website": "https://www.shukcity.co.il/",
+          "regular_price": 32.3,
+          "sale_price": null,
+          "effective_price": 32.3
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 35.9,
+          "sale_price": 33.0,
+          "effective_price": 33.0
+        },
+        {
+          "chain": "שופרסל אונליין",
+          "store": "שופרסל אונליין",
+          "website": "https://www.shufersal.co.il",
+          "regular_price": 33.9,
+          "sale_price": null,
+          "effective_price": 33.9
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 33.9,
+          "sale_price": null,
+          "effective_price": 33.9
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 34.9,
+          "sale_price": null,
+          "effective_price": 34.9
+        }
+      ]
+    },
+    {
+      "groupId": 44,
+      "barcode": "7290004129101",
+      "name": "נפוליאון גבינת שמנת בטעם טבעי 25% 225גר",
+      "chp_title": "נפוליאון גבינת שמנת בטעם טבעי 25%, 225 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 45,
+      "barcode": "7290000040974",
+      "name": "חלב תנובה קרטון דל לקטוז 2% 1ל'",
+      "chp_title": "חלב דל לקטוז 2% קרטון, 1 ליטר",
+      "prices": [
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 5.9,
+          "sale_price": null,
+          "effective_price": 5.9
+        },
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 8.9,
+          "sale_price": 5.9,
+          "effective_price": 5.9
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 7.8,
+          "sale_price": null,
+          "effective_price": 7.8
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 7.9,
+          "sale_price": null,
+          "effective_price": 7.9
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 8.3,
+          "sale_price": null,
+          "effective_price": 8.3
+        },
+        {
+          "chain": "אקספרס מהדרין",
+          "store": "אקספרס מהדרין",
+          "website": "https://www.expressmehadrin.co.il/",
+          "regular_price": 8.5,
+          "sale_price": null,
+          "effective_price": 8.5
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 8.5,
+          "sale_price": null,
+          "effective_price": 8.5
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 8.7,
+          "sale_price": null,
+          "effective_price": 8.7
+        },
+        {
+          "chain": "שוק העיר אונליין",
+          "store": "שוק העיר אונליין",
+          "website": "https://www.shukcity.co.il/",
+          "regular_price": 9.1,
+          "sale_price": null,
+          "effective_price": 9.1
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 9.2,
+          "sale_price": null,
+          "effective_price": 9.2
+        }
+      ]
+    },
+    {
+      "groupId": 46,
+      "barcode": "7290107932080",
+      "name": "יטבתה חלב בבקבוק 3% מועשר 1ל'",
+      "chp_title": "חלב מועשר 3% בבקבוק, 1 ליטר",
+      "prices": []
+    },
+    {
+      "groupId": 47,
+      "barcode": "7290116932033",
+      "name": "חמאה 200 גרם מהדרין",
+      "chp_title": "חמאה, 200 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 48,
+      "barcode": "7290119380916",
+      "name": "אקטימל תות 16 * 108 גר",
+      "chp_title": "אקטימל יוגורט פרוביוטי בטעם תות, 16 * 108 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 49,
+      "barcode": "7290000408354",
+      "name": "דנונה קראנצ' פיצפוצים 175מל",
+      "chp_title": "יוגורט עם אורז תפוח מצופה שוקולד ואורז קקאו, 175 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 50,
+      "barcode": "7290005839078",
+      "name": "דנונה ביו מארז חסכון 3% 8*150מל",
+      "chp_title": "יוגורט פרוביוטי 3%, שמיניה 8 * 150 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 51,
+      "barcode": "7290110565527",
+      "name": "דנונה פרו 20ג חלבון 1.5% 200גרם",
+      "chp_title": "פרו יוגורט 1.5%, 200 גרם",
+      "prices": [
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 4.5,
+          "sale_price": null,
+          "effective_price": 4.5
+        },
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 6.7,
+          "sale_price": 4.5,
+          "effective_price": 4.5
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 6.4,
+          "sale_price": null,
+          "effective_price": 6.4
+        },
+        {
+          "chain": "שופרסל אונליין",
+          "store": "שופרסל אונליין",
+          "website": "https://www.shufersal.co.il",
+          "regular_price": 6.5,
+          "sale_price": null,
+          "effective_price": 6.5
+        },
+        {
+          "chain": "שוק העיר אונליין",
+          "store": "שוק העיר אונליין",
+          "website": "https://www.shukcity.co.il/",
+          "regular_price": 6.5,
+          "sale_price": null,
+          "effective_price": 6.5
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 6.5,
+          "sale_price": null,
+          "effective_price": 6.5
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 6.5,
+          "sale_price": null,
+          "effective_price": 6.5
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 6.5,
+          "sale_price": null,
+          "effective_price": 6.5
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 6.5,
+          "sale_price": null,
+          "effective_price": 6.5
+        },
+        {
+          "chain": "אקספרס מהדרין",
+          "store": "אקספרס מהדרין",
+          "website": "https://www.expressmehadrin.co.il/",
+          "regular_price": 6.9,
+          "sale_price": null,
+          "effective_price": 6.9
+        },
+        {
+          "chain": "קוויק אונליין",
+          "store": "קוויק אונליין",
+          "website": "https://quik.co.il/",
+          "regular_price": 7.4,
+          "sale_price": null,
+          "effective_price": 7.4
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 7.4,
+          "sale_price": null,
+          "effective_price": 7.4
+        }
+      ]
+    },
+    {
+      "groupId": 52,
+      "barcode": "7290004125721",
+      "name": "שף לבן שמנת לבישול 15% 250מל'",
+      "chp_title": "שמנת לבישול 15%, 250 מ\"ל",
+      "prices": []
+    },
+    {
+      "groupId": 53,
+      "barcode": "7290005838002",
+      "name": "דניאלה מעדן גבינה 150מל",
+      "chp_title": "דניאלה מעדן גבינה ויוגורט מוקצף בטעם וניל, 88 גרם",
+      "prices": [
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 4.3,
+          "sale_price": 2.9,
+          "effective_price": 2.9
+        },
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 4.4,
+          "sale_price": 3.75,
+          "effective_price": 3.75
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 4.2,
+          "sale_price": 3.98,
+          "effective_price": 3.98
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 4.0,
+          "sale_price": null,
+          "effective_price": 4.0
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 4.1,
+          "sale_price": null,
+          "effective_price": 4.1
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 4.1,
+          "sale_price": null,
+          "effective_price": 4.1
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 4.2,
+          "sale_price": null,
+          "effective_price": 4.2
+        },
+        {
+          "chain": "שוק העיר אונליין",
+          "store": "שוק העיר אונליין",
+          "website": "https://www.shukcity.co.il/",
+          "regular_price": 4.4,
+          "sale_price": null,
+          "effective_price": 4.4
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 4.9,
+          "sale_price": null,
+          "effective_price": 4.9
+        }
+      ]
+    },
+    {
+      "groupId": 54,
+      "barcode": "7290104726712",
+      "name": "מילקי שמינייה מארז 8*170מל",
+      "chp_title": "מילקי שוקולד, שמיניה 8 * 133 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 55,
+      "barcode": "7290115678376",
+      "name": "מעדן הגולן שוקולד 125 גר",
+      "chp_title": "מעדן הגולן בטעם שוקולד, 125 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 56,
+      "barcode": "7290003029181",
+      "name": "יטבתה שוקו בקבוק 1ל",
+      "chp_title": "שוקו משקה חלב עם קקאו, 1 ליטר",
+      "prices": [
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 12.9,
+          "sale_price": 8.9,
+          "effective_price": 8.9
+        },
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 13.5,
+          "sale_price": 10.0,
+          "effective_price": 10.0
+        },
+        {
+          "chain": "אקספרס מהדרין",
+          "store": "אקספרס מהדרין",
+          "website": "https://www.expressmehadrin.co.il/",
+          "regular_price": 13.9,
+          "sale_price": 10.0,
+          "effective_price": 10.0
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 12.9,
+          "sale_price": 10.95,
+          "effective_price": 10.95
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 12.3,
+          "sale_price": 11.0,
+          "effective_price": 11.0
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 12.3,
+          "sale_price": 11.0,
+          "effective_price": 11.0
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 12.9,
+          "sale_price": 11.0,
+          "effective_price": 11.0
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 12.9,
+          "sale_price": 11.0,
+          "effective_price": 11.0
+        },
+        {
+          "chain": "שוק העיר אונליין",
+          "store": "שוק העיר אונליין",
+          "website": "https://www.shukcity.co.il/",
+          "regular_price": 12.7,
+          "sale_price": null,
+          "effective_price": 12.7
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 13.9,
+          "sale_price": null,
+          "effective_price": 13.9
+        }
+      ]
+    },
+    {
+      "groupId": 57,
+      "barcode": "7290110324926",
+      "name": "משקה סויה ללא תוספת סוכר 1 ליטר",
+      "chp_title": "משקה סויה ללא תוספת סוכר, 1 ליטר",
+      "prices": [
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 11.9,
+          "sale_price": 7.5,
+          "effective_price": 7.5
+        },
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 12.3,
+          "sale_price": 7.9,
+          "effective_price": 7.9
+        },
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 9.1,
+          "sale_price": 9.0,
+          "effective_price": 9.0
+        },
+        {
+          "chain": "שופרסל אונליין",
+          "store": "שופרסל אונליין",
+          "website": "https://www.shufersal.co.il",
+          "regular_price": 11.9,
+          "sale_price": 10.0,
+          "effective_price": 10.0
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 11.9,
+          "sale_price": 10.0,
+          "effective_price": 10.0
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 10.6,
+          "sale_price": null,
+          "effective_price": 10.6
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 10.9,
+          "sale_price": null,
+          "effective_price": 10.9
+        },
+        {
+          "chain": "אקספרס מהדרין",
+          "store": "אקספרס מהדרין",
+          "website": "https://www.expressmehadrin.co.il/",
+          "regular_price": 11.7,
+          "sale_price": null,
+          "effective_price": 11.7
+        },
+        {
+          "chain": "שוק העיר אונליין",
+          "store": "שוק העיר אונליין",
+          "website": "https://www.shukcity.co.il/",
+          "regular_price": 11.9,
+          "sale_price": null,
+          "effective_price": 11.9
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 12.2,
+          "sale_price": null,
+          "effective_price": 12.2
+        },
+        {
+          "chain": "קוויק אונליין",
+          "store": "קוויק אונליין",
+          "website": "https://quik.co.il/",
+          "regular_price": 14.9,
+          "sale_price": null,
+          "effective_price": 14.9
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 14.9,
+          "sale_price": null,
+          "effective_price": 14.9
+        }
+      ]
+    },
+    {
+      "groupId": 58,
+      "barcode": "7290004125578",
+      "name": "סויה תנובה מועשר 1ל",
+      "chp_title": "משקה סויה, 1 ליטר",
+      "prices": []
+    },
+    {
+      "groupId": 59,
+      "barcode": "7290110325619",
+      "name": "תנובה משקה שיבולת שועל 1 ליטר",
+      "chp_title": "משקה שיבולת שועל, 1 ליטר",
+      "prices": []
+    },
+    {
+      "groupId": 60,
+      "barcode": "7290004127329",
+      "name": "קוטג תנובה מהדרין 5% 250ג",
+      "chp_title": "קוטג' 5%, 250 גרם",
+      "prices": [
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 5.4,
+          "sale_price": null,
+          "effective_price": 5.4
+        },
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 6.2,
+          "sale_price": 5.4,
+          "effective_price": 5.4
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 6.0,
+          "sale_price": null,
+          "effective_price": 6.0
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 6.1,
+          "sale_price": null,
+          "effective_price": 6.1
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 6.1,
+          "sale_price": null,
+          "effective_price": 6.1
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 6.1,
+          "sale_price": null,
+          "effective_price": 6.1
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 6.2,
+          "sale_price": null,
+          "effective_price": 6.2
+        },
+        {
+          "chain": "שוק העיר אונליין",
+          "store": "שוק העיר אונליין",
+          "website": "https://www.shukcity.co.il/",
+          "regular_price": 6.5,
+          "sale_price": null,
+          "effective_price": 6.5
+        },
+        {
+          "chain": "קוויק אונליין",
+          "store": "קוויק אונליין",
+          "website": "https://quik.co.il/",
+          "regular_price": 6.6,
+          "sale_price": null,
+          "effective_price": 6.6
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 6.6,
+          "sale_price": null,
+          "effective_price": 6.6
+        },
+        {
+          "chain": "אקספרס מהדרין",
+          "store": "אקספרס מהדרין",
+          "website": "https://www.expressmehadrin.co.il/",
+          "regular_price": 6.6,
+          "sale_price": null,
+          "effective_price": 6.6
+        }
+      ]
+    },
+    {
+      "groupId": 61,
+      "barcode": "7290003726615",
+      "name": "משק ווילר טופו הבית 300 גר",
+      "chp_title": "טופו הבית במרקם קשה, 300 גרם",
+      "prices": [
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 13.2,
+          "sale_price": 7.9,
+          "effective_price": 7.9
+        },
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 10.9,
+          "sale_price": 9.9,
+          "effective_price": 9.9
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 10.9,
+          "sale_price": null,
+          "effective_price": 10.9
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 12.9,
+          "sale_price": null,
+          "effective_price": 12.9
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 12.9,
+          "sale_price": null,
+          "effective_price": 12.9
+        },
+        {
+          "chain": "שוק העיר אונליין",
+          "store": "שוק העיר אונליין",
+          "website": "https://www.shukcity.co.il/",
+          "regular_price": 13.1,
+          "sale_price": null,
+          "effective_price": 13.1
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 13.1,
+          "sale_price": null,
+          "effective_price": 13.1
+        },
+        {
+          "chain": "קוויק אונליין",
+          "store": "קוויק אונליין",
+          "website": "https://quik.co.il/",
+          "regular_price": 14.9,
+          "sale_price": null,
+          "effective_price": 14.9
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 14.9,
+          "sale_price": null,
+          "effective_price": 14.9
+        }
+      ]
+    },
+    {
+      "groupId": 62,
+      "barcode": "7290005427107",
+      "name": "סנו סושי מגבות הפלא 6 גלילים",
+      "chp_title": "סנו סושי -6 מגבות הפלא, שישיה 6 * 10.58 מטר",
+      "prices": [
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 13.5,
+          "sale_price": 7.9,
+          "effective_price": 7.9
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 12.9,
+          "sale_price": 10.95,
+          "effective_price": 10.95
+        },
+        {
+          "chain": "שוק העיר אונליין",
+          "store": "שוק העיר אונליין",
+          "website": "https://www.shukcity.co.il/",
+          "regular_price": 13.9,
+          "sale_price": 11.0,
+          "effective_price": 11.0
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 12.9,
+          "sale_price": 11.25,
+          "effective_price": 11.25
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 13.5,
+          "sale_price": 11.5,
+          "effective_price": 11.5
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 12.9,
+          "sale_price": null,
+          "effective_price": 12.9
+        },
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 13.9,
+          "sale_price": 12.9,
+          "effective_price": 12.9
+        },
+        {
+          "chain": "אקספרס מהדרין",
+          "store": "אקספרס מהדרין",
+          "website": "https://www.expressmehadrin.co.il/",
+          "regular_price": 14.9,
+          "sale_price": null,
+          "effective_price": 14.9
+        },
+        {
+          "chain": "קוויק אונליין",
+          "store": "קוויק אונליין",
+          "website": "https://quik.co.il/",
+          "regular_price": 15.9,
+          "sale_price": null,
+          "effective_price": 15.9
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 15.9,
+          "sale_price": null,
+          "effective_price": 15.9
+        },
+        {
+          "chain": "סופר פארם אונליין",
+          "store": "סופר פארם אונליין",
+          "website": "https://shop.super-pharm.co.il",
+          "regular_price": 16.9,
+          "sale_price": null,
+          "effective_price": 16.9
+        }
+      ]
+    },
+    {
+      "groupId": 63,
+      "barcode": "7290012823602",
+      "name": "נייר טואלט סופט סילק לבן 32 יח",
+      "chp_title": "נייר טואלט דו שכבתי רך, 32 * 18.4 מטר",
+      "prices": []
+    },
+    {
+      "groupId": 64,
+      "barcode": "7290003989539",
+      "name": "שטראוס רביולי גבינה 400ג",
+      "chp_title": "איט גוד רביולי במילוי גבינות, 400 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 65,
+      "barcode": "7290008409216",
+      "name": "מאמא עוף קפוא שניצל דק פריך 700 גרם",
+      "chp_title": "שניצל דק דק פריך, 700 גרם",
+      "prices": [
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 28.2,
+          "sale_price": null,
+          "effective_price": 28.2
+        },
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 49.9,
+          "sale_price": 28.2,
+          "effective_price": 28.2
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 45.9,
+          "sale_price": 37.5,
+          "effective_price": 37.5
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 46.9,
+          "sale_price": 39.9,
+          "effective_price": 39.9
+        },
+        {
+          "chain": "שוק העיר אונליין",
+          "store": "שוק העיר אונליין",
+          "website": "https://www.shukcity.co.il/",
+          "regular_price": 49.9,
+          "sale_price": 39.9,
+          "effective_price": 39.9
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 50.9,
+          "sale_price": 45.0,
+          "effective_price": 45.0
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 46.9,
+          "sale_price": null,
+          "effective_price": 46.9
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 49.4,
+          "sale_price": null,
+          "effective_price": 49.4
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 49.9,
+          "sale_price": null,
+          "effective_price": 49.9
+        }
+      ]
+    },
+    {
+      "groupId": 66,
+      "barcode": "8712400802499",
+      "name": "נוטרילון שלב 1- 800 גרם",
+      "chp_title": "נוטרילון שלב 1, 800 גרם",
+      "prices": [
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 65.9,
+          "sale_price": 50.0,
+          "effective_price": 50.0
+        },
+        {
+          "chain": "סופר פארם אונליין",
+          "store": "סופר פארם אונליין",
+          "website": "https://shop.super-pharm.co.il",
+          "regular_price": 69.9,
+          "sale_price": 55.9,
+          "effective_price": 55.9
+        },
+        {
+          "chain": "שופרסל אונליין",
+          "store": "שופרסל אונליין",
+          "website": "https://www.shufersal.co.il",
+          "regular_price": 64.9,
+          "sale_price": 57.5,
+          "effective_price": 57.5
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 69.9,
+          "sale_price": null,
+          "effective_price": 69.9
+        },
+        {
+          "chain": "שוק העיר אונליין",
+          "store": "שוק העיר אונליין",
+          "website": "https://www.shukcity.co.il/",
+          "regular_price": 75.9,
+          "sale_price": null,
+          "effective_price": 75.9
+        }
+      ]
+    },
+    {
+      "groupId": 67,
+      "barcode": "7290000063140",
+      "name": "שקדי מרק רכיבים טבעיים שקית 400 גרם",
+      "chp_title": "שקדי מרק, 400 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 68,
+      "barcode": "7290019056973",
+      "name": "מי עדן 1.5(6) פק",
+      "chp_title": "מים מינרליים, שישיה 6 * 1.5 ליטר",
+      "prices": []
+    },
+    {
+      "groupId": 69,
+      "barcode": "7290000525969",
+      "name": "פרימור מיץ תפוזים 1ל",
+      "chp_title": "מיץ תפוזים סחוט, 1 ליטר",
+      "prices": []
+    },
+    {
+      "groupId": 70,
+      "barcode": "5906485301012",
+      "name": "אקס אל משקה אנרגיה 250מל",
+      "chp_title": "משקה אנרגיה, 250 מ\"ל",
+      "prices": [
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 5.0,
+          "sale_price": 2.9,
+          "effective_price": 2.9
+        },
+        {
+          "chain": "קוויק אונליין",
+          "store": "קוויק אונליין",
+          "website": "https://quik.co.il/",
+          "regular_price": 5.6,
+          "sale_price": 2.9,
+          "effective_price": 2.9
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 5.6,
+          "sale_price": 2.9,
+          "effective_price": 2.9
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 4.6,
+          "sale_price": 3.3,
+          "effective_price": 3.3
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 4.3,
+          "sale_price": 3.32,
+          "effective_price": 3.32
+        },
+        {
+          "chain": "שוק העיר אונליין",
+          "store": "שוק העיר אונליין",
+          "website": "https://www.shukcity.co.il/",
+          "regular_price": 5.0,
+          "sale_price": 3.33,
+          "effective_price": 3.33
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 4.9,
+          "sale_price": 3.48,
+          "effective_price": 3.48
+        },
+        {
+          "chain": "אקספרס מהדרין",
+          "store": "אקספרס מהדרין",
+          "website": "https://www.expressmehadrin.co.il/",
+          "regular_price": 4.6,
+          "sale_price": 3.63,
+          "effective_price": 3.63
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 4.9,
+          "sale_price": null,
+          "effective_price": 4.9
+        },
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 4.2,
+          "sale_price": 4.0,
+          "effective_price": 4.0
+        },
+        {
+          "chain": "שופרסל אונליין",
+          "store": "שופרסל אונליין",
+          "website": "https://www.shufersal.co.il",
+          "regular_price": 4.7,
+          "sale_price": 4.0,
+          "effective_price": 4.0
+        }
+      ]
+    },
+    {
+      "groupId": 71,
+      "barcode": "7290110115227",
+      "name": "קוקה-קולה זירו 1.5 ליטר",
+      "chp_title": "קולה זירו, 1.5 ליטר",
+      "prices": [
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 8.5,
+          "sale_price": 6.9,
+          "effective_price": 6.9
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 9.7,
+          "sale_price": 6.9,
+          "effective_price": 6.9
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 7.9,
+          "sale_price": null,
+          "effective_price": 7.9
+        },
+        {
+          "chain": "שופרסל אונליין",
+          "store": "שופרסל אונליין",
+          "website": "https://www.shufersal.co.il",
+          "regular_price": 8.2,
+          "sale_price": null,
+          "effective_price": 8.2
+        },
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 8.2,
+          "sale_price": null,
+          "effective_price": 8.2
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 8.2,
+          "sale_price": null,
+          "effective_price": 8.2
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 8.3,
+          "sale_price": null,
+          "effective_price": 8.3
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 8.3,
+          "sale_price": null,
+          "effective_price": 8.3
+        },
+        {
+          "chain": "שוק העיר אונליין",
+          "store": "שוק העיר אונליין",
+          "website": "https://www.shukcity.co.il/",
+          "regular_price": 8.5,
+          "sale_price": null,
+          "effective_price": 8.5
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 8.5,
+          "sale_price": null,
+          "effective_price": 8.5
+        },
+        {
+          "chain": "אקספרס מהדרין",
+          "store": "אקספרס מהדרין",
+          "website": "https://www.expressmehadrin.co.il/",
+          "regular_price": 8.7,
+          "sale_price": null,
+          "effective_price": 8.7
+        },
+        {
+          "chain": "סופר פארם אונליין",
+          "store": "סופר פארם אונליין",
+          "website": "https://shop.super-pharm.co.il",
+          "regular_price": 11.9,
+          "sale_price": null,
+          "effective_price": 11.9
+        }
+      ]
+    },
+    {
+      "groupId": 72,
+      "barcode": "7290110115203",
+      "name": "קוקה-קולה 1.5 ליטר",
+      "chp_title": "קוקה קולה, 1.5 ליטר",
+      "prices": [
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 8.5,
+          "sale_price": 6.9,
+          "effective_price": 6.9
+        },
+        {
+          "chain": "קוויק אונליין",
+          "store": "קוויק אונליין",
+          "website": "https://quik.co.il/",
+          "regular_price": 9.7,
+          "sale_price": 6.9,
+          "effective_price": 6.9
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 9.7,
+          "sale_price": 6.9,
+          "effective_price": 6.9
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 7.9,
+          "sale_price": null,
+          "effective_price": 7.9
+        },
+        {
+          "chain": "שופרסל אונליין",
+          "store": "שופרסל אונליין",
+          "website": "https://www.shufersal.co.il",
+          "regular_price": 8.2,
+          "sale_price": null,
+          "effective_price": 8.2
+        },
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 8.2,
+          "sale_price": null,
+          "effective_price": 8.2
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 8.3,
+          "sale_price": null,
+          "effective_price": 8.3
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 8.3,
+          "sale_price": null,
+          "effective_price": 8.3
+        },
+        {
+          "chain": "שוק העיר אונליין",
+          "store": "שוק העיר אונליין",
+          "website": "https://www.shukcity.co.il/",
+          "regular_price": 8.5,
+          "sale_price": null,
+          "effective_price": 8.5
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 8.5,
+          "sale_price": null,
+          "effective_price": 8.5
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 8.5,
+          "sale_price": null,
+          "effective_price": 8.5
+        },
+        {
+          "chain": "אקספרס מהדרין",
+          "store": "אקספרס מהדרין",
+          "website": "https://www.expressmehadrin.co.il/",
+          "regular_price": 8.7,
+          "sale_price": null,
+          "effective_price": 8.7
+        },
+        {
+          "chain": "סופר פארם אונליין",
+          "store": "סופר פארם אונליין",
+          "website": "https://shop.super-pharm.co.il",
+          "regular_price": 11.9,
+          "sale_price": null,
+          "effective_price": 11.9
+        }
+      ]
+    },
+    {
+      "groupId": 73,
+      "barcode": "7290000136790",
+      "name": "טמפו סודה 6*1.5ל",
+      "chp_title": "מי סודה בגיזוז חזק, שישיה 6 * 1.5 ליטר",
+      "prices": []
+    },
+    {
+      "groupId": 74,
+      "barcode": "7290110115463",
+      "name": "פיוז טי אפרסק 1.5 ליטר",
+      "chp_title": "פיוזטי אפרסק, 1.5 ליטר",
+      "prices": [
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 9.5,
+          "sale_price": 6.5,
+          "effective_price": 6.5
+        },
+        {
+          "chain": "שוק העיר אונליין",
+          "store": "שוק העיר אונליין",
+          "website": "https://www.shukcity.co.il/",
+          "regular_price": 9.2,
+          "sale_price": 6.63,
+          "effective_price": 6.63
+        },
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 8.3,
+          "sale_price": 7.0,
+          "effective_price": 7.0
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 8.9,
+          "sale_price": 7.45,
+          "effective_price": 7.45
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 8.9,
+          "sale_price": 7.95,
+          "effective_price": 7.95
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 8.8,
+          "sale_price": 8.0,
+          "effective_price": 8.0
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 8.9,
+          "sale_price": 8.0,
+          "effective_price": 8.0
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 8.9,
+          "sale_price": 8.0,
+          "effective_price": 8.0
+        },
+        {
+          "chain": "שופרסל אונליין",
+          "store": "שופרסל אונליין",
+          "website": "https://www.shufersal.co.il",
+          "regular_price": 8.6,
+          "sale_price": null,
+          "effective_price": 8.6
+        },
+        {
+          "chain": "אקספרס מהדרין",
+          "store": "אקספרס מהדרין",
+          "website": "https://www.expressmehadrin.co.il/",
+          "regular_price": 9.5,
+          "sale_price": null,
+          "effective_price": 9.5
+        },
+        {
+          "chain": "קוויק אונליין",
+          "store": "קוויק אונליין",
+          "website": "https://quik.co.il/",
+          "regular_price": 11.2,
+          "sale_price": null,
+          "effective_price": 11.2
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 11.2,
+          "sale_price": null,
+          "effective_price": 11.2
+        }
+      ]
+    },
+    {
+      "groupId": 75,
+      "barcode": "7290000288024",
+      "name": "סנו ז'אוול בריח לימון 4 ליטר",
+      "chp_title": "אקונומיקה בריח לימון, 4 ליטר",
+      "prices": []
+    },
+    {
+      "groupId": 76,
+      "barcode": "7290000211503",
+      "name": "סוכר סוגת 1 ק\"ג",
+      "chp_title": "סוכר לבן, 1 ק\"ג",
+      "prices": [
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 5.6,
+          "sale_price": 2.9,
+          "effective_price": 2.9
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 4.9,
+          "sale_price": null,
+          "effective_price": 4.9
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 4.9,
+          "sale_price": null,
+          "effective_price": 4.9
+        },
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 5.0,
+          "sale_price": null,
+          "effective_price": 5.0
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 5.5,
+          "sale_price": null,
+          "effective_price": 5.5
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 5.5,
+          "sale_price": null,
+          "effective_price": 5.5
+        },
+        {
+          "chain": "אקספרס מהדרין",
+          "store": "אקספרס מהדרין",
+          "website": "https://www.expressmehadrin.co.il/",
+          "regular_price": 6.0,
+          "sale_price": null,
+          "effective_price": 6.0
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 6.1,
+          "sale_price": null,
+          "effective_price": 6.1
+        }
+      ]
+    },
+    {
+      "groupId": 77,
+      "barcode": "7290106576537",
+      "name": "צבר חומוס מסעדה 700 גר",
+      "chp_title": "סלט חומוס מסעדה, 700 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 78,
+      "barcode": "7290000068138",
+      "name": "אסם פודינג אינסטנט וניל 80 גרם",
+      "chp_title": "פודינג בטעם וניל, 80 גרם",
+      "prices": [
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 4.0,
+          "sale_price": null,
+          "effective_price": 4.0
+        },
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 6.0,
+          "sale_price": 4.0,
+          "effective_price": 4.0
+        },
+        {
+          "chain": "קוויק אונליין",
+          "store": "קוויק אונליין",
+          "website": "https://quik.co.il/",
+          "regular_price": 6.1,
+          "sale_price": 4.0,
+          "effective_price": 4.0
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 6.1,
+          "sale_price": 4.0,
+          "effective_price": 4.0
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 6.9,
+          "sale_price": 5.0,
+          "effective_price": 5.0
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 5.4,
+          "sale_price": null,
+          "effective_price": 5.4
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 5.5,
+          "sale_price": null,
+          "effective_price": 5.5
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 5.8,
+          "sale_price": null,
+          "effective_price": 5.8
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 5.9,
+          "sale_price": null,
+          "effective_price": 5.9
+        },
+        {
+          "chain": "שוק העיר אונליין",
+          "store": "שוק העיר אונליין",
+          "website": "https://www.shukcity.co.il/",
+          "regular_price": 6.5,
+          "sale_price": null,
+          "effective_price": 6.5
+        },
+        {
+          "chain": "סופר פארם אונליין",
+          "store": "סופר פארם אונליין",
+          "website": "https://shop.super-pharm.co.il",
+          "regular_price": 7.9,
+          "sale_price": null,
+          "effective_price": 7.9
+        }
+      ]
+    },
+    {
+      "groupId": 79,
+      "barcode": "7290005201882",
+      "name": "טורקי עלית 200ג",
+      "chp_title": "קפה טורקי, 200 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 80,
+      "barcode": "7290000072753",
+      "name": "טייסטר צ'וייס 200ג",
+      "chp_title": "קפה טסטר צ'ויס, 200 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 81,
+      "barcode": "7290000176420",
+      "name": "עלית נמס אבקתי 200 גרם",
+      "chp_title": "קפה נמס, 200 גרם",
+      "prices": [
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 25.9,
+          "sale_price": 21.5,
+          "effective_price": 21.5
+        },
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 25.9,
+          "sale_price": null,
+          "effective_price": 25.9
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 25.9,
+          "sale_price": null,
+          "effective_price": 25.9
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 25.9,
+          "sale_price": null,
+          "effective_price": 25.9
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 25.9,
+          "sale_price": null,
+          "effective_price": 25.9
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 25.9,
+          "sale_price": null,
+          "effective_price": 25.9
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 26.9,
+          "sale_price": null,
+          "effective_price": 26.9
+        },
+        {
+          "chain": "קוויק אונליין",
+          "store": "קוויק אונליין",
+          "website": "https://quik.co.il/",
+          "regular_price": 27.9,
+          "sale_price": null,
+          "effective_price": 27.9
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 27.9,
+          "sale_price": null,
+          "effective_price": 27.9
+        },
+        {
+          "chain": "אקספרס מהדרין",
+          "store": "אקספרס מהדרין",
+          "website": "https://www.expressmehadrin.co.il/",
+          "regular_price": 28.9,
+          "sale_price": null,
+          "effective_price": 28.9
+        }
+      ]
+    },
+    {
+      "groupId": 82,
+      "barcode": "7290000174723",
+      "name": "שוקולית 500ג",
+      "chp_title": "שוקולית אבקה להכנת משקה בטעם שוקו, 500 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 83,
+      "barcode": "7290010328246",
+      "name": "אחוה טחינה משומשום מלא 500 גרם",
+      "chp_title": "טחינה גולמית משומשום מלא, 500 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 84,
+      "barcode": "7290000112220",
+      "name": "טחינה בסיסית 500 גר' בארכה",
+      "chp_title": "טחינה בארכה 100% שומשום, 500 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 85,
+      "barcode": "7290000111186",
+      "name": "מיונז צנ500. ג",
+      "chp_title": "מיונז אמיתי, 500 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 86,
+      "barcode": "80176800",
+      "name": "ממרח שוקולד נוטלה 750",
+      "chp_title": "ממרח אגוזי לוז עם קקאו, 750 גרם",
+      "prices": [
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 33.9,
+          "sale_price": 24.9,
+          "effective_price": 24.9
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 29.9,
+          "sale_price": 27.9,
+          "effective_price": 27.9
+        },
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 31.5,
+          "sale_price": 27.9,
+          "effective_price": 27.9
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 31.9,
+          "sale_price": 29.45,
+          "effective_price": 29.45
+        },
+        {
+          "chain": "שופרסל אונליין",
+          "store": "שופרסל אונליין",
+          "website": "https://www.shufersal.co.il",
+          "regular_price": 31.9,
+          "sale_price": null,
+          "effective_price": 31.9
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 31.9,
+          "sale_price": null,
+          "effective_price": 31.9
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 31.9,
+          "sale_price": null,
+          "effective_price": 31.9
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 32.9,
+          "sale_price": null,
+          "effective_price": 32.9
+        },
+        {
+          "chain": "קוויק אונליין",
+          "store": "קוויק אונליין",
+          "website": "https://quik.co.il/",
+          "regular_price": 34.9,
+          "sale_price": null,
+          "effective_price": 34.9
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 34.9,
+          "sale_price": null,
+          "effective_price": 34.9
+        },
+        {
+          "chain": "שוק העיר אונליין",
+          "store": "שוק העיר אונליין",
+          "website": "https://www.shukcity.co.il/",
+          "regular_price": 35.9,
+          "sale_price": null,
+          "effective_price": 35.9
+        }
+      ]
+    },
+    {
+      "groupId": 87,
+      "barcode": "7290000072623",
+      "name": "אסם קטשופ 750 גרם",
+      "chp_title": "קטשופ, 750 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 88,
+      "barcode": "7290000178134",
+      "name": "פרה שוק.מריר לל\"ג בד\"צ 4*100ג",
+      "chp_title": "שוקולד מריר מעולה, רביעיה 4 * 100 גרם",
+      "prices": [
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 27.9,
+          "sale_price": null,
+          "effective_price": 27.9
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 28.9,
+          "sale_price": 27.9,
+          "effective_price": 27.9
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 28.9,
+          "sale_price": null,
+          "effective_price": 28.9
+        },
+        {
+          "chain": "אקספרס מהדרין",
+          "store": "אקספרס מהדרין",
+          "website": "https://www.expressmehadrin.co.il/",
+          "regular_price": 29.9,
+          "sale_price": null,
+          "effective_price": 29.9
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 32.9,
+          "sale_price": null,
+          "effective_price": 32.9
+        }
+      ]
+    },
+    {
+      "groupId": 89,
+      "barcode": "7290008750677",
+      "name": "פרה שוקולד מלוי תות מגדים 100ג",
+      "chp_title": "ממולדה שוקולד חלב תות מגדים פרה, 100 גרם",
+      "prices": [
+        {
+          "chain": "סופר פארם אונליין",
+          "store": "סופר פארם אונליין",
+          "website": "https://shop.super-pharm.co.il",
+          "regular_price": 11.9,
+          "sale_price": 8.0,
+          "effective_price": 8.0
+        },
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 8.6,
+          "sale_price": null,
+          "effective_price": 8.6
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 8.9,
+          "sale_price": null,
+          "effective_price": 8.9
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 8.9,
+          "sale_price": null,
+          "effective_price": 8.9
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 8.9,
+          "sale_price": null,
+          "effective_price": 8.9
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 8.9,
+          "sale_price": null,
+          "effective_price": 8.9
+        },
+        {
+          "chain": "אקספרס מהדרין",
+          "store": "אקספרס מהדרין",
+          "website": "https://www.expressmehadrin.co.il/",
+          "regular_price": 9.9,
+          "sale_price": null,
+          "effective_price": 9.9
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 9.9,
+          "sale_price": null,
+          "effective_price": 9.9
+        },
+        {
+          "chain": "קוויק אונליין",
+          "store": "קוויק אונליין",
+          "website": "https://quik.co.il/",
+          "regular_price": 10.9,
+          "sale_price": null,
+          "effective_price": 10.9
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 10.9,
+          "sale_price": null,
+          "effective_price": 10.9
+        }
+      ]
+    },
+    {
+      "groupId": 90,
+      "barcode": "7290113192355",
+      "name": "בית השיטה חרוזית זית ירוק ללא גלעין",
+      "chp_title": "חרוזית זיתים ירוקים ללא גלעין, 275 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 91,
+      "barcode": "7290005287206",
+      "name": "סטארקיסט טונה בשמן ב.י 4*160ג",
+      "chp_title": "טונה בשמן סטארקיסט, רביעיה 4 * 160 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 92,
+      "barcode": "7290018359495",
+      "name": "יכין תירס מהשדה ללת\"ס 550 גרם",
+      "chp_title": "תירס מהשדה בלי תוספת סוכר, 335 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 93,
+      "barcode": "7290000208114",
+      "name": "יכין אפונת גינה וגזר 550 גר",
+      "chp_title": "אפונת גינה וגזר, 335 גרם",
+      "prices": [
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 8.3,
+          "sale_price": null,
+          "effective_price": 8.3
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 10.9,
+          "sale_price": 8.45,
+          "effective_price": 8.45
+        },
+        {
+          "chain": "שוק העיר אונליין",
+          "store": "שוק העיר אונליין",
+          "website": "https://www.shukcity.co.il/",
+          "regular_price": 11.9,
+          "sale_price": 8.95,
+          "effective_price": 8.95
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 10.9,
+          "sale_price": 9.0,
+          "effective_price": 9.0
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 9.9,
+          "sale_price": 9.5,
+          "effective_price": 9.5
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 13.5,
+          "sale_price": 9.95,
+          "effective_price": 9.95
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 10.9,
+          "sale_price": null,
+          "effective_price": 10.9
+        }
+      ]
+    },
+    {
+      "groupId": 94,
+      "barcode": "8005110170300",
+      "name": "מוטי עגבניות חתוכות דק 3*400גר",
+      "chp_title": "עגבניות חתוכות דק, שלישיה 3 * 400 גרם",
+      "prices": []
+    },
+    {
+      "groupId": 95,
+      "barcode": "7290002019794",
+      "name": "פריניר רסק עגבניות 22% 100ג",
+      "chp_title": "רסק עגבניות 22%,, 100 גרם",
+      "prices": [
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 2.9,
+          "sale_price": 1.5,
+          "effective_price": 1.5
+        },
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 2.4,
+          "sale_price": 1.86,
+          "effective_price": 1.86
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 2.9,
+          "sale_price": 1.86,
+          "effective_price": 1.86
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 2.3,
+          "sale_price": 2.0,
+          "effective_price": 2.0
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 2.9,
+          "sale_price": 2.0,
+          "effective_price": 2.0
+        },
+        {
+          "chain": "שוק העיר אונליין",
+          "store": "שוק העיר אונליין",
+          "website": "https://www.shukcity.co.il/",
+          "regular_price": 2.9,
+          "sale_price": 2.23,
+          "effective_price": 2.23
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 2.9,
+          "sale_price": 2.25,
+          "effective_price": 2.25
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 2.9,
+          "sale_price": null,
+          "effective_price": 2.9
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 2.9,
+          "sale_price": null,
+          "effective_price": 2.9
+        }
+      ]
+    },
+    {
+      "groupId": 96,
+      "barcode": "7290010429554",
+      "name": "יד מרדכי ש.זית כתית מעולה 2 קלאסי 750מל",
+      "chp_title": "שמן זית כתית מעולה קלאסי, 750 מ\"ל",
+      "prices": []
+    },
+    {
+      "groupId": 97,
+      "barcode": "7290000144474",
+      "name": "שמן קנולה בריאות מהטבע 1 ליטר",
+      "chp_title": "שמן קנולה מזוכך, 1 ליטר",
+      "prices": []
+    },
+    {
+      "groupId": 98,
+      "barcode": "7290000347752",
+      "name": "תה ירוק לימונית ולואיזה 25 שקיקים 1.5 גר",
+      "chp_title": "תה ירוק לימונית ולואיזה, 25 יחידות",
+      "prices": []
+    },
+    {
+      "groupId": 99,
+      "barcode": "7290016509786",
+      "name": "פרסיל גל ירוק 2.5 ליטר",
+      "chp_title": "ג'ל לכביסה לבנה וצבעונית, 2.5 ליטר",
+      "prices": []
+    },
+    {
+      "groupId": 100,
+      "barcode": "7290115208047",
+      "name": "ויטמינצ'יק פטל 1 ליטר",
+      "chp_title": "ויטמינצ`יק פטל 1 ל, 1 ליטר",
+      "prices": [
+        {
+          "chain": "קרפור אונליין",
+          "store": "קרפור אונליין",
+          "website": "https://www.carrefour.co.il/",
+          "regular_price": 16.1,
+          "sale_price": 10.9,
+          "effective_price": 10.9
+        },
+        {
+          "chain": "יינות ביתן אונליין",
+          "store": "יינות ביתן אונליין",
+          "website": "https://www.ybitan.co.il",
+          "regular_price": 17.9,
+          "sale_price": 10.9,
+          "effective_price": 10.9
+        },
+        {
+          "chain": "ויקטורי אונליין",
+          "store": "ויקטורי אונליין",
+          "website": "https://www.victoryonline.co.il",
+          "regular_price": 15.9,
+          "sale_price": 13.33,
+          "effective_price": 13.33
+        },
+        {
+          "chain": "שופרסל אונליין",
+          "store": "שופרסל אונליין",
+          "website": "https://www.shufersal.co.il",
+          "regular_price": 13.9,
+          "sale_price": null,
+          "effective_price": 13.9
+        },
+        {
+          "chain": "טיב טעם אונליין",
+          "store": "טיב טעם בקליק",
+          "website": "https://www.tivtaam.co.il/",
+          "regular_price": 13.9,
+          "sale_price": null,
+          "effective_price": 13.9
+        },
+        {
+          "chain": "רמי לוי באינטרנט",
+          "store": "רמי לוי באינטרנט",
+          "website": "https://www.rami-levy.co.il",
+          "regular_price": 14.4,
+          "sale_price": 13.9,
+          "effective_price": 13.9
+        },
+        {
+          "chain": "מחסני השוק אונליין",
+          "store": "מחסני השוק אונליין",
+          "website": "https://www.mck.co.il/",
+          "regular_price": 14.9,
+          "sale_price": null,
+          "effective_price": 14.9
+        },
+        {
+          "chain": "קשת טעמים אונליין",
+          "store": "קשת טעמים אונליין",
+          "website": "https://www.keshet-teamim.co.il/",
+          "regular_price": 14.9,
+          "sale_price": null,
+          "effective_price": 14.9
+        },
+        {
+          "chain": "חצי חינם אונליין",
+          "store": "חצי חינם אונליין",
+          "website": "https://shop.hazi-hinam.co.il/",
+          "regular_price": 15.9,
+          "sale_price": null,
+          "effective_price": 15.9
+        },
+        {
+          "chain": "שוק העיר אונליין",
+          "store": "שוק העיר אונליין",
+          "website": "https://www.shukcity.co.il/",
+          "regular_price": 16.9,
+          "sale_price": null,
+          "effective_price": 16.9
+        },
+        {
+          "chain": "אקספרס מהדרין",
+          "store": "אקספרס מהדרין",
+          "website": "https://www.expressmehadrin.co.il/",
+          "regular_price": 16.9,
+          "sale_price": null,
+          "effective_price": 16.9
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/* RTL base */
+html {
+  direction: rtl;
+}
+
+/* Hide scrollbar for horizontal filter strips */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Smooth font rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: system-ui, -apple-system, Arial, sans-serif;
+}

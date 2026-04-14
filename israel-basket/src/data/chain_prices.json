@@ -1,0 +1,2416 @@
+{
+  "fetched_at": "2026-04-14T11:37:33.422268+00:00",
+  "chains": [
+    "שופרסל",
+    "רמי לוי",
+    "יוחננוף",
+    "חצי חינם"
+  ],
+  "product_count": 100,
+  "error_count": 0,
+  "coverage": {
+    "שופרסל": 98,
+    "רמי לוי": 97,
+    "יוחננוף": 95,
+    "חצי חינם": 34
+  },
+  "products": [
+    {
+      "groupId": 1,
+      "barcode": "7290000197678",
+      "name": "האגיס פרידום פלוס שלב 6 27 יח",
+      "prices": {
+        "שופרסל": {
+          "regular": 44.9,
+          "sale": null,
+          "effective": 44.9
+        },
+        "רמי לוי": {
+          "regular": 46.6,
+          "sale": null,
+          "effective": 46.6
+        },
+        "יוחננוף": {
+          "regular": 42.3,
+          "sale": null,
+          "effective": 42.3
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 2,
+      "barcode": "7290000195537",
+      "name": "מגבוני האגיס דיילי קר לא מבושם 4*56",
+      "prices": {
+        "שופרסל": {
+          "regular": 22.9,
+          "sale": null,
+          "effective": 22.9
+        },
+        "רמי לוי": {
+          "regular": 19.7,
+          "sale": null,
+          "effective": 19.7
+        },
+        "יוחננוף": {
+          "regular": 19.9,
+          "sale": null,
+          "effective": 19.9
+        },
+        "חצי חינם": {
+          "regular": 23.1,
+          "sale": null,
+          "effective": 23.1
+        }
+      }
+    },
+    {
+      "groupId": 3,
+      "barcode": "7290000211442",
+      "name": "סוגת אורז פרסי קלאסי שקית 1 ק\"ג",
+      "prices": {
+        "שופרסל": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
+        },
+        "רמי לוי": {
+          "regular": 12.9,
+          "sale": 11.9,
+          "effective": 11.9
+        },
+        "יוחננוף": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 4,
+      "barcode": "7290100700372",
+      "name": "סוגת אורז בסמטי מלא 1 ק\"ג",
+      "prices": {
+        "שופרסל": {
+          "regular": 14.9,
+          "sale": null,
+          "effective": 14.9
+        },
+        "רמי לוי": {
+          "regular": 14.9,
+          "sale": null,
+          "effective": 14.9
+        },
+        "יוחננוף": {
+          "regular": 14.9,
+          "sale": null,
+          "effective": 14.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 5,
+      "barcode": "7290000060880",
+      "name": "פסטה אסם ספגטי 500גר",
+      "prices": {
+        "שופרסל": {
+          "regular": 6.5,
+          "sale": null,
+          "effective": 6.5
+        },
+        "רמי לוי": {
+          "regular": 5.9,
+          "sale": null,
+          "effective": 5.9
+        },
+        "יוחננוף": {
+          "regular": 5.9,
+          "sale": null,
+          "effective": 5.9
+        },
+        "חצי חינם": {
+          "regular": 6.8,
+          "sale": null,
+          "effective": 6.8
+        }
+      }
+    },
+    {
+      "groupId": 6,
+      "barcode": "8076809529419",
+      "name": "ברילה ספגטי מחיטה מלאה 500 גרם",
+      "prices": {
+        "שופרסל": {
+          "regular": 16.9,
+          "sale": null,
+          "effective": 16.9
+        },
+        "רמי לוי": {
+          "regular": 15.9,
+          "sale": null,
+          "effective": 15.9
+        },
+        "יוחננוף": null,
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 7,
+      "barcode": "7290100700273",
+      "name": "סוגת קינואה 500 גר",
+      "prices": {
+        "שופרסל": {
+          "regular": 17.5,
+          "sale": null,
+          "effective": 17.5
+        },
+        "רמי לוי": {
+          "regular": 14.9,
+          "sale": null,
+          "effective": 14.9
+        },
+        "יוחננוף": {
+          "regular": 14.9,
+          "sale": null,
+          "effective": 14.9
+        },
+        "חצי חינם": {
+          "regular": 15.1,
+          "sale": null,
+          "effective": 15.1
+        }
+      }
+    },
+    {
+      "groupId": 8,
+      "barcode": "7290003643752",
+      "name": "סוגת עדשים ירוקים 500 גר",
+      "prices": {
+        "שופרסל": {
+          "regular": 9.9,
+          "sale": null,
+          "effective": 9.9
+        },
+        "רמי לוי": {
+          "regular": 3.9,
+          "sale": null,
+          "effective": 3.9
+        },
+        "יוחננוף": {
+          "regular": 8.9,
+          "sale": null,
+          "effective": 8.9
+        },
+        "חצי חינם": {
+          "regular": 9.0,
+          "sale": null,
+          "effective": 9.0
+        }
+      }
+    },
+    {
+      "groupId": 9,
+      "barcode": "7290100704929",
+      "name": "סוגת שעועית לבנה 500 גר",
+      "prices": {
+        "שופרסל": {
+          "regular": 12.9,
+          "sale": null,
+          "effective": 12.9
+        },
+        "רמי לוי": {
+          "regular": 9.4,
+          "sale": null,
+          "effective": 9.4
+        },
+        "יוחננוף": null,
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 10,
+      "barcode": "7290003643714",
+      "name": "סוגת חומוס 500גר",
+      "prices": {
+        "שופרסל": {
+          "regular": 9.9,
+          "sale": null,
+          "effective": 9.9
+        },
+        "רמי לוי": {
+          "regular": 9.3,
+          "sale": 8.9,
+          "effective": 8.9
+        },
+        "יוחננוף": {
+          "regular": 8.9,
+          "sale": null,
+          "effective": 8.9
+        },
+        "חצי חינם": {
+          "regular": 9.0,
+          "sale": null,
+          "effective": 9.0
+        }
+      }
+    },
+    {
+      "groupId": 11,
+      "barcode": "7290010116348",
+      "name": "מיקס מעורב מגדים 390ג",
+      "prices": {
+        "שופרסל": {
+          "regular": 31.9,
+          "sale": null,
+          "effective": 31.9
+        },
+        "רמי לוי": {
+          "regular": 31.5,
+          "sale": 29.9,
+          "effective": 29.9
+        },
+        "יוחננוף": {
+          "regular": 29.9,
+          "sale": null,
+          "effective": 29.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 12,
+      "barcode": "8000500071083",
+      "name": "קינדר אצבעות שוקולד 200ג",
+      "prices": {
+        "שופרסל": {
+          "regular": 17.9,
+          "sale": null,
+          "effective": 17.9
+        },
+        "רמי לוי": {
+          "regular": 16.2,
+          "sale": 14.9,
+          "effective": 14.9
+        },
+        "יוחננוף": {
+          "regular": 15.9,
+          "sale": null,
+          "effective": 15.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 13,
+      "barcode": "7290112494313",
+      "name": "קליק קורנפלקס תפזורת 65גר",
+      "prices": {
+        "שופרסל": {
+          "regular": 8.5,
+          "sale": null,
+          "effective": 8.5
+        },
+        "רמי לוי": {
+          "regular": 7.9,
+          "sale": null,
+          "effective": 7.9
+        },
+        "יוחננוף": {
+          "regular": 7.5,
+          "sale": null,
+          "effective": 7.5
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 14,
+      "barcode": "7290000137513",
+      "name": "קרמיסימו שוקו ניל חלבי 60יח 630גר",
+      "prices": {
+        "שופרסל": {
+          "regular": 26.9,
+          "sale": 25.9,
+          "effective": 25.9
+        },
+        "רמי לוי": {
+          "regular": 51.9,
+          "sale": 45.9,
+          "effective": 45.9
+        },
+        "יוחננוף": {
+          "regular": 51.9,
+          "sale": null,
+          "effective": 51.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 15,
+      "barcode": "7290116537351",
+      "name": "כריות נוגט תלמה 686 גרם",
+      "prices": {
+        "שופרסל": {
+          "regular": 28.9,
+          "sale": null,
+          "effective": 28.9
+        },
+        "רמי לוי": {
+          "regular": 28.4,
+          "sale": 27.9,
+          "effective": 27.9
+        },
+        "יוחננוף": {
+          "regular": 27.9,
+          "sale": null,
+          "effective": 27.9
+        },
+        "חצי חינם": {
+          "regular": 29.4,
+          "sale": null,
+          "effective": 29.4
+        }
+      }
+    },
+    {
+      "groupId": 16,
+      "barcode": "7290112494351",
+      "name": "קורנפלקס אלופים בד\"צ 850 גר",
+      "prices": {
+        "שופרסל": {
+          "regular": 20.9,
+          "sale": null,
+          "effective": 20.9
+        },
+        "רמי לוי": {
+          "regular": 20,
+          "sale": null,
+          "effective": 20
+        },
+        "יוחננוף": {
+          "regular": 19.9,
+          "sale": null,
+          "effective": 19.9
+        },
+        "חצי חינם": {
+          "regular": 21.9,
+          "sale": null,
+          "effective": 21.9
+        }
+      }
+    },
+    {
+      "groupId": 17,
+      "barcode": "7290000480107",
+      "name": "קוואקר מהיר אטוס לל\"ס 500 גר",
+      "prices": {
+        "שופרסל": {
+          "regular": 7.9,
+          "sale": null,
+          "effective": 7.9
+        },
+        "רמי לוי": {
+          "regular": 8.8,
+          "sale": null,
+          "effective": 8.8
+        },
+        "יוחננוף": {
+          "regular": 12.9,
+          "sale": null,
+          "effective": 12.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 18,
+      "barcode": "7290000066332",
+      "name": "אפרופו 50 גרם",
+      "prices": {
+        "שופרסל": {
+          "regular": 15.9,
+          "sale": null,
+          "effective": 15.9
+        },
+        "רמי לוי": {
+          "regular": 4.9,
+          "sale": null,
+          "effective": 4.9
+        },
+        "יוחננוף": {
+          "regular": 4.5,
+          "sale": null,
+          "effective": 4.5
+        },
+        "חצי חינם": {
+          "regular": 4.6,
+          "sale": 3.57,
+          "effective": 3.57
+        }
+      }
+    },
+    {
+      "groupId": 19,
+      "barcode": "7290000066318",
+      "name": "במבה 80 גרם",
+      "prices": {
+        "שופרסל": {
+          "regular": 17.9,
+          "sale": 16.9,
+          "effective": 16.9
+        },
+        "רמי לוי": {
+          "regular": 4.4,
+          "sale": null,
+          "effective": 4.4
+        },
+        "יוחננוף": {
+          "regular": 4.5,
+          "sale": null,
+          "effective": 4.5
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 20,
+      "barcode": "7290008745239",
+      "name": "תפוציפס קראנץ טבעי 50 גר",
+      "prices": {
+        "שופרסל": {
+          "regular": 15.9,
+          "sale": null,
+          "effective": 15.9
+        },
+        "רמי לוי": {
+          "regular": 2.4,
+          "sale": null,
+          "effective": 2.4
+        },
+        "יוחננוף": {
+          "regular": 4,
+          "sale": null,
+          "effective": 4
+        },
+        "חצי חינם": {
+          "regular": 5.0,
+          "sale": 3.33,
+          "effective": 3.33
+        }
+      }
+    },
+    {
+      "groupId": 21,
+      "barcode": "7290112492449",
+      "name": "פינוק שמפו לשיער רגיל 700מ\"ל",
+      "prices": {
+        "שופרסל": null,
+        "רמי לוי": {
+          "regular": 14.7,
+          "sale": null,
+          "effective": 14.7
+        },
+        "יוחננוף": {
+          "regular": 13.9,
+          "sale": null,
+          "effective": 13.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 22,
+      "barcode": "7290017812571",
+      "name": "תירוש כרמל אדום 1 ליטר",
+      "prices": {
+        "שופרסל": null,
+        "רמי לוי": {
+          "regular": 21.9,
+          "sale": 16.9,
+          "effective": 16.9
+        },
+        "יוחננוף": {
+          "regular": 19.9,
+          "sale": null,
+          "effective": 19.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 23,
+      "barcode": "7290000104676",
+      "name": "אפונה 800 גרם",
+      "prices": {
+        "שופרסל": {
+          "regular": 101.0,
+          "sale": null,
+          "effective": 101.0
+        },
+        "רמי לוי": {
+          "regular": 19.9,
+          "sale": null,
+          "effective": 19.9
+        },
+        "יוחננוף": {
+          "regular": 16.9,
+          "sale": null,
+          "effective": 16.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 24,
+      "barcode": "7290000107295",
+      "name": "תפרחות ברוקולי 800ג",
+      "prices": {
+        "שופרסל": {
+          "regular": 17.9,
+          "sale": null,
+          "effective": 17.9
+        },
+        "רמי לוי": {
+          "regular": 12.9,
+          "sale": null,
+          "effective": 12.9
+        },
+        "יוחננוף": {
+          "regular": 25.9,
+          "sale": null,
+          "effective": 25.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 25,
+      "barcode": "7290000104744",
+      "name": "כרובית 800גר",
+      "prices": {
+        "שופרסל": {
+          "regular": 14.9,
+          "sale": null,
+          "effective": 14.9
+        },
+        "רמי לוי": {
+          "regular": 12.9,
+          "sale": null,
+          "effective": 12.9
+        },
+        "יוחננוף": {
+          "regular": 23.9,
+          "sale": null,
+          "effective": 23.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 26,
+      "barcode": "7290012884986",
+      "name": "תפוגן ציפס לתנור עד 4% שומן 1.5 קג",
+      "prices": {
+        "שופרסל": {
+          "regular": 28.9,
+          "sale": null,
+          "effective": 28.9
+        },
+        "רמי לוי": {
+          "regular": 16.9,
+          "sale": null,
+          "effective": 16.9
+        },
+        "יוחננוף": null,
+        "חצי חינם": {
+          "regular": 28.2,
+          "sale": null,
+          "effective": 28.2
+        }
+      }
+    },
+    {
+      "groupId": 27,
+      "barcode": "7290000104836",
+      "name": "שעועית עדינה שלמה 600גר",
+      "prices": {
+        "שופרסל": {
+          "regular": 23.9,
+          "sale": null,
+          "effective": 23.9
+        },
+        "רמי לוי": {
+          "regular": 21.4,
+          "sale": 15.8,
+          "effective": 15.8
+        },
+        "יוחננוף": {
+          "regular": 22.9,
+          "sale": null,
+          "effective": 22.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 28,
+      "barcode": "7290017947891",
+      "name": "לחם אנגל כוסמין וחיטה מלאה 750 גרם",
+      "prices": {
+        "שופרסל": {
+          "regular": 17.9,
+          "sale": null,
+          "effective": 17.9
+        },
+        "רמי לוי": {
+          "regular": 17.9,
+          "sale": 16.9,
+          "effective": 16.9
+        },
+        "יוחננוף": {
+          "regular": 17.9,
+          "sale": null,
+          "effective": 17.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 29,
+      "barcode": "7290014940901",
+      "name": "אנג'ל לחם פשוט מלא 750מל",
+      "prices": {
+        "שופרסל": {
+          "regular": 15.9,
+          "sale": null,
+          "effective": 15.9
+        },
+        "רמי לוי": {
+          "regular": 16.9,
+          "sale": 15.9,
+          "effective": 15.9
+        },
+        "יוחננוף": {
+          "regular": 15.9,
+          "sale": null,
+          "effective": 15.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 30,
+      "barcode": "7290018540329",
+      "name": "פיתה אנגל 8 יח",
+      "prices": {
+        "שופרסל": {
+          "regular": 14.9,
+          "sale": null,
+          "effective": 14.9
+        },
+        "רמי לוי": {
+          "regular": 7.9,
+          "sale": null,
+          "effective": 7.9
+        },
+        "יוחננוף": null,
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 31,
+      "barcode": "7290017947464",
+      "name": "אנגל פיתות כוסמין 8יח 400גר",
+      "prices": {
+        "שופרסל": {
+          "regular": 17.9,
+          "sale": null,
+          "effective": 17.9
+        },
+        "רמי לוי": {
+          "regular": 17.9,
+          "sale": 16.9,
+          "effective": 16.9
+        },
+        "יוחננוף": {
+          "regular": 16.9,
+          "sale": null,
+          "effective": 16.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 32,
+      "barcode": "7290112495105",
+      "name": "נשנושים שמנת בצל 260 ג",
+      "prices": {
+        "שופרסל": {
+          "regular": 15.9,
+          "sale": null,
+          "effective": 15.9
+        },
+        "רמי לוי": {
+          "regular": 14.4,
+          "sale": 13.9,
+          "effective": 13.9
+        },
+        "יוחננוף": {
+          "regular": 13.9,
+          "sale": null,
+          "effective": 13.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 33,
+      "barcode": "8434165466333",
+      "name": "קריט מיני קרקרים עגולים 350גר",
+      "prices": {
+        "שופרסל": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
+        },
+        "רמי לוי": {
+          "regular": 8.2,
+          "sale": null,
+          "effective": 8.2
+        },
+        "יוחננוף": {
+          "regular": 10.9,
+          "sale": null,
+          "effective": 10.9
+        },
+        "חצי חינם": {
+          "regular": 11.5,
+          "sale": null,
+          "effective": 11.5
+        }
+      }
+    },
+    {
+      "groupId": 34,
+      "barcode": "7622010001858",
+      "name": "אוראו 176 גרם",
+      "prices": {
+        "שופרסל": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
+        },
+        "רמי לוי": {
+          "regular": 12.6,
+          "sale": null,
+          "effective": 12.6
+        },
+        "יוחננוף": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 35,
+      "barcode": "46214731552",
+      "name": "עוגיות שוקולד ציפס מובחרות % 37 שוקולד",
+      "prices": {
+        "שופרסל": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
+        },
+        "רמי לוי": {
+          "regular": 10.9,
+          "sale": null,
+          "effective": 10.9
+        },
+        "יוחננוף": {
+          "regular": 10.9,
+          "sale": null,
+          "effective": 10.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 36,
+      "barcode": "7290000181103",
+      "name": "עד חצות 200ג",
+      "prices": {
+        "שופרסל": {
+          "regular": 17.9,
+          "sale": null,
+          "effective": 17.9
+        },
+        "רמי לוי": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
+        },
+        "יוחננוף": {
+          "regular": 17.9,
+          "sale": null,
+          "effective": 17.9
+        },
+        "חצי חינם": {
+          "regular": 17.9,
+          "sale": null,
+          "effective": 17.9
+        }
+      }
+    },
+    {
+      "groupId": 37,
+      "barcode": "7290000074184",
+      "name": "אסם פתי בר בינוני 500ג",
+      "prices": {
+        "שופרסל": {
+          "regular": 15.9,
+          "sale": null,
+          "effective": 15.9
+        },
+        "רמי לוי": {
+          "regular": 9.9,
+          "sale": null,
+          "effective": 9.9
+        },
+        "יוחננוף": {
+          "regular": 10.9,
+          "sale": null,
+          "effective": 10.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 38,
+      "barcode": "7290018091531",
+      "name": "מעדנות חטיפי פיצה 650 גרם",
+      "prices": {
+        "שופרסל": {
+          "regular": 34.9,
+          "sale": null,
+          "effective": 34.9
+        },
+        "רמי לוי": {
+          "regular": 33.3,
+          "sale": 31.9,
+          "effective": 31.9
+        },
+        "יוחננוף": {
+          "regular": 32.9,
+          "sale": 30.9,
+          "effective": 30.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 39,
+      "barcode": "7290000043890",
+      "name": "ריויון 1.5% 1ל",
+      "prices": {
+        "שופרסל": {
+          "regular": 6.5,
+          "sale": null,
+          "effective": 6.5
+        },
+        "רמי לוי": {
+          "regular": 14,
+          "sale": 12.9,
+          "effective": 12.9
+        },
+        "יוחננוף": {
+          "regular": 12.9,
+          "sale": null,
+          "effective": 12.9
+        },
+        "חצי חינם": {
+          "regular": 13.5,
+          "sale": null,
+          "effective": 13.5
+        }
+      }
+    },
+    {
+      "groupId": 40,
+      "barcode": "7290004584351",
+      "name": "סימפוניה חמישית 200ג",
+      "prices": {
+        "שופרסל": {
+          "regular": 13.5,
+          "sale": null,
+          "effective": 13.5
+        },
+        "רמי לוי": {
+          "regular": 10.4,
+          "sale": null,
+          "effective": 10.4
+        },
+        "יוחננוף": {
+          "regular": 10.9,
+          "sale": null,
+          "effective": 10.9
+        },
+        "חצי חינם": {
+          "regular": 11.0,
+          "sale": null,
+          "effective": 11.0
+        }
+      }
+    },
+    {
+      "groupId": 41,
+      "barcode": "7290006492432",
+      "name": "גד בייבי מוצרלה 150גר",
+      "prices": {
+        "שופרסל": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
+        },
+        "רמי לוי": {
+          "regular": 16.4,
+          "sale": 16,
+          "effective": 16
+        },
+        "יוחננוף": {
+          "regular": 16.9,
+          "sale": null,
+          "effective": 16.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 42,
+      "barcode": "7290000554532",
+      "name": "גד צפתית מעודנת במלח ים 5% 200ג",
+      "prices": {
+        "שופרסל": {
+          "regular": 18.9,
+          "sale": null,
+          "effective": 18.9
+        },
+        "רמי לוי": {
+          "regular": 11,
+          "sale": null,
+          "effective": 11
+        },
+        "יוחננוף": {
+          "regular": 15.9,
+          "sale": null,
+          "effective": 15.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 43,
+      "barcode": "7290102394463",
+      "name": "נעם גבינה צהובה וואקום 28% 500גרם",
+      "prices": {
+        "שופרסל": {
+          "regular": 33.9,
+          "sale": null,
+          "effective": 33.9
+        },
+        "רמי לוי": {
+          "regular": 31.9,
+          "sale": 30.9,
+          "effective": 30.9
+        },
+        "יוחננוף": {
+          "regular": 30.9,
+          "sale": null,
+          "effective": 30.9
+        },
+        "חצי חינם": {
+          "regular": 31.2,
+          "sale": null,
+          "effective": 31.2
+        }
+      }
+    },
+    {
+      "groupId": 44,
+      "barcode": "7290004129101",
+      "name": "נפוליאון גבינת שמנת בטעם טבעי 25% 225גר",
+      "prices": {
+        "שופרסל": {
+          "regular": 15.8,
+          "sale": null,
+          "effective": 15.8
+        },
+        "רמי לוי": {
+          "regular": 10.5,
+          "sale": null,
+          "effective": 10.5
+        },
+        "יוחננוף": {
+          "regular": 14.6,
+          "sale": null,
+          "effective": 14.6
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 45,
+      "barcode": "7290000040974",
+      "name": "חלב תנובה קרטון דל לקטוז 2% 1ל'",
+      "prices": {
+        "שופרסל": {
+          "regular": 8.3,
+          "sale": null,
+          "effective": 8.3
+        },
+        "רמי לוי": {
+          "regular": 5.9,
+          "sale": null,
+          "effective": 5.9
+        },
+        "יוחננוף": {
+          "regular": 7.8,
+          "sale": null,
+          "effective": 7.8
+        },
+        "חצי חינם": {
+          "regular": 8.5,
+          "sale": null,
+          "effective": 8.5
+        }
+      }
+    },
+    {
+      "groupId": 46,
+      "barcode": "7290107932080",
+      "name": "יטבתה חלב בבקבוק 3% מועשר 1ל'",
+      "prices": {
+        "שופרסל": {
+          "regular": 9.2,
+          "sale": null,
+          "effective": 9.2
+        },
+        "רמי לוי": {
+          "regular": 8.1,
+          "sale": 7.9,
+          "effective": 7.9
+        },
+        "יוחננוף": {
+          "regular": 8.9,
+          "sale": null,
+          "effective": 8.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 47,
+      "barcode": "7290116932033",
+      "name": "חמאה 200 גרם מהדרין",
+      "prices": {
+        "שופרסל": {
+          "regular": 9.9,
+          "sale": null,
+          "effective": 9.9
+        },
+        "רמי לוי": {
+          "regular": 7.9,
+          "sale": null,
+          "effective": 7.9
+        },
+        "יוחננוף": {
+          "regular": 9.5,
+          "sale": null,
+          "effective": 9.5
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 48,
+      "barcode": "7290119380916",
+      "name": "אקטימל תות 16 * 108 גר",
+      "prices": {
+        "שופרסל": {
+          "regular": 34.9,
+          "sale": null,
+          "effective": 34.9
+        },
+        "רמי לוי": {
+          "regular": 33.9,
+          "sale": 32.9,
+          "effective": 32.9
+        },
+        "יוחננוף": {
+          "regular": 34.9,
+          "sale": null,
+          "effective": 34.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 49,
+      "barcode": "7290000408354",
+      "name": "דנונה קראנצ' פיצפוצים 175מל",
+      "prices": {
+        "שופרסל": {
+          "regular": 5.3,
+          "sale": null,
+          "effective": 5.3
+        },
+        "רמי לוי": {
+          "regular": 3.9,
+          "sale": null,
+          "effective": 3.9
+        },
+        "יוחננוף": {
+          "regular": 4.9,
+          "sale": null,
+          "effective": 4.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 50,
+      "barcode": "7290005839078",
+      "name": "דנונה ביו מארז חסכון 3% 8*150מל",
+      "prices": {
+        "שופרסל": {
+          "regular": 21.5,
+          "sale": null,
+          "effective": 21.5
+        },
+        "רמי לוי": {
+          "regular": 17.9,
+          "sale": null,
+          "effective": 17.9
+        },
+        "יוחננוף": {
+          "regular": 18.9,
+          "sale": null,
+          "effective": 18.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 51,
+      "barcode": "7290110565527",
+      "name": "דנונה פרו 20ג חלבון 1.5% 200גרם",
+      "prices": {
+        "שופרסל": {
+          "regular": 6.5,
+          "sale": null,
+          "effective": 6.5
+        },
+        "רמי לוי": {
+          "regular": 4.5,
+          "sale": null,
+          "effective": 4.5
+        },
+        "יוחננוף": {
+          "regular": 5.9,
+          "sale": null,
+          "effective": 5.9
+        },
+        "חצי חינם": {
+          "regular": 6.4,
+          "sale": null,
+          "effective": 6.4
+        }
+      }
+    },
+    {
+      "groupId": 52,
+      "barcode": "7290004125721",
+      "name": "שף לבן שמנת לבישול 15% 250מל'",
+      "prices": {
+        "שופרסל": {
+          "regular": 9.9,
+          "sale": null,
+          "effective": 9.9
+        },
+        "רמי לוי": {
+          "regular": 9.6,
+          "sale": null,
+          "effective": 9.6
+        },
+        "יוחננוף": {
+          "regular": 9.6,
+          "sale": null,
+          "effective": 9.6
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 53,
+      "barcode": "7290005838002",
+      "name": "דניאלה מעדן גבינה 150מל",
+      "prices": {
+        "שופרסל": {
+          "regular": 4.2,
+          "sale": null,
+          "effective": 4.2
+        },
+        "רמי לוי": {
+          "regular": 4.4,
+          "sale": null,
+          "effective": 4.4
+        },
+        "יוחננוף": {
+          "regular": 3.9,
+          "sale": null,
+          "effective": 3.9
+        },
+        "חצי חינם": {
+          "regular": 4.0,
+          "sale": null,
+          "effective": 4.0
+        }
+      }
+    },
+    {
+      "groupId": 54,
+      "barcode": "7290104726712",
+      "name": "מילקי שמינייה מארז 8*170מל",
+      "prices": {
+        "שופרסל": {
+          "regular": 21.9,
+          "sale": null,
+          "effective": 21.9
+        },
+        "רמי לוי": {
+          "regular": 21.2,
+          "sale": 19.9,
+          "effective": 19.9
+        },
+        "יוחננוף": {
+          "regular": 21.5,
+          "sale": null,
+          "effective": 21.5
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 55,
+      "barcode": "7290115678376",
+      "name": "מעדן הגולן שוקולד 125 גר",
+      "prices": {
+        "שופרסל": {
+          "regular": 3.4,
+          "sale": null,
+          "effective": 3.4
+        },
+        "רמי לוי": {
+          "regular": 2.9,
+          "sale": null,
+          "effective": 2.9
+        },
+        "יוחננוף": {
+          "regular": 3.2,
+          "sale": null,
+          "effective": 3.2
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 56,
+      "barcode": "7290003029181",
+      "name": "יטבתה שוקו בקבוק 1ל",
+      "prices": {
+        "שופרסל": {
+          "regular": 7.28,
+          "sale": null,
+          "effective": 7.28
+        },
+        "רמי לוי": {
+          "regular": 13.5,
+          "sale": null,
+          "effective": 13.5
+        },
+        "יוחננוף": {
+          "regular": 12.3,
+          "sale": null,
+          "effective": 12.3
+        },
+        "חצי חינם": {
+          "regular": 12.3,
+          "sale": 11.0,
+          "effective": 11.0
+        }
+      }
+    },
+    {
+      "groupId": 57,
+      "barcode": "7290110324926",
+      "name": "משקה סויה ללא תוספת סוכר 1 ליטר",
+      "prices": {
+        "שופרסל": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
+        },
+        "רמי לוי": {
+          "regular": 9.1,
+          "sale": null,
+          "effective": 9.1
+        },
+        "יוחננוף": {
+          "regular": 10.6,
+          "sale": null,
+          "effective": 10.6
+        },
+        "חצי חינם": {
+          "regular": 12.2,
+          "sale": null,
+          "effective": 12.2
+        }
+      }
+    },
+    {
+      "groupId": 58,
+      "barcode": "7290004125578",
+      "name": "סויה תנובה מועשר 1ל",
+      "prices": {
+        "שופרסל": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
+        },
+        "רמי לוי": {
+          "regular": 9.1,
+          "sale": null,
+          "effective": 9.1
+        },
+        "יוחננוף": {
+          "regular": 10.6,
+          "sale": null,
+          "effective": 10.6
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 59,
+      "barcode": "7290110325619",
+      "name": "תנובה משקה שיבולת שועל 1 ליטר",
+      "prices": {
+        "שופרסל": {
+          "regular": 13.9,
+          "sale": null,
+          "effective": 13.9
+        },
+        "רמי לוי": {
+          "regular": 9.1,
+          "sale": null,
+          "effective": 9.1
+        },
+        "יוחננוף": {
+          "regular": 12.9,
+          "sale": null,
+          "effective": 12.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 60,
+      "barcode": "7290004127329",
+      "name": "קוטג תנובה מהדרין 5% 250ג",
+      "prices": {
+        "שופרסל": {
+          "regular": 6.1,
+          "sale": null,
+          "effective": 6.1
+        },
+        "רמי לוי": {
+          "regular": 5.4,
+          "sale": null,
+          "effective": 5.4
+        },
+        "יוחננוף": {
+          "regular": 6.1,
+          "sale": null,
+          "effective": 6.1
+        },
+        "חצי חינם": {
+          "regular": 6.1,
+          "sale": null,
+          "effective": 6.1
+        }
+      }
+    },
+    {
+      "groupId": 61,
+      "barcode": "7290003726615",
+      "name": "משק ווילר טופו הבית 300 גר",
+      "prices": {
+        "שופרסל": {
+          "regular": 12.9,
+          "sale": null,
+          "effective": 12.9
+        },
+        "רמי לוי": {
+          "regular": 10.9,
+          "sale": 9.9,
+          "effective": 9.9
+        },
+        "יוחננוף": {
+          "regular": 10.9,
+          "sale": null,
+          "effective": 10.9
+        },
+        "חצי חינם": {
+          "regular": 13.1,
+          "sale": null,
+          "effective": 13.1
+        }
+      }
+    },
+    {
+      "groupId": 62,
+      "barcode": "7290005427107",
+      "name": "סנו סושי מגבות הפלא 6 גלילים",
+      "prices": {
+        "שופרסל": {
+          "regular": 13.5,
+          "sale": null,
+          "effective": 13.5
+        },
+        "רמי לוי": {
+          "regular": 12.9,
+          "sale": null,
+          "effective": 12.9
+        },
+        "יוחננוף": {
+          "regular": 12.9,
+          "sale": null,
+          "effective": 12.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 63,
+      "barcode": "7290012823602",
+      "name": "נייר טואלט סופט סילק לבן 32 יח",
+      "prices": {
+        "שופרסל": {
+          "regular": 35.9,
+          "sale": null,
+          "effective": 35.9
+        },
+        "רמי לוי": null,
+        "יוחננוף": {
+          "regular": 33.9,
+          "sale": null,
+          "effective": 33.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 64,
+      "barcode": "7290003989539",
+      "name": "שטראוס רביולי גבינה 400ג",
+      "prices": {
+        "שופרסל": {
+          "regular": 19.9,
+          "sale": null,
+          "effective": 19.9
+        },
+        "רמי לוי": {
+          "regular": 18.9,
+          "sale": 17.9,
+          "effective": 17.9
+        },
+        "יוחננוף": {
+          "regular": 19.9,
+          "sale": null,
+          "effective": 19.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 65,
+      "barcode": "7290008409216",
+      "name": "מאמא עוף קפוא שניצל דק פריך 700 גרם",
+      "prices": {
+        "שופרסל": {
+          "regular": 49.9,
+          "sale": null,
+          "effective": 49.9
+        },
+        "רמי לוי": {
+          "regular": 28.2,
+          "sale": null,
+          "effective": 28.2
+        },
+        "יוחננוף": {
+          "regular": 45.9,
+          "sale": null,
+          "effective": 45.9
+        },
+        "חצי חינם": {
+          "regular": 49.4,
+          "sale": null,
+          "effective": 49.4
+        }
+      }
+    },
+    {
+      "groupId": 66,
+      "barcode": "8712400802499",
+      "name": "נוטרילון שלב 1- 800 גרם",
+      "prices": {
+        "שופרסל": {
+          "regular": 64.9,
+          "sale": null,
+          "effective": 64.9
+        },
+        "רמי לוי": {
+          "regular": 63.2,
+          "sale": 55,
+          "effective": 55
+        },
+        "יוחננוף": {
+          "regular": 64.9,
+          "sale": null,
+          "effective": 64.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 67,
+      "barcode": "7290000063140",
+      "name": "שקדי מרק רכיבים טבעיים שקית 400 גרם",
+      "prices": {
+        "שופרסל": {
+          "regular": 9.9,
+          "sale": null,
+          "effective": 9.9
+        },
+        "רמי לוי": {
+          "regular": 7.9,
+          "sale": null,
+          "effective": 7.9
+        },
+        "יוחננוף": {
+          "regular": 10.9,
+          "sale": null,
+          "effective": 10.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 68,
+      "barcode": "7290019056973",
+      "name": "מי עדן 1.5(6) פק",
+      "prices": {
+        "שופרסל": {
+          "regular": 16.3,
+          "sale": null,
+          "effective": 16.3
+        },
+        "רמי לוי": {
+          "regular": 14.4,
+          "sale": 13.9,
+          "effective": 13.9
+        },
+        "יוחננוף": {
+          "regular": 14.9,
+          "sale": null,
+          "effective": 14.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 69,
+      "barcode": "7290000525969",
+      "name": "פרימור מיץ תפוזים 1ל",
+      "prices": {
+        "שופרסל": {
+          "regular": 9.9,
+          "sale": null,
+          "effective": 9.9
+        },
+        "רמי לוי": {
+          "regular": 18.5,
+          "sale": 17.9,
+          "effective": 17.9
+        },
+        "יוחננוף": {
+          "regular": 18.9,
+          "sale": null,
+          "effective": 18.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 70,
+      "barcode": "5906485301012",
+      "name": "אקס אל משקה אנרגיה 250מל",
+      "prices": {
+        "שופרסל": {
+          "regular": 5.0,
+          "sale": null,
+          "effective": 5.0
+        },
+        "רמי לוי": {
+          "regular": 4.2,
+          "sale": null,
+          "effective": 4.2
+        },
+        "יוחננוף": {
+          "regular": 4.5,
+          "sale": null,
+          "effective": 4.5
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 71,
+      "barcode": "7290110115227",
+      "name": "קוקה-קולה זירו 1.5 ליטר",
+      "prices": {
+        "שופרסל": {
+          "regular": 8.5,
+          "sale": null,
+          "effective": 8.5
+        },
+        "רמי לוי": {
+          "regular": 8.2,
+          "sale": null,
+          "effective": 8.2
+        },
+        "יוחננוף": {
+          "regular": 8.2,
+          "sale": null,
+          "effective": 8.2
+        },
+        "חצי חינם": {
+          "regular": 8.3,
+          "sale": null,
+          "effective": 8.3
+        }
+      }
+    },
+    {
+      "groupId": 72,
+      "barcode": "7290110115203",
+      "name": "קוקה-קולה 1.5 ליטר",
+      "prices": {
+        "שופרסל": {
+          "regular": 8.5,
+          "sale": null,
+          "effective": 8.5
+        },
+        "רמי לוי": {
+          "regular": 8.2,
+          "sale": null,
+          "effective": 8.2
+        },
+        "יוחננוף": {
+          "regular": 8.2,
+          "sale": null,
+          "effective": 8.2
+        },
+        "חצי חינם": {
+          "regular": 8.3,
+          "sale": null,
+          "effective": 8.3
+        }
+      }
+    },
+    {
+      "groupId": 73,
+      "barcode": "7290000136790",
+      "name": "טמפו סודה 6*1.5ל",
+      "prices": {
+        "שופרסל": {
+          "regular": 3.9,
+          "sale": null,
+          "effective": 3.9
+        },
+        "רמי לוי": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
+        },
+        "יוחננוף": {
+          "regular": 18.9,
+          "sale": null,
+          "effective": 18.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 74,
+      "barcode": "7290110115463",
+      "name": "פיוז טי אפרסק 1.5 ליטר",
+      "prices": {
+        "שופרסל": {
+          "regular": 8.9,
+          "sale": null,
+          "effective": 8.9
+        },
+        "רמי לוי": {
+          "regular": 8.3,
+          "sale": null,
+          "effective": 8.3
+        },
+        "יוחננוף": {
+          "regular": 8.6,
+          "sale": null,
+          "effective": 8.6
+        },
+        "חצי חינם": {
+          "regular": 8.8,
+          "sale": 8.0,
+          "effective": 8.0
+        }
+      }
+    },
+    {
+      "groupId": 75,
+      "barcode": "7290000288024",
+      "name": "סנו ז'אוול בריח לימון 4 ליטר",
+      "prices": {
+        "שופרסל": {
+          "regular": 12.9,
+          "sale": null,
+          "effective": 12.9
+        },
+        "רמי לוי": {
+          "regular": 16.9,
+          "sale": null,
+          "effective": 16.9
+        },
+        "יוחננוף": {
+          "regular": 16.9,
+          "sale": null,
+          "effective": 16.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 76,
+      "barcode": "7290000211503",
+      "name": "סוכר סוגת 1 ק\"ג",
+      "prices": {
+        "שופרסל": {
+          "regular": 5.5,
+          "sale": null,
+          "effective": 5.5
+        },
+        "רמי לוי": {
+          "regular": 5,
+          "sale": null,
+          "effective": 5
+        },
+        "יוחננוף": {
+          "regular": 4.9,
+          "sale": null,
+          "effective": 4.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 77,
+      "barcode": "7290106576537",
+      "name": "צבר חומוס מסעדה 700 גר",
+      "prices": {
+        "שופרסל": {
+          "regular": 11.9,
+          "sale": 10.9,
+          "effective": 10.9
+        },
+        "רמי לוי": {
+          "regular": 8,
+          "sale": null,
+          "effective": 8
+        },
+        "יוחננוף": {
+          "regular": 11.5,
+          "sale": null,
+          "effective": 11.5
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 78,
+      "barcode": "7290000068138",
+      "name": "אסם פודינג אינסטנט וניל 80 גרם",
+      "prices": {
+        "שופרסל": {
+          "regular": 5.9,
+          "sale": null,
+          "effective": 5.9
+        },
+        "רמי לוי": {
+          "regular": 4,
+          "sale": null,
+          "effective": 4
+        },
+        "יוחננוף": {
+          "regular": 5.9,
+          "sale": null,
+          "effective": 5.9
+        },
+        "חצי חינם": {
+          "regular": 5.8,
+          "sale": null,
+          "effective": 5.8
+        }
+      }
+    },
+    {
+      "groupId": 79,
+      "barcode": "7290005201882",
+      "name": "טורקי עלית 200ג",
+      "prices": {
+        "שופרסל": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
+        },
+        "רמי לוי": {
+          "regular": 19.9,
+          "sale": 18.9,
+          "effective": 18.9
+        },
+        "יוחננוף": {
+          "regular": 18.9,
+          "sale": null,
+          "effective": 18.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 80,
+      "barcode": "7290000072753",
+      "name": "טייסטר צ'וייס 200ג",
+      "prices": {
+        "שופרסל": {
+          "regular": 35.9,
+          "sale": null,
+          "effective": 35.9
+        },
+        "רמי לוי": {
+          "regular": 36.2,
+          "sale": 35.9,
+          "effective": 35.9
+        },
+        "יוחננוף": {
+          "regular": 35.9,
+          "sale": null,
+          "effective": 35.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 81,
+      "barcode": "7290000176420",
+      "name": "עלית נמס אבקתי 200 גרם",
+      "prices": {
+        "שופרסל": {
+          "regular": 25.9,
+          "sale": null,
+          "effective": 25.9
+        },
+        "רמי לוי": {
+          "regular": 26.9,
+          "sale": 25.9,
+          "effective": 25.9
+        },
+        "יוחננוף": null,
+        "חצי חינם": {
+          "regular": 26.9,
+          "sale": null,
+          "effective": 26.9
+        }
+      }
+    },
+    {
+      "groupId": 82,
+      "barcode": "7290000174723",
+      "name": "שוקולית 500ג",
+      "prices": {
+        "שופרסל": {
+          "regular": 16.9,
+          "sale": null,
+          "effective": 16.9
+        },
+        "רמי לוי": {
+          "regular": 16.3,
+          "sale": 15.9,
+          "effective": 15.9
+        },
+        "יוחננוף": {
+          "regular": 15.9,
+          "sale": null,
+          "effective": 15.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 83,
+      "barcode": "7290010328246",
+      "name": "אחוה טחינה משומשום מלא 500 גרם",
+      "prices": {
+        "שופרסל": {
+          "regular": 14.9,
+          "sale": null,
+          "effective": 14.9
+        },
+        "רמי לוי": null,
+        "יוחננוף": {
+          "regular": 12.9,
+          "sale": null,
+          "effective": 12.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 84,
+      "barcode": "7290000112220",
+      "name": "טחינה בסיסית 500 גר' בארכה",
+      "prices": {
+        "שופרסל": {
+          "regular": 14.3,
+          "sale": null,
+          "effective": 14.3
+        },
+        "רמי לוי": {
+          "regular": 17.9,
+          "sale": 16.9,
+          "effective": 16.9
+        },
+        "יוחננוף": {
+          "regular": 15.9,
+          "sale": null,
+          "effective": 15.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 85,
+      "barcode": "7290000111186",
+      "name": "מיונז צנ500. ג",
+      "prices": {
+        "שופרסל": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
+        },
+        "רמי לוי": {
+          "regular": 11.5,
+          "sale": null,
+          "effective": 11.5
+        },
+        "יוחננוף": {
+          "regular": 10.9,
+          "sale": null,
+          "effective": 10.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 86,
+      "barcode": "80176800",
+      "name": "ממרח שוקולד נוטלה 750",
+      "prices": {
+        "שופרסל": {
+          "regular": 31.9,
+          "sale": null,
+          "effective": 31.9
+        },
+        "רמי לוי": {
+          "regular": 31.5,
+          "sale": 27.9,
+          "effective": 27.9
+        },
+        "יוחננוף": {
+          "regular": 31.9,
+          "sale": null,
+          "effective": 31.9
+        },
+        "חצי חינם": {
+          "regular": 31.9,
+          "sale": null,
+          "effective": 31.9
+        }
+      }
+    },
+    {
+      "groupId": 87,
+      "barcode": "7290000072623",
+      "name": "אסם קטשופ 750 גרם",
+      "prices": {
+        "שופרסל": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
+        },
+        "רמי לוי": {
+          "regular": 12.9,
+          "sale": null,
+          "effective": 12.9
+        },
+        "יוחננוף": {
+          "regular": 10.9,
+          "sale": null,
+          "effective": 10.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 88,
+      "barcode": "7290000178134",
+      "name": "פרה שוק.מריר לל\"ג בד\"צ 4*100ג",
+      "prices": {
+        "שופרסל": {
+          "regular": 19.9,
+          "sale": null,
+          "effective": 19.9
+        },
+        "רמי לוי": null,
+        "יוחננוף": {
+          "regular": 27.9,
+          "sale": null,
+          "effective": 27.9
+        },
+        "חצי חינם": {
+          "regular": 27.9,
+          "sale": null,
+          "effective": 27.9
+        }
+      }
+    },
+    {
+      "groupId": 89,
+      "barcode": "7290008750677",
+      "name": "פרה שוקולד מלוי תות מגדים 100ג",
+      "prices": {
+        "שופרסל": {
+          "regular": 8.9,
+          "sale": null,
+          "effective": 8.9
+        },
+        "רמי לוי": {
+          "regular": 8.6,
+          "sale": null,
+          "effective": 8.6
+        },
+        "יוחננוף": {
+          "regular": 8.5,
+          "sale": null,
+          "effective": 8.5
+        },
+        "חצי חינם": {
+          "regular": 8.9,
+          "sale": null,
+          "effective": 8.9
+        }
+      }
+    },
+    {
+      "groupId": 90,
+      "barcode": "7290113192355",
+      "name": "בית השיטה חרוזית זית ירוק ללא גלעין",
+      "prices": {
+        "שופרסל": {
+          "regular": 16.9,
+          "sale": null,
+          "effective": 16.9
+        },
+        "רמי לוי": {
+          "regular": 15.6,
+          "sale": 15,
+          "effective": 15
+        },
+        "יוחננוף": {
+          "regular": 15.9,
+          "sale": null,
+          "effective": 15.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 91,
+      "barcode": "7290005287206",
+      "name": "סטארקיסט טונה בשמן ב.י 4*160ג",
+      "prices": {
+        "שופרסל": {
+          "regular": 25.9,
+          "sale": null,
+          "effective": 25.9
+        },
+        "רמי לוי": {
+          "regular": 27.7,
+          "sale": null,
+          "effective": 27.7
+        },
+        "יוחננוף": {
+          "regular": 25.9,
+          "sale": null,
+          "effective": 25.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 92,
+      "barcode": "7290018359495",
+      "name": "יכין תירס מהשדה ללת\"ס 550 גרם",
+      "prices": {
+        "שופרסל": {
+          "regular": 10.0,
+          "sale": null,
+          "effective": 10.0
+        },
+        "רמי לוי": {
+          "regular": 8.9,
+          "sale": null,
+          "effective": 8.9
+        },
+        "יוחננוף": {
+          "regular": 10.9,
+          "sale": null,
+          "effective": 10.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 93,
+      "barcode": "7290000208114",
+      "name": "יכין אפונת גינה וגזר 550 גר",
+      "prices": {
+        "שופרסל": {
+          "regular": 19.9,
+          "sale": null,
+          "effective": 19.9
+        },
+        "רמי לוי": {
+          "regular": 8.3,
+          "sale": null,
+          "effective": 8.3
+        },
+        "יוחננוף": {
+          "regular": 10.9,
+          "sale": null,
+          "effective": 10.9
+        },
+        "חצי חינם": {
+          "regular": 10.9,
+          "sale": null,
+          "effective": 10.9
+        }
+      }
+    },
+    {
+      "groupId": 94,
+      "barcode": "8005110170300",
+      "name": "מוטי עגבניות חתוכות דק 3*400גר",
+      "prices": {
+        "שופרסל": {
+          "regular": 25.9,
+          "sale": null,
+          "effective": 25.9
+        },
+        "רמי לוי": {
+          "regular": 17.8,
+          "sale": null,
+          "effective": 17.8
+        },
+        "יוחננוף": {
+          "regular": 24.9,
+          "sale": null,
+          "effective": 24.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 95,
+      "barcode": "7290002019794",
+      "name": "פריניר רסק עגבניות 22% 100ג",
+      "prices": {
+        "שופרסל": {
+          "regular": 9.9,
+          "sale": null,
+          "effective": 9.9
+        },
+        "רמי לוי": {
+          "regular": 2.4,
+          "sale": null,
+          "effective": 2.4
+        },
+        "יוחננוף": {
+          "regular": 2.4,
+          "sale": null,
+          "effective": 2.4
+        },
+        "חצי חינם": {
+          "regular": 2.9,
+          "sale": null,
+          "effective": 2.9
+        }
+      }
+    },
+    {
+      "groupId": 96,
+      "barcode": "7290010429554",
+      "name": "יד מרדכי ש.זית כתית מעולה 2 קלאסי 750מל",
+      "prices": {
+        "שופרסל": {
+          "regular": 46.9,
+          "sale": null,
+          "effective": 46.9
+        },
+        "רמי לוי": {
+          "regular": 41.9,
+          "sale": 40.9,
+          "effective": 40.9
+        },
+        "יוחננוף": {
+          "regular": 39.9,
+          "sale": null,
+          "effective": 39.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 97,
+      "barcode": "7290000144474",
+      "name": "שמן קנולה בריאות מהטבע 1 ליטר",
+      "prices": {
+        "שופרסל": {
+          "regular": 9.9,
+          "sale": null,
+          "effective": 9.9
+        },
+        "רמי לוי": {
+          "regular": 15.7,
+          "sale": null,
+          "effective": 15.7
+        },
+        "יוחננוף": {
+          "regular": 14.9,
+          "sale": null,
+          "effective": 14.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 98,
+      "barcode": "7290000347752",
+      "name": "תה ירוק לימונית ולואיזה 25 שקיקים 1.5 גר",
+      "prices": {
+        "שופרסל": {
+          "regular": 25.5,
+          "sale": 24.9,
+          "effective": 24.9
+        },
+        "רמי לוי": {
+          "regular": 15.9,
+          "sale": null,
+          "effective": 15.9
+        },
+        "יוחננוף": {
+          "regular": 22.9,
+          "sale": null,
+          "effective": 22.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 99,
+      "barcode": "7290016509786",
+      "name": "פרסיל גל ירוק 2.5 ליטר",
+      "prices": {
+        "שופרסל": {
+          "regular": 39.9,
+          "sale": 29.9,
+          "effective": 29.9
+        },
+        "רמי לוי": {
+          "regular": 34.9,
+          "sale": 28.9,
+          "effective": 28.9
+        },
+        "יוחננוף": {
+          "regular": 29.9,
+          "sale": null,
+          "effective": 29.9
+        },
+        "חצי חינם": null
+      }
+    },
+    {
+      "groupId": 100,
+      "barcode": "7290115208047",
+      "name": "ויטמינצ'יק פטל 1 ליטר",
+      "prices": {
+        "שופרסל": {
+          "regular": 13.9,
+          "sale": null,
+          "effective": 13.9
+        },
+        "רמי לוי": {
+          "regular": 14.4,
+          "sale": null,
+          "effective": 14.4
+        },
+        "יוחננוף": {
+          "regular": 13.9,
+          "sale": null,
+          "effective": 13.9
+        },
+        "חצי חינם": {
+          "regular": 15.9,
+          "sale": null,
+          "effective": 15.9
+        }
+      }
+    }
+  ],
+  "errors": []
+}

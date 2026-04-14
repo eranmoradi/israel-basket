@@ -8,7 +8,7 @@ import ComparePage from './pages/ComparePage'
 
 export default function App() {
   return (
-    <BrowserRouter basename="/israel-basket">
+    <BrowserRouter>
       <div className="min-h-screen bg-gray-50">
         <Header />
         <Routes>

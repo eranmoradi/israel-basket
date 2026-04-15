@@ -125,19 +125,57 @@ export default function BasketPage() {
     ? competitorData.cheapestChainCarrefourTotal - competitorData.cheapestChainTotal
     : 0
 
+  function buildSummaryText() {
+    const date = new Date().toLocaleDateString('he-IL')
+    const lines: string[] = [
+      `🛒 הסל שלי — הסל של ישראל`,
+      `תאריך: ${date}`,
+      ``,
+      `מוצרים (${count}):`,
+      ...items.map((p) => `• ${p.name}${p.price != null ? ` — ${p.price.toFixed(2)}₪` : ''}`),
+      ``,
+      `סה״כ בקארפור: ${total.toFixed(2)}₪`,
+    ]
+    if (competitorData.cheapestChain) {
+      lines.push(`הרשת הזולה ביותר (${competitorData.cheapestChain}): ${competitorData.cheapestChainTotal.toFixed(2)}₪`)
+      if (saving > 0.01 && !competitorData.isPartialCoverage) {
+        lines.push(`✅ חיסכון בקארפור: ${saving.toFixed(2)}₪`)
+      }
+    }
+    lines.push(``, `⚠️ עד 2 יחידות מכל מוצר. תקף בסניפי קארפור מרקט והיפר בלבד.`)
+    lines.push(``, `israelbasket.app`)
+    return lines.join('\n')
+  }
+
+  function handleDownload() {
+    const text = buildSummaryText()
+    const blob = new Blob([text], { type: 'text/plain;charset=utf-8' })
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.href = url
+    a.download = `הסל-שלי-${new Date().toLocaleDateString('he-IL').replace(/\//g, '-')}.txt`
+    a.click()
+    URL.revokeObjectURL(url)
+  }
+
+  function handleWhatsApp() {
+    const text = buildSummaryText()
+    window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank')
+  }
+
   if (count === 0) {
     return (
       <div className="max-w-3xl mx-auto px-4 py-16 text-center">
-        <div className="text-6xl mb-4">🛒</div>
-        <h1 className="text-2xl font-bold text-gray-300 mb-2">הסל שלך ריק</h1>
-        <p className="text-gray-500 mb-6">הוסף מוצרים מהרשימה וראה את הסכום הכולל</p>
-        <button
-          onClick={() => navigate('/products')}
-          className="bg-blue-700 text-white font-bold px-8 py-3 rounded-2xl hover:bg-blue-600 transition-colors"
-        >
-          לרשימת המוצרים
-        </button>
-      </div>
+          <div className="text-6xl mb-4">🛒</div>
+          <h1 className="text-2xl font-bold text-gray-300 mb-2">הסל שלך ריק</h1>
+          <p className="text-gray-500 mb-6">הוסף מוצרים מהרשימה וראה את הסכום הכולל</p>
+          <button
+            onClick={() => navigate('/products')}
+            className="bg-blue-700 text-white font-bold px-8 py-3 rounded-2xl hover:bg-blue-600 transition-colors"
+          >
+            לרשימת המוצרים
+          </button>
+        </div>
     )
   }
 
@@ -196,6 +234,30 @@ export default function BasketPage() {
             </span>
           </div>
         )}
+      </div>
+
+      {/* Save & Share */}
+      <div className="bg-gray-900 border border-gray-700 rounded-2xl p-4 mb-6">
+        <p className="text-xs text-amber-400 mb-3 flex items-center gap-1.5">
+          <span>⚠️</span>
+          <span>הנתונים שלך לא נשמרים במערכת — כדאי לשמור את הסיכום לפני שתצא</span>
+        </p>
+        <div className="grid grid-cols-2 gap-3">
+          <button
+            onClick={handleDownload}
+            className="flex items-center justify-center gap-2 bg-gray-800 hover:bg-gray-700 active:scale-95 border border-gray-600 text-gray-200 font-semibold text-sm py-2.5 rounded-xl transition-all"
+          >
+            <span>⬇️</span>
+            <span>הורד סיכום</span>
+          </button>
+          <button
+            onClick={handleWhatsApp}
+            className="flex items-center justify-center gap-2 bg-green-800 hover:bg-green-700 active:scale-95 text-white font-semibold text-sm py-2.5 rounded-xl transition-all"
+          >
+            <span>📲</span>
+            <span>שתף בוואטסאפ</span>
+          </button>
+        </div>
       </div>
 
       {/* Product list */}

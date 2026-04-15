@@ -27,10 +27,10 @@ function getCheapest(item: ChainProductPrices): { chain: ChainName; price: numbe
 }
 
 const CHAIN_BADGE: Record<ChainName, string> = {
-  שופרסל: 'bg-orange-100 text-orange-700',
-  'רמי לוי': 'bg-blue-100 text-blue-700',
-  יוחננוף: 'bg-green-100 text-green-700',
-  'חצי חינם': 'bg-purple-100 text-purple-700',
+  שופרסל: 'bg-orange-900/50 text-orange-300',
+  'רמי לוי': 'bg-blue-900/50 text-blue-300',
+  יוחננוף: 'bg-green-900/50 text-green-300',
+  'חצי חינם': 'bg-purple-900/50 text-purple-300',
 }
 
 export default function BasketPage() {
@@ -129,11 +129,11 @@ export default function BasketPage() {
     return (
       <div className="max-w-3xl mx-auto px-4 py-16 text-center">
         <div className="text-6xl mb-4">🛒</div>
-        <h1 className="text-2xl font-bold text-gray-700 mb-2">הסל שלך ריק</h1>
+        <h1 className="text-2xl font-bold text-gray-300 mb-2">הסל שלך ריק</h1>
         <p className="text-gray-500 mb-6">הוסף מוצרים מהרשימה וראה את הסכום הכולל</p>
         <button
           onClick={() => navigate('/products')}
-          className="bg-blue-700 text-white font-bold px-8 py-3 rounded-2xl hover:bg-blue-800 transition-colors"
+          className="bg-blue-700 text-white font-bold px-8 py-3 rounded-2xl hover:bg-blue-600 transition-colors"
         >
           לרשימת המוצרים
         </button>
@@ -144,10 +144,10 @@ export default function BasketPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-6">
       <div className="flex items-center justify-between mb-6">
-        <h1 className="text-2xl font-extrabold text-gray-900">הסל שלי ({count})</h1>
+        <h1 className="text-2xl font-extrabold text-gray-100">הסל שלי ({count})</h1>
         <button
           onClick={clear}
-          className="text-sm text-red-500 hover:text-red-700 font-medium"
+          className="text-sm text-red-400 hover:text-red-300 font-medium"
         >
           נקה הכל
         </button>
@@ -156,9 +156,9 @@ export default function BasketPage() {
       {/* Summary card */}
       <div className="rounded-2xl overflow-hidden mb-6 shadow-sm">
         {/* Official price row */}
-        <div className="bg-blue-700 text-white px-5 py-4 flex justify-between items-center">
+        <div className="bg-blue-800 text-white px-5 py-4 flex justify-between items-center">
           <div>
-            <div className="text-blue-200 text-xs mb-0.5">מחיר מוצע (ממשלתי)</div>
+            <div className="text-blue-300 text-xs mb-0.5">מחיר מוצע (ממשלתי)</div>
             <div className="font-bold text-sm">קרפור · {count} מוצרים</div>
           </div>
           <span className="text-3xl font-extrabold">{total.toFixed(2)} ₪</span>
@@ -168,11 +168,11 @@ export default function BasketPage() {
         {competitorData.cheapestChain && (
           <div
             className={`text-white px-5 py-4 flex justify-between items-center ${
-              competitorData.isPartialCoverage ? 'bg-gray-500' : 'bg-green-600'
+              competitorData.isPartialCoverage ? 'bg-gray-700' : 'bg-green-700'
             }`}
           >
             <div>
-              <div className={`text-xs mb-0.5 ${competitorData.isPartialCoverage ? 'text-gray-300' : 'text-green-200'}`}>
+              <div className={`text-xs mb-0.5 ${competitorData.isPartialCoverage ? 'text-gray-400' : 'text-green-300'}`}>
                 {competitorData.isPartialCoverage
                   ? `השוואה חלקית — רק ${competitorData.cheapestChainCount} מתוך ${competitorData.comparableCount} מוצרים`
                   : 'הרשת הזולה ביותר לסל זה'}
@@ -187,11 +187,11 @@ export default function BasketPage() {
 
         {/* Saving row — only shown for full-coverage chains */}
         {saving > 0.01 && !competitorData.isPartialCoverage && (
-          <div className="bg-amber-50 border-t border-amber-200 px-5 py-3 flex justify-between items-center">
-            <span className="text-amber-800 font-semibold text-sm">
+          <div className="bg-amber-900/30 border-t border-amber-700 px-5 py-3 flex justify-between items-center">
+            <span className="text-amber-300 font-semibold text-sm">
               חיסכון לעומת {competitorData.cheapestChain}
             </span>
-            <span className="text-amber-700 font-extrabold text-lg">
+            <span className="text-amber-400 font-extrabold text-lg">
               {saving.toFixed(2)} ₪ ↓
             </span>
           </div>
@@ -208,25 +208,25 @@ export default function BasketPage() {
           return (
             <div
               key={product.id + '-' + product.barcode}
-              className="bg-white rounded-xl border border-gray-200 p-4"
+              className="bg-gray-800 rounded-xl border border-gray-700 p-4"
             >
               <div className="flex items-start justify-between gap-3">
                 {/* Name + brand */}
                 <div className="flex-1 min-w-0">
-                  <p className="font-semibold text-sm text-gray-800 leading-snug">
+                  <p className="font-semibold text-sm text-gray-100 leading-snug">
                     {product.name}
                   </p>
-                  <p className="text-xs text-gray-500">{product.brand}</p>
+                  <p className="text-xs text-gray-400">{product.brand}</p>
                 </div>
 
                 {/* Official price + remove */}
                 <div className="flex items-center gap-2 shrink-0">
-                  <span className="font-bold text-blue-700 whitespace-nowrap text-sm">
+                  <span className="font-bold text-blue-400 whitespace-nowrap text-sm">
                     {product.price?.toFixed(2)} ₪
                   </span>
                   <button
                     onClick={() => toggle(product)}
-                    className="text-gray-400 hover:text-red-500 transition-colors text-xl leading-none"
+                    className="text-gray-600 hover:text-red-400 transition-colors text-xl leading-none"
                     aria-label="הסר מוצר"
                   >
                     ×
@@ -236,9 +236,9 @@ export default function BasketPage() {
 
               {/* Competitor best price */}
               {best && (
-                <div className="mt-2 pt-2 border-t border-gray-100 flex items-center justify-between">
+                <div className="mt-2 pt-2 border-t border-gray-700 flex items-center justify-between">
                   <div className="flex items-center gap-1.5">
-                    <span className="text-xs text-gray-400">הזול ביותר:</span>
+                    <span className="text-xs text-gray-500">הזול ביותר:</span>
                     <span
                       className={`text-xs font-semibold px-2 py-0.5 rounded-full ${
                         CHAIN_BADGE[best.chain]
@@ -250,13 +250,13 @@ export default function BasketPage() {
                   <div className="flex items-center gap-2">
                     <span
                       className={`font-bold text-sm tabular-nums ${
-                        isCheaper ? 'text-green-600' : 'text-gray-500'
+                        isCheaper ? 'text-green-400' : 'text-gray-400'
                       }`}
                     >
                       {best.price.toFixed(2)} ₪
                     </span>
                     {isCheaper && (
-                      <span className="text-xs text-green-600 font-medium">
+                      <span className="text-xs text-green-400 font-medium">
                         חיסכון {priceDiff!.toFixed(2)} ₪
                       </span>
                     )}
@@ -270,19 +270,19 @@ export default function BasketPage() {
 
       <button
         onClick={() => navigate('/products')}
-        className="w-full border-2 border-blue-700 text-blue-700 font-bold py-3 rounded-2xl hover:bg-blue-50 transition-colors"
+        className="w-full border-2 border-blue-600 text-blue-400 font-bold py-3 rounded-2xl hover:bg-gray-800 transition-colors"
       >
         + הוסף עוד מוצרים
       </button>
 
       {/* Limit notice */}
-      <div className="bg-blue-50 border border-blue-200 rounded-2xl p-4 mt-6 text-sm text-blue-700">
+      <div className="bg-blue-900/20 border border-blue-700 rounded-2xl p-4 mt-6 text-sm text-blue-300">
         <strong>⚠️ שים לב:</strong> ניתן לרכוש עד 2 יחידות מכל מוצר בכל קנייה.
         המחירים תקפים בסניפי קארפור מרקט והיפר בלבד (לא בסניפי קארפור סיטי).
       </div>
 
       {/* Disclaimer */}
-      <div className="bg-gray-50 border border-gray-200 rounded-2xl p-4 mt-4 text-sm text-gray-600">
+      <div className="bg-gray-900 border border-gray-700 rounded-2xl p-4 mt-4 text-sm text-gray-400">
         <strong>⚠️ גילוי נאות:</strong> מחירי הרשתות המתחרות נשלפים אוטומטית מהאתרים שלהן ומתעדכנים מדי יום.
         ייתכנו פערים קטנים בין המחיר המוצג לבין המחיר בפועל בחנות.
       </div>

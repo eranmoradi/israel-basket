@@ -12,7 +12,7 @@ export default function BottomNav() {
   const count = useBasketStore((s) => s.count)
 
   return (
-    <nav className="fixed bottom-0 inset-x-0 z-50 bg-white border-t border-gray-200">
+    <nav className="fixed bottom-0 inset-x-0 z-50 bg-gray-900 border-t border-gray-700">
       <div className="max-w-3xl mx-auto flex">
         {tabs.map((tab) => (
           <NavLink
@@ -20,7 +20,7 @@ export default function BottomNav() {
             to={tab.to}
             className={({ isActive }) =>
               `flex-1 flex flex-col items-center justify-center py-2 gap-0.5 min-h-[60px] transition-colors relative ${
-                isActive ? 'text-blue-700' : 'text-gray-500'
+                isActive ? 'text-blue-400' : 'text-gray-500'
               }`
             }
           >

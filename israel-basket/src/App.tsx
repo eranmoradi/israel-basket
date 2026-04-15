@@ -14,7 +14,7 @@ export default function App() {
 
   return (
     <BrowserRouter>
-      <div className={`min-h-screen bg-gray-50 ${count > 0 ? 'pb-32' : 'pb-16'}`}>
+      <div className={`min-h-screen bg-gray-950 ${count > 0 ? 'pb-32' : 'pb-16'}`}>
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />

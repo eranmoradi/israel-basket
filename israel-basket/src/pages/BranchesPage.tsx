@@ -25,19 +25,19 @@ export default function BranchesPage() {
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-6">
-      <h1 className="text-2xl font-extrabold text-gray-900 mb-5">
+      <h1 className="text-2xl font-extrabold text-gray-100 mb-5">
         סניפים משתתפים ({branches.length})
       </h1>
 
       {/* Search */}
       <div className="relative mb-4">
-        <span className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 text-lg">🔍</span>
+        <span className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 text-lg">🔍</span>
         <input
           type="search"
           placeholder="חפש עיר או כתובת..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="w-full border border-gray-300 rounded-xl py-3 pr-10 pl-4 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="w-full bg-gray-800 border border-gray-600 text-gray-100 placeholder:text-gray-500 rounded-xl py-3 pr-10 pl-4 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
 
@@ -50,7 +50,7 @@ export default function BranchesPage() {
             className={`text-xs font-semibold px-3 py-1.5 rounded-full border transition-colors ${
               format === f
                 ? 'bg-blue-700 text-white border-blue-700'
-                : 'bg-white text-gray-600 border-gray-300 hover:border-blue-400'
+                : 'bg-gray-800 text-gray-300 border-gray-600 hover:border-blue-500'
             }`}
           >
             {f}
@@ -63,7 +63,7 @@ export default function BranchesPage() {
         <select
           value={city}
           onChange={(e) => setCity(e.target.value)}
-          className="w-full border border-gray-300 rounded-xl py-2.5 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400 bg-white"
+          className="w-full bg-gray-800 border border-gray-600 text-gray-100 rounded-xl py-2.5 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
         >
           {CITIES.map((c) => (
             <option key={c} value={c}>
@@ -73,10 +73,10 @@ export default function BranchesPage() {
         </select>
       </div>
 
-      <p className="text-xs text-gray-400 mb-3">מציג {filtered.length} סניפים</p>
+      <p className="text-xs text-gray-500 mb-3">מציג {filtered.length} סניפים</p>
 
       {filtered.length === 0 ? (
-        <div className="text-center py-16 text-gray-400">
+        <div className="text-center py-16 text-gray-500">
           <div className="text-4xl mb-3">🏪</div>
           <p>לא נמצאו סניפים</p>
         </div>

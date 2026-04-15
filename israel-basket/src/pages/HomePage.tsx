@@ -69,7 +69,7 @@ export default function HomePage() {
 
         {/* WHY section */}
         <div className="bg-gray-900 border border-gray-800 border-r-4 border-r-green-500 rounded-2xl px-6 py-5 mb-6">
-          <div className="text-xs text-gray-600 font-semibold tracking-widest uppercase mb-3">למה נוצרה האפליקציה</div>
+          <div className="text-sm text-gray-300 font-semibold tracking-widest uppercase mb-3">למה נוצרה האפליקציה</div>
           <p className="text-sm text-gray-300 leading-relaxed">
             יוקר המחיה בישראל הוא אחד הגבוהים בעולם. הממשלה וקארפור הכריזו על הסל של ישראל, רצינו לוודא שכל אחד יוכל להשתמש בו בקלות ובך לחסוך משמעותית בהוצאות המזון החל מתאריך 15.04.26 למשך 6 חודשים — כל זה בלי לחפש, בלי לנחש. האפליקציה הזאת נוצרה עבור הקהילה מתוך רצון אמיתי וכנה לעזור להוזיל את יוקר המחייה בישראל.
           </p>
@@ -122,7 +122,7 @@ export default function HomePage() {
 
         {/* How-to steps */}
         <div className="bg-gray-900 rounded-2xl px-6 py-8 mb-8">
-          <div className="text-xs text-gray-600 font-semibold tracking-widest uppercase mb-6">איך מתחילים?</div>
+          <div className="text-sm text-gray-300 font-semibold tracking-widest uppercase mb-6">איך מתחילים?</div>
           <div className="flex flex-col gap-5">
             {[
               {
@@ -156,7 +156,7 @@ export default function HomePage() {
 
         {/* Features */}
         <div className="bg-gray-900 rounded-2xl px-6 py-8 mb-8">
-          <div className="text-xs text-gray-600 font-semibold tracking-widest uppercase mb-5">מה תקבל</div>
+          <div className="text-sm text-gray-300 font-semibold tracking-widest uppercase mb-5">מה תקבל</div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               {

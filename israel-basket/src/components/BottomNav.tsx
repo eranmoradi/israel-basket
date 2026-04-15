@@ -27,7 +27,7 @@ export default function BottomNav() {
             <span className="text-xl relative inline-block">
               {tab.icon}
               {tab.to === '/basket' && count > 0 && (
-                <span className="absolute -top-1 -right-1.5 bg-red-500 text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold leading-none">
+                <span className="absolute -top-1.5 -right-2 bg-red-500 text-white text-[10px] min-w-[18px] h-[18px] px-0.5 rounded-full flex items-center justify-center font-bold">
                   {count > 9 ? '9+' : count}
                 </span>
               )}

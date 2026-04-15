@@ -95,7 +95,7 @@ export default function FirstTimeBot() {
         <button
           onClick={() => setOpen(true)}
           style={{ zIndex: 9999 }}
-        className="fixed top-2.5 left-1/2 -translate-x-1/2 flex items-center gap-1.5 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 active:scale-95 text-white text-xs font-semibold px-3 py-1.5 rounded-full shadow-lg shadow-amber-500/40 transition-all whitespace-nowrap"
+        className="fixed top-3 left-4 flex items-center gap-1.5 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 active:scale-95 text-white text-xs font-semibold px-3 py-1.5 rounded-full shadow-lg shadow-amber-500/40 transition-all whitespace-nowrap"
         >
           <span>💬</span>
           <span>פעם ראשונה כאן?</span>

@@ -1,4 +1,4 @@
-import { NavLink, useLocation } from 'react-router-dom'
+import { NavLink, useLocation, useNavigate } from 'react-router-dom'
 
 interface HeaderProps {
   onBotOpen?: () => void
@@ -6,7 +6,8 @@ interface HeaderProps {
 
 export default function Header({ onBotOpen }: HeaderProps) {
   const { pathname } = useLocation()
-  const showBot = pathname !== '/'
+  const navigate = useNavigate()
+  const isInner = pathname !== '/'
 
   return (
     <header className="sticky top-0 z-50 bg-blue-700 text-white shadow-md">
@@ -14,14 +15,25 @@ export default function Header({ onBotOpen }: HeaderProps) {
         <NavLink to="/" className="font-bold text-lg tracking-wide">
           🛒 הסל של ישראל
         </NavLink>
-        {showBot && onBotOpen && (
-          <button
-            onClick={onBotOpen}
-            className="flex items-center gap-1.5 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 active:scale-95 text-white text-xs font-semibold px-3 py-1.5 rounded-full shadow-md transition-all whitespace-nowrap"
-          >
-            <span>💬</span>
-            <span>עזרה</span>
-          </button>
+        {isInner && (
+          <div className="flex items-center gap-2">
+            {onBotOpen && (
+              <button
+                onClick={onBotOpen}
+                className="flex items-center gap-1.5 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 active:scale-95 text-white text-sm font-bold px-4 py-2 rounded-full shadow-lg ring-2 ring-white/40 transition-all whitespace-nowrap"
+              >
+                <span>💬</span>
+                <span>עזרה</span>
+              </button>
+            )}
+            <button
+              onClick={() => navigate(-1)}
+              className="flex items-center justify-center bg-white/15 hover:bg-white/25 active:scale-95 text-white w-9 h-9 rounded-full transition-all"
+              aria-label="חזרה"
+            >
+              <span className="text-lg leading-none">›</span>
+            </button>
+          </div>
         )}
       </div>
     </header>

@@ -143,7 +143,7 @@ export default function BasketPage() {
       }
     }
     lines.push(``, `⚠️ עד 2 יחידות מכל מוצר. תקף בסניפי קארפור מרקט והיפר בלבד.`)
-    lines.push(``, `israelbasket.app`)
+    lines.push(``, `https://israelbasket.app`)
     return lines.join('\n')
   }
 
@@ -160,6 +160,11 @@ export default function BasketPage() {
 
   function handleWhatsApp() {
     const text = buildSummaryText()
+    window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank')
+  }
+
+  function handleShareApp() {
+    const text = `היי! תראו איזו אפליקציה מצאתי 🛒\nהסל של ישראל — חוסכת לי המון כסף בקניות המזון!\nבלחיצת כפתור היא יכולה לחסוך גם לך 👇\nhttps://israelbasket.app`
     window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank')
   }
 
@@ -194,30 +199,30 @@ export default function BasketPage() {
       {/* Summary card */}
       <div className="rounded-2xl overflow-hidden mb-6 shadow-sm">
         {/* Official price row */}
-        <div className="bg-blue-800 text-white px-5 py-4 flex justify-between items-center">
+        <div className="bg-blue-800 text-white px-6 py-6 flex justify-between items-center">
           <div>
-            <div className="text-blue-300 text-xs mb-0.5">מחיר מוצע (ממשלתי)</div>
-            <div className="font-bold text-sm">קרפור · {count} מוצרים</div>
+            <div className="text-blue-300 text-sm mb-1">מחיר מוצע (ממשלתי)</div>
+            <div className="font-bold text-base">קרפור · {count} מוצרים</div>
           </div>
-          <span className="text-3xl font-extrabold">{total.toFixed(2)} ₪</span>
+          <span className="text-4xl font-extrabold">{total.toFixed(2)} ₪</span>
         </div>
 
         {/* Cheapest single chain row */}
         {competitorData.cheapestChain && (
           <div
-            className={`text-white px-5 py-4 flex justify-between items-center ${
+            className={`text-white px-6 py-6 flex justify-between items-center ${
               competitorData.isPartialCoverage ? 'bg-gray-700' : 'bg-green-700'
             }`}
           >
             <div>
-              <div className={`text-xs mb-0.5 ${competitorData.isPartialCoverage ? 'text-gray-400' : 'text-green-300'}`}>
+              <div className={`text-sm mb-1 ${competitorData.isPartialCoverage ? 'text-gray-400' : 'text-green-300'}`}>
                 {competitorData.isPartialCoverage
                   ? `השוואה חלקית — רק ${competitorData.cheapestChainCount} מתוך ${competitorData.comparableCount} מוצרים`
                   : 'הרשת הזולה ביותר לסל זה'}
               </div>
-              <div className="font-bold text-sm">{competitorData.cheapestChain}</div>
+              <div className="font-bold text-base">{competitorData.cheapestChain}</div>
             </div>
-            <span className="text-3xl font-extrabold">
+            <span className="text-4xl font-extrabold">
               {competitorData.cheapestChainTotal.toFixed(2)} ₪
             </span>
           </div>
@@ -225,11 +230,11 @@ export default function BasketPage() {
 
         {/* Saving row — only shown for full-coverage chains */}
         {saving > 0.01 && !competitorData.isPartialCoverage && (
-          <div className="bg-amber-900/30 border-t border-amber-700 px-5 py-3 flex justify-between items-center">
-            <span className="text-amber-300 font-semibold text-sm">
+          <div className="bg-amber-900/30 border-t border-amber-700 px-6 py-4 flex justify-between items-center">
+            <span className="text-amber-300 font-semibold text-base">
               חיסכון לעומת {competitorData.cheapestChain}
             </span>
-            <span className="text-amber-400 font-extrabold text-lg">
+            <span className="text-amber-400 font-extrabold text-xl">
               {saving.toFixed(2)} ₪ ↓
             </span>
           </div>
@@ -237,27 +242,41 @@ export default function BasketPage() {
       </div>
 
       {/* Save & Share */}
-      <div className="bg-gray-900 border border-gray-700 rounded-2xl p-4 mb-6">
-        <p className="text-xs text-amber-400 mb-3 flex items-center gap-1.5">
+      <div className="bg-gray-900 border border-gray-700 rounded-2xl p-5 mb-6">
+        <p className="text-sm text-amber-400 mb-4 flex items-center gap-1.5">
           <span>⚠️</span>
-          <span>הנתונים שלך לא נשמרים במערכת — כדאי לשמור את הסיכום לפני שתצא</span>
+          <span>הנתונים שלך לא נשמרים — כדאי לשמור לפני שתצא</span>
         </p>
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-2 gap-3 mb-3">
           <button
             onClick={handleDownload}
-            className="flex items-center justify-center gap-2 bg-gray-800 hover:bg-gray-700 active:scale-95 border border-gray-600 text-gray-200 font-semibold text-sm py-2.5 rounded-xl transition-all"
+            className="flex items-center justify-center gap-2 bg-gray-800 hover:bg-gray-700 active:scale-95 border border-gray-600 text-gray-200 font-semibold text-base py-4 rounded-xl transition-all"
           >
             <span>⬇️</span>
             <span>הורד סיכום</span>
           </button>
           <button
             onClick={handleWhatsApp}
-            className="flex items-center justify-center gap-2 bg-green-800 hover:bg-green-700 active:scale-95 text-white font-semibold text-sm py-2.5 rounded-xl transition-all"
+            className="flex items-center justify-center gap-2 bg-green-800 hover:bg-green-700 active:scale-95 text-white font-semibold text-base py-4 rounded-xl transition-all"
           >
             <span>📲</span>
-            <span>שתף בוואטסאפ</span>
+            <span>רשימת קניות</span>
           </button>
         </div>
+        <button
+          onClick={handleShareApp}
+          className="w-full flex items-center justify-center gap-2 bg-blue-700 hover:bg-blue-600 active:scale-95 text-white font-semibold text-base py-4 rounded-xl transition-all mb-3"
+        >
+          <span>🤝</span>
+          <span>שתף עם חברים ומשפחה</span>
+        </button>
+        <button
+          onClick={() => navigate('/branches')}
+          className="w-full flex items-center justify-center gap-2 bg-gray-800 hover:bg-gray-700 active:scale-95 border border-gray-600 text-gray-200 font-semibold text-base py-4 rounded-xl transition-all"
+        >
+          <span>📍</span>
+          <span>5 הסניפים הקרובים אלי</span>
+        </button>
       </div>
 
       {/* Product list */}

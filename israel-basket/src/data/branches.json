@@ -5,7 +5,9 @@
     "address": "המפעל 13 אור יהודה",
     "city": "אור יהודה",
     "wazeUrl": "waze://?q=המפעל+13+אור+יהודה",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=המפעל+13+אור+יהודה"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=המפעל+13+אור+יהודה",
+    "lat": 32.034363,
+    "lng": 34.849128
   },
   {
     "format": "מרקט",
@@ -13,7 +15,9 @@
     "address": "בית\"ר פינת ינובסקי  4 י-ם",
     "city": "ירושלים",
     "wazeUrl": "waze://?q=בית\"ר+פינת+ינובסקי++4+י-ם",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=בית\"ר+פינת+ינובסקי++4+י-ם"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=בית\"ר+פינת+ינובסקי++4+י-ם",
+    "lat": 31.778847,
+    "lng": 35.225786
   },
   {
     "format": "מרקט",
@@ -21,7 +25,9 @@
     "address": "מרכז כלניות  אשדוד",
     "city": "אשדוד",
     "wazeUrl": "waze://?q=מרכז+כלניות++אשדוד",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=מרכז+כלניות++אשדוד"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=מרכז+כלניות++אשדוד",
+    "lat": 31.783661,
+    "lng": 34.653599
   },
   {
     "format": "מרקט",
@@ -29,7 +35,9 @@
     "address": "רח' ניצנים 39, מגדל העמק",
     "city": "מגדל העמק",
     "wazeUrl": "waze://?q=רח'+ניצנים+39,+מגדל+העמק",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=רח'+ניצנים+39,+מגדל+העמק"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=רח'+ניצנים+39,+מגדל+העמק",
+    "lat": 32.676574,
+    "lng": 35.241324
   },
   {
     "format": "מרקט",
@@ -37,7 +45,9 @@
     "address": "בר כוכבא 63 ,פתח תקווה",
     "city": "פתח תקווה",
     "wazeUrl": "waze://?q=בר+כוכבא+63+,פתח+תקווה",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=בר+כוכבא+63+,פתח+תקווה"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=בר+כוכבא+63+,פתח+תקווה",
+    "lat": 32.09653,
+    "lng": 34.885532
   },
   {
     "format": "מרקט",
@@ -45,7 +55,9 @@
     "address": "ניון אביה -מבצע יואב פינת שאול המלך ב\"ש",
     "city": "באר שבע",
     "wazeUrl": "waze://?q=ניון+אביה+-מבצע+יואב+פינת+שאול+המלך+ב\"ש",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=ניון+אביה+-מבצע+יואב+פינת+שאול+המלך+ב\"ש"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=ניון+אביה+-מבצע+יואב+פינת+שאול+המלך+ב\"ש",
+    "lat": 31.245744,
+    "lng": 34.792518
   },
   {
     "format": "מרקט",
@@ -53,7 +65,9 @@
     "address": "קיבוץ גלויות 5 אשקלון",
     "city": "אשקלון",
     "wazeUrl": "waze://?q=קיבוץ+גלויות+5+אשקלון",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=קיבוץ+גלויות+5+אשקלון"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=קיבוץ+גלויות+5+אשקלון",
+    "lat": 31.66568,
+    "lng": 34.566874
   },
   {
     "format": "מרקט",
@@ -61,7 +75,9 @@
     "address": "רח' שד' הנשיא מרכז הכרמל חיפה",
     "city": "חיפה",
     "wazeUrl": "waze://?q=רח'+שד'+הנשיא+מרכז+הכרמל+חיפה",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=רח'+שד'+הנשיא+מרכז+הכרמל+חיפה"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=רח'+שד'+הנשיא+מרכז+הכרמל+חיפה",
+    "lat": 32.819122,
+    "lng": 34.998386
   },
   {
     "format": "מרקט",
@@ -69,7 +85,9 @@
     "address": "דרך ראשית 672, כיכר חמוד אל-קארה",
     "city": "דליית אל כרמל",
     "wazeUrl": "waze://?q=דרך+ראשית+672,+כיכר+חמוד+אל-קארה",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=דרך+ראשית+672,+כיכר+חמוד+אל-קארה"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=דרך+ראשית+672,+כיכר+חמוד+אל-קארה",
+    "lat": 32.692239,
+    "lng": 35.048279
   },
   {
     "format": "מרקט",
@@ -77,7 +95,9 @@
     "address": "רח' כורזין 1 גבעתיים",
     "city": "גבעתיים",
     "wazeUrl": "waze://?q=רח'+כורזין+1+גבעתיים",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=רח'+כורזין+1+גבעתיים"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=רח'+כורזין+1+גבעתיים",
+    "lat": 32.072961,
+    "lng": 34.811328
   },
   {
     "format": "מרקט",
@@ -85,7 +105,9 @@
     "address": "שדרות הרצל 45 , רמלה",
     "city": "רמלה",
     "wazeUrl": "waze://?q=שדרות+הרצל+45+,+רמלה",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=שדרות+הרצל+45+,+רמלה"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=שדרות+הרצל+45+,+רמלה",
+    "lat": 31.928916,
+    "lng": 34.871037
   },
   {
     "format": "מרקט",
@@ -93,7 +115,9 @@
     "address": "שלמה שרירא 3,מעלות תרשיחא",
     "city": "מעלות תרשיחא",
     "wazeUrl": "waze://?q=שלמה+שרירא+3,מעלות+תרשיחא",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=שלמה+שרירא+3,מעלות+תרשיחא"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=שלמה+שרירא+3,מעלות+תרשיחא",
+    "lat": 33.019899,
+    "lng": 35.283323
   },
   {
     "format": "מרקט",
@@ -101,7 +125,9 @@
     "address": "רחוב החלמונית 29, ראשל\"צ",
     "city": "ראשון לציון",
     "wazeUrl": "waze://?q=רחוב+החלמונית+29,+ראשל\"צ",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=רחוב+החלמונית+29,+ראשל\"צ"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=רחוב+החלמונית+29,+ראשל\"צ",
+    "lat": 31.974769,
+    "lng": 34.778334
   },
   {
     "format": "מרקט",
@@ -109,7 +135,9 @@
     "address": "שטמפפר 73, פינת אבניאל פ\"ת",
     "city": "פתח תקווה",
     "wazeUrl": "waze://?q=שטמפפר+73,+פינת+אבניאל+פ\"ת",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=שטמפפר+73,+פינת+אבניאל+פ\"ת"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=שטמפפר+73,+פינת+אבניאל+פ\"ת",
+    "lat": 32.087764,
+    "lng": 34.885998
   },
   {
     "format": "מרקט",
@@ -117,7 +145,9 @@
     "address": "ארבע עונות 14 לוד",
     "city": "לוד",
     "wazeUrl": "waze://?q=ארבע+עונות+14+לוד",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=ארבע+עונות+14+לוד"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=ארבע+עונות+14+לוד",
+    "lat": 31.958847,
+    "lng": 34.880364
   },
   {
     "format": "מרקט",
@@ -125,7 +155,9 @@
     "address": "שדרות ירושלים 5 אשקלון",
     "city": "אשקלון",
     "wazeUrl": "waze://?q=שדרות+ירושלים+5+אשקלון",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=שדרות+ירושלים+5+אשקלון"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=שדרות+ירושלים+5+אשקלון",
+    "lat": 31.697733,
+    "lng": 34.57829
   },
   {
     "format": "מרקט",
@@ -133,7 +165,9 @@
     "address": "רחוב  עמק בית שאן 29  , מודיעין",
     "city": "מודיעין",
     "wazeUrl": "waze://?q=רחוב++עמק+בית+שאן+29++,+מודיעין",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=רחוב++עמק+בית+שאן+29++,+מודיעין"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=רחוב++עמק+בית+שאן+29++,+מודיעין",
+    "lat": 31.895278,
+    "lng": 34.989231
   },
   {
     "format": "מרקט",
@@ -141,7 +175,9 @@
     "address": "רח' אבא אחימאיר 1, קרית-מנחם, רמלה",
     "city": "רמלה",
     "wazeUrl": "waze://?q=רח'+אבא+אחימאיר+1,+קרית-מנחם,+רמלה",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=רח'+אבא+אחימאיר+1,+קרית-מנחם,+רמלה"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=רח'+אבא+אחימאיר+1,+קרית-מנחם,+רמלה",
+    "lat": 31.927999,
+    "lng": 34.862347
   },
   {
     "format": "מרקט",
@@ -149,7 +185,9 @@
     "address": "דואני 42, יבנה",
     "city": "יבנה",
     "wazeUrl": "waze://?q=דואני+42,+יבנה",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=דואני+42,+יבנה"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=דואני+42,+יבנה",
+    "lat": 31.86926,
+    "lng": 34.744141
   },
   {
     "format": "מרקט",
@@ -157,7 +195,9 @@
     "address": "רחוב קלאוזנר 10 רמלה",
     "city": "רמלה",
     "wazeUrl": "waze://?q=רחוב+קלאוזנר+10+רמלה",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=רחוב+קלאוזנר+10+רמלה"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=רחוב+קלאוזנר+10+רמלה",
+    "lat": 31.927999,
+    "lng": 34.862347
   },
   {
     "format": "מרקט",
@@ -165,7 +205,9 @@
     "address": "הארי 12, נתניה",
     "city": "נתניה",
     "wazeUrl": "waze://?q=הארי+12,+נתניה",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=הארי+12,+נתניה"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=הארי+12,+נתניה",
+    "lat": 32.28623,
+    "lng": 34.866048
   },
   {
     "format": "מרקט",
@@ -173,7 +215,9 @@
     "address": "רחוב שדרות מחנה 80 ,מספר 4, כרכור",
     "city": "כרכור",
     "wazeUrl": "waze://?q=רחוב+שדרות+מחנה+80+,מספר+4,+כרכור",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=רחוב+שדרות+מחנה+80+,מספר+4,+כרכור"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=רחוב+שדרות+מחנה+80+,מספר+4,+כרכור",
+    "lat": 31.346474,
+    "lng": 34.76732
   },
   {
     "format": "מרקט",
@@ -181,7 +225,9 @@
     "address": "רח' קיבוץ גלויות פינת הרצל 1 גן יבנה",
     "city": "גן יבנה",
     "wazeUrl": "waze://?q=רח'+קיבוץ+גלויות+פינת+הרצל+1+גן+יבנה",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=רח'+קיבוץ+גלויות+פינת+הרצל+1+גן+יבנה"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=רח'+קיבוץ+גלויות+פינת+הרצל+1+גן+יבנה",
+    "lat": 31.787109,
+    "lng": 34.709663
   },
   {
     "format": "מרקט",
@@ -189,7 +235,9 @@
     "address": "העצמאות21 בית אליעזר-חדרה",
     "city": "חדרה",
     "wazeUrl": "waze://?q=העצמאות21+בית+אליעזר-חדרה",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=העצמאות21+בית+אליעזר-חדרה"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=העצמאות21+בית+אליעזר-חדרה",
+    "lat": 32.440742,
+    "lng": 34.940105
   },
   {
     "format": "מרקט",
@@ -197,7 +245,9 @@
     "address": "מרכז גולן, אחוזה 198, רעננה",
     "city": "רעננה",
     "wazeUrl": "waze://?q=מרכז+גולן,+אחוזה+198,+רעננה",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=מרכז+גולן,+אחוזה+198,+רעננה"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=מרכז+גולן,+אחוזה+198,+רעננה",
+    "lat": 32.186024,
+    "lng": 34.867836
   },
   {
     "format": "מרקט",
@@ -205,7 +255,9 @@
     "address": "חטיבת גולני 41 ,אילת",
     "city": "אילת",
     "wazeUrl": "waze://?q=חטיבת+גולני+41+,אילת",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=חטיבת+גולני+41+,אילת"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=חטיבת+גולני+41+,אילת",
+    "lat": 29.562105,
+    "lng": 34.955266
   },
   {
     "format": "מרקט",
@@ -213,7 +265,9 @@
     "address": "רחוב גולני 43",
     "city": "אילת",
     "wazeUrl": "waze://?q=רחוב+גולני+43",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=רחוב+גולני+43"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=רחוב+גולני+43",
+    "lat": 29.556935,
+    "lng": 34.949795
   },
   {
     "format": "מרקט",
@@ -221,7 +275,9 @@
     "address": "הרצל 19 ,יבנה",
     "city": "יבנה",
     "wazeUrl": "waze://?q=הרצל+19+,יבנה",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=הרצל+19+,יבנה"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=הרצל+19+,יבנה",
+    "lat": 31.869874,
+    "lng": 34.731102
   },
   {
     "format": "מרקט",
@@ -229,7 +285,9 @@
     "address": "יהושוע בן נון 77 , ראש העין",
     "city": "ראש העין",
     "wazeUrl": "waze://?q=יהושוע+בן+נון+77+,+ראש+העין",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=יהושוע+בן+נון+77+,+ראש+העין"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=יהושוע+בן+נון+77+,+ראש+העין",
+    "lat": 32.095293,
+    "lng": 34.953322
   },
   {
     "format": "מרקט",
@@ -237,7 +295,9 @@
     "address": "טשרניחובסקי 4, קריית שמונה",
     "city": "קריית שמונה",
     "wazeUrl": "waze://?q=טשרניחובסקי+4,+קריית+שמונה",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=טשרניחובסקי+4,+קריית+שמונה"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=טשרניחובסקי+4,+קריית+שמונה",
+    "lat": 33.211141,
+    "lng": 35.568706
   },
   {
     "format": "מרקט",
@@ -245,7 +305,9 @@
     "address": "שד' האמרואים 28 , בית שמש",
     "city": "בית שמש",
     "wazeUrl": "waze://?q=שד'+האמרואים+28+,+בית+שמש",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=שד'+האמרואים+28+,+בית+שמש"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=שד'+האמרואים+28+,+בית+שמש",
+    "lat": 31.746214,
+    "lng": 34.988683
   },
   {
     "format": "היפר",
@@ -253,7 +315,9 @@
     "address": "האילן 1 אור עקיבא",
     "city": "אור עקיבא",
     "wazeUrl": "waze://?q=האילן+1+אור+עקיבא",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=האילן+1+אור+עקיבא"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=האילן+1+אור+עקיבא",
+    "lat": 32.515569,
+    "lng": 34.922572
   },
   {
     "format": "היפר",
@@ -261,7 +325,9 @@
     "address": "יגאל אלון 1 , בית שמש",
     "city": "בית שמש",
     "wazeUrl": "waze://?q=יגאל+אלון+1+,+בית+שמש",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=יגאל+אלון+1+,+בית+שמש"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=יגאל+אלון+1+,+בית+שמש",
+    "lat": 31.755957,
+    "lng": 34.989832
   },
   {
     "format": "היפר",
@@ -269,7 +335,9 @@
     "address": "זרחין 12 רעננה",
     "city": "רעננה",
     "wazeUrl": "waze://?q=זרחין+12+רעננה",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=זרחין+12+רעננה"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=זרחין+12+רעננה",
+    "lat": 32.198121,
+    "lng": 34.882349
   },
   {
     "format": "היפר",
@@ -277,7 +345,9 @@
     "address": "התעשיה 60, ערד",
     "city": "ערד",
     "wazeUrl": "waze://?q=התעשיה+60,+ערד",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=התעשיה+60,+ערד"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=התעשיה+60,+ערד",
+    "lat": 31.246741,
+    "lng": 35.196083
   },
   {
     "format": "היפר",
@@ -285,7 +355,9 @@
     "address": "בית שאן א.ת צפוני",
     "city": "בית שאן",
     "wazeUrl": "waze://?q=בית+שאן+א.ת+צפוני",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=בית+שאן+א.ת+צפוני"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=בית+שאן+א.ת+צפוני",
+    "lat": 32.496752,
+    "lng": 35.497302
   },
   {
     "format": "היפר",
@@ -293,7 +365,9 @@
     "address": "השיטה 4, כפר סבא",
     "city": "כפר סבא",
     "wazeUrl": "waze://?q=השיטה+4,+כפר+סבא",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=השיטה+4,+כפר+סבא"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=השיטה+4,+כפר+סבא",
+    "lat": 32.175973,
+    "lng": 34.933409
   },
   {
     "format": "היפר",
@@ -301,7 +375,9 @@
     "address": "קניון פנינת הנגב א\"ת דרומי",
     "city": "שדרות",
     "wazeUrl": "waze://?q=קניון+פנינת+הנגב+א\"ת+דרומי",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=קניון+פנינת+הנגב+א\"ת+דרומי"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=קניון+פנינת+הנגב+א\"ת+דרומי",
+    "lat": 31.531263,
+    "lng": 34.594281
   },
   {
     "format": "היפר",
@@ -309,7 +385,9 @@
     "address": "הפנינים 28 ,אשקלון",
     "city": "אשקלון",
     "wazeUrl": "waze://?q=הפנינים+28+,אשקלון",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=הפנינים+28+,אשקלון"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=הפנינים+28+,אשקלון",
+    "lat": 31.667321,
+    "lng": 34.601532
   },
   {
     "format": "היפר",
@@ -317,7 +395,9 @@
     "address": "קניון סינימה סיטי, החיטה 1 באר שבע",
     "city": "באר שבע",
     "wazeUrl": "waze://?q=קניון+סינימה+סיטי,+החיטה+1+באר+שבע",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=קניון+סינימה+סיטי,+החיטה+1+באר+שבע"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=קניון+סינימה+סיטי,+החיטה+1+באר+שבע",
+    "lat": 31.245744,
+    "lng": 34.792518
   },
   {
     "format": "היפר",
@@ -325,7 +405,9 @@
     "address": "שדרות מנחם בגין 53 , עפולה",
     "city": "עפולה",
     "wazeUrl": "waze://?q=שדרות+מנחם+בגין+53+,+עפולה",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=שדרות+מנחם+בגין+53+,+עפולה"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=שדרות+מנחם+בגין+53+,+עפולה",
+    "lat": 32.603829,
+    "lng": 35.298516
   },
   {
     "format": "היפר",
@@ -333,7 +415,9 @@
     "address": "בעלי המלאכה 3 , נתיבות",
     "city": "נתיבות",
     "wazeUrl": "waze://?q=בעלי+המלאכה+3+,+נתיבות",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=בעלי+המלאכה+3+,+נתיבות"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=בעלי+המלאכה+3+,+נתיבות",
+    "lat": 31.41931,
+    "lng": 34.598398
   },
   {
     "format": "היפר",
@@ -341,7 +425,9 @@
     "address": "האומן 14, ירושלים",
     "city": "ירושלים",
     "wazeUrl": "waze://?q=האומן+14,+ירושלים",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=האומן+14,+ירושלים"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=האומן+14,+ירושלים",
+    "lat": 31.750153,
+    "lng": 35.209877
   },
   {
     "format": "היפר",
@@ -349,7 +435,9 @@
     "address": "בצלאל 1 , אופקים",
     "city": "אופקים",
     "wazeUrl": "waze://?q=בצלאל+1+,+אופקים",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=בצלאל+1+,+אופקים"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=בצלאל+1+,+אופקים",
+    "lat": 31.311981,
+    "lng": 34.628739
   },
   {
     "format": "מהדרין",
@@ -357,7 +445,9 @@
     "address": "הלל יפה 5 פינת סמילנסקי",
     "city": "חדרה",
     "wazeUrl": "waze://?q=הלל+יפה+5+פינת+סמילנסקי",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=הלל+יפה+5+פינת+סמילנסקי"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=הלל+יפה+5+פינת+סמילנסקי",
+    "lat": 32.440742,
+    "lng": 34.940105
   },
   {
     "format": "מהדרין",
@@ -365,7 +455,9 @@
     "address": "בן זכאי 32, אלעד",
     "city": "אלעד",
     "wazeUrl": "waze://?q=בן+זכאי+32,+אלעד",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=בן+זכאי+32,+אלעד"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=בן+זכאי+32,+אלעד",
+    "lat": 32.048461,
+    "lng": 34.96588
   },
   {
     "format": "מהדרין",
@@ -373,7 +465,9 @@
     "address": "נחל השורק 23, בית שמש",
     "city": "בית שמש",
     "wazeUrl": "waze://?q=נחל+השורק+23,+בית+שמש",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=נחל+השורק+23,+בית+שמש"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=נחל+השורק+23,+בית+שמש",
+    "lat": 31.746214,
+    "lng": 34.988683
   },
   {
     "format": "מהדרין",
@@ -381,7 +475,9 @@
     "address": "הרצל 97 חיפה",
     "city": "חיפה",
     "wazeUrl": "waze://?q=הרצל+97+חיפה",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=הרצל+97+חיפה"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=הרצל+97+חיפה",
+    "lat": 32.80481,
+    "lng": 35.003467
   },
   {
     "format": "מהדרין",
@@ -389,7 +485,9 @@
     "address": "ריינס 6 שכונת ק. משה",
     "city": "ירושלים",
     "wazeUrl": "waze://?q=ריינס+6+שכונת+ק.+משה",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=ריינס+6+שכונת+ק.+משה"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=ריינס+6+שכונת+ק.+משה",
+    "lat": 31.778847,
+    "lng": 35.225786
   },
   {
     "format": "מהדרין",
@@ -397,6 +495,8 @@
     "address": "דרך מנחם בגין 96, פ\"ת",
     "city": "פתח תקווה",
     "wazeUrl": "waze://?q=דרך+מנחם+בגין+96,+פ\"ת",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=דרך+מנחם+בגין+96,+פ\"ת"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=דרך+מנחם+בגין+96,+פ\"ת",
+    "lat": 32.087764,
+    "lng": 34.885998
   }
 ]

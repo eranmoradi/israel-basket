@@ -19,6 +19,8 @@ export interface Branch {
   city: string
   wazeUrl: string
   mapsUrl: string
+  lat?: number
+  lng?: number
 }
 
 export interface ChainPrice {

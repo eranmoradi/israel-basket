@@ -36,6 +36,7 @@ cd israel-basket && npm run preview   # serve dist/
 python3 scripts/convert_excel.py      # Excel → products.json + branches.json
 python3 scripts/fetch_prices.py       # CHP scrape → prices.json (~5 min, 100 products)
 python3 -u scripts/fetch_chain_prices.py  # 4-chain scrape → chain_prices.json (~7 min)
+python3 scripts/geocode_branches.py   # add lat/lng to branches.json (one-time; re-run after convert_excel.py)
 ```
 
 No test suite or linter is configured.
@@ -62,9 +63,13 @@ Custom slash commands live in `.claude/commands/`. Type the command in Claude Co
 |------|------|---------|
 | `/` | `HomePage` | Landing |
 | `/products` | `ProductsPage` | Browse + add to basket |
-| `/basket` | `BasketPage` | Review basket + cheapest competitor per item |
-| `/compare` | `ComparePage` | Full price comparison table across 4 chains |
+| `/basket` | `BasketPage` | Review basket + single cheapest chain comparison |
+| `/compare` | `ComparePage` | Full price comparison table (שופרסל, רמי לוי, יוחננוף) |
 | `/branches` | `BranchesPage` | 50 Carrefour locations |
+
+**Layout:** `App.tsx` renders `Header` (logo only) + `BottomNav` (fixed bottom tab bar, 4 tabs) + `BasketBar` (floating strip above BottomNav, shown globally except on `/basket`, only when basket has items). The app wrapper applies dynamic bottom padding (`pb-16` / `pb-32`) based on whether BasketBar is visible.
+
+**BasketPage comparison logic:** Finds the cheapest *single chain* for the full basket. First pass: chains with 100% product coverage, pick lowest total. Second pass (fallback): if no chain covers all items, show the best-coverage chain with a gray "partial" indicator and no savings row.
 
 **State:** Zustand store (`src/store/basketStore.ts`) holds `Map<id, Product>`. `total` and `count` are eagerly recomputed on every `toggle`. The store does NOT persist to localStorage.
 
@@ -79,7 +84,7 @@ Custom slash commands live in `.claude/commands/`. Type the command in Claude Co
 | `products.json` | `convert_excel.py` | 116 entries: 107 branded + 9 basic |
 | `branches.json` | `convert_excel.py` | 50 Carrefour branches |
 | `prices.json` | `fetch_prices.py` | All chains via chp.co.il, coverage varies |
-| `chain_prices.json` | `fetch_chain_prices.py` | 4 chains: שופרסל 98%, רמי לוי 97%, יוחננוף 95%, חצי חינם 34% |
+| `chain_prices.json` | `fetch_chain_prices.py` | 4 chains scraped: שופרסל 98%, רמי לוי 97%, יוחננוף 95%, חצי חינם 34%. UI only displays the first 3 — חצי חינם excluded due to low coverage. |
 
 **`groupId` is the join key** between `products.json` and `chain_prices.json`. The 4-chain data has one entry per `groupId` (representative barcode only), while `products.json` has multiple rows per group for size variants.
 
@@ -98,14 +103,17 @@ The 4 chains in `fetch_chain_prices.py` are fetched via reverse-engineered APIs:
 
 **sal-snifim.xlsx:** Sheet `סיכום`, data from row 4. City extracted from branch name via `KNOWN_CITIES` + `CITY_ALIASES` in the script — update these if new cities are added.
 
-## Planned: GitHub Actions — Daily Price Update
+## Deployment & CI
 
-**מטרה:** להריץ את `fetch_chain_prices.py` אוטומטית כל לילה ולעשות commit על `chain_prices.json`, כך שהנתונים תמיד עדכניים בלי צורך ב-`/update-prices` ידני.
+**Live site:** https://israelbasket.app (custom domain, served via GitHub Pages)
 
-**צעדים ליישום:**
-1. צור `.github/workflows/update-prices.yml`
-2. Trigger: `schedule: cron: '0 2 * * *'` (02:00 UTC = 04:00–05:00 ישראל)
-3. Steps: checkout → setup Python → `pip install requests` → `python3 scripts/fetch_chain_prices.py` → commit + push אם `chain_prices.json` השתנה
-4. דרוש: `GITHUB_TOKEN` (קיים אוטומטית ב-Actions) עם הרשאת write לתוכן
+**Two GitHub Actions workflows** (`.github/workflows/`):
 
-**הערה:** הקובץ `chain_prices.json` נמצא ב-`israel-basket/src/data/` — שזה build artifact שמגיע מ-git, ולא נוצר בזמן build.
+| Workflow | Trigger | What it does |
+|----------|---------|--------------|
+| `deploy.yml` | push to `main` | `npm ci` → `npm run build` → deploy `dist/` to `gh-pages` branch |
+| `update-prices.yml` | daily 02:00 UTC (04:00–05:00 IL) + manual dispatch | runs `fetch_chain_prices.py` → commits updated `chain_prices.json` if changed |
+
+`chain_prices.json` lives in `israel-basket/src/data/` — it's a git-tracked build input, not generated at build time. The daily workflow keeps it fresh automatically; `/update-prices` is only needed for manual on-demand refreshes.
+
+Python scripts require `pip install requests` (no other dependencies).

@@ -171,20 +171,23 @@ export default function ComparePage() {
         </div>
 
         {/* Department chips */}
-        <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-hide">
-          {DEPARTMENTS.map((d) => (
-            <button
-              key={d}
-              onClick={() => setDept(d)}
-              className={`shrink-0 text-xs font-medium px-3 py-1.5 rounded-full border transition-colors whitespace-nowrap ${
-                dept === d
-                  ? 'bg-blue-700 text-white border-blue-700'
-                  : 'bg-gray-800 text-gray-300 border-gray-600 hover:border-blue-500'
-              }`}
-            >
-              {d}
-            </button>
-          ))}
+        <div className="relative">
+          <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-hide">
+            {DEPARTMENTS.map((d) => (
+              <button
+                key={d}
+                onClick={() => setDept(d)}
+                className={`shrink-0 text-xs font-medium px-3 py-1.5 rounded-full border transition-colors whitespace-nowrap ${
+                  dept === d
+                    ? 'bg-blue-700 text-white border-blue-700'
+                    : 'bg-gray-800 text-gray-300 border-gray-600 hover:border-blue-500'
+                }`}
+              >
+                {d}
+              </button>
+            ))}
+          </div>
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-8 bg-gradient-to-r from-gray-950 to-transparent" />
         </div>
       </div>
 
@@ -197,11 +200,12 @@ export default function ComparePage() {
           <p>לא נמצאו מוצרים</p>
         </div>
       ) : (
+        <div className="relative">
         <div className="overflow-x-auto rounded-xl border border-gray-700 shadow-sm">
           <table className="w-full text-sm border-collapse">
             <thead>
               <tr className="bg-gray-800">
-                <th className="text-right px-3 py-2.5 font-semibold text-gray-300 w-44 border-b border-gray-700">
+                <th className="sticky right-0 z-10 bg-gray-800 text-right px-3 py-2.5 font-semibold text-gray-300 w-44 border-b border-gray-700">
                   מוצר
                 </th>
                 {CHAINS.map((chain) => (
@@ -226,7 +230,7 @@ export default function ComparePage() {
                     key={item.barcode}
                     className={idx % 2 === 0 ? 'bg-gray-900 hover:bg-gray-800' : 'bg-gray-900/50 hover:bg-gray-800'}
                   >
-                    <td className="px-3 py-2.5 border-b border-gray-800">
+                    <td className={`sticky right-0 z-10 px-3 py-2.5 border-b border-gray-800 ${idx % 2 === 0 ? 'bg-gray-900' : 'bg-[#0d1117]'}`}>
                       <div className="font-medium text-gray-200 leading-tight text-xs">{item.name}</div>
                       {dept && (
                         <div className="text-gray-600 text-[10px] mt-0.5">{dept}</div>
@@ -252,13 +256,16 @@ export default function ComparePage() {
             </tbody>
           </table>
         </div>
+        {/* scroll hint — left-edge fade in RTL signals hidden content */}
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-10 rounded-l-xl bg-gradient-to-r from-gray-950 to-transparent" />
+        </div>
       )}
 
       {/* Totals row */}
       {sorted.length > 1 && (
         <div className="mt-4 p-4 bg-gray-900 rounded-xl border border-gray-700">
           <div className="text-sm font-semibold text-gray-300 mb-3">סכום לסל (מוצרים עם מחיר בלבד)</div>
-          <div className="grid grid-cols-3 gap-3">
+          <div className="grid grid-cols-2 gap-3">
             {CHAINS.map((chain) => {
               const total = sorted.reduce((sum, item) => {
                 const cp = getChainPrice(item, chain)

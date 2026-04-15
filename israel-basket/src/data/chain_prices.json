@@ -1,6 +1,7 @@
 {
-  "fetched_at": "2026-04-15T08:20:03.666645+00:00",
+  "fetched_at": "2026-04-15T09:12:57.597423+00:00",
   "chains": [
+    "קרפור",
     "שופרסל",
     "רמי לוי",
     "יוחננוף",
@@ -9,9 +10,10 @@
   "product_count": 100,
   "error_count": 0,
   "coverage": {
+    "קרפור": 100,
     "שופרסל": 98,
     "רמי לוי": 97,
-    "יוחננוף": 96,
+    "יוחננוף": 95,
     "חצי חינם": 31
   },
   "products": [
@@ -34,6 +36,11 @@
           "regular": 42.3,
           "sale": null,
           "effective": 42.3
+        },
+        "קרפור": {
+          "regular": 31.9,
+          "sale": null,
+          "effective": 31.9
         },
         "חצי חינם": null
       }
@@ -58,6 +65,11 @@
           "sale": null,
           "effective": 19.9
         },
+        "קרפור": {
+          "regular": 16.0,
+          "sale": null,
+          "effective": 16.0
+        },
         "חצי חינם": null
       }
     },
@@ -80,6 +92,11 @@
           "regular": 11.9,
           "sale": null,
           "effective": 11.9
+        },
+        "קרפור": {
+          "regular": 7.0,
+          "sale": null,
+          "effective": 7.0
         },
         "חצי חינם": {
           "regular": 11.9,
@@ -108,6 +125,11 @@
           "sale": null,
           "effective": 14.9
         },
+        "קרפור": {
+          "regular": 6.9,
+          "sale": null,
+          "effective": 6.9
+        },
         "חצי חינם": null
       }
     },
@@ -131,6 +153,11 @@
           "sale": null,
           "effective": 5.9
         },
+        "קרפור": {
+          "regular": 3.9,
+          "sale": null,
+          "effective": 3.9
+        },
         "חצי חינם": null
       }
     },
@@ -150,6 +177,11 @@
           "effective": 15.7
         },
         "יוחננוף": null,
+        "קרפור": {
+          "regular": 8.9,
+          "sale": null,
+          "effective": 8.9
+        },
         "חצי חינם": {
           "regular": 17.1,
           "sale": null,
@@ -177,6 +209,11 @@
           "sale": null,
           "effective": 14.9
         },
+        "קרפור": {
+          "regular": 6.9,
+          "sale": null,
+          "effective": 6.9
+        },
         "חצי חינם": null
       }
     },
@@ -200,6 +237,11 @@
           "sale": null,
           "effective": 8.9
         },
+        "קרפור": {
+          "regular": 3.9,
+          "sale": null,
+          "effective": 3.9
+        },
         "חצי חינם": null
       }
     },
@@ -219,6 +261,11 @@
           "effective": 9.4
         },
         "יוחננוף": null,
+        "קרפור": {
+          "regular": 4.9,
+          "sale": null,
+          "effective": 4.9
+        },
         "חצי חינם": null
       }
     },
@@ -241,6 +288,11 @@
           "regular": 8.9,
           "sale": null,
           "effective": 8.9
+        },
+        "קרפור": {
+          "regular": 3.9,
+          "sale": null,
+          "effective": 3.9
         },
         "חצי חינם": null
       }
@@ -265,6 +317,11 @@
           "sale": null,
           "effective": 29.9
         },
+        "קרפור": {
+          "regular": 21.9,
+          "sale": null,
+          "effective": 21.9
+        },
         "חצי חינם": null
       }
     },
@@ -287,6 +344,11 @@
           "regular": 15.9,
           "sale": null,
           "effective": 15.9
+        },
+        "קרפור": {
+          "regular": 9.9,
+          "sale": null,
+          "effective": 9.9
         },
         "חצי חינם": {
           "regular": 13.5,
@@ -315,6 +377,11 @@
           "sale": null,
           "effective": 7.5
         },
+        "קרפור": {
+          "regular": 5.5,
+          "sale": null,
+          "effective": 5.5
+        },
         "חצי חינם": null
       }
     },
@@ -338,6 +405,11 @@
           "sale": null,
           "effective": 51.9
         },
+        "קרפור": {
+          "regular": 29.9,
+          "sale": null,
+          "effective": 29.9
+        },
         "חצי חינם": null
       }
     },
@@ -360,6 +432,11 @@
           "regular": 27.9,
           "sale": null,
           "effective": 27.9
+        },
+        "קרפור": {
+          "regular": 22.9,
+          "sale": null,
+          "effective": 22.9
         },
         "חצי חינם": {
           "regular": 29.4,
@@ -388,6 +465,11 @@
           "sale": null,
           "effective": 19.9
         },
+        "קרפור": {
+          "regular": 17.9,
+          "sale": null,
+          "effective": 17.9
+        },
         "חצי חינם": null
       }
     },
@@ -410,6 +492,11 @@
           "regular": 12.9,
           "sale": null,
           "effective": 12.9
+        },
+        "קרפור": {
+          "regular": 8.9,
+          "sale": null,
+          "effective": 8.9
         },
         "חצי חינם": null
       }
@@ -434,6 +521,11 @@
           "sale": null,
           "effective": 4.5
         },
+        "קרפור": {
+          "regular": 3.1,
+          "sale": null,
+          "effective": 3.1
+        },
         "חצי חינם": null
       }
     },
@@ -456,6 +548,11 @@
           "regular": 4.5,
           "sale": null,
           "effective": 4.5
+        },
+        "קרפור": {
+          "regular": 3.0,
+          "sale": null,
+          "effective": 3.0
         },
         "חצי חינם": null
       }
@@ -480,6 +577,11 @@
           "sale": null,
           "effective": 4
         },
+        "קרפור": {
+          "regular": 2.5,
+          "sale": null,
+          "effective": 2.5
+        },
         "חצי חינם": null
       }
     },
@@ -499,6 +601,11 @@
           "sale": null,
           "effective": 13.9
         },
+        "קרפור": {
+          "regular": 8.9,
+          "sale": null,
+          "effective": 8.9
+        },
         "חצי חינם": null
       }
     },
@@ -517,6 +624,11 @@
           "regular": 19.9,
           "sale": null,
           "effective": 19.9
+        },
+        "קרפור": {
+          "regular": 13.9,
+          "sale": null,
+          "effective": 13.9
         },
         "חצי חינם": null
       }
@@ -541,6 +653,11 @@
           "sale": null,
           "effective": 16.9
         },
+        "קרפור": {
+          "regular": 11.5,
+          "sale": null,
+          "effective": 11.5
+        },
         "חצי חינם": null
       }
     },
@@ -563,6 +680,11 @@
           "regular": 25.9,
           "sale": null,
           "effective": 25.9
+        },
+        "קרפור": {
+          "regular": 12.9,
+          "sale": null,
+          "effective": 12.9
         },
         "חצי חינם": {
           "regular": 26.2,
@@ -591,6 +713,11 @@
           "sale": null,
           "effective": 23.9
         },
+        "קרפור": {
+          "regular": 12.9,
+          "sale": null,
+          "effective": 12.9
+        },
         "חצי חינם": null
       }
     },
@@ -610,6 +737,11 @@
           "effective": 16.9
         },
         "יוחננוף": null,
+        "קרפור": {
+          "regular": 16.9,
+          "sale": null,
+          "effective": 16.9
+        },
         "חצי חינם": null
       }
     },
@@ -632,6 +764,11 @@
           "regular": 22.9,
           "sale": null,
           "effective": 22.9
+        },
+        "קרפור": {
+          "regular": 13.9,
+          "sale": null,
+          "effective": 13.9
         },
         "חצי חינם": {
           "regular": 25.2,
@@ -660,6 +797,11 @@
           "sale": null,
           "effective": 17.9
         },
+        "קרפור": {
+          "regular": 8.9,
+          "sale": null,
+          "effective": 8.9
+        },
         "חצי חינם": null
       }
     },
@@ -683,6 +825,11 @@
           "sale": null,
           "effective": 15.9
         },
+        "קרפור": {
+          "regular": 8.9,
+          "sale": null,
+          "effective": 8.9
+        },
         "חצי חינם": null
       }
     },
@@ -702,6 +849,11 @@
           "effective": 7.9
         },
         "יוחננוף": null,
+        "קרפור": {
+          "regular": 7.9,
+          "sale": null,
+          "effective": 7.9
+        },
         "חצי חינם": null
       }
     },
@@ -725,6 +877,11 @@
           "sale": null,
           "effective": 16.9
         },
+        "קרפור": {
+          "regular": 9.9,
+          "sale": null,
+          "effective": 9.9
+        },
         "חצי חינם": null
       }
     },
@@ -747,6 +904,11 @@
           "regular": 13.9,
           "sale": null,
           "effective": 13.9
+        },
+        "קרפור": {
+          "regular": 9.9,
+          "sale": null,
+          "effective": 9.9
         },
         "חצי חינם": {
           "regular": 15.0,
@@ -775,6 +937,11 @@
           "sale": null,
           "effective": 10.9
         },
+        "קרפור": {
+          "regular": 6.5,
+          "sale": null,
+          "effective": 6.5
+        },
         "חצי חינם": null
       }
     },
@@ -797,6 +964,11 @@
           "regular": 11.9,
           "sale": null,
           "effective": 11.9
+        },
+        "קרפור": {
+          "regular": 7.5,
+          "sale": null,
+          "effective": 7.5
         },
         "חצי חינם": null
       }
@@ -821,6 +993,11 @@
           "sale": null,
           "effective": 10.9
         },
+        "קרפור": {
+          "regular": 6.9,
+          "sale": null,
+          "effective": 6.9
+        },
         "חצי חינם": null
       }
     },
@@ -843,6 +1020,11 @@
           "regular": 17.9,
           "sale": null,
           "effective": 17.9
+        },
+        "קרפור": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
         },
         "חצי חינם": null
       }
@@ -867,6 +1049,11 @@
           "sale": null,
           "effective": 10.9
         },
+        "קרפור": {
+          "regular": 7.4,
+          "sale": null,
+          "effective": 7.4
+        },
         "חצי חינם": null
       }
     },
@@ -889,6 +1076,11 @@
           "regular": 32.9,
           "sale": 30.9,
           "effective": 30.9
+        },
+        "קרפור": {
+          "regular": 19.9,
+          "sale": null,
+          "effective": 19.9
         },
         "חצי חינם": {
           "regular": 36.3,
@@ -917,6 +1109,11 @@
           "sale": null,
           "effective": 12.9
         },
+        "קרפור": {
+          "regular": 9.5,
+          "sale": null,
+          "effective": 9.5
+        },
         "חצי חינם": {
           "regular": 13.5,
           "sale": null,
@@ -939,10 +1136,11 @@
           "sale": null,
           "effective": 10.4
         },
-        "יוחננוף": {
-          "regular": 10.9,
+        "יוחננוף": null,
+        "קרפור": {
+          "regular": 7.7,
           "sale": null,
-          "effective": 10.9
+          "effective": 7.7
         },
         "חצי חינם": null
       }
@@ -967,6 +1165,11 @@
           "sale": null,
           "effective": 16.9
         },
+        "קרפור": {
+          "regular": 10.5,
+          "sale": null,
+          "effective": 10.5
+        },
         "חצי חינם": null
       }
     },
@@ -990,6 +1193,11 @@
           "sale": null,
           "effective": 15.9
         },
+        "קרפור": {
+          "regular": 11.0,
+          "sale": null,
+          "effective": 11.0
+        },
         "חצי חינם": null
       }
     },
@@ -1012,6 +1220,11 @@
           "regular": 30.9,
           "sale": null,
           "effective": 30.9
+        },
+        "קרפור": {
+          "regular": 22.6,
+          "sale": null,
+          "effective": 22.6
         },
         "חצי חינם": {
           "regular": 31.2,
@@ -1040,6 +1253,11 @@
           "sale": null,
           "effective": 14.6
         },
+        "קרפור": {
+          "regular": 10.5,
+          "sale": null,
+          "effective": 10.5
+        },
         "חצי חינם": {
           "regular": 16.4,
           "sale": null,
@@ -1067,6 +1285,11 @@
           "sale": null,
           "effective": 7.8
         },
+        "קרפור": {
+          "regular": 5.9,
+          "sale": null,
+          "effective": 5.9
+        },
         "חצי חינם": null
       }
     },
@@ -1090,6 +1313,11 @@
           "sale": null,
           "effective": 8.9
         },
+        "קרפור": {
+          "regular": 6.9,
+          "sale": null,
+          "effective": 6.9
+        },
         "חצי חינם": null
       }
     },
@@ -1112,6 +1340,11 @@
           "regular": 9.5,
           "sale": null,
           "effective": 9.5
+        },
+        "קרפור": {
+          "regular": 7.9,
+          "sale": null,
+          "effective": 7.9
         },
         "חצי חינם": {
           "regular": 10.1,
@@ -1140,6 +1373,11 @@
           "sale": null,
           "effective": 34.9
         },
+        "קרפור": {
+          "regular": 24.9,
+          "sale": null,
+          "effective": 24.9
+        },
         "חצי חינם": null
       }
     },
@@ -1162,6 +1400,11 @@
           "regular": 4.9,
           "sale": null,
           "effective": 4.9
+        },
+        "קרפור": {
+          "regular": 3.9,
+          "sale": null,
+          "effective": 3.9
         },
         "חצי חינם": null
       }
@@ -1186,6 +1429,11 @@
           "sale": null,
           "effective": 18.9
         },
+        "קרפור": {
+          "regular": 13.9,
+          "sale": null,
+          "effective": 13.9
+        },
         "חצי חינם": null
       }
     },
@@ -1208,6 +1456,11 @@
           "regular": 5.9,
           "sale": null,
           "effective": 5.9
+        },
+        "קרפור": {
+          "regular": 4.5,
+          "sale": null,
+          "effective": 4.5
         },
         "חצי חינם": {
           "regular": 6.4,
@@ -1236,6 +1489,11 @@
           "sale": null,
           "effective": 9.6
         },
+        "קרפור": {
+          "regular": 6.9,
+          "sale": null,
+          "effective": 6.9
+        },
         "חצי חינם": null
       }
     },
@@ -1258,6 +1516,11 @@
           "regular": 3.9,
           "sale": null,
           "effective": 3.9
+        },
+        "קרפור": {
+          "regular": 2.9,
+          "sale": null,
+          "effective": 2.9
         },
         "חצי חינם": {
           "regular": 4.0,
@@ -1286,6 +1549,11 @@
           "sale": null,
           "effective": 21.5
         },
+        "קרפור": {
+          "regular": 15.9,
+          "sale": null,
+          "effective": 15.9
+        },
         "חצי חינם": {
           "regular": 21.5,
           "sale": null,
@@ -1313,6 +1581,11 @@
           "sale": null,
           "effective": 3.2
         },
+        "קרפור": {
+          "regular": 1.95,
+          "sale": null,
+          "effective": 1.95
+        },
         "חצי חינם": null
       }
     },
@@ -1335,6 +1608,11 @@
           "regular": 12.3,
           "sale": null,
           "effective": 12.3
+        },
+        "קרפור": {
+          "regular": 8.9,
+          "sale": null,
+          "effective": 8.9
         },
         "חצי חינם": {
           "regular": 12.3,
@@ -1363,6 +1641,11 @@
           "sale": null,
           "effective": 10.6
         },
+        "קרפור": {
+          "regular": 7.9,
+          "sale": null,
+          "effective": 7.9
+        },
         "חצי חינם": null
       }
     },
@@ -1385,6 +1668,11 @@
           "regular": 10.6,
           "sale": null,
           "effective": 10.6
+        },
+        "קרפור": {
+          "regular": 7.5,
+          "sale": null,
+          "effective": 7.5
         },
         "חצי חינם": {
           "regular": 12.2,
@@ -1413,6 +1701,11 @@
           "sale": null,
           "effective": 12.9
         },
+        "קרפור": {
+          "regular": 8.9,
+          "sale": null,
+          "effective": 8.9
+        },
         "חצי חינם": null
       }
     },
@@ -1435,6 +1728,11 @@
           "regular": 6.1,
           "sale": null,
           "effective": 6.1
+        },
+        "קרפור": {
+          "regular": 5.4,
+          "sale": null,
+          "effective": 5.4
         },
         "חצי חינם": {
           "regular": 6.1,
@@ -1463,6 +1761,11 @@
           "sale": null,
           "effective": 10.9
         },
+        "קרפור": {
+          "regular": 7.9,
+          "sale": null,
+          "effective": 7.9
+        },
         "חצי חינם": {
           "regular": 13.1,
           "sale": null,
@@ -1490,6 +1793,11 @@
           "sale": null,
           "effective": 12.9
         },
+        "קרפור": {
+          "regular": 7.9,
+          "sale": null,
+          "effective": 7.9
+        },
         "חצי חינם": null
       }
     },
@@ -1508,6 +1816,11 @@
           "regular": 33.9,
           "sale": null,
           "effective": 33.9
+        },
+        "קרפור": {
+          "regular": 21.9,
+          "sale": null,
+          "effective": 21.9
         },
         "חצי חינם": null
       }
@@ -1532,6 +1845,11 @@
           "sale": null,
           "effective": 19.9
         },
+        "קרפור": {
+          "regular": 11.5,
+          "sale": null,
+          "effective": 11.5
+        },
         "חצי חינם": null
       }
     },
@@ -1554,6 +1872,11 @@
           "regular": 45.9,
           "sale": null,
           "effective": 45.9
+        },
+        "קרפור": {
+          "regular": 28.2,
+          "sale": null,
+          "effective": 28.2
         },
         "חצי חינם": null
       }
@@ -1578,6 +1901,11 @@
           "sale": null,
           "effective": 64.9
         },
+        "קרפור": {
+          "regular": 9.9,
+          "sale": null,
+          "effective": 9.9
+        },
         "חצי חינם": null
       }
     },
@@ -1600,6 +1928,11 @@
           "regular": 10.9,
           "sale": null,
           "effective": 10.9
+        },
+        "קרפור": {
+          "regular": 7.9,
+          "sale": null,
+          "effective": 7.9
         },
         "חצי חינם": {
           "regular": 13.1,
@@ -1628,6 +1961,11 @@
           "sale": null,
           "effective": 14.9
         },
+        "קרפור": {
+          "regular": 9.9,
+          "sale": null,
+          "effective": 9.9
+        },
         "חצי חינם": null
       }
     },
@@ -1650,6 +1988,11 @@
           "regular": 18.9,
           "sale": null,
           "effective": 18.9
+        },
+        "קרפור": {
+          "regular": 13.7,
+          "sale": null,
+          "effective": 13.7
         },
         "חצי חינם": null
       }
@@ -1674,6 +2017,11 @@
           "sale": null,
           "effective": 4.5
         },
+        "קרפור": {
+          "regular": 2.9,
+          "sale": null,
+          "effective": 2.9
+        },
         "חצי חינם": null
       }
     },
@@ -1696,6 +2044,11 @@
           "regular": 8.2,
           "sale": null,
           "effective": 8.2
+        },
+        "קרפור": {
+          "regular": 6.9,
+          "sale": null,
+          "effective": 6.9
         },
         "חצי חינם": null
       }
@@ -1720,6 +2073,11 @@
           "sale": null,
           "effective": 8.2
         },
+        "קרפור": {
+          "regular": 6.9,
+          "sale": null,
+          "effective": 6.9
+        },
         "חצי חינם": null
       }
     },
@@ -1742,6 +2100,11 @@
           "regular": 18.9,
           "sale": null,
           "effective": 18.9
+        },
+        "קרפור": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
         },
         "חצי חינם": null
       }
@@ -1766,6 +2129,11 @@
           "sale": null,
           "effective": 8.6
         },
+        "קרפור": {
+          "regular": 6.5,
+          "sale": null,
+          "effective": 6.5
+        },
         "חצי חינם": null
       }
     },
@@ -1788,6 +2156,11 @@
           "regular": 16.9,
           "sale": null,
           "effective": 16.9
+        },
+        "קרפור": {
+          "regular": 9.9,
+          "sale": null,
+          "effective": 9.9
         },
         "חצי חינם": {
           "regular": 17.2,
@@ -1816,6 +2189,11 @@
           "sale": null,
           "effective": 4.9
         },
+        "קרפור": {
+          "regular": 2.9,
+          "sale": null,
+          "effective": 2.9
+        },
         "חצי חינם": null
       }
     },
@@ -1839,6 +2217,11 @@
           "sale": null,
           "effective": 11.5
         },
+        "קרפור": {
+          "regular": 9.1,
+          "sale": null,
+          "effective": 9.1
+        },
         "חצי חינם": null
       }
     },
@@ -1861,6 +2244,11 @@
           "regular": 5.9,
           "sale": null,
           "effective": 5.9
+        },
+        "קרפור": {
+          "regular": 4.0,
+          "sale": null,
+          "effective": 4.0
         },
         "חצי חינם": {
           "regular": 5.8,
@@ -1889,6 +2277,11 @@
           "sale": null,
           "effective": 18.9
         },
+        "קרפור": {
+          "regular": 12.9,
+          "sale": null,
+          "effective": 12.9
+        },
         "חצי חינם": null
       }
     },
@@ -1912,6 +2305,11 @@
           "sale": null,
           "effective": 35.9
         },
+        "קרפור": {
+          "regular": 29.9,
+          "sale": null,
+          "effective": 29.9
+        },
         "חצי חינם": null
       }
     },
@@ -1934,6 +2332,11 @@
           "regular": 25.9,
           "sale": null,
           "effective": 25.9
+        },
+        "קרפור": {
+          "regular": 21.5,
+          "sale": null,
+          "effective": 21.5
         },
         "חצי חינם": {
           "regular": 26.9,
@@ -1962,6 +2365,11 @@
           "sale": null,
           "effective": 15.9
         },
+        "קרפור": {
+          "regular": 10.5,
+          "sale": null,
+          "effective": 10.5
+        },
         "חצי חינם": null
       }
     },
@@ -1980,6 +2388,11 @@
           "regular": 12.9,
           "sale": null,
           "effective": 12.9
+        },
+        "קרפור": {
+          "regular": 7.9,
+          "sale": null,
+          "effective": 7.9
         },
         "חצי חינם": {
           "regular": 13.1,
@@ -2008,6 +2421,11 @@
           "sale": null,
           "effective": 15.9
         },
+        "קרפור": {
+          "regular": 9.9,
+          "sale": null,
+          "effective": 9.9
+        },
         "חצי חינם": {
           "regular": 16.1,
           "sale": 7.9,
@@ -2035,6 +2453,11 @@
           "sale": null,
           "effective": 10.9
         },
+        "קרפור": {
+          "regular": 8.5,
+          "sale": null,
+          "effective": 8.5
+        },
         "חצי חינם": null
       }
     },
@@ -2057,6 +2480,11 @@
           "regular": 31.9,
           "sale": null,
           "effective": 31.9
+        },
+        "קרפור": {
+          "regular": 24.9,
+          "sale": null,
+          "effective": 24.9
         },
         "חצי חינם": null
       }
@@ -2081,6 +2509,11 @@
           "sale": null,
           "effective": 10.9
         },
+        "קרפור": {
+          "regular": 7.9,
+          "sale": null,
+          "effective": 7.9
+        },
         "חצי חינם": null
       }
     },
@@ -2099,6 +2532,11 @@
           "regular": 27.9,
           "sale": null,
           "effective": 27.9
+        },
+        "קרפור": {
+          "regular": 20.5,
+          "sale": null,
+          "effective": 20.5
         },
         "חצי חינם": {
           "regular": 27.9,
@@ -2127,6 +2565,11 @@
           "sale": null,
           "effective": 8.5
         },
+        "קרפור": {
+          "regular": 6.0,
+          "sale": null,
+          "effective": 6.0
+        },
         "חצי חינם": null
       }
     },
@@ -2149,6 +2592,11 @@
           "regular": 15.9,
           "sale": null,
           "effective": 15.9
+        },
+        "קרפור": {
+          "regular": 7.9,
+          "sale": null,
+          "effective": 7.9
         },
         "חצי חינם": {
           "regular": 15.9,
@@ -2177,6 +2625,11 @@
           "sale": null,
           "effective": 25.9
         },
+        "קרפור": {
+          "regular": 21.9,
+          "sale": null,
+          "effective": 21.9
+        },
         "חצי חינם": null
       }
     },
@@ -2199,6 +2652,11 @@
           "regular": 10.9,
           "sale": null,
           "effective": 10.9
+        },
+        "קרפור": {
+          "regular": 5.9,
+          "sale": null,
+          "effective": 5.9
         },
         "חצי חינם": {
           "regular": 10.9,
@@ -2227,6 +2685,11 @@
           "sale": null,
           "effective": 10.9
         },
+        "קרפור": {
+          "regular": 5.2,
+          "sale": null,
+          "effective": 5.2
+        },
         "חצי חינם": {
           "regular": 10.9,
           "sale": null,
@@ -2254,6 +2717,11 @@
           "sale": null,
           "effective": 24.9
         },
+        "קרפור": {
+          "regular": 16.9,
+          "sale": null,
+          "effective": 16.9
+        },
         "חצי חינם": null
       }
     },
@@ -2276,6 +2744,11 @@
           "regular": 2.4,
           "sale": null,
           "effective": 2.4
+        },
+        "קרפור": {
+          "regular": 1.5,
+          "sale": null,
+          "effective": 1.5
         },
         "חצי חינם": null
       }
@@ -2300,6 +2773,11 @@
           "sale": null,
           "effective": 39.9
         },
+        "קרפור": {
+          "regular": 27.9,
+          "sale": null,
+          "effective": 27.9
+        },
         "חצי חינם": null
       }
     },
@@ -2322,6 +2800,11 @@
           "regular": 14.9,
           "sale": null,
           "effective": 14.9
+        },
+        "קרפור": {
+          "regular": 9.9,
+          "sale": null,
+          "effective": 9.9
         },
         "חצי חינם": {
           "regular": 15.1,
@@ -2350,6 +2833,11 @@
           "sale": null,
           "effective": 22.9
         },
+        "קרפור": {
+          "regular": 15.9,
+          "sale": null,
+          "effective": 15.9
+        },
         "חצי חינם": {
           "regular": 23.1,
           "sale": 21.0,
@@ -2377,6 +2865,11 @@
           "sale": null,
           "effective": 29.9
         },
+        "קרפור": {
+          "regular": 12.6,
+          "sale": null,
+          "effective": 12.6
+        },
         "חצי חינם": null
       }
     },
@@ -2399,6 +2892,11 @@
           "regular": 13.9,
           "sale": null,
           "effective": 13.9
+        },
+        "קרפור": {
+          "regular": 10.9,
+          "sale": null,
+          "effective": 10.9
         },
         "חצי חינם": null
       }

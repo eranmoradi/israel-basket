@@ -6,7 +6,7 @@ import type { ChainPricesData, ChainProductPrices, ChainPrice, Product } from '.
 const chainPrices = chainPricesData as ChainPricesData
 const allProducts = productsData as Product[]
 
-const CHAINS = ['שופרסל', 'רמי לוי', 'יוחננוף'] as const
+const CHAINS = ['קרפור', 'שופרסל', 'רמי לוי', 'יוחננוף'] as const
 type ChainName = (typeof CHAINS)[number]
 
 // Build department lookup from products.json (groupId → department)
@@ -20,12 +20,14 @@ for (const p of allProducts) {
 const DEPARTMENTS = ['הכל', ...Array.from(new Set(deptByGroup.values())).sort()]
 
 const CHAIN_COLORS: Record<ChainName, string> = {
+  קרפור: 'bg-red-900/20 border-red-700',
   שופרסל: 'bg-orange-900/20 border-orange-700',
   'רמי לוי': 'bg-blue-900/20 border-blue-700',
   יוחננוף: 'bg-green-900/20 border-green-700',
 }
 
 const CHAIN_HEADER_COLORS: Record<ChainName, string> = {
+  קרפור: 'bg-red-700 text-white',
   שופרסל: 'bg-orange-600 text-white',
   'רמי לוי': 'bg-blue-700 text-white',
   יוחננוף: 'bg-green-700 text-white',

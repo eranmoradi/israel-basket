@@ -34,6 +34,7 @@ export interface ChainProductPrices {
   barcode: string
   name: string
   prices: {
+    קרפור?: ChainPrice | null
     שופרסל?: ChainPrice | null
     'רמי לוי'?: ChainPrice | null
     יוחננוף?: ChainPrice | null

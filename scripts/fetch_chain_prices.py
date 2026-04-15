@@ -27,7 +27,7 @@ PRODUCTS_JSON = ROOT / "israel-basket/src/data/products.json"
 PRICES_JSON = ROOT / "israel-basket/src/data/prices.json"   # CHP data for חצי חינם
 OUTPUT_JSON = ROOT / "israel-basket/src/data/chain_prices.json"
 
-CHAINS = ["שופרסל", "רמי לוי", "יוחננוף", "חצי חינם"]
+CHAINS = ["קרפור", "שופרסל", "רמי לוי", "יוחננוף", "חצי חינם"]
 DELAY_BETWEEN_PRODUCTS = (0.8, 1.8)  # seconds between product groups
 DELAY_BETWEEN_CHAINS = (0.3, 0.7)    # seconds between API calls for same product
 
@@ -244,6 +244,20 @@ def build_hazi_hinam_index(chp_data: dict) -> dict[str, dict]:
     return index
 
 
+def build_carrefour_index(all_products: list[dict]) -> dict[str, dict]:
+    """Index Carrefour prices from products.json (Excel 'מחיר מוצע' column, 100% coverage)."""
+    index: dict[str, dict] = {}
+    for p in all_products:
+        if p.get("isBasic"):
+            continue
+        price = p.get("price")
+        if price is not None:
+            barcode = str(p["barcode"])
+            if barcode not in index:  # first variant per group is representative
+                index[barcode] = {"regular": price, "sale": None, "effective": price}
+    return index
+
+
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
@@ -285,9 +299,11 @@ def main() -> None:
 
     representatives = select_group_representatives(all_products)
     hazi_hinam_idx = build_hazi_hinam_index(chp_data)
+    carrefour_idx = build_carrefour_index(all_products)
 
     total = len(representatives)
     print(f"\n{total} product groups to fetch")
+    print(f"קרפור Excel coverage: {len(carrefour_idx)}/{total}")
     print(f"חצי חינם CHP coverage: {len(hazi_hinam_idx)}/{total}\n")
 
     results: list[dict] = []
@@ -325,11 +341,15 @@ def main() -> None:
             product_errors.append(f"יוחננוף: {e}")
         time.sleep(random.uniform(*DELAY_BETWEEN_CHAINS))
 
+        # --- קרפור (Excel prices, no HTTP call needed) ---
+        prices["קרפור"] = carrefour_idx.get(barcode)
+
         # --- חצי חינם (CHP, no HTTP call needed) ---
         prices["חצי חינם"] = hazi_hinam_idx.get(barcode)
 
         print(
-            f"       שופרסל: {fmt_price(prices['שופרסל']):12s}"
+            f"       קרפור: {fmt_price(prices['קרפור']):12s}"
+            f"  שופרסל: {fmt_price(prices['שופרסל']):12s}"
             f"  רמי לוי: {fmt_price(prices['רמי לוי']):12s}"
             f"  יוחננוף: {fmt_price(prices['יוחננוף']):12s}"
             f"  חצי חינם: {fmt_price(prices['חצי חינם'])}"

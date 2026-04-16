@@ -11,9 +11,9 @@ export default function BasketBar() {
   return (
     <div className="fixed bottom-[60px] inset-x-0 z-40 bg-blue-700 text-white shadow-2xl">
       <div className="max-w-3xl mx-auto px-4 py-3 flex items-center justify-between">
-        <div>
-          <span className="font-bold text-lg">{total.toFixed(2)} ₪</span>
-          <span className="text-blue-200 text-sm mr-2">{count} מוצרים</span>
+        <div className="flex items-baseline gap-2">
+          <span className="font-bold text-lg tabular-nums">₪{total.toFixed(2)}</span>
+          <span className="text-blue-200 text-sm tabular-nums">{count} מוצרים</span>
         </div>
         <button
           onClick={() => navigate('/basket')}

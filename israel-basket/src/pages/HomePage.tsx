@@ -137,7 +137,7 @@ export default function HomePage() {
               },
               {
                 step: '3',
-                title: 'גע לסניף וחסוך',
+                title: 'גש לסניף וחסוך',
                 body: 'מצא את סניף קארפור הקרוב אליך וצא לקנות עם החיסכון בכיס.',
               },
             ].map(({ step, title, body }) => (

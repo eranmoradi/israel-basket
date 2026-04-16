@@ -6,7 +6,7 @@ const QA = [
     id: 'start',
     question: 'איך מתחילים',
     answer:
-      '1. לחץ על "מוצרים" בתפריט התחתון\n2. הוסף לסל את המוצרים שאתה קונה בדרך כלל\n3. עבור ל"הסל שלי" לראות את הסכום הכולל\n4. ב"השוואה" תראה מול כמה משלמים בשאר הרשתות\n5. בסניפים תמצא את הקרוב אליך',
+      '1. לחצו על "מוצרים" בתפריט התחתון\n2. הוסיפו לסל את המוצרים שאתם קונים בדרך כלל\n3. עברו ל"הסל שלי" לראות את הסכום הכולל\n4. ב"השוואה" תראו מול כמה משלמים בשאר הרשתות\n5. בסניפים תמצאו את הקרוב אליכם',
   },
   {
     id: 'what',
@@ -30,7 +30,7 @@ const QA = [
     id: 'compare',
     question: 'איך עובדת ההשוואה',
     answer:
-      'הוסף מוצרים לסל — האפליקציה תשלוף אוטומטית את המחירים מהאתרים של שופרסל, רמי לוי ויוחננוף ותציג לך את הרשת הזולה ביותר לסל שלך.',
+      'הוסיפו מוצרים לסל — האפליקציה תשלוף אוטומטית את המחירים מהאתרים של שופרסל, רמי לוי ויוחננוף ותציג לכם את הרשת הזולה ביותר לסל שלכם.',
   },
   {
     id: 'limits',
@@ -130,7 +130,7 @@ export default function FirstTimeBot() {
 
         {/* Header */}
         <div className="flex items-center justify-between px-5 py-3 border-b border-gray-800">
-          <span className="text-sm font-semibold text-gray-200">שאל אותי כל שאלה על האפליקציה</span>
+          <span className="text-sm font-semibold text-gray-200">שאלו אותי כל שאלה על האפליקציה</span>
           <button
             onClick={handleClose}
             className="text-gray-500 hover:text-gray-300 text-xl leading-none"
@@ -147,7 +147,7 @@ export default function FirstTimeBot() {
               💬
             </div>
             <div className="bg-gray-800 rounded-2xl rounded-tr-sm px-4 py-2.5 text-sm text-gray-200 leading-relaxed">
-              שלום! אני כאן כדי לעזור לך להתחיל. מה תרצה לדעת?
+              שלום! אני כאן כדי לעזור לכם להתחיל. מה תרצו לדעת?
             </div>
           </div>
 

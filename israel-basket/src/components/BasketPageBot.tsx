@@ -10,27 +10,27 @@ const QA = [
   },
   {
     id: 'saving',
-    question: 'כמה אני חוסך',
+    question: 'כמה חוסכים',
     answer:
-      'בתחתית כרטיס הסיכום תראה את החיסכון לעומת הרשת הזולה ביותר שמכסה את כל המוצרים שבחרת. ככל שתוסיף יותר מוצרים — החיסכון יגדל.',
+      'בתחתית כרטיס הסיכום תראו את החיסכון לעומת הרשת הזולה ביותר שמכסה את כל המוצרים שבחרתם. ככל שתוסיפו יותר מוצרים — החיסכון יגדל.',
   },
   {
     id: 'privacy',
-    question: 'האם הסל שלי נשמר',
+    question: 'האם הסל נשמר',
     answer:
-      'לא. הסל שלך לא נשמר בשום מקום — ברגע שתצא מהדף הוא יאופס. לכן אנחנו ממליצים להוריד את הסיכום כקובץ או לשתף אותו עם משפחה וחברים בוואטסאפ — האפשרות נמצאת ממש מעל רשימת המוצרים.',
+      'לא. הסל שלכם לא נשמר בשום מקום — ברגע שתצאו מהדף הוא יאופס. לכן אנחנו ממליצים להוריד את הסיכום כקובץ או לשתף אותו עם משפחה וחברים בוואטסאפ — האפשרות נמצאת ממש מעל רשימת המוצרים.',
   },
   {
     id: 'compare',
     question: 'איך לראות השוואה מלאה',
     answer:
-      'לחץ על לשונית "השוואה" בתפריט התחתון — שם תקבל טבלה מלאה של כל מחירי הרשתות לכל מוצר בסל.',
+      'לחצו על לשונית "השוואה" בתפריט התחתון — שם תקבלו טבלה מלאה של כל מחירי הרשתות לכל מוצר בסל.',
   },
   {
     id: 'add',
     question: 'איך מוסיפים מוצרים',
     answer:
-      'לחץ על "הוסף עוד מוצרים" בתחתית הדף, או על לשונית "מוצרים" בתפריט. תוכל לסנן לפי קטגוריה ולהוסיף כל מה שאתה רוצה.',
+      'לחצו על "הוסף עוד מוצרים" בתחתית הדף, או על לשונית "מוצרים" בתפריט. תוכלו לסנן לפי קטגוריה ולהוסיף כל מה שתרצו.',
   },
   {
     id: 'partial',
@@ -96,7 +96,7 @@ export default function BasketPageBot({ externalOpen, onExternalClose }: BasketP
 
         {/* Header */}
         <div className="flex items-center justify-between px-5 py-3 border-b border-gray-800">
-          <span className="text-sm font-semibold text-gray-200">שאל אותי על הסל שלך</span>
+          <span className="text-sm font-semibold text-gray-200">שאלו אותי על הסל שלכם</span>
           <button
             onClick={handleClose}
             className="text-gray-500 hover:text-gray-300 text-xl leading-none"
@@ -113,7 +113,7 @@ export default function BasketPageBot({ externalOpen, onExternalClose }: BasketP
               💬
             </div>
             <div className="bg-gray-800 rounded-2xl rounded-tr-sm px-4 py-2.5 text-sm text-gray-200 leading-relaxed">
-              שלום! במה אוכל לעזור לך עם הסל?
+              שלום! במה אוכל לעזור לכם עם הסל?
             </div>
           </div>
 

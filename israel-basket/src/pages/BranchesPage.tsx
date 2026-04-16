@@ -44,8 +44,8 @@ export default function BranchesPage() {
       (err) => {
         const message =
           err.code === err.PERMISSION_DENIED
-            ? 'לא אישרת גישה למיקום. אנא אפשר מיקום בהגדרות הדפדפן ונסה שנית.'
-            : 'לא הצלחנו לאתר את מיקומך. נסה שנית.'
+            ? 'לא אישרתם גישה למיקום. אנא אפשרו מיקום בהגדרות הדפדפן ונסו שנית.'
+            : 'לא הצלחנו לאתר את מיקומכם. נסו שנית.'
         setGeo({ mode: 'error', message })
       },
       { timeout: 10000, maximumAge: 60000 },
@@ -164,7 +164,7 @@ export default function BranchesPage() {
       {/* Near-me mode header */}
       {isNearMeActive && (
         <p className="text-xs text-amber-400 mb-3">
-          מציג {NEAR_ME_COUNT} הסניפים הקרובים ביותר אליך
+          מציג {NEAR_ME_COUNT} הסניפים הקרובים ביותר אליכם
         </p>
       )}
 

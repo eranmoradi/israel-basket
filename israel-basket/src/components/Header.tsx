@@ -28,10 +28,10 @@ export default function Header({ onBotOpen }: HeaderProps) {
             )}
             <button
               onClick={() => navigate(-1)}
-              className="flex items-center justify-center bg-white/15 hover:bg-white/25 active:scale-95 text-white w-9 h-9 rounded-full transition-all"
-              aria-label="חזרה"
+              className="flex items-center gap-1.5 bg-white/15 hover:bg-white/25 active:scale-95 text-white text-sm font-bold px-4 py-2 rounded-full transition-all whitespace-nowrap"
             >
-              <span className="text-lg leading-none">›</span>
+              <span className="text-lg leading-none">‹</span>
+              <span>חזרה</span>
             </button>
           </div>
         )}

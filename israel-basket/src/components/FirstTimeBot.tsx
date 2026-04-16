@@ -107,7 +107,7 @@ export default function FirstTimeBot() {
         className="fixed top-3 left-4 flex items-center gap-1.5 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 active:scale-95 text-white text-sm font-bold px-4 py-2 rounded-full shadow-lg ring-2 ring-white/40 transition-all whitespace-nowrap"
         >
           <span>💬</span>
-          <span>פעם ראשונה כאן?</span>
+          <span>עזרה</span>
         </button>
       )}
 

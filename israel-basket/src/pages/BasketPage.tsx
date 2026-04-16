@@ -247,22 +247,13 @@ export default function BasketPage() {
           <span>⚠️</span>
           <span>הנתונים שלכם לא נשמרים — כדאי לשמור לפני שתצאו</span>
         </p>
-        <div className="grid grid-cols-2 gap-3 mb-3">
-          <button
-            onClick={handleDownload}
-            className="flex items-center justify-center gap-2 bg-gray-800 hover:bg-gray-700 active:scale-95 border border-gray-600 text-gray-200 font-semibold text-base py-4 rounded-xl transition-all"
-          >
-            <span>⬇️</span>
-            <span>הורד סיכום</span>
-          </button>
-          <button
-            onClick={handleWhatsApp}
-            className="flex items-center justify-center gap-2 bg-green-800 hover:bg-green-700 active:scale-95 text-white font-semibold text-base py-4 rounded-xl transition-all"
-          >
-            <span>📲</span>
-            <span>רשימת קניות</span>
-          </button>
-        </div>
+        <button
+          onClick={handleWhatsApp}
+          className="w-full flex items-center justify-center gap-2 bg-green-800 hover:bg-green-700 active:scale-95 text-white font-semibold text-base py-4 rounded-xl transition-all mb-3"
+        >
+          <span>📲</span>
+          <span>רשימת הקניות שלך לוואטסאפ</span>
+        </button>
         <button
           onClick={handleShareApp}
           className="w-full flex items-center justify-center gap-2 bg-blue-700 hover:bg-blue-600 active:scale-95 text-white font-semibold text-base py-4 rounded-xl transition-all mb-3"

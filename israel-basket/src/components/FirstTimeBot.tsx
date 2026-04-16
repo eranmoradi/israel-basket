@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const QA = [
@@ -52,12 +52,21 @@ const QA = [
   },
 ]
 
+const VISITED_KEY = 'home-visited'
+
 export default function FirstTimeBot() {
   const navigate = useNavigate()
   const [open, setOpen] = useState(false)
-  const [hasInteracted, setHasInteracted] = useState(false)
+  const [hasInteracted, setHasInteracted] = useState(
+    () => !!localStorage.getItem(VISITED_KEY)
+  )
   const [answeredId, setAnsweredId] = useState<string | null>(null)
   const [typing, setTyping] = useState(false)
+
+  // Mark as visited on first mount so next visit shows the pill
+  useEffect(() => {
+    localStorage.setItem(VISITED_KEY, '1')
+  }, [])
 
   const currentAnswer = QA.find((q) => q.id === answeredId)
   const remainingChips = QA.filter((q) => q.id !== answeredId)
@@ -95,7 +104,7 @@ export default function FirstTimeBot() {
         <button
           onClick={() => setOpen(true)}
           style={{ zIndex: 9999 }}
-        className="fixed top-3 left-4 flex items-center gap-1.5 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 active:scale-95 text-white text-xs font-semibold px-3 py-1.5 rounded-full shadow-lg shadow-amber-500/40 transition-all whitespace-nowrap"
+        className="fixed top-3 left-4 flex items-center gap-1.5 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 active:scale-95 text-white text-sm font-bold px-4 py-2 rounded-full shadow-lg ring-2 ring-white/40 transition-all whitespace-nowrap"
         >
           <span>💬</span>
           <span>פעם ראשונה כאן?</span>

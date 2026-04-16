@@ -36,7 +36,7 @@ export default function ProductCard({ product }: Props) {
         <div className="flex flex-col items-end gap-2 shrink-0">
           {product.price !== null ? (
             <span className="text-lg font-bold text-blue-400 whitespace-nowrap">
-              {product.price.toFixed(2)} ₪
+              {product.price.toFixed(2)}₪
             </span>
           ) : (
             <span className="text-sm text-gray-500">מחיר לא זמין</span>

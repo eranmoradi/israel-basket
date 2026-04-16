@@ -127,18 +127,18 @@ export default function HomePage() {
             {[
               {
                 step: '1',
-                title: 'בחר את המוצרים שלך',
-                body: 'דפדף ב-100 המוצרים בסל, הוסף לסל את מה שאתה קונה בדרך כלל.',
+                title: 'בחרו את המוצרים שלכם',
+                body: 'דפדפו ב-100 המוצרים בסל, הוסיפו לסל את מה שאתם קונים בדרך כלל.',
               },
               {
                 step: '2',
-                title: 'ראה את ההשוואה',
-                body: 'תקבל מיד מחיר כולל מול שופרסל, רמי לוי ויוחננוף — וכמה חוסך הסל.',
+                title: 'ראו את ההשוואה',
+                body: 'תקבלו מיד מחיר כולל מול שופרסל, רמי לוי ויוחננוף — וכמה חוסך הסל.',
               },
               {
                 step: '3',
-                title: 'גש לסניף וחסוך',
-                body: 'מצא את סניף קארפור הקרוב אליך וצא לקנות עם החיסכון בכיס.',
+                title: 'גשו לסניף וחסכו',
+                body: 'מצאו את סניף קארפור הקרוב אליכם וצאו לקנות עם החיסכון בכיס.',
               },
             ].map(({ step, title, body }) => (
               <div key={step} className="flex gap-4 items-start">
@@ -156,19 +156,19 @@ export default function HomePage() {
 
         {/* Features */}
         <div className="bg-gray-900 rounded-2xl px-6 py-8 mb-8">
-          <div className="text-sm text-gray-300 font-semibold tracking-widest uppercase mb-5">מה תקבל</div>
+          <div className="text-sm text-gray-300 font-semibold tracking-widest uppercase mb-5">מה תקבלו</div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               {
                 emoji: '📌',
                 title: 'מה זה הסל של ישראל?',
-                body: 'קארפור זכתה במכרז מדינה: 100 מוצרים מובילים ב-30%+ הנחה קבועה — לפחות חצי שנה. הסל עולה 1,098 ₪ במקום ~1,700 ₪.',
+                body: 'קארפור זכתה במכרז מדינה: 100 מוצרים מובילים ב-30%+ הנחה קבועה — לפחות חצי שנה. הסל עולה 1,098₪ במקום ~1,700₪.',
                 border: 'border-r-blue-500',
               },
               {
                 emoji: '📊',
                 title: 'השוואת מחירים בזמן אמת',
-                body: 'הוסף מוצרים לסל — ותקבל מיד השוואה מול שופרסל, רמי לוי, יוחננוף וחצי חינם. תראה בדיוק כמה חוסך הסל.',
+                body: 'הוסיפו מוצרים לסל — ותקבלו מיד השוואה מול שופרסל, רמי לוי, יוחננוף וחצי חינם. תראו בדיוק כמה חוסך הסל.',
                 border: 'border-r-purple-500',
               },
               {

@@ -164,7 +164,7 @@ export default function BasketPage() {
   }
 
   function handleShareApp() {
-    const text = `היי! תראו איזו אפליקציה מצאתי 🛒\nהסל של ישראל — חוסכת לי המון כסף בקניות המזון!\nבלחיצת כפתור היא יכולה לחסוך גם לך 👇\nhttps://israelbasket.app`
+    const text = `היי! תראו איזו אפליקציה מצאנו 🛒\nהסל של ישראל — חוסכת המון כסף בקניות המזון!\nבלחיצת כפתור היא יכולה לחסוך גם לכם 👇\nhttps://israelbasket.app`
     window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank')
   }
 
@@ -172,8 +172,8 @@ export default function BasketPage() {
     return (
       <div className="max-w-3xl mx-auto px-4 py-16 text-center">
           <div className="text-6xl mb-4">🛒</div>
-          <h1 className="text-2xl font-bold text-gray-300 mb-2">הסל שלך ריק</h1>
-          <p className="text-gray-500 mb-6">הוסף מוצרים מהרשימה וראה את הסכום הכולל</p>
+          <h1 className="text-2xl font-bold text-gray-300 mb-2">הסל שלכם ריק</h1>
+          <p className="text-gray-500 mb-6">הוסיפו מוצרים מהרשימה וראו את הסכום הכולל</p>
           <button
             onClick={() => navigate('/products')}
             className="bg-blue-700 text-white font-bold px-8 py-3 rounded-2xl hover:bg-blue-600 transition-colors"
@@ -204,7 +204,7 @@ export default function BasketPage() {
             <div className="text-blue-300 text-sm mb-1">מחיר מוצע (ממשלתי)</div>
             <div className="font-bold text-base">קרפור · {count} מוצרים</div>
           </div>
-          <span className="text-4xl font-extrabold">{total.toFixed(2)} ₪</span>
+          <span className="text-4xl font-extrabold">{total.toFixed(2)}₪</span>
         </div>
 
         {/* Cheapest single chain row */}
@@ -223,7 +223,7 @@ export default function BasketPage() {
               <div className="font-bold text-base">{competitorData.cheapestChain}</div>
             </div>
             <span className="text-4xl font-extrabold">
-              {competitorData.cheapestChainTotal.toFixed(2)} ₪
+              {competitorData.cheapestChainTotal.toFixed(2)}₪
             </span>
           </div>
         )}
@@ -235,7 +235,7 @@ export default function BasketPage() {
               חיסכון לעומת {competitorData.cheapestChain}
             </span>
             <span className="text-amber-400 font-extrabold text-xl">
-              {saving.toFixed(2)} ₪ ↓
+              {saving.toFixed(2)}₪ ↓
             </span>
           </div>
         )}
@@ -245,7 +245,7 @@ export default function BasketPage() {
       <div className="bg-gray-900 border border-gray-700 rounded-2xl p-5 mb-6">
         <p className="text-sm text-amber-400 mb-4 flex items-center gap-1.5">
           <span>⚠️</span>
-          <span>הנתונים שלך לא נשמרים — כדאי לשמור לפני שתצא</span>
+          <span>הנתונים שלכם לא נשמרים — כדאי לשמור לפני שתצאו</span>
         </p>
         <div className="grid grid-cols-2 gap-3 mb-3">
           <button
@@ -303,7 +303,7 @@ export default function BasketPage() {
                 {/* Official price + remove */}
                 <div className="flex items-center gap-2 shrink-0">
                   <span className="font-bold text-blue-400 whitespace-nowrap text-sm">
-                    {product.price?.toFixed(2)} ₪
+                    {product.price?.toFixed(2)}₪
                   </span>
                   <button
                     onClick={() => toggle(product)}
@@ -334,11 +334,11 @@ export default function BasketPage() {
                         isCheaper ? 'text-green-400' : 'text-gray-400'
                       }`}
                     >
-                      {best.price.toFixed(2)} ₪
+                      {best.price.toFixed(2)}₪
                     </span>
                     {isCheaper && (
                       <span className="text-xs text-green-400 font-medium">
-                        חיסכון {priceDiff!.toFixed(2)} ₪
+                        חיסכון {priceDiff!.toFixed(2)}₪
                       </span>
                     )}
                   </div>
@@ -358,7 +358,7 @@ export default function BasketPage() {
 
       {/* Limit notice */}
       <div className="bg-blue-900/20 border border-blue-700 rounded-2xl p-4 mt-6 text-sm text-blue-300">
-        <strong>⚠️ שים לב:</strong> ניתן לרכוש עד 2 יחידות מכל מוצר בכל קנייה.
+        <strong>⚠️ שימו לב:</strong> ניתן לרכוש עד 2 יחידות מכל מוצר בכל קנייה.
         המחירים תקפים בסניפי קארפור מרקט והיפר בלבד (לא בסניפי קארפור סיטי).
       </div>
 

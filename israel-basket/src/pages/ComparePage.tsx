@@ -71,8 +71,8 @@ type SortKey = 'name' | ChainName
 export default function ComparePage() {
   const [search, setSearch] = useState('')
   const [dept, setDept] = useState('הכל')
-  const [sortBy, setSortBy] = useState<SortKey>('name')
-  const [missingOnly, setMissingOnly] = useState(false)
+  const [sortBy] = useState<SortKey>('name')
+  const [missingOnly] = useState(false)
   const location = useLocation()
   const [basketOnly, setBasketOnly] = useState(() => !!(location.state as { basketOnly?: boolean })?.basketOnly)
   const navigate = useNavigate()
@@ -114,9 +114,9 @@ export default function ComparePage() {
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-6">
-      <div className="mb-5">
-        <h1 className="text-2xl font-extrabold text-gray-100">השוואת מחירים</h1>
-        <p className="text-sm text-gray-500 mt-1">
+      <div className="mb-5 text-center">
+        <h1 className="text-3xl font-extrabold text-gray-100">השוואת מחירים</h1>
+        <p className="text-base text-blue-400 mt-1">
           עודכן: {new Date(chainPrices.fetched_at).toLocaleDateString('he-IL', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })}
         </p>
       </div>
@@ -135,17 +135,6 @@ export default function ComparePage() {
         </div>
 
         <div className="flex gap-2 flex-wrap">
-          <button
-            onClick={() => setMissingOnly((v) => !v)}
-            className={`text-xs font-semibold px-3 py-1.5 rounded-full border transition-colors ${
-              missingOnly
-                ? 'bg-red-600 text-white border-red-600'
-                : 'bg-gray-800 text-gray-300 border-gray-600 hover:border-red-500'
-            }`}
-          >
-            ⚠ חסר מחיר
-          </button>
-
           <button
             onClick={() => {
               if (!basketOnly && basketCount === 0) {
@@ -173,18 +162,6 @@ export default function ComparePage() {
             📍 5 הסניפים הקרובים אלי
           </button>
 
-          <select
-            value={sortBy}
-            onChange={(e) => setSortBy(e.target.value as SortKey)}
-            className="text-xs bg-gray-800 border border-gray-600 text-gray-300 rounded-full px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          >
-            <option value="name">מיון: שם מוצר</option>
-            {CHAINS.map((c) => (
-              <option key={c} value={c}>
-                מיון: {c} (זול ראשון)
-              </option>
-            ))}
-          </select>
         </div>
 
         {/* Department chips */}

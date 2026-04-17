@@ -166,6 +166,13 @@ export default function ComparePage() {
             🛒 {basketCount > 0 ? `השווה את המחירים לסל שלי (${basketCount})` : 'הוסיפו מוצרים לסל להשוואת מחירים'}
           </button>
 
+          <button
+            onClick={() => navigate('/branches')}
+            className="text-sm font-semibold px-4 py-2 rounded-full border transition-all bg-gray-700 text-blue-300 border-blue-500/50 hover:border-blue-400 hover:bg-gray-600"
+          >
+            📍 5 הסניפים הקרובים אלי
+          </button>
+
           <select
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value as SortKey)}

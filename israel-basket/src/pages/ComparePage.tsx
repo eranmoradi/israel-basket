@@ -153,12 +153,15 @@ export default function ComparePage() {
               }
               setBasketOnly(v => !v)
             }}
-            className={`text-xs font-semibold px-3 py-1.5 rounded-full border transition-colors ${
+            className={`relative text-sm font-bold px-4 py-2 rounded-full border transition-all ${
               basketOnly
-                ? 'bg-amber-500 text-gray-900 border-amber-500'
-                : 'bg-gray-800 text-gray-300 border-gray-600 hover:border-amber-500'
+                ? 'bg-amber-500 text-gray-900 border-amber-500 shadow-lg shadow-amber-500/30'
+                : 'bg-gray-800 text-amber-400 border-amber-500/60 hover:border-amber-400 hover:bg-gray-700'
             }`}
           >
+            {!basketOnly && (
+              <span className="absolute inset-0 rounded-full animate-ping bg-amber-400 opacity-20 pointer-events-none" />
+            )}
             🛒 השווה את המחירים לסל שלי{basketCount > 0 ? ` (${basketCount})` : ''}
           </button>
 

@@ -143,23 +143,34 @@ export default function BasketPage() {
     if (competitorData.cheapestChain) {
       lines.push(`הרשת הזולה ביותר (${competitorData.cheapestChain}): ${competitorData.cheapestChainTotal.toFixed(2)}₪`)
       if (saving > 0.01 && !competitorData.isPartialCoverage) {
-        lines.push(`✅ חיסכון בקארפור: ${saving.toFixed(2)}₪`)
+        lines.push(`✅ חסכתי ${saving.toFixed(0)}₪ בקארפור לעומת ${competitorData.cheapestChain}`)
       }
     }
     lines.push(``, `⚠️ עד 2 יחידות מכל מוצר. תקף בסניפי קארפור מרקט והיפר בלבד.`)
-    lines.push(``, `https://israelbasket.app`)
+    lines.push(`💡 בדקו כמה תחסכו גם אתם: israelbasket.app`)
     return lines.join('\n')
   }
 
-
   function handleWhatsApp() {
     const text = buildSummaryText()
-    window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank')
+    if (navigator.share) {
+      navigator.share({ title: 'הסל של ישראל', text }).catch(() => {
+        window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank')
+      })
+    } else {
+      window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank')
+    }
   }
 
   function handleShareApp() {
-    const text = `היי! תראו איזו אפליקציה מצאנו 🛒\nהסל של ישראל — חוסכת המון כסף בקניות המזון!\nבלחיצת כפתור היא יכולה לחסוך גם לכם 👇\nhttps://israelbasket.app`
-    window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank')
+    const text = `שלחתי לעצמי את רשימת הקניות דרך הסל של ישראל 😮\nהאפליקציה משווה מחירים ב-4 רשתות ומראה מאיפה הכי כדאי לקנות.\nחינם, ללא הרשמה: israelbasket.app`
+    if (navigator.share) {
+      navigator.share({ title: 'הסל של ישראל', text, url: 'https://israelbasket.app' }).catch(() => {
+        window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank')
+      })
+    } else {
+      window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank')
+    }
   }
 
   if (count === 0) {

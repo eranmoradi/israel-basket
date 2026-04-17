@@ -77,7 +77,7 @@ Custom slash commands live in `.claude/commands/`. Type the command in Claude Co
 
 **BasketPage comparison logic:** Finds the cheapest *single chain* for the full basket. First pass: chains with 100% product coverage, pick lowest total. Second pass (fallback): if no chain covers all items, show the best-coverage chain with a gray "partial" indicator and no savings row.
 
-**State:** Zustand store (`src/store/basketStore.ts`) holds `Map<id, Product>`. `total` and `count` are eagerly recomputed on every `toggle`. Persisted to `sessionStorage` via Zustand `persist` middleware (key `basket-session`) — survives page refreshes but clears when the tab is closed. A custom storage adapter handles `Map` ↔ JSON-array serialisation.
+**State:** Zustand store (`src/store/basketStore.ts`) holds `Map<id, Product>`. `total` and `count` are eagerly recomputed on every `toggle`. No persistence — basket is lost on page close or refresh. Users are prompted to download or share the summary before leaving the basket page.
 
 **Styling:** Tailwind CSS v4 via `@tailwindcss/vite` (no `tailwind.config.js`). RTL enforced globally via `direction: rtl` in `src/index.css` and `dir="rtl"` in `index.html`.
 
@@ -93,7 +93,7 @@ Custom slash commands live in `.claude/commands/`. Type the command in Claude Co
 
 **Bot components** (`src/components/FirstTimeBot.tsx`, `src/components/BasketPageBot.tsx`): Scripted FAQ chatbots, no AI/API. Q&A is a hardcoded array; each bot renders only a bottom-sheet drawer (no internal trigger button). `BasketPageBot` accepts `externalOpen: boolean` + `onExternalClose: () => void` props — the trigger is the amber pill button rendered inside `Header`. `FirstTimeBot` (homepage only) renders its own two-phase trigger: large pulsing FAB on first visit → small amber pill pinned to the header (left side, `fixed top-3 left-4`) on return visits. Return-visit detection uses `localStorage` key `home-visited` (set on first mount). Both use `from-amber-500 to-orange-500` gradient to distinguish from the blue header.
 
-**BasketPage share features:** `buildSummaryText()` generates a plain-text basket summary (includes `https://israelbasket.app` as a clickable link). Three share actions: `handleDownload()` → `.txt` file via Blob URL; `handleWhatsApp()` → WhatsApp with the full shopping list; `handleShareApp()` → WhatsApp with a short promotional message. A fourth button navigates to `/branches` (nearest Carrefour). The Header on all inner pages renders a `›` back button (`navigate(-1)`) on the left side alongside the bot pill.
+**BasketPage share features:** `buildSummaryText()` generates a plain-text basket summary (includes `israelbasket.app` as a link). Two share actions: `handleDownload()` → `.txt` file via Blob URL; `handleWhatsApp()` → WhatsApp with the full shopping list.
 
 **HomePage stats:** The proof strip uses `IntersectionObserver` + `requestAnimationFrame` (ease-out cubic) to count up numbers when the section scrolls into view. Stat cards are tappable and navigate to `/products` or `/branches`.
 

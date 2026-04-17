@@ -1,7 +1,9 @@
 import { useMemo, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import chainPricesData from '../data/chain_prices.json'
 import productsData from '../data/products.json'
 import type { ChainPricesData, ChainProductPrices, ChainPrice, Product } from '../types'
+import { useBasketStore } from '../store/basketStore'
 
 const chainPrices = chainPricesData as ChainPricesData
 const allProducts = productsData as Product[]
@@ -71,6 +73,11 @@ export default function ComparePage() {
   const [dept, setDept] = useState('הכל')
   const [sortBy, setSortBy] = useState<SortKey>('name')
   const [missingOnly, setMissingOnly] = useState(false)
+  const [basketOnly, setBasketOnly] = useState(false)
+  const navigate = useNavigate()
+  const { selected } = useBasketStore()
+  const basketGroupIds = new Set(Array.from(selected.values()).map(p => p.groupId))
+  const basketCount = basketGroupIds.size
 
   const items = useMemo(() => {
     const q = search.trim().toLowerCase()
@@ -80,9 +87,10 @@ export default function ComparePage() {
       const matchesSearch = !q || item.name.toLowerCase().includes(q)
       const hasMissing =
         !missingOnly || CHAINS.some((c) => getChainPrice(item, c) === null)
-      return matchesDept && matchesSearch && hasMissing
+      const matchesBasket = !basketOnly || basketGroupIds.has(item.groupId)
+      return matchesDept && matchesSearch && hasMissing && matchesBasket
     })
-  }, [search, dept, missingOnly])
+  }, [search, dept, missingOnly, basketOnly, basketGroupIds])
 
   const sorted = useMemo(() => {
     return [...items].sort((a, b) => {
@@ -92,16 +100,6 @@ export default function ComparePage() {
       return pa - pb
     })
   }, [items, sortBy])
-
-  // Coverage stats
-  const coverage = useMemo(() => {
-    const total = chainPrices.products.length
-    return CHAINS.map((c) => ({
-      chain: c,
-      count: chainPrices.products.filter((p) => getChainPrice(p, c) !== null).length,
-      total,
-    }))
-  }, [])
 
   if (!chainPrices.fetched_at) {
     return (
@@ -118,21 +116,8 @@ export default function ComparePage() {
       <div className="mb-5">
         <h1 className="text-2xl font-extrabold text-gray-100">השוואת מחירים</h1>
         <p className="text-sm text-gray-500 mt-1">
-          עודכן: {new Date(chainPrices.fetched_at).toLocaleString('he-IL')} · {chainPrices.product_count} מוצרים
+          עודכן: {new Date(chainPrices.fetched_at).toLocaleDateString('he-IL', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })}
         </p>
-      </div>
-
-      {/* Coverage pills */}
-      <div className="flex gap-2 flex-wrap mb-5">
-        {coverage.map(({ chain, count, total }) => (
-          <div
-            key={chain}
-            className={`flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-full border ${CHAIN_COLORS[chain as ChainName]}`}
-          >
-            <span className="text-gray-300">{chain}</span>
-            <span className="font-bold text-gray-200">{count}/{total}</span>
-          </div>
-        ))}
       </div>
 
       {/* Search + filters */}
@@ -158,6 +143,23 @@ export default function ComparePage() {
             }`}
           >
             ⚠ חסר מחיר
+          </button>
+
+          <button
+            onClick={() => {
+              if (!basketOnly && basketCount === 0) {
+                navigate('/products')
+                return
+              }
+              setBasketOnly(v => !v)
+            }}
+            className={`text-xs font-semibold px-3 py-1.5 rounded-full border transition-colors ${
+              basketOnly
+                ? 'bg-amber-500 text-gray-900 border-amber-500'
+                : 'bg-gray-800 text-gray-300 border-gray-600 hover:border-amber-500'
+            }`}
+          >
+            🛒 השווה את המחירים לסל שלי{basketCount > 0 ? ` (${basketCount})` : ''}
           </button>
 
           <select

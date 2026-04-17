@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 import chainPricesData from '../data/chain_prices.json'
 import productsData from '../data/products.json'
 import type { ChainPricesData, ChainProductPrices, ChainPrice, Product } from '../types'
@@ -73,7 +73,8 @@ export default function ComparePage() {
   const [dept, setDept] = useState('הכל')
   const [sortBy, setSortBy] = useState<SortKey>('name')
   const [missingOnly, setMissingOnly] = useState(false)
-  const [basketOnly, setBasketOnly] = useState(false)
+  const location = useLocation()
+  const [basketOnly, setBasketOnly] = useState(() => !!(location.state as { basketOnly?: boolean })?.basketOnly)
   const navigate = useNavigate()
   const { selected } = useBasketStore()
   const basketGroupIds = new Set(Array.from(selected.values()).map(p => p.groupId))

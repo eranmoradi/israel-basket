@@ -273,6 +273,13 @@ export default function BasketPage() {
           <span>📍</span>
           <span>5 הסניפים הקרובים אלי</span>
         </button>
+        <button
+          onClick={() => navigate('/compare', { state: { basketOnly: true } })}
+          className="w-full flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 active:scale-95 border border-amber-400 text-gray-900 font-semibold text-base py-4 rounded-xl transition-all"
+        >
+          <span>🛒</span>
+          <span>השווה את מחיר הסל שלי לרשתות נוספות</span>
+        </button>
       </div>
 
       {/* Product list */}

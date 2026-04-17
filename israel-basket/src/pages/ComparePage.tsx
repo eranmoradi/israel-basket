@@ -162,7 +162,7 @@ export default function ComparePage() {
             {!basketOnly && (
               <span className="absolute inset-0 rounded-full animate-ping bg-amber-400 opacity-20 pointer-events-none" />
             )}
-            🛒 השווה את המחירים לסל שלי{basketCount > 0 ? ` (${basketCount})` : ''}
+            🛒 {basketCount > 0 ? `השווה את המחירים לסל שלי (${basketCount})` : 'הוסיפו מוצרים לסל להשוואת מחירים'}
           </button>
 
           <select

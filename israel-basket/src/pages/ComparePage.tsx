@@ -102,6 +102,11 @@ export default function ComparePage() {
     })
   }, [items, sortBy])
 
+  const visibleChains = useMemo(() => {
+    if (!basketOnly || sorted.length === 0) return CHAINS
+    return CHAINS.filter(c => sorted.every(item => getChainPrice(item, c) !== null))
+  }, [basketOnly, sorted])
+
   if (!chainPrices.fetched_at) {
     return (
       <div className="max-w-5xl mx-auto px-4 py-16 text-center text-gray-500">
@@ -202,7 +207,7 @@ export default function ComparePage() {
                 <th className="sticky right-0 z-10 bg-gray-800 text-right px-3 py-2.5 font-semibold text-gray-300 w-44 border-b border-gray-700">
                   מוצר
                 </th>
-                {CHAINS.map((chain) => (
+                {visibleChains.map((chain) => (
                   <th
                     key={chain}
                     className={`px-3 py-2.5 font-semibold text-center border-b border-gray-700 ${CHAIN_HEADER_COLORS[chain]}`}
@@ -215,7 +220,7 @@ export default function ComparePage() {
             <tbody>
               {sorted.map((item, idx) => {
                 // Find minimum effective price across chains
-                const chainEffectives = CHAINS.map((c) => getChainPrice(item, c)?.effective ?? Infinity)
+                const chainEffectives = visibleChains.map((c) => getChainPrice(item, c)?.effective ?? Infinity)
                 const minPrice = Math.min(...chainEffectives)
                 const dept = deptByGroup.get(item.groupId) ?? ''
 
@@ -230,7 +235,7 @@ export default function ComparePage() {
                         <div className="text-gray-600 text-[10px] mt-0.5">{dept}</div>
                       )}
                     </td>
-                    {CHAINS.map((chain) => {
+                    {visibleChains.map((chain) => {
                       const cp = getChainPrice(item, chain)
                       const isMin = cp !== null && cp.effective === minPrice
                       return (
@@ -260,7 +265,7 @@ export default function ComparePage() {
         <div className="mt-4 p-4 bg-gray-900 rounded-xl border border-gray-700">
           <div className="text-sm font-semibold text-gray-300 mb-3">סכום לסל (מוצרים עם מחיר בלבד)</div>
           <div className="grid grid-cols-2 gap-3">
-            {CHAINS.map((chain) => {
+            {visibleChains.map((chain) => {
               const total = sorted.reduce((sum, item) => {
                 const cp = getChainPrice(item, chain)
                 return sum + (cp?.effective ?? 0)

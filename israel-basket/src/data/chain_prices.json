@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-16T04:56:01.077802+00:00",
+  "fetched_at": "2026-04-17T04:53:08.867803+00:00",
   "chains": [
     "קרפור",
     "שופרסל",
@@ -13,7 +13,7 @@
     "קרפור": 100,
     "שופרסל": 0,
     "רמי לוי": 0,
-    "יוחננוף": 86,
+    "יוחננוף": 97,
     "חצי חינם": 31
   },
   "products": [
@@ -64,7 +64,11 @@
       "prices": {
         "שופרסל": null,
         "רמי לוי": null,
-        "יוחננוף": null,
+        "יוחננוף": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
+        },
         "קרפור": {
           "regular": 7.0,
           "sale": null,
@@ -84,7 +88,11 @@
       "prices": {
         "שופרסל": null,
         "רמי לוי": null,
-        "יוחננוף": null,
+        "יוחננוף": {
+          "regular": 14.9,
+          "sale": null,
+          "effective": 14.9
+        },
         "קרפור": {
           "regular": 6.9,
           "sale": null,
@@ -100,7 +108,11 @@
       "prices": {
         "שופרסל": null,
         "רמי לוי": null,
-        "יוחננוף": null,
+        "יוחננוף": {
+          "regular": 5.9,
+          "sale": null,
+          "effective": 5.9
+        },
         "קרפור": {
           "regular": 3.9,
           "sale": null,
@@ -212,7 +224,11 @@
       "prices": {
         "שופרסל": null,
         "רמי לוי": null,
-        "יוחננוף": null,
+        "יוחננוף": {
+          "regular": 29.9,
+          "sale": null,
+          "effective": 29.9
+        },
         "קרפור": {
           "regular": 21.9,
           "sale": null,
@@ -292,7 +308,11 @@
       "prices": {
         "שופרסל": null,
         "רמי לוי": null,
-        "יוחננוף": null,
+        "יוחננוף": {
+          "regular": 27.9,
+          "sale": null,
+          "effective": 27.9
+        },
         "קרפור": {
           "regular": 22.9,
           "sale": null,
@@ -432,7 +452,11 @@
       "prices": {
         "שופרסל": null,
         "רמי לוי": null,
-        "יוחננוף": null,
+        "יוחננוף": {
+          "regular": 19.9,
+          "sale": null,
+          "effective": 19.9
+        },
         "קרפור": {
           "regular": 13.9,
           "sale": null,
@@ -468,7 +492,11 @@
       "prices": {
         "שופרסל": null,
         "רמי לוי": null,
-        "יוחננוף": null,
+        "יוחננוף": {
+          "regular": 25.9,
+          "sale": null,
+          "effective": 25.9
+        },
         "קרפור": {
           "regular": 12.9,
           "sale": null,
@@ -508,7 +536,11 @@
       "prices": {
         "שופרסל": null,
         "רמי לוי": null,
-        "יוחננוף": null,
+        "יוחננוף": {
+          "regular": 25.9,
+          "sale": null,
+          "effective": 25.9
+        },
         "קרפור": {
           "regular": 16.9,
           "sale": null,
@@ -748,7 +780,11 @@
       "prices": {
         "שופרסל": null,
         "רמי לוי": null,
-        "יוחננוף": null,
+        "יוחננוף": {
+          "regular": 32.9,
+          "sale": 30.9,
+          "effective": 30.9
+        },
         "קרפור": {
           "regular": 19.9,
           "sale": null,
@@ -792,7 +828,11 @@
       "prices": {
         "שופרסל": null,
         "רמי לוי": null,
-        "יוחננוף": null,
+        "יוחננוף": {
+          "regular": 10.9,
+          "sale": null,
+          "effective": 10.9
+        },
         "קרפור": {
           "regular": 7.7,
           "sale": null,
@@ -1620,7 +1660,11 @@
       "prices": {
         "שופרסל": null,
         "רמי לוי": null,
-        "יוחננוף": null,
+        "יוחננוף": {
+          "regular": 18.9,
+          "sale": null,
+          "effective": 18.9
+        },
         "קרפור": {
           "regular": 12.9,
           "sale": null,

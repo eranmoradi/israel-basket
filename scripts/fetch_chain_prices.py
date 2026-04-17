@@ -1,15 +1,19 @@
 #!/usr/bin/env python3
 """
-Fetch real-time prices for all Israel Basket products from 4 chains:
+Fetch real-time prices for all Israel Basket products from 5 chains:
   - שופרסל (Shufersal Online) — direct product page API
   - רמי לוי (Rami Levy Online) — search API
   - יוחננוף (Yochananof Online) — Magento 2 GraphQL API
   - חצי חינם (Hazi Hinam Online) — CHP price data (auth required for direct API)
+  - אושר עד — government price transparency FTP (url.retail.publishedprices.co.il)
 
 Outputs: israel-basket/src/data/chain_prices.json
 """
 from __future__ import annotations
 
+import ftplib
+import gzip
+import io
 import json
 import time
 import random
@@ -17,6 +21,7 @@ import re
 import urllib.request
 import urllib.error
 import urllib.parse
+import xml.etree.ElementTree as ET
 from html import unescape
 from datetime import datetime, timezone
 from pathlib import Path
@@ -27,7 +32,7 @@ PRODUCTS_JSON = ROOT / "israel-basket/src/data/products.json"
 PRICES_JSON = ROOT / "israel-basket/src/data/prices.json"   # CHP data for חצי חינם
 OUTPUT_JSON = ROOT / "israel-basket/src/data/chain_prices.json"
 
-CHAINS = ["קרפור", "שופרסל", "רמי לוי", "יוחננוף", "חצי חינם"]
+CHAINS = ["קרפור", "שופרסל", "רמי לוי", "יוחננוף", "אושר עד", "ויקטורי", "חצי חינם"]
 DELAY_BETWEEN_PRODUCTS = (0.8, 1.8)  # seconds between product groups
 DELAY_BETWEEN_CHAINS = (0.3, 0.7)    # seconds between API calls for same product
 
@@ -259,6 +264,161 @@ def build_carrefour_index(all_products: list[dict]) -> dict[str, dict]:
 
 
 # ---------------------------------------------------------------------------
+# אושר עד (government FTP price transparency)
+# ---------------------------------------------------------------------------
+
+OSHER_AD_FTP_HOST = "url.retail.publishedprices.co.il"
+OSHER_AD_FTP_USER = "osherad"
+
+
+def _ftp_download(ftp: ftplib.FTP, filename: str) -> bytes:
+    buf = io.BytesIO()
+    ftp.retrbinary(f"RETR {filename}", buf.write)
+    buf.seek(0)
+    return buf.read()
+
+
+def _parse_pricefull_xml(data: bytes) -> dict[str, float]:
+    """Parse one PriceFull XML (may be gzip-compressed). Returns barcode→price dict."""
+    if data[:2] == b"\x1f\x8b":
+        data = gzip.decompress(data)
+    root = ET.fromstring(data)
+    prices: dict[str, float] = {}
+    for item in root.iter("Item"):
+        barcode = item.findtext("ItemCode")
+        price_text = item.findtext("ItemPrice")
+        if barcode and price_text:
+            try:
+                price = float(price_text)
+                if price > 0:
+                    prices[barcode.strip()] = price
+            except ValueError:
+                pass
+    return prices
+
+
+def build_osher_ad_index() -> dict[str, dict]:
+    """
+    Download all today's PriceFull files from Osher Ad's government FTP,
+    average prices across branches, and return barcode→{regular,sale,effective}.
+    Uses active FTP mode (passive fails on this server due to IPv6 PASV responses).
+    """
+    print("  Connecting to Osher Ad FTP...")
+    ftp = ftplib.FTP(timeout=30)
+    ftp.set_pasv(False)
+    ftp.connect(OSHER_AD_FTP_HOST, 21)
+    ftp.login(OSHER_AD_FTP_USER, "")
+
+    all_files = ftp.nlst()
+    price_files = sorted(
+        [f for f in all_files if "pricef" in f.lower()],
+        reverse=True,
+    )
+
+    if not price_files:
+        print("  ⚠ No PriceFull files found on Osher Ad FTP")
+        ftp.quit()
+        return {}
+
+    # Keep only the latest date's files (date in filename is YYYYMMDD after last dash before time)
+    latest_date = re.search(r"-(\d{8})-\d{6}\.", price_files[0])
+    if latest_date:
+        date_str = latest_date.group(1)
+        price_files = [f for f in price_files if f"-{date_str}-" in f]
+
+    print(f"  Found {len(price_files)} branch files (date: {date_str if latest_date else '?'})")
+
+    # Accumulate prices across all branches
+    accumulated: dict[str, list[float]] = {}
+    for i, fname in enumerate(price_files, 1):
+        print(f"  [{i}/{len(price_files)}] {fname}")
+        try:
+            raw = _ftp_download(ftp, fname)
+            branch_prices = _parse_pricefull_xml(raw)
+            for barcode, price in branch_prices.items():
+                accumulated.setdefault(barcode, []).append(price)
+        except Exception as e:
+            print(f"    ⚠ {e}")
+
+    ftp.quit()
+
+    # Average across branches
+    index: dict[str, dict] = {}
+    for barcode, price_list in accumulated.items():
+        avg = round(sum(price_list) / len(price_list), 2)
+        index[barcode] = {"regular": avg, "sale": None, "effective": avg}
+
+    print(f"  אושר עד index built: {len(index)} unique barcodes")
+    return index
+
+
+# ---------------------------------------------------------------------------
+# ויקטורי (laibcatalog.co.il REST API)
+# ---------------------------------------------------------------------------
+
+VICTORY_BASE = "https://laibcatalog.co.il"
+VICTORY_CHAIN_ID = "7290696200003"
+
+
+def build_victory_index() -> dict[str, dict]:
+    """
+    Download all today's PriceFull files from Victory via laibcatalog.co.il REST API,
+    average prices across branches, and return barcode→{regular,sale,effective}.
+    Only uses items with EAN-style barcodes (≥8 digits).
+    """
+    print("  Fetching ויקטורי file list from laibcatalog.co.il...")
+
+    def _get_json(url: str) -> list:
+        raw = _get(url, headers={"Accept": "application/json"})
+        return json.loads(raw.decode("utf-8"))
+
+    files = _get_json(f"{VICTORY_BASE}/webapi/api/getfiles?edi={VICTORY_CHAIN_ID}")
+    price_files = [f for f in files if "pricefull" in f.get("fileType", "").lower()]
+
+    if not price_files:
+        print("  ⚠ No PriceFull files found for ויקטורי")
+        return {}
+
+    # Keep only the latest date's files
+    latest_date = re.search(r"-(\d{8})-\d{6}\.", price_files[0]["fileName"])
+    if latest_date:
+        date_str = latest_date.group(1)
+        price_files = [f for f in price_files if f"-{date_str}-" in f["fileName"]]
+
+    print(f"  Found {len(price_files)} branch files")
+
+    accumulated: dict[str, list[float]] = {}
+    for i, entry in enumerate(price_files, 1):
+        fname = entry["fileName"]
+        print(f"  [{i}/{len(price_files)}] {fname}")
+        try:
+            url = f"{VICTORY_BASE}/webapi/{VICTORY_CHAIN_ID}/{fname}"
+            raw = _get(url)
+            data = gzip.decompress(raw) if raw[:2] == b"\x1f\x8b" else raw
+            root = ET.fromstring(data)
+            for item in root.iter("Item"):
+                code = (item.findtext("ItemCode") or "").strip()
+                price_text = item.findtext("ItemPrice")
+                if len(code) >= 8 and price_text:
+                    try:
+                        p = float(price_text)
+                        if p > 0:
+                            accumulated.setdefault(code, []).append(p)
+                    except ValueError:
+                        pass
+        except Exception as e:
+            print(f"    ⚠ {e}")
+
+    index: dict[str, dict] = {}
+    for barcode, price_list in accumulated.items():
+        avg = round(sum(price_list) / len(price_list), 2)
+        index[barcode] = {"regular": avg, "sale": None, "effective": avg}
+
+    print(f"  ויקטורי index built: {len(index)} unique barcodes")
+    return index
+
+
+# ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
 
@@ -301,9 +461,25 @@ def main() -> None:
     hazi_hinam_idx = build_hazi_hinam_index(chp_data)
     carrefour_idx = build_carrefour_index(all_products)
 
+    print("\nFetching אושר עד prices from government FTP...")
+    try:
+        osher_ad_idx = build_osher_ad_index()
+    except Exception as e:
+        print(f"⚠ אושר עד FTP failed: {e}")
+        osher_ad_idx = {}
+
+    print("\nFetching ויקטורי prices from laibcatalog.co.il...")
+    try:
+        victory_idx = build_victory_index()
+    except Exception as e:
+        print(f"⚠ ויקטורי API failed: {e}")
+        victory_idx = {}
+
     total = len(representatives)
     print(f"\n{total} product groups to fetch")
     print(f"קרפור Excel coverage: {len(carrefour_idx)}/{total}")
+    print(f"אושר עד FTP coverage: {len(osher_ad_idx)} barcodes available")
+    print(f"ויקטורי API coverage: {len(victory_idx)} barcodes available")
     print(f"חצי חינם CHP coverage: {len(hazi_hinam_idx)}/{total}\n")
 
     results: list[dict] = []
@@ -344,6 +520,12 @@ def main() -> None:
         # --- קרפור (Excel prices, no HTTP call needed) ---
         prices["קרפור"] = carrefour_idx.get(barcode)
 
+        # --- אושר עד (government FTP, pre-built index) ---
+        prices["אושר עד"] = osher_ad_idx.get(barcode)
+
+        # --- ויקטורי (laibcatalog API, pre-built index) ---
+        prices["ויקטורי"] = victory_idx.get(barcode)
+
         # --- חצי חינם (CHP, no HTTP call needed) ---
         prices["חצי חינם"] = hazi_hinam_idx.get(barcode)
 
@@ -352,6 +534,8 @@ def main() -> None:
             f"  שופרסל: {fmt_price(prices['שופרסל']):12s}"
             f"  רמי לוי: {fmt_price(prices['רמי לוי']):12s}"
             f"  יוחננוף: {fmt_price(prices['יוחננוף']):12s}"
+            f"  אושר עד: {fmt_price(prices['אושר עד']):12s}"
+            f"  ויקטורי: {fmt_price(prices['ויקטורי']):12s}"
             f"  חצי חינם: {fmt_price(prices['חצי חינם'])}"
         )
 

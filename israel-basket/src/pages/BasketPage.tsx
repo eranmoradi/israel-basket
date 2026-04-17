@@ -6,7 +6,7 @@ import type { ChainPricesData, ChainProductPrices, ChainPrice } from '../types'
 
 const chainPrices = chainPricesData as ChainPricesData
 
-const CHAINS = ['שופרסל', 'רמי לוי', 'יוחננוף', 'חצי חינם'] as const
+const CHAINS = ['שופרסל', 'רמי לוי', 'יוחננוף', 'אושר עד', 'ויקטורי', 'חצי חינם'] as const
 type ChainName = (typeof CHAINS)[number]
 
 // Index chain prices by groupId for fast lookup
@@ -30,7 +30,9 @@ const CHAIN_BADGE: Record<ChainName, string> = {
   שופרסל: 'bg-orange-900/50 text-orange-300',
   'רמי לוי': 'bg-blue-900/50 text-blue-300',
   יוחננוף: 'bg-green-900/50 text-green-300',
-  'חצי חינם': 'bg-purple-900/50 text-purple-300',
+  'אושר עד': 'bg-yellow-900/50 text-yellow-300',
+  ויקטורי: 'bg-purple-900/50 text-purple-300',
+  'חצי חינם': 'bg-fuchsia-900/50 text-fuchsia-300',
 }
 
 export default function BasketPage() {
@@ -53,6 +55,8 @@ export default function BasketPage() {
       שופרסל: { total: 0, carrefourTotal: 0, count: 0 },
       'רמי לוי': { total: 0, carrefourTotal: 0, count: 0 },
       יוחננוף: { total: 0, carrefourTotal: 0, count: 0 },
+      'אושר עד': { total: 0, carrefourTotal: 0, count: 0 },
+      ויקטורי: { total: 0, carrefourTotal: 0, count: 0 },
       'חצי חינם': { total: 0, carrefourTotal: 0, count: 0 },
     }
 
@@ -147,16 +151,6 @@ export default function BasketPage() {
     return lines.join('\n')
   }
 
-  function handleDownload() {
-    const text = buildSummaryText()
-    const blob = new Blob([text], { type: 'text/plain;charset=utf-8' })
-    const url = URL.createObjectURL(blob)
-    const a = document.createElement('a')
-    a.href = url
-    a.download = `הסל-שלי-${new Date().toLocaleDateString('he-IL').replace(/\//g, '-')}.txt`
-    a.click()
-    URL.revokeObjectURL(url)
-  }
 
   function handleWhatsApp() {
     const text = buildSummaryText()

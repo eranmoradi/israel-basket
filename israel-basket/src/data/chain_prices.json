@@ -1,19 +1,23 @@
 {
-  "fetched_at": "2026-04-17T04:53:08.867803+00:00",
+  "fetched_at": "2026-04-17T06:53:06.419240+00:00",
   "chains": [
     "קרפור",
     "שופרסל",
     "רמי לוי",
     "יוחננוף",
+    "אושר עד",
+    "ויקטורי",
     "חצי חינם"
   ],
   "product_count": 100,
-  "error_count": 100,
+  "error_count": 0,
   "coverage": {
     "קרפור": 100,
-    "שופרסל": 0,
-    "רמי לוי": 0,
+    "שופרסל": 98,
+    "רמי לוי": 97,
     "יוחננוף": 97,
+    "אושר עד": 77,
+    "ויקטורי": 100,
     "חצי חינם": 31
   },
   "products": [
@@ -22,8 +26,16 @@
       "barcode": "7290000197678",
       "name": "האגיס פרידום פלוס שלב 6 27 יח",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 44.9,
+          "sale": null,
+          "effective": 44.9
+        },
+        "רמי לוי": {
+          "regular": 46.6,
+          "sale": null,
+          "effective": 46.6
+        },
         "יוחננוף": {
           "regular": 42.3,
           "sale": null,
@@ -34,6 +46,16 @@
           "sale": null,
           "effective": 31.9
         },
+        "אושר עד": {
+          "regular": 41.5,
+          "sale": null,
+          "effective": 41.5
+        },
+        "ויקטורי": {
+          "regular": 43.9,
+          "sale": null,
+          "effective": 43.9
+        },
         "חצי חינם": null
       }
     },
@@ -42,8 +64,16 @@
       "barcode": "7290000195537",
       "name": "מגבוני האגיס דיילי קר לא מבושם 4*56",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 22.9,
+          "sale": null,
+          "effective": 22.9
+        },
+        "רמי לוי": {
+          "regular": 19.7,
+          "sale": null,
+          "effective": 19.7
+        },
         "יוחננוף": {
           "regular": 19.9,
           "sale": null,
@@ -54,6 +84,16 @@
           "sale": null,
           "effective": 16.0
         },
+        "אושר עד": {
+          "regular": 19.41,
+          "sale": null,
+          "effective": 19.41
+        },
+        "ויקטורי": {
+          "regular": 20.9,
+          "sale": null,
+          "effective": 20.9
+        },
         "חצי חינם": null
       }
     },
@@ -62,8 +102,16 @@
       "barcode": "7290000211442",
       "name": "סוגת אורז פרסי קלאסי שקית 1 ק\"ג",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
+        },
+        "רמי לוי": {
+          "regular": 12.9,
+          "sale": 11.9,
+          "effective": 11.9
+        },
         "יוחננוף": {
           "regular": 11.9,
           "sale": null,
@@ -73,6 +121,16 @@
           "regular": 7.0,
           "sale": null,
           "effective": 7.0
+        },
+        "אושר עד": {
+          "regular": 11.6,
+          "sale": null,
+          "effective": 11.6
+        },
+        "ויקטורי": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
         },
         "חצי חינם": {
           "regular": 11.9,
@@ -86,8 +144,16 @@
       "barcode": "7290100700372",
       "name": "סוגת אורז בסמטי מלא 1 ק\"ג",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 14.9,
+          "sale": null,
+          "effective": 14.9
+        },
+        "רמי לוי": {
+          "regular": 14.9,
+          "sale": null,
+          "effective": 14.9
+        },
         "יוחננוף": {
           "regular": 14.9,
           "sale": null,
@@ -98,6 +164,12 @@
           "sale": null,
           "effective": 6.9
         },
+        "אושר עד": null,
+        "ויקטורי": {
+          "regular": 15.9,
+          "sale": null,
+          "effective": 15.9
+        },
         "חצי חינם": null
       }
     },
@@ -106,8 +178,16 @@
       "barcode": "7290000060880",
       "name": "פסטה אסם ספגטי 500גר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 6.5,
+          "sale": null,
+          "effective": 6.5
+        },
+        "רמי לוי": {
+          "regular": 5.9,
+          "sale": null,
+          "effective": 5.9
+        },
         "יוחננוף": {
           "regular": 5.9,
           "sale": null,
@@ -118,6 +198,16 @@
           "sale": null,
           "effective": 3.9
         },
+        "אושר עד": {
+          "regular": 4.9,
+          "sale": null,
+          "effective": 4.9
+        },
+        "ויקטורי": {
+          "regular": 6.9,
+          "sale": null,
+          "effective": 6.9
+        },
         "חצי חינם": null
       }
     },
@@ -126,13 +216,27 @@
       "barcode": "8076809529419",
       "name": "ברילה ספגטי מחיטה מלאה 500 גרם",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 16.9,
+          "sale": null,
+          "effective": 16.9
+        },
+        "רמי לוי": {
+          "regular": 4.9,
+          "sale": null,
+          "effective": 4.9
+        },
         "יוחננוף": null,
         "קרפור": {
           "regular": 8.9,
           "sale": null,
           "effective": 8.9
+        },
+        "אושר עד": null,
+        "ויקטורי": {
+          "regular": 16.9,
+          "sale": null,
+          "effective": 16.9
         },
         "חצי חינם": {
           "regular": 17.1,
@@ -146,8 +250,16 @@
       "barcode": "7290100700273",
       "name": "סוגת קינואה 500 גר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 17.5,
+          "sale": null,
+          "effective": 17.5
+        },
+        "רמי לוי": {
+          "regular": 14.9,
+          "sale": null,
+          "effective": 14.9
+        },
         "יוחננוף": {
           "regular": 14.9,
           "sale": null,
@@ -158,6 +270,12 @@
           "sale": null,
           "effective": 6.9
         },
+        "אושר עד": null,
+        "ויקטורי": {
+          "regular": 16.9,
+          "sale": null,
+          "effective": 16.9
+        },
         "חצי חינם": null
       }
     },
@@ -166,8 +284,16 @@
       "barcode": "7290003643752",
       "name": "סוגת עדשים ירוקים 500 גר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 9.9,
+          "sale": null,
+          "effective": 9.9
+        },
+        "רמי לוי": {
+          "regular": 3.9,
+          "sale": null,
+          "effective": 3.9
+        },
         "יוחננוף": {
           "regular": 8.9,
           "sale": null,
@@ -177,6 +303,12 @@
           "regular": 3.9,
           "sale": null,
           "effective": 3.9
+        },
+        "אושר עד": null,
+        "ויקטורי": {
+          "regular": 9.5,
+          "sale": null,
+          "effective": 9.5
         },
         "חצי חינם": null
       }
@@ -186,13 +318,27 @@
       "barcode": "7290100704929",
       "name": "סוגת שעועית לבנה 500 גר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 12.9,
+          "sale": null,
+          "effective": 12.9
+        },
+        "רמי לוי": {
+          "regular": 9.4,
+          "sale": null,
+          "effective": 9.4
+        },
         "יוחננוף": null,
         "קרפור": {
           "regular": 4.9,
           "sale": null,
           "effective": 4.9
+        },
+        "אושר עד": null,
+        "ויקטורי": {
+          "regular": 13.9,
+          "sale": null,
+          "effective": 13.9
         },
         "חצי חינם": null
       }
@@ -202,8 +348,16 @@
       "barcode": "7290003643714",
       "name": "סוגת חומוס 500גר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 9.9,
+          "sale": null,
+          "effective": 9.9
+        },
+        "רמי לוי": {
+          "regular": 9.3,
+          "sale": 8.9,
+          "effective": 8.9
+        },
         "יוחננוף": {
           "regular": 8.9,
           "sale": null,
@@ -214,6 +368,12 @@
           "sale": null,
           "effective": 3.9
         },
+        "אושר עד": null,
+        "ויקטורי": {
+          "regular": 9.2,
+          "sale": null,
+          "effective": 9.2
+        },
         "חצי חינם": null
       }
     },
@@ -222,8 +382,16 @@
       "barcode": "7290010116348",
       "name": "מיקס מעורב מגדים 390ג",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 31.9,
+          "sale": null,
+          "effective": 31.9
+        },
+        "רמי לוי": {
+          "regular": 31.5,
+          "sale": 29.9,
+          "effective": 29.9
+        },
         "יוחננוף": {
           "regular": 29.9,
           "sale": null,
@@ -234,6 +402,16 @@
           "sale": null,
           "effective": 21.9
         },
+        "אושר עד": {
+          "regular": 28.85,
+          "sale": null,
+          "effective": 28.85
+        },
+        "ויקטורי": {
+          "regular": 32.9,
+          "sale": null,
+          "effective": 32.9
+        },
         "חצי חינם": null
       }
     },
@@ -242,8 +420,16 @@
       "barcode": "8000500071083",
       "name": "קינדר אצבעות שוקולד 200ג",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 17.9,
+          "sale": null,
+          "effective": 17.9
+        },
+        "רמי לוי": {
+          "regular": 16.2,
+          "sale": 14.9,
+          "effective": 14.9
+        },
         "יוחננוף": {
           "regular": 15.9,
           "sale": null,
@@ -253,6 +439,12 @@
           "regular": 9.9,
           "sale": null,
           "effective": 9.9
+        },
+        "אושר עד": null,
+        "ויקטורי": {
+          "regular": 16.9,
+          "sale": null,
+          "effective": 16.9
         },
         "חצי חינם": {
           "regular": 13.5,
@@ -266,8 +458,16 @@
       "barcode": "7290112494313",
       "name": "קליק קורנפלקס תפזורת 65גר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 8.5,
+          "sale": null,
+          "effective": 8.5
+        },
+        "רמי לוי": {
+          "regular": 7.9,
+          "sale": null,
+          "effective": 7.9
+        },
         "יוחננוף": {
           "regular": 7.5,
           "sale": null,
@@ -278,6 +478,16 @@
           "sale": null,
           "effective": 5.5
         },
+        "אושר עד": {
+          "regular": 7.12,
+          "sale": null,
+          "effective": 7.12
+        },
+        "ויקטורי": {
+          "regular": 7.9,
+          "sale": null,
+          "effective": 7.9
+        },
         "חצי חינם": null
       }
     },
@@ -286,8 +496,16 @@
       "barcode": "7290000137513",
       "name": "קרמיסימו שוקו ניל חלבי 60יח 630גר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 26.9,
+          "sale": 25.9,
+          "effective": 25.9
+        },
+        "רמי לוי": {
+          "regular": 51.9,
+          "sale": 45.9,
+          "effective": 45.9
+        },
         "יוחננוף": {
           "regular": 51.9,
           "sale": null,
@@ -298,6 +516,16 @@
           "sale": null,
           "effective": 29.9
         },
+        "אושר עד": {
+          "regular": 48.17,
+          "sale": null,
+          "effective": 48.17
+        },
+        "ויקטורי": {
+          "regular": 55.9,
+          "sale": null,
+          "effective": 55.9
+        },
         "חצי חינם": null
       }
     },
@@ -306,8 +534,16 @@
       "barcode": "7290116537351",
       "name": "כריות נוגט תלמה 686 גרם",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 28.9,
+          "sale": null,
+          "effective": 28.9
+        },
+        "רמי לוי": {
+          "regular": 28.4,
+          "sale": 27.9,
+          "effective": 27.9
+        },
         "יוחננוף": {
           "regular": 27.9,
           "sale": null,
@@ -317,6 +553,16 @@
           "regular": 22.9,
           "sale": null,
           "effective": 22.9
+        },
+        "אושר עד": {
+          "regular": 27.76,
+          "sale": null,
+          "effective": 27.76
+        },
+        "ויקטורי": {
+          "regular": 29.9,
+          "sale": null,
+          "effective": 29.9
         },
         "חצי חינם": {
           "regular": 29.4,
@@ -330,8 +576,16 @@
       "barcode": "7290112494351",
       "name": "קורנפלקס אלופים בד\"צ 850 גר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 20.9,
+          "sale": null,
+          "effective": 20.9
+        },
+        "רמי לוי": {
+          "regular": 20,
+          "sale": null,
+          "effective": 20
+        },
         "יוחננוף": {
           "regular": 19.9,
           "sale": null,
@@ -342,6 +596,16 @@
           "sale": null,
           "effective": 17.9
         },
+        "אושר עד": {
+          "regular": 19.8,
+          "sale": null,
+          "effective": 19.8
+        },
+        "ויקטורי": {
+          "regular": 21.9,
+          "sale": null,
+          "effective": 21.9
+        },
         "חצי חינם": null
       }
     },
@@ -350,8 +614,16 @@
       "barcode": "7290000480107",
       "name": "קוואקר מהיר אטוס לל\"ס 500 גר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 7.9,
+          "sale": null,
+          "effective": 7.9
+        },
+        "רמי לוי": {
+          "regular": 8.8,
+          "sale": null,
+          "effective": 8.8
+        },
         "יוחננוף": {
           "regular": 12.9,
           "sale": null,
@@ -362,6 +634,16 @@
           "sale": null,
           "effective": 8.9
         },
+        "אושר עד": {
+          "regular": 11.8,
+          "sale": null,
+          "effective": 11.8
+        },
+        "ויקטורי": {
+          "regular": 12.9,
+          "sale": null,
+          "effective": 12.9
+        },
         "חצי חינם": null
       }
     },
@@ -370,8 +652,16 @@
       "barcode": "7290000066332",
       "name": "אפרופו 50 גרם",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 15.9,
+          "sale": null,
+          "effective": 15.9
+        },
+        "רמי לוי": {
+          "regular": 4.9,
+          "sale": null,
+          "effective": 4.9
+        },
         "יוחננוף": {
           "regular": 4.5,
           "sale": null,
@@ -382,6 +672,16 @@
           "sale": null,
           "effective": 3.1
         },
+        "אושר עד": {
+          "regular": 4.43,
+          "sale": null,
+          "effective": 4.43
+        },
+        "ויקטורי": {
+          "regular": 5.0,
+          "sale": null,
+          "effective": 5.0
+        },
         "חצי חינם": null
       }
     },
@@ -390,8 +690,16 @@
       "barcode": "7290000066318",
       "name": "במבה 80 גרם",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 17.9,
+          "sale": 16.9,
+          "effective": 16.9
+        },
+        "רמי לוי": {
+          "regular": 4.4,
+          "sale": null,
+          "effective": 4.4
+        },
         "יוחננוף": {
           "regular": 4.5,
           "sale": null,
@@ -402,6 +710,16 @@
           "sale": null,
           "effective": 3.0
         },
+        "אושר עד": {
+          "regular": 3.86,
+          "sale": null,
+          "effective": 3.86
+        },
+        "ויקטורי": {
+          "regular": 4.9,
+          "sale": null,
+          "effective": 4.9
+        },
         "חצי חינם": null
       }
     },
@@ -410,8 +728,16 @@
       "barcode": "7290008745239",
       "name": "תפוציפס קראנץ טבעי 50 גר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 15.9,
+          "sale": null,
+          "effective": 15.9
+        },
+        "רמי לוי": {
+          "regular": 2.4,
+          "sale": null,
+          "effective": 2.4
+        },
         "יוחננוף": {
           "regular": 4,
           "sale": null,
@@ -422,6 +748,16 @@
           "sale": null,
           "effective": 2.5
         },
+        "אושר עד": {
+          "regular": 3.88,
+          "sale": null,
+          "effective": 3.88
+        },
+        "ויקטורי": {
+          "regular": 4.4,
+          "sale": null,
+          "effective": 4.4
+        },
         "חצי חינם": null
       }
     },
@@ -431,7 +767,11 @@
       "name": "פינוק שמפו לשיער רגיל 700מ\"ל",
       "prices": {
         "שופרסל": null,
-        "רמי לוי": null,
+        "רמי לוי": {
+          "regular": 14.7,
+          "sale": null,
+          "effective": 14.7
+        },
         "יוחננוף": {
           "regular": 13.9,
           "sale": null,
@@ -442,6 +782,16 @@
           "sale": null,
           "effective": 8.9
         },
+        "אושר עד": {
+          "regular": 13.42,
+          "sale": null,
+          "effective": 13.42
+        },
+        "ויקטורי": {
+          "regular": 13.9,
+          "sale": null,
+          "effective": 13.9
+        },
         "חצי חינם": null
       }
     },
@@ -451,7 +801,11 @@
       "name": "תירוש כרמל אדום 1 ליטר",
       "prices": {
         "שופרסל": null,
-        "רמי לוי": null,
+        "רמי לוי": {
+          "regular": 21.9,
+          "sale": 16.9,
+          "effective": 16.9
+        },
         "יוחננוף": {
           "regular": 19.9,
           "sale": null,
@@ -462,6 +816,16 @@
           "sale": null,
           "effective": 13.9
         },
+        "אושר עד": {
+          "regular": 19.33,
+          "sale": null,
+          "effective": 19.33
+        },
+        "ויקטורי": {
+          "regular": 19.9,
+          "sale": null,
+          "effective": 19.9
+        },
         "חצי חינם": null
       }
     },
@@ -470,8 +834,16 @@
       "barcode": "7290000104676",
       "name": "אפונה 800 גרם",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 101.0,
+          "sale": null,
+          "effective": 101.0
+        },
+        "רמי לוי": {
+          "regular": 19.9,
+          "sale": null,
+          "effective": 19.9
+        },
         "יוחננוף": {
           "regular": 16.9,
           "sale": null,
@@ -482,6 +854,12 @@
           "sale": null,
           "effective": 11.5
         },
+        "אושר עד": null,
+        "ויקטורי": {
+          "regular": 18.9,
+          "sale": null,
+          "effective": 18.9
+        },
         "חצי חינם": null
       }
     },
@@ -490,8 +868,16 @@
       "barcode": "7290000107295",
       "name": "תפרחות ברוקולי 800ג",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 17.9,
+          "sale": null,
+          "effective": 17.9
+        },
+        "רמי לוי": {
+          "regular": 12.9,
+          "sale": null,
+          "effective": 12.9
+        },
         "יוחננוף": {
           "regular": 25.9,
           "sale": null,
@@ -501,6 +887,12 @@
           "regular": 12.9,
           "sale": null,
           "effective": 12.9
+        },
+        "אושר עד": null,
+        "ויקטורי": {
+          "regular": 26.9,
+          "sale": null,
+          "effective": 26.9
         },
         "חצי חינם": {
           "regular": 26.2,
@@ -514,8 +906,16 @@
       "barcode": "7290000104744",
       "name": "כרובית 800גר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 14.9,
+          "sale": null,
+          "effective": 14.9
+        },
+        "רמי לוי": {
+          "regular": 12.9,
+          "sale": null,
+          "effective": 12.9
+        },
         "יוחננוף": {
           "regular": 23.9,
           "sale": null,
@@ -526,6 +926,12 @@
           "sale": null,
           "effective": 12.9
         },
+        "אושר עד": null,
+        "ויקטורי": {
+          "regular": 26.9,
+          "sale": null,
+          "effective": 26.9
+        },
         "חצי חינם": null
       }
     },
@@ -534,8 +940,16 @@
       "barcode": "7290012884986",
       "name": "תפוגן ציפס לתנור עד 4% שומן 1.5 קג",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 28.9,
+          "sale": null,
+          "effective": 28.9
+        },
+        "רמי לוי": {
+          "regular": 16.9,
+          "sale": null,
+          "effective": 16.9
+        },
         "יוחננוף": {
           "regular": 25.9,
           "sale": null,
@@ -546,6 +960,16 @@
           "sale": null,
           "effective": 16.9
         },
+        "אושר עד": {
+          "regular": 24.9,
+          "sale": null,
+          "effective": 24.9
+        },
+        "ויקטורי": {
+          "regular": 27.9,
+          "sale": null,
+          "effective": 27.9
+        },
         "חצי חינם": null
       }
     },
@@ -554,8 +978,16 @@
       "barcode": "7290000104836",
       "name": "שעועית עדינה שלמה 600גר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 23.9,
+          "sale": null,
+          "effective": 23.9
+        },
+        "רמי לוי": {
+          "regular": 21.4,
+          "sale": 15.8,
+          "effective": 15.8
+        },
         "יוחננוף": {
           "regular": 22.9,
           "sale": null,
@@ -565,6 +997,12 @@
           "regular": 13.9,
           "sale": null,
           "effective": 13.9
+        },
+        "אושר עד": null,
+        "ויקטורי": {
+          "regular": 26.9,
+          "sale": null,
+          "effective": 26.9
         },
         "חצי חינם": {
           "regular": 25.2,
@@ -578,8 +1016,16 @@
       "barcode": "7290017947891",
       "name": "לחם אנגל כוסמין וחיטה מלאה 750 גרם",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 17.9,
+          "sale": null,
+          "effective": 17.9
+        },
+        "רמי לוי": {
+          "regular": 17.9,
+          "sale": 16.9,
+          "effective": 16.9
+        },
         "יוחננוף": {
           "regular": 17.9,
           "sale": null,
@@ -590,6 +1036,16 @@
           "sale": null,
           "effective": 8.9
         },
+        "אושר עד": {
+          "regular": 17.61,
+          "sale": null,
+          "effective": 17.61
+        },
+        "ויקטורי": {
+          "regular": 17.9,
+          "sale": null,
+          "effective": 17.9
+        },
         "חצי חינם": null
       }
     },
@@ -598,8 +1054,16 @@
       "barcode": "7290014940901",
       "name": "אנג'ל לחם פשוט מלא 750מל",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 15.9,
+          "sale": null,
+          "effective": 15.9
+        },
+        "רמי לוי": {
+          "regular": 16.9,
+          "sale": 15.9,
+          "effective": 15.9
+        },
         "יוחננוף": {
           "regular": 15.9,
           "sale": null,
@@ -610,6 +1074,16 @@
           "sale": null,
           "effective": 8.9
         },
+        "אושר עד": {
+          "regular": 15.61,
+          "sale": null,
+          "effective": 15.61
+        },
+        "ויקטורי": {
+          "regular": 17.9,
+          "sale": null,
+          "effective": 17.9
+        },
         "חצי חינם": null
       }
     },
@@ -618,13 +1092,31 @@
       "barcode": "7290018540329",
       "name": "פיתה אנגל 8 יח",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 14.9,
+          "sale": null,
+          "effective": 14.9
+        },
+        "רמי לוי": {
+          "regular": 7.9,
+          "sale": null,
+          "effective": 7.9
+        },
         "יוחננוף": null,
         "קרפור": {
           "regular": 7.9,
           "sale": null,
           "effective": 7.9
+        },
+        "אושר עד": {
+          "regular": 13.68,
+          "sale": null,
+          "effective": 13.68
+        },
+        "ויקטורי": {
+          "regular": 14.9,
+          "sale": null,
+          "effective": 14.9
         },
         "חצי חינם": null
       }
@@ -634,8 +1126,16 @@
       "barcode": "7290017947464",
       "name": "אנגל פיתות כוסמין 8יח 400גר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 17.9,
+          "sale": null,
+          "effective": 17.9
+        },
+        "רמי לוי": {
+          "regular": 17.9,
+          "sale": 16.9,
+          "effective": 16.9
+        },
         "יוחננוף": {
           "regular": 16.9,
           "sale": null,
@@ -646,6 +1146,16 @@
           "sale": null,
           "effective": 9.9
         },
+        "אושר עד": {
+          "regular": 16.9,
+          "sale": null,
+          "effective": 16.9
+        },
+        "ויקטורי": {
+          "regular": 19.9,
+          "sale": null,
+          "effective": 19.9
+        },
         "חצי חינם": null
       }
     },
@@ -654,8 +1164,16 @@
       "barcode": "7290112495105",
       "name": "נשנושים שמנת בצל 260 ג",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 15.9,
+          "sale": null,
+          "effective": 15.9
+        },
+        "רמי לוי": {
+          "regular": 14.4,
+          "sale": 13.9,
+          "effective": 13.9
+        },
         "יוחננוף": {
           "regular": 13.9,
           "sale": null,
@@ -665,6 +1183,16 @@
           "regular": 9.9,
           "sale": null,
           "effective": 9.9
+        },
+        "אושר עד": {
+          "regular": 12.9,
+          "sale": null,
+          "effective": 12.9
+        },
+        "ויקטורי": {
+          "regular": 15.9,
+          "sale": null,
+          "effective": 15.9
         },
         "חצי חינם": {
           "regular": 15.0,
@@ -678,8 +1206,16 @@
       "barcode": "8434165466333",
       "name": "קריט מיני קרקרים עגולים 350גר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
+        },
+        "רמי לוי": {
+          "regular": 6.4,
+          "sale": null,
+          "effective": 6.4
+        },
         "יוחננוף": {
           "regular": 10.9,
           "sale": null,
@@ -690,6 +1226,16 @@
           "sale": null,
           "effective": 6.5
         },
+        "אושר עד": {
+          "regular": 9.9,
+          "sale": null,
+          "effective": 9.9
+        },
+        "ויקטורי": {
+          "regular": 10.9,
+          "sale": null,
+          "effective": 10.9
+        },
         "חצי חינם": null
       }
     },
@@ -698,8 +1244,16 @@
       "barcode": "7622010001858",
       "name": "אוראו 176 גרם",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
+        },
+        "רמי לוי": {
+          "regular": 12.6,
+          "sale": null,
+          "effective": 12.6
+        },
         "יוחננוף": {
           "regular": 11.9,
           "sale": null,
@@ -710,6 +1264,12 @@
           "sale": null,
           "effective": 7.5
         },
+        "אושר עד": null,
+        "ויקטורי": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
+        },
         "חצי חינם": null
       }
     },
@@ -718,8 +1278,16 @@
       "barcode": "46214731552",
       "name": "עוגיות שוקולד ציפס מובחרות % 37 שוקולד",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
+        },
+        "רמי לוי": {
+          "regular": 10.9,
+          "sale": null,
+          "effective": 10.9
+        },
         "יוחננוף": {
           "regular": 10.9,
           "sale": null,
@@ -730,6 +1298,12 @@
           "sale": null,
           "effective": 6.9
         },
+        "אושר עד": null,
+        "ויקטורי": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
+        },
         "חצי חינם": null
       }
     },
@@ -738,8 +1312,16 @@
       "barcode": "7290000181103",
       "name": "עד חצות 200ג",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 17.9,
+          "sale": null,
+          "effective": 17.9
+        },
+        "רמי לוי": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
+        },
         "יוחננוף": {
           "regular": 17.9,
           "sale": null,
@@ -750,6 +1332,16 @@
           "sale": null,
           "effective": 11.9
         },
+        "אושר עד": {
+          "regular": 15.22,
+          "sale": null,
+          "effective": 15.22
+        },
+        "ויקטורי": {
+          "regular": 18.9,
+          "sale": null,
+          "effective": 18.9
+        },
         "חצי חינם": null
       }
     },
@@ -758,8 +1350,16 @@
       "barcode": "7290000074184",
       "name": "אסם פתי בר בינוני 500ג",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 15.9,
+          "sale": null,
+          "effective": 15.9
+        },
+        "רמי לוי": {
+          "regular": 9.9,
+          "sale": null,
+          "effective": 9.9
+        },
         "יוחננוף": {
           "regular": 10.9,
           "sale": null,
@@ -770,6 +1370,16 @@
           "sale": null,
           "effective": 7.4
         },
+        "אושר עד": {
+          "regular": 8.9,
+          "sale": null,
+          "effective": 8.9
+        },
+        "ויקטורי": {
+          "regular": 13.9,
+          "sale": null,
+          "effective": 13.9
+        },
         "חצי חינם": null
       }
     },
@@ -778,8 +1388,16 @@
       "barcode": "7290018091531",
       "name": "מעדנות חטיפי פיצה 650 גרם",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 34.9,
+          "sale": null,
+          "effective": 34.9
+        },
+        "רמי לוי": {
+          "regular": 33.3,
+          "sale": 31.9,
+          "effective": 31.9
+        },
         "יוחננוף": {
           "regular": 32.9,
           "sale": 30.9,
@@ -789,6 +1407,12 @@
           "regular": 19.9,
           "sale": null,
           "effective": 19.9
+        },
+        "אושר עד": null,
+        "ויקטורי": {
+          "regular": 38.9,
+          "sale": null,
+          "effective": 38.9
         },
         "חצי חינם": {
           "regular": 36.3,
@@ -802,8 +1426,16 @@
       "barcode": "7290000043890",
       "name": "ריויון 1.5% 1ל",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 6.5,
+          "sale": null,
+          "effective": 6.5
+        },
+        "רמי לוי": {
+          "regular": 14,
+          "sale": 12.9,
+          "effective": 12.9
+        },
         "יוחננוף": {
           "regular": 12.9,
           "sale": null,
@@ -813,6 +1445,16 @@
           "regular": 9.5,
           "sale": null,
           "effective": 9.5
+        },
+        "אושר עד": {
+          "regular": 12.45,
+          "sale": null,
+          "effective": 12.45
+        },
+        "ויקטורי": {
+          "regular": 14.9,
+          "sale": null,
+          "effective": 14.9
         },
         "חצי חינם": {
           "regular": 13.5,
@@ -826,8 +1468,16 @@
       "barcode": "7290004584351",
       "name": "סימפוניה חמישית 200ג",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 13.5,
+          "sale": null,
+          "effective": 13.5
+        },
+        "רמי לוי": {
+          "regular": 10.4,
+          "sale": null,
+          "effective": 10.4
+        },
         "יוחננוף": {
           "regular": 10.9,
           "sale": null,
@@ -838,6 +1488,16 @@
           "sale": null,
           "effective": 7.7
         },
+        "אושר עד": {
+          "regular": 10.37,
+          "sale": null,
+          "effective": 10.37
+        },
+        "ויקטורי": {
+          "regular": 11.2,
+          "sale": null,
+          "effective": 11.2
+        },
         "חצי חינם": null
       }
     },
@@ -846,8 +1506,16 @@
       "barcode": "7290006492432",
       "name": "גד בייבי מוצרלה 150גר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 17.9,
+          "sale": null,
+          "effective": 17.9
+        },
+        "רמי לוי": {
+          "regular": 16.4,
+          "sale": 16,
+          "effective": 16
+        },
         "יוחננוף": {
           "regular": 16.9,
           "sale": null,
@@ -858,6 +1526,16 @@
           "sale": null,
           "effective": 10.5
         },
+        "אושר עד": {
+          "regular": 15.02,
+          "sale": null,
+          "effective": 15.02
+        },
+        "ויקטורי": {
+          "regular": 19.9,
+          "sale": null,
+          "effective": 19.9
+        },
         "חצי חינם": null
       }
     },
@@ -866,8 +1544,16 @@
       "barcode": "7290000554532",
       "name": "גד צפתית מעודנת במלח ים 5% 200ג",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 18.9,
+          "sale": null,
+          "effective": 18.9
+        },
+        "רמי לוי": {
+          "regular": 11,
+          "sale": null,
+          "effective": 11
+        },
         "יוחננוף": {
           "regular": 15.9,
           "sale": null,
@@ -878,6 +1564,16 @@
           "sale": null,
           "effective": 11.0
         },
+        "אושר עד": {
+          "regular": 16.14,
+          "sale": null,
+          "effective": 16.14
+        },
+        "ויקטורי": {
+          "regular": 19.9,
+          "sale": null,
+          "effective": 19.9
+        },
         "חצי חינם": null
       }
     },
@@ -886,8 +1582,16 @@
       "barcode": "7290102394463",
       "name": "נעם גבינה צהובה וואקום 28% 500גרם",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 33.9,
+          "sale": null,
+          "effective": 33.9
+        },
+        "רמי לוי": {
+          "regular": 31.9,
+          "sale": 30.9,
+          "effective": 30.9
+        },
         "יוחננוף": {
           "regular": 30.9,
           "sale": null,
@@ -897,6 +1601,16 @@
           "regular": 22.6,
           "sale": null,
           "effective": 22.6
+        },
+        "אושר עד": {
+          "regular": 29.74,
+          "sale": null,
+          "effective": 29.74
+        },
+        "ויקטורי": {
+          "regular": 35.9,
+          "sale": null,
+          "effective": 35.9
         },
         "חצי חינם": {
           "regular": 31.2,
@@ -910,8 +1624,16 @@
       "barcode": "7290004129101",
       "name": "נפוליאון גבינת שמנת בטעם טבעי 25% 225גר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 15.8,
+          "sale": null,
+          "effective": 15.8
+        },
+        "רמי לוי": {
+          "regular": 10.5,
+          "sale": null,
+          "effective": 10.5
+        },
         "יוחננוף": {
           "regular": 14.6,
           "sale": null,
@@ -921,6 +1643,12 @@
           "regular": 10.5,
           "sale": null,
           "effective": 10.5
+        },
+        "אושר עד": null,
+        "ויקטורי": {
+          "regular": 17.4,
+          "sale": null,
+          "effective": 17.4
         },
         "חצי חינם": {
           "regular": 16.4,
@@ -934,8 +1662,16 @@
       "barcode": "7290000040974",
       "name": "חלב תנובה קרטון דל לקטוז 2% 1ל'",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 8.3,
+          "sale": null,
+          "effective": 8.3
+        },
+        "רמי לוי": {
+          "regular": 7.8,
+          "sale": null,
+          "effective": 7.8
+        },
         "יוחננוף": {
           "regular": 7.8,
           "sale": null,
@@ -946,6 +1682,16 @@
           "sale": null,
           "effective": 5.9
         },
+        "אושר עד": {
+          "regular": 7.14,
+          "sale": null,
+          "effective": 7.14
+        },
+        "ויקטורי": {
+          "regular": 7.9,
+          "sale": null,
+          "effective": 7.9
+        },
         "חצי חינם": null
       }
     },
@@ -954,8 +1700,16 @@
       "barcode": "7290107932080",
       "name": "יטבתה חלב בבקבוק 3% מועשר 1ל'",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 9.2,
+          "sale": null,
+          "effective": 9.2
+        },
+        "רמי לוי": {
+          "regular": 8.1,
+          "sale": 7.9,
+          "effective": 7.9
+        },
         "יוחננוף": {
           "regular": 8.9,
           "sale": null,
@@ -966,6 +1720,16 @@
           "sale": null,
           "effective": 6.9
         },
+        "אושר עד": {
+          "regular": 8.47,
+          "sale": null,
+          "effective": 8.47
+        },
+        "ויקטורי": {
+          "regular": 9.2,
+          "sale": null,
+          "effective": 9.2
+        },
         "חצי חינם": null
       }
     },
@@ -974,8 +1738,16 @@
       "barcode": "7290116932033",
       "name": "חמאה 200 גרם מהדרין",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 9.9,
+          "sale": null,
+          "effective": 9.9
+        },
+        "רמי לוי": {
+          "regular": 7.9,
+          "sale": null,
+          "effective": 7.9
+        },
         "יוחננוף": {
           "regular": 9.5,
           "sale": null,
@@ -985,6 +1757,16 @@
           "regular": 7.9,
           "sale": null,
           "effective": 7.9
+        },
+        "אושר עד": {
+          "regular": 9.1,
+          "sale": null,
+          "effective": 9.1
+        },
+        "ויקטורי": {
+          "regular": 9.9,
+          "sale": null,
+          "effective": 9.9
         },
         "חצי חינם": {
           "regular": 10.1,
@@ -998,8 +1780,16 @@
       "barcode": "7290119380916",
       "name": "אקטימל תות 16 * 108 גר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 34.9,
+          "sale": null,
+          "effective": 34.9
+        },
+        "רמי לוי": {
+          "regular": 33.9,
+          "sale": 32.9,
+          "effective": 32.9
+        },
         "יוחננוף": {
           "regular": 34.9,
           "sale": null,
@@ -1010,6 +1800,16 @@
           "sale": null,
           "effective": 24.9
         },
+        "אושר עד": {
+          "regular": 32.9,
+          "sale": null,
+          "effective": 32.9
+        },
+        "ויקטורי": {
+          "regular": 37.3,
+          "sale": null,
+          "effective": 37.3
+        },
         "חצי חינם": null
       }
     },
@@ -1018,8 +1818,16 @@
       "barcode": "7290000408354",
       "name": "דנונה קראנצ' פיצפוצים 175מל",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 5.3,
+          "sale": null,
+          "effective": 5.3
+        },
+        "רמי לוי": {
+          "regular": 3.9,
+          "sale": null,
+          "effective": 3.9
+        },
         "יוחננוף": {
           "regular": 4.9,
           "sale": null,
@@ -1030,6 +1838,16 @@
           "sale": null,
           "effective": 3.9
         },
+        "אושר עד": {
+          "regular": 4.79,
+          "sale": null,
+          "effective": 4.79
+        },
+        "ויקטורי": {
+          "regular": 5.1,
+          "sale": null,
+          "effective": 5.1
+        },
         "חצי חינם": null
       }
     },
@@ -1038,8 +1856,16 @@
       "barcode": "7290005839078",
       "name": "דנונה ביו מארז חסכון 3% 8*150מל",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 21.5,
+          "sale": null,
+          "effective": 21.5
+        },
+        "רמי לוי": {
+          "regular": 17.9,
+          "sale": null,
+          "effective": 17.9
+        },
         "יוחננוף": {
           "regular": 18.9,
           "sale": null,
@@ -1050,6 +1876,16 @@
           "sale": null,
           "effective": 13.9
         },
+        "אושר עד": {
+          "regular": 18.11,
+          "sale": null,
+          "effective": 18.11
+        },
+        "ויקטורי": {
+          "regular": 20.5,
+          "sale": null,
+          "effective": 20.5
+        },
         "חצי חינם": null
       }
     },
@@ -1058,8 +1894,16 @@
       "barcode": "7290110565527",
       "name": "דנונה פרו 20ג חלבון 1.5% 200גרם",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 6.5,
+          "sale": null,
+          "effective": 6.5
+        },
+        "רמי לוי": {
+          "regular": 4.5,
+          "sale": null,
+          "effective": 4.5
+        },
         "יוחננוף": {
           "regular": 5.9,
           "sale": null,
@@ -1069,6 +1913,16 @@
           "regular": 4.5,
           "sale": null,
           "effective": 4.5
+        },
+        "אושר עד": {
+          "regular": 5.98,
+          "sale": null,
+          "effective": 5.98
+        },
+        "ויקטורי": {
+          "regular": 6.4,
+          "sale": null,
+          "effective": 6.4
         },
         "חצי חינם": {
           "regular": 6.4,
@@ -1082,8 +1936,16 @@
       "barcode": "7290004125721",
       "name": "שף לבן שמנת לבישול 15% 250מל'",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 9.9,
+          "sale": null,
+          "effective": 9.9
+        },
+        "רמי לוי": {
+          "regular": 9.6,
+          "sale": null,
+          "effective": 9.6
+        },
         "יוחננוף": {
           "regular": 9.6,
           "sale": null,
@@ -1094,6 +1956,16 @@
           "sale": null,
           "effective": 6.9
         },
+        "אושר עד": {
+          "regular": 9.23,
+          "sale": null,
+          "effective": 9.23
+        },
+        "ויקטורי": {
+          "regular": 10.9,
+          "sale": null,
+          "effective": 10.9
+        },
         "חצי חינם": null
       }
     },
@@ -1102,8 +1974,16 @@
       "barcode": "7290005838002",
       "name": "דניאלה מעדן גבינה 150מל",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 4.2,
+          "sale": null,
+          "effective": 4.2
+        },
+        "רמי לוי": {
+          "regular": 4.4,
+          "sale": null,
+          "effective": 4.4
+        },
         "יוחננוף": {
           "regular": 3.9,
           "sale": null,
@@ -1113,6 +1993,16 @@
           "regular": 2.9,
           "sale": null,
           "effective": 2.9
+        },
+        "אושר עד": {
+          "regular": 3.9,
+          "sale": null,
+          "effective": 3.9
+        },
+        "ויקטורי": {
+          "regular": 4.1,
+          "sale": null,
+          "effective": 4.1
         },
         "חצי חינם": {
           "regular": 4.0,
@@ -1126,8 +2016,16 @@
       "barcode": "7290104726712",
       "name": "מילקי שמינייה מארז 8*170מל",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 21.9,
+          "sale": null,
+          "effective": 21.9
+        },
+        "רמי לוי": {
+          "regular": 21.2,
+          "sale": 19.9,
+          "effective": 19.9
+        },
         "יוחננוף": {
           "regular": 21.5,
           "sale": null,
@@ -1137,6 +2035,16 @@
           "regular": 15.9,
           "sale": null,
           "effective": 15.9
+        },
+        "אושר עד": {
+          "regular": 21.08,
+          "sale": null,
+          "effective": 21.08
+        },
+        "ויקטורי": {
+          "regular": 21.5,
+          "sale": null,
+          "effective": 21.5
         },
         "חצי חינם": {
           "regular": 21.5,
@@ -1150,8 +2058,16 @@
       "barcode": "7290115678376",
       "name": "מעדן הגולן שוקולד 125 גר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 3.4,
+          "sale": null,
+          "effective": 3.4
+        },
+        "רמי לוי": {
+          "regular": 2.9,
+          "sale": null,
+          "effective": 2.9
+        },
         "יוחננוף": {
           "regular": 3.2,
           "sale": null,
@@ -1162,6 +2078,16 @@
           "sale": null,
           "effective": 1.95
         },
+        "אושר עד": {
+          "regular": 2.85,
+          "sale": null,
+          "effective": 2.85
+        },
+        "ויקטורי": {
+          "regular": 3.3,
+          "sale": null,
+          "effective": 3.3
+        },
         "חצי חינם": null
       }
     },
@@ -1170,8 +2096,16 @@
       "barcode": "7290003029181",
       "name": "יטבתה שוקו בקבוק 1ל",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 7.28,
+          "sale": null,
+          "effective": 7.28
+        },
+        "רמי לוי": {
+          "regular": 13.5,
+          "sale": null,
+          "effective": 13.5
+        },
         "יוחננוף": {
           "regular": 12.3,
           "sale": null,
@@ -1181,6 +2115,16 @@
           "regular": 8.9,
           "sale": null,
           "effective": 8.9
+        },
+        "אושר עד": {
+          "regular": 12.24,
+          "sale": null,
+          "effective": 12.24
+        },
+        "ויקטורי": {
+          "regular": 12.9,
+          "sale": null,
+          "effective": 12.9
         },
         "חצי חינם": {
           "regular": 12.3,
@@ -1194,8 +2138,16 @@
       "barcode": "7290110324926",
       "name": "משקה סויה ללא תוספת סוכר 1 ליטר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
+        },
+        "רמי לוי": {
+          "regular": 9.1,
+          "sale": null,
+          "effective": 9.1
+        },
         "יוחננוף": {
           "regular": 10.6,
           "sale": null,
@@ -1206,6 +2158,16 @@
           "sale": null,
           "effective": 7.9
         },
+        "אושר עד": {
+          "regular": 10.36,
+          "sale": null,
+          "effective": 10.36
+        },
+        "ויקטורי": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
+        },
         "חצי חינם": null
       }
     },
@@ -1214,8 +2176,16 @@
       "barcode": "7290004125578",
       "name": "סויה תנובה מועשר 1ל",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
+        },
+        "רמי לוי": {
+          "regular": 9.1,
+          "sale": null,
+          "effective": 9.1
+        },
         "יוחננוף": {
           "regular": 10.6,
           "sale": null,
@@ -1225,6 +2195,16 @@
           "regular": 7.5,
           "sale": null,
           "effective": 7.5
+        },
+        "אושר עד": {
+          "regular": 9.9,
+          "sale": null,
+          "effective": 9.9
+        },
+        "ויקטורי": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
         },
         "חצי חינם": {
           "regular": 12.2,
@@ -1238,8 +2218,16 @@
       "barcode": "7290110325619",
       "name": "תנובה משקה שיבולת שועל 1 ליטר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 13.9,
+          "sale": null,
+          "effective": 13.9
+        },
+        "רמי לוי": {
+          "regular": 9.1,
+          "sale": null,
+          "effective": 9.1
+        },
         "יוחננוף": {
           "regular": 12.9,
           "sale": null,
@@ -1250,6 +2238,16 @@
           "sale": null,
           "effective": 8.9
         },
+        "אושר עד": {
+          "regular": 11.75,
+          "sale": null,
+          "effective": 11.75
+        },
+        "ויקטורי": {
+          "regular": 13.9,
+          "sale": null,
+          "effective": 13.9
+        },
         "חצי חינם": null
       }
     },
@@ -1258,8 +2256,16 @@
       "barcode": "7290004127329",
       "name": "קוטג תנובה מהדרין 5% 250ג",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 6.1,
+          "sale": null,
+          "effective": 6.1
+        },
+        "רמי לוי": {
+          "regular": 5.4,
+          "sale": null,
+          "effective": 5.4
+        },
         "יוחננוף": {
           "regular": 6.1,
           "sale": null,
@@ -1269,6 +2275,16 @@
           "regular": 5.4,
           "sale": null,
           "effective": 5.4
+        },
+        "אושר עד": {
+          "regular": 5.9,
+          "sale": null,
+          "effective": 5.9
+        },
+        "ויקטורי": {
+          "regular": 6.1,
+          "sale": null,
+          "effective": 6.1
         },
         "חצי חינם": {
           "regular": 6.1,
@@ -1282,8 +2298,16 @@
       "barcode": "7290003726615",
       "name": "משק ווילר טופו הבית 300 גר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 12.9,
+          "sale": null,
+          "effective": 12.9
+        },
+        "רמי לוי": {
+          "regular": 10.9,
+          "sale": 9.9,
+          "effective": 9.9
+        },
         "יוחננוף": {
           "regular": 10.9,
           "sale": null,
@@ -1293,6 +2317,16 @@
           "regular": 7.9,
           "sale": null,
           "effective": 7.9
+        },
+        "אושר עד": {
+          "regular": 10.85,
+          "sale": null,
+          "effective": 10.85
+        },
+        "ויקטורי": {
+          "regular": 13.9,
+          "sale": null,
+          "effective": 13.9
         },
         "חצי חינם": {
           "regular": 13.1,
@@ -1306,8 +2340,16 @@
       "barcode": "7290005427107",
       "name": "סנו סושי מגבות הפלא 6 גלילים",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 12.5,
+          "sale": null,
+          "effective": 12.5
+        },
+        "רמי לוי": {
+          "regular": 12.9,
+          "sale": null,
+          "effective": 12.9
+        },
         "יוחננוף": {
           "regular": 12.9,
           "sale": null,
@@ -1318,6 +2360,12 @@
           "sale": null,
           "effective": 7.9
         },
+        "אושר עד": null,
+        "ויקטורי": {
+          "regular": 12.9,
+          "sale": null,
+          "effective": 12.9
+        },
         "חצי חינם": null
       }
     },
@@ -1326,7 +2374,11 @@
       "barcode": "7290012823602",
       "name": "נייר טואלט סופט סילק לבן 32 יח",
       "prices": {
-        "שופרסל": null,
+        "שופרסל": {
+          "regular": 35.9,
+          "sale": null,
+          "effective": 35.9
+        },
         "רמי לוי": null,
         "יוחננוף": {
           "regular": 33.9,
@@ -1338,6 +2390,16 @@
           "sale": null,
           "effective": 21.9
         },
+        "אושר עד": {
+          "regular": 31.19,
+          "sale": null,
+          "effective": 31.19
+        },
+        "ויקטורי": {
+          "regular": 35.9,
+          "sale": null,
+          "effective": 35.9
+        },
         "חצי חינם": null
       }
     },
@@ -1346,8 +2408,16 @@
       "barcode": "7290003989539",
       "name": "שטראוס רביולי גבינה 400ג",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 19.9,
+          "sale": null,
+          "effective": 19.9
+        },
+        "רמי לוי": {
+          "regular": 18.9,
+          "sale": 17.9,
+          "effective": 17.9
+        },
         "יוחננוף": {
           "regular": 19.9,
           "sale": null,
@@ -1358,6 +2428,16 @@
           "sale": null,
           "effective": 11.5
         },
+        "אושר עד": {
+          "regular": 18.85,
+          "sale": null,
+          "effective": 18.85
+        },
+        "ויקטורי": {
+          "regular": 19.9,
+          "sale": null,
+          "effective": 19.9
+        },
         "חצי חינם": null
       }
     },
@@ -1366,8 +2446,16 @@
       "barcode": "7290008409216",
       "name": "מאמא עוף קפוא שניצל דק פריך 700 גרם",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 29.9,
+          "sale": null,
+          "effective": 29.9
+        },
+        "רמי לוי": {
+          "regular": 28.2,
+          "sale": null,
+          "effective": 28.2
+        },
         "יוחננוף": {
           "regular": 45.9,
           "sale": null,
@@ -1378,6 +2466,12 @@
           "sale": null,
           "effective": 28.2
         },
+        "אושר עד": null,
+        "ויקטורי": {
+          "regular": 49.9,
+          "sale": null,
+          "effective": 49.9
+        },
         "חצי חינם": null
       }
     },
@@ -1386,8 +2480,16 @@
       "barcode": "8712400802499",
       "name": "נוטרילון שלב 1- 800 גרם",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 64.9,
+          "sale": null,
+          "effective": 64.9
+        },
+        "רמי לוי": {
+          "regular": 63.2,
+          "sale": null,
+          "effective": 63.2
+        },
         "יוחננוף": {
           "regular": 64.9,
           "sale": null,
@@ -1398,6 +2500,12 @@
           "sale": null,
           "effective": 9.9
         },
+        "אושר עד": null,
+        "ויקטורי": {
+          "regular": 69.9,
+          "sale": null,
+          "effective": 69.9
+        },
         "חצי חינם": null
       }
     },
@@ -1406,8 +2514,16 @@
       "barcode": "7290000063140",
       "name": "שקדי מרק רכיבים טבעיים שקית 400 גרם",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 9.9,
+          "sale": null,
+          "effective": 9.9
+        },
+        "רמי לוי": {
+          "regular": 7.9,
+          "sale": null,
+          "effective": 7.9
+        },
         "יוחננוף": {
           "regular": 10.9,
           "sale": null,
@@ -1417,6 +2533,16 @@
           "regular": 7.9,
           "sale": null,
           "effective": 7.9
+        },
+        "אושר עד": {
+          "regular": 9.87,
+          "sale": null,
+          "effective": 9.87
+        },
+        "ויקטורי": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
         },
         "חצי חינם": {
           "regular": 13.1,
@@ -1430,8 +2556,16 @@
       "barcode": "7290019056973",
       "name": "מי עדן 1.5(6) פק",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 16.3,
+          "sale": null,
+          "effective": 16.3
+        },
+        "רמי לוי": {
+          "regular": 14.4,
+          "sale": 13.9,
+          "effective": 13.9
+        },
         "יוחננוף": {
           "regular": 14.9,
           "sale": null,
@@ -1442,6 +2576,16 @@
           "sale": null,
           "effective": 9.9
         },
+        "אושר עד": {
+          "regular": 14.88,
+          "sale": null,
+          "effective": 14.88
+        },
+        "ויקטורי": {
+          "regular": 15.83,
+          "sale": null,
+          "effective": 15.83
+        },
         "חצי חינם": null
       }
     },
@@ -1450,8 +2594,16 @@
       "barcode": "7290000525969",
       "name": "פרימור מיץ תפוזים 1ל",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 9.9,
+          "sale": null,
+          "effective": 9.9
+        },
+        "רמי לוי": {
+          "regular": 18.5,
+          "sale": 17.9,
+          "effective": 17.9
+        },
         "יוחננוף": {
           "regular": 18.9,
           "sale": null,
@@ -1462,6 +2614,12 @@
           "sale": null,
           "effective": 13.7
         },
+        "אושר עד": null,
+        "ויקטורי": {
+          "regular": 21.7,
+          "sale": null,
+          "effective": 21.7
+        },
         "חצי חינם": null
       }
     },
@@ -1470,8 +2628,16 @@
       "barcode": "5906485301012",
       "name": "אקס אל משקה אנרגיה 250מל",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 5.0,
+          "sale": null,
+          "effective": 5.0
+        },
+        "רמי לוי": {
+          "regular": 4.2,
+          "sale": null,
+          "effective": 4.2
+        },
         "יוחננוף": {
           "regular": 4.5,
           "sale": null,
@@ -1482,6 +2648,16 @@
           "sale": null,
           "effective": 2.9
         },
+        "אושר עד": {
+          "regular": 4.19,
+          "sale": null,
+          "effective": 4.19
+        },
+        "ויקטורי": {
+          "regular": 4.9,
+          "sale": null,
+          "effective": 4.9
+        },
         "חצי חינם": null
       }
     },
@@ -1490,8 +2666,16 @@
       "barcode": "7290110115227",
       "name": "קוקה-קולה זירו 1.5 ליטר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 8.5,
+          "sale": null,
+          "effective": 8.5
+        },
+        "רמי לוי": {
+          "regular": 8.2,
+          "sale": null,
+          "effective": 8.2
+        },
         "יוחננוף": {
           "regular": 8.2,
           "sale": null,
@@ -1501,6 +2685,16 @@
           "regular": 6.9,
           "sale": null,
           "effective": 6.9
+        },
+        "אושר עד": {
+          "regular": 8.17,
+          "sale": null,
+          "effective": 8.17
+        },
+        "ויקטורי": {
+          "regular": 8.2,
+          "sale": null,
+          "effective": 8.2
         },
         "חצי חינם": null
       }
@@ -1510,8 +2704,16 @@
       "barcode": "7290110115203",
       "name": "קוקה-קולה 1.5 ליטר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 8.5,
+          "sale": null,
+          "effective": 8.5
+        },
+        "רמי לוי": {
+          "regular": 8.2,
+          "sale": null,
+          "effective": 8.2
+        },
         "יוחננוף": {
           "regular": 8.2,
           "sale": null,
@@ -1522,6 +2724,16 @@
           "sale": null,
           "effective": 6.9
         },
+        "אושר עד": {
+          "regular": 8.19,
+          "sale": null,
+          "effective": 8.19
+        },
+        "ויקטורי": {
+          "regular": 8.2,
+          "sale": null,
+          "effective": 8.2
+        },
         "חצי חינם": null
       }
     },
@@ -1530,8 +2742,16 @@
       "barcode": "7290000136790",
       "name": "טמפו סודה 6*1.5ל",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 3.9,
+          "sale": null,
+          "effective": 3.9
+        },
+        "רמי לוי": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
+        },
         "יוחננוף": {
           "regular": 18.9,
           "sale": null,
@@ -1542,6 +2762,16 @@
           "sale": null,
           "effective": 11.9
         },
+        "אושר עד": {
+          "regular": 16.8,
+          "sale": null,
+          "effective": 16.8
+        },
+        "ויקטורי": {
+          "regular": 18.9,
+          "sale": null,
+          "effective": 18.9
+        },
         "חצי חינם": null
       }
     },
@@ -1550,8 +2780,16 @@
       "barcode": "7290110115463",
       "name": "פיוז טי אפרסק 1.5 ליטר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 8.9,
+          "sale": null,
+          "effective": 8.9
+        },
+        "רמי לוי": {
+          "regular": 8.3,
+          "sale": null,
+          "effective": 8.3
+        },
         "יוחננוף": {
           "regular": 8.6,
           "sale": null,
@@ -1562,6 +2800,16 @@
           "sale": null,
           "effective": 6.5
         },
+        "אושר עד": {
+          "regular": 8.53,
+          "sale": null,
+          "effective": 8.53
+        },
+        "ויקטורי": {
+          "regular": 8.9,
+          "sale": null,
+          "effective": 8.9
+        },
         "חצי חינם": null
       }
     },
@@ -1570,8 +2818,16 @@
       "barcode": "7290000288024",
       "name": "סנו ז'אוול בריח לימון 4 ליטר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 12.9,
+          "sale": null,
+          "effective": 12.9
+        },
+        "רמי לוי": {
+          "regular": 16.9,
+          "sale": null,
+          "effective": 16.9
+        },
         "יוחננוף": {
           "regular": 16.9,
           "sale": null,
@@ -1581,6 +2837,16 @@
           "regular": 9.9,
           "sale": null,
           "effective": 9.9
+        },
+        "אושר עד": {
+          "regular": 16.33,
+          "sale": null,
+          "effective": 16.33
+        },
+        "ויקטורי": {
+          "regular": 17.9,
+          "sale": null,
+          "effective": 17.9
         },
         "חצי חינם": {
           "regular": 17.2,
@@ -1594,8 +2860,16 @@
       "barcode": "7290000211503",
       "name": "סוכר סוגת 1 ק\"ג",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 5.5,
+          "sale": null,
+          "effective": 5.5
+        },
+        "רמי לוי": {
+          "regular": 5,
+          "sale": null,
+          "effective": 5
+        },
         "יוחננוף": {
           "regular": 4.9,
           "sale": null,
@@ -1606,6 +2880,16 @@
           "sale": null,
           "effective": 2.9
         },
+        "אושר עד": {
+          "regular": 4.85,
+          "sale": null,
+          "effective": 4.85
+        },
+        "ויקטורי": {
+          "regular": 5.5,
+          "sale": null,
+          "effective": 5.5
+        },
         "חצי חינם": null
       }
     },
@@ -1614,8 +2898,16 @@
       "barcode": "7290106576537",
       "name": "צבר חומוס מסעדה 700 גר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 11.9,
+          "sale": 10.9,
+          "effective": 10.9
+        },
+        "רמי לוי": {
+          "regular": 8,
+          "sale": null,
+          "effective": 8
+        },
         "יוחננוף": {
           "regular": 11.5,
           "sale": null,
@@ -1626,6 +2918,16 @@
           "sale": null,
           "effective": 9.1
         },
+        "אושר עד": {
+          "regular": 10.52,
+          "sale": null,
+          "effective": 10.52
+        },
+        "ויקטורי": {
+          "regular": 12.9,
+          "sale": null,
+          "effective": 12.9
+        },
         "חצי חינם": null
       }
     },
@@ -1634,8 +2936,16 @@
       "barcode": "7290000068138",
       "name": "אסם פודינג אינסטנט וניל 80 גרם",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 5.9,
+          "sale": null,
+          "effective": 5.9
+        },
+        "רמי לוי": {
+          "regular": 4,
+          "sale": null,
+          "effective": 4
+        },
         "יוחננוף": {
           "regular": 5.9,
           "sale": null,
@@ -1645,6 +2955,16 @@
           "regular": 4.0,
           "sale": null,
           "effective": 4.0
+        },
+        "אושר עד": {
+          "regular": 4.8,
+          "sale": null,
+          "effective": 4.8
+        },
+        "ויקטורי": {
+          "regular": 6.4,
+          "sale": null,
+          "effective": 6.4
         },
         "חצי חינם": {
           "regular": 5.8,
@@ -1658,8 +2978,16 @@
       "barcode": "7290005201882",
       "name": "טורקי עלית 200ג",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 19.9,
+          "sale": null,
+          "effective": 19.9
+        },
+        "רמי לוי": {
+          "regular": 19.9,
+          "sale": 18.9,
+          "effective": 18.9
+        },
         "יוחננוף": {
           "regular": 18.9,
           "sale": null,
@@ -1670,6 +2998,12 @@
           "sale": null,
           "effective": 12.9
         },
+        "אושר עד": null,
+        "ויקטורי": {
+          "regular": 19.9,
+          "sale": null,
+          "effective": 19.9
+        },
         "חצי חינם": null
       }
     },
@@ -1678,8 +3012,16 @@
       "barcode": "7290000072753",
       "name": "טייסטר צ'וייס 200ג",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 35.9,
+          "sale": null,
+          "effective": 35.9
+        },
+        "רמי לוי": {
+          "regular": 36.2,
+          "sale": 35.9,
+          "effective": 35.9
+        },
         "יוחננוף": {
           "regular": 35.9,
           "sale": null,
@@ -1690,6 +3032,16 @@
           "sale": null,
           "effective": 29.9
         },
+        "אושר עד": {
+          "regular": 35.8,
+          "sale": null,
+          "effective": 35.8
+        },
+        "ויקטורי": {
+          "regular": 36.9,
+          "sale": null,
+          "effective": 36.9
+        },
         "חצי חינם": null
       }
     },
@@ -1698,8 +3050,16 @@
       "barcode": "7290000176420",
       "name": "עלית נמס אבקתי 200 גרם",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 25.9,
+          "sale": null,
+          "effective": 25.9
+        },
+        "רמי לוי": {
+          "regular": 26.9,
+          "sale": 25.9,
+          "effective": 25.9
+        },
         "יוחננוף": {
           "regular": 25.9,
           "sale": null,
@@ -1709,6 +3069,16 @@
           "regular": 21.5,
           "sale": null,
           "effective": 21.5
+        },
+        "אושר עד": {
+          "regular": 24.9,
+          "sale": null,
+          "effective": 24.9
+        },
+        "ויקטורי": {
+          "regular": 25.9,
+          "sale": null,
+          "effective": 25.9
         },
         "חצי חינם": {
           "regular": 26.9,
@@ -1722,8 +3092,16 @@
       "barcode": "7290000174723",
       "name": "שוקולית 500ג",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 16.9,
+          "sale": null,
+          "effective": 16.9
+        },
+        "רמי לוי": {
+          "regular": 16.3,
+          "sale": 15.9,
+          "effective": 15.9
+        },
         "יוחננוף": {
           "regular": 15.9,
           "sale": null,
@@ -1734,6 +3112,16 @@
           "sale": null,
           "effective": 10.5
         },
+        "אושר עד": {
+          "regular": 14.9,
+          "sale": null,
+          "effective": 14.9
+        },
+        "ויקטורי": {
+          "regular": 16.9,
+          "sale": null,
+          "effective": 16.9
+        },
         "חצי חינם": null
       }
     },
@@ -1742,7 +3130,11 @@
       "barcode": "7290010328246",
       "name": "אחוה טחינה משומשום מלא 500 גרם",
       "prices": {
-        "שופרסל": null,
+        "שופרסל": {
+          "regular": 18.3,
+          "sale": null,
+          "effective": 18.3
+        },
         "רמי לוי": null,
         "יוחננוף": {
           "regular": 12.9,
@@ -1753,6 +3145,12 @@
           "regular": 7.9,
           "sale": null,
           "effective": 7.9
+        },
+        "אושר עד": null,
+        "ויקטורי": {
+          "regular": 13.9,
+          "sale": null,
+          "effective": 13.9
         },
         "חצי חינם": {
           "regular": 13.1,
@@ -1766,8 +3164,16 @@
       "barcode": "7290000112220",
       "name": "טחינה בסיסית 500 גר' בארכה",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 14.3,
+          "sale": null,
+          "effective": 14.3
+        },
+        "רמי לוי": {
+          "regular": 17.9,
+          "sale": 16.9,
+          "effective": 16.9
+        },
         "יוחננוף": {
           "regular": 15.9,
           "sale": null,
@@ -1777,6 +3183,12 @@
           "regular": 9.9,
           "sale": null,
           "effective": 9.9
+        },
+        "אושר עד": null,
+        "ויקטורי": {
+          "regular": 13.9,
+          "sale": null,
+          "effective": 13.9
         },
         "חצי חינם": {
           "regular": 16.1,
@@ -1790,8 +3202,16 @@
       "barcode": "7290000111186",
       "name": "מיונז צנ500. ג",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
+        },
+        "רמי לוי": {
+          "regular": 8.5,
+          "sale": null,
+          "effective": 8.5
+        },
         "יוחננוף": {
           "regular": 10.9,
           "sale": null,
@@ -1802,6 +3222,16 @@
           "sale": null,
           "effective": 8.5
         },
+        "אושר עד": {
+          "regular": 10.61,
+          "sale": null,
+          "effective": 10.61
+        },
+        "ויקטורי": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
+        },
         "חצי חינם": null
       }
     },
@@ -1810,8 +3240,16 @@
       "barcode": "80176800",
       "name": "ממרח שוקולד נוטלה 750",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 31.9,
+          "sale": null,
+          "effective": 31.9
+        },
+        "רמי לוי": {
+          "regular": 31.5,
+          "sale": 27.9,
+          "effective": 27.9
+        },
         "יוחננוף": {
           "regular": 31.9,
           "sale": null,
@@ -1822,6 +3260,12 @@
           "sale": null,
           "effective": 24.9
         },
+        "אושר עד": null,
+        "ויקטורי": {
+          "regular": 31.9,
+          "sale": null,
+          "effective": 31.9
+        },
         "חצי חינם": null
       }
     },
@@ -1830,8 +3274,16 @@
       "barcode": "7290000072623",
       "name": "אסם קטשופ 750 גרם",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 11.9,
+          "sale": null,
+          "effective": 11.9
+        },
+        "רמי לוי": {
+          "regular": 12.9,
+          "sale": null,
+          "effective": 12.9
+        },
         "יוחננוף": {
           "regular": 10.9,
           "sale": null,
@@ -1842,6 +3294,16 @@
           "sale": null,
           "effective": 7.9
         },
+        "אושר עד": {
+          "regular": 10.71,
+          "sale": null,
+          "effective": 10.71
+        },
+        "ויקטורי": {
+          "regular": 10.9,
+          "sale": null,
+          "effective": 10.9
+        },
         "חצי חינם": null
       }
     },
@@ -1850,7 +3312,11 @@
       "barcode": "7290000178134",
       "name": "פרה שוק.מריר לל\"ג בד\"צ 4*100ג",
       "prices": {
-        "שופרסל": null,
+        "שופרסל": {
+          "regular": 8.9,
+          "sale": null,
+          "effective": 8.9
+        },
         "רמי לוי": null,
         "יוחננוף": {
           "regular": 27.9,
@@ -1861,6 +3327,16 @@
           "regular": 20.5,
           "sale": null,
           "effective": 20.5
+        },
+        "אושר עד": {
+          "regular": 26.85,
+          "sale": null,
+          "effective": 26.85
+        },
+        "ויקטורי": {
+          "regular": 28.9,
+          "sale": null,
+          "effective": 28.9
         },
         "חצי חינם": {
           "regular": 27.9,
@@ -1874,8 +3350,16 @@
       "barcode": "7290008750677",
       "name": "פרה שוקולד מלוי תות מגדים 100ג",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 8.9,
+          "sale": null,
+          "effective": 8.9
+        },
+        "רמי לוי": {
+          "regular": 6,
+          "sale": null,
+          "effective": 6
+        },
         "יוחננוף": {
           "regular": 8.5,
           "sale": null,
@@ -1886,6 +3370,16 @@
           "sale": null,
           "effective": 6.0
         },
+        "אושר עד": {
+          "regular": 8.47,
+          "sale": null,
+          "effective": 8.47
+        },
+        "ויקטורי": {
+          "regular": 9.9,
+          "sale": null,
+          "effective": 9.9
+        },
         "חצי חינם": null
       }
     },
@@ -1894,8 +3388,16 @@
       "barcode": "7290113192355",
       "name": "בית השיטה חרוזית זית ירוק ללא גלעין",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 16.9,
+          "sale": null,
+          "effective": 16.9
+        },
+        "רמי לוי": {
+          "regular": 15.6,
+          "sale": 15,
+          "effective": 15
+        },
         "יוחננוף": {
           "regular": 15.9,
           "sale": null,
@@ -1905,6 +3407,16 @@
           "regular": 7.9,
           "sale": null,
           "effective": 7.9
+        },
+        "אושר עד": {
+          "regular": 12.43,
+          "sale": null,
+          "effective": 12.43
+        },
+        "ויקטורי": {
+          "regular": 15.9,
+          "sale": null,
+          "effective": 15.9
         },
         "חצי חינם": {
           "regular": 15.9,
@@ -1918,8 +3430,16 @@
       "barcode": "7290005287206",
       "name": "סטארקיסט טונה בשמן ב.י 4*160ג",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 25.9,
+          "sale": null,
+          "effective": 25.9
+        },
+        "רמי לוי": {
+          "regular": 27.7,
+          "sale": null,
+          "effective": 27.7
+        },
         "יוחננוף": {
           "regular": 25.9,
           "sale": null,
@@ -1930,6 +3450,16 @@
           "sale": null,
           "effective": 21.9
         },
+        "אושר עד": {
+          "regular": 24.9,
+          "sale": null,
+          "effective": 24.9
+        },
+        "ויקטורי": {
+          "regular": 25.9,
+          "sale": null,
+          "effective": 25.9
+        },
         "חצי חינם": null
       }
     },
@@ -1938,8 +3468,16 @@
       "barcode": "7290018359495",
       "name": "יכין תירס מהשדה ללת\"ס 550 גרם",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 10.0,
+          "sale": null,
+          "effective": 10.0
+        },
+        "רמי לוי": {
+          "regular": 8.9,
+          "sale": null,
+          "effective": 8.9
+        },
         "יוחננוף": {
           "regular": 10.9,
           "sale": null,
@@ -1949,6 +3487,16 @@
           "regular": 5.9,
           "sale": null,
           "effective": 5.9
+        },
+        "אושר עד": {
+          "regular": 8.9,
+          "sale": null,
+          "effective": 8.9
+        },
+        "ויקטורי": {
+          "regular": 10.9,
+          "sale": null,
+          "effective": 10.9
         },
         "חצי חינם": {
           "regular": 10.9,
@@ -1962,8 +3510,16 @@
       "barcode": "7290000208114",
       "name": "יכין אפונת גינה וגזר 550 גר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 19.9,
+          "sale": null,
+          "effective": 19.9
+        },
+        "רמי לוי": {
+          "regular": 8.3,
+          "sale": null,
+          "effective": 8.3
+        },
         "יוחננוף": {
           "regular": 10.9,
           "sale": null,
@@ -1973,6 +3529,16 @@
           "regular": 5.2,
           "sale": null,
           "effective": 5.2
+        },
+        "אושר עד": {
+          "regular": 8.9,
+          "sale": null,
+          "effective": 8.9
+        },
+        "ויקטורי": {
+          "regular": 10.9,
+          "sale": null,
+          "effective": 10.9
         },
         "חצי חינם": {
           "regular": 10.9,
@@ -1986,8 +3552,16 @@
       "barcode": "8005110170300",
       "name": "מוטי עגבניות חתוכות דק 3*400גר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 25.9,
+          "sale": null,
+          "effective": 25.9
+        },
+        "רמי לוי": {
+          "regular": 17.8,
+          "sale": null,
+          "effective": 17.8
+        },
         "יוחננוף": {
           "regular": 24.9,
           "sale": null,
@@ -1998,6 +3572,16 @@
           "sale": null,
           "effective": 16.9
         },
+        "אושר עד": {
+          "regular": 20.74,
+          "sale": null,
+          "effective": 20.74
+        },
+        "ויקטורי": {
+          "regular": 24.9,
+          "sale": null,
+          "effective": 24.9
+        },
         "חצי חינם": null
       }
     },
@@ -2006,8 +3590,16 @@
       "barcode": "7290002019794",
       "name": "פריניר רסק עגבניות 22% 100ג",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 9.9,
+          "sale": null,
+          "effective": 9.9
+        },
+        "רמי לוי": {
+          "regular": 2.4,
+          "sale": null,
+          "effective": 2.4
+        },
         "יוחננוף": {
           "regular": 2.4,
           "sale": null,
@@ -2018,6 +3610,16 @@
           "sale": null,
           "effective": 1.5
         },
+        "אושר עד": {
+          "regular": 2.09,
+          "sale": null,
+          "effective": 2.09
+        },
+        "ויקטורי": {
+          "regular": 2.9,
+          "sale": null,
+          "effective": 2.9
+        },
         "חצי חינם": null
       }
     },
@@ -2026,8 +3628,16 @@
       "barcode": "7290010429554",
       "name": "יד מרדכי ש.זית כתית מעולה 2 קלאסי 750מל",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 46.9,
+          "sale": null,
+          "effective": 46.9
+        },
+        "רמי לוי": {
+          "regular": 41.9,
+          "sale": 40.9,
+          "effective": 40.9
+        },
         "יוחננוף": {
           "regular": 39.9,
           "sale": null,
@@ -2038,6 +3648,16 @@
           "sale": null,
           "effective": 27.9
         },
+        "אושר עד": {
+          "regular": 39.19,
+          "sale": null,
+          "effective": 39.19
+        },
+        "ויקטורי": {
+          "regular": 44.07,
+          "sale": null,
+          "effective": 44.07
+        },
         "חצי חינם": null
       }
     },
@@ -2046,8 +3666,16 @@
       "barcode": "7290000144474",
       "name": "שמן קנולה בריאות מהטבע 1 ליטר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 9.9,
+          "sale": null,
+          "effective": 9.9
+        },
+        "רמי לוי": {
+          "regular": 15.7,
+          "sale": null,
+          "effective": 15.7
+        },
         "יוחננוף": {
           "regular": 14.9,
           "sale": null,
@@ -2057,6 +3685,16 @@
           "regular": 9.9,
           "sale": null,
           "effective": 9.9
+        },
+        "אושר עד": {
+          "regular": 14.69,
+          "sale": null,
+          "effective": 14.69
+        },
+        "ויקטורי": {
+          "regular": 16.9,
+          "sale": null,
+          "effective": 16.9
         },
         "חצי חינם": {
           "regular": 15.1,
@@ -2070,8 +3708,16 @@
       "barcode": "7290000347752",
       "name": "תה ירוק לימונית ולואיזה 25 שקיקים 1.5 גר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 25.5,
+          "sale": 24.9,
+          "effective": 24.9
+        },
+        "רמי לוי": {
+          "regular": 15.9,
+          "sale": null,
+          "effective": 15.9
+        },
         "יוחננוף": {
           "regular": 22.9,
           "sale": null,
@@ -2081,6 +3727,16 @@
           "regular": 15.9,
           "sale": null,
           "effective": 15.9
+        },
+        "אושר עד": {
+          "regular": 21.9,
+          "sale": null,
+          "effective": 21.9
+        },
+        "ויקטורי": {
+          "regular": 25.9,
+          "sale": null,
+          "effective": 25.9
         },
         "חצי חינם": {
           "regular": 23.1,
@@ -2094,8 +3750,16 @@
       "barcode": "7290016509786",
       "name": "פרסיל גל ירוק 2.5 ליטר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 39.9,
+          "sale": 29.9,
+          "effective": 29.9
+        },
+        "רמי לוי": {
+          "regular": 34.9,
+          "sale": 28.9,
+          "effective": 28.9
+        },
         "יוחננוף": {
           "regular": 29.9,
           "sale": null,
@@ -2106,6 +3770,16 @@
           "sale": null,
           "effective": 12.6
         },
+        "אושר עד": {
+          "regular": 28.27,
+          "sale": null,
+          "effective": 28.27
+        },
+        "ויקטורי": {
+          "regular": 39.9,
+          "sale": null,
+          "effective": 39.9
+        },
         "חצי חינם": null
       }
     },
@@ -2114,8 +3788,16 @@
       "barcode": "7290115208047",
       "name": "ויטמינצ'יק פטל 1 ליטר",
       "prices": {
-        "שופרסל": null,
-        "רמי לוי": null,
+        "שופרסל": {
+          "regular": 13.9,
+          "sale": null,
+          "effective": 13.9
+        },
+        "רמי לוי": {
+          "regular": 14.4,
+          "sale": null,
+          "effective": 14.4
+        },
         "יוחננוף": {
           "regular": 13.9,
           "sale": null,
@@ -2126,710 +3808,19 @@
           "sale": null,
           "effective": 10.9
         },
+        "אושר עד": {
+          "regular": 13.04,
+          "sale": null,
+          "effective": 13.04
+        },
+        "ויקטורי": {
+          "regular": 14.9,
+          "sale": null,
+          "effective": 14.9
+        },
         "חצי חינם": null
       }
     }
   ],
-  "errors": [
-    {
-      "barcode": "7290000197678",
-      "name": "האגיס פרידום פלוס שלב 6 27 יח",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000195537",
-      "name": "מגבוני האגיס דיילי קר לא מבושם 4*56",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000211442",
-      "name": "סוגת אורז פרסי קלאסי שקית 1 ק\"ג",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290100700372",
-      "name": "סוגת אורז בסמטי מלא 1 ק\"ג",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000060880",
-      "name": "פסטה אסם ספגטי 500גר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "8076809529419",
-      "name": "ברילה ספגטי מחיטה מלאה 500 גרם",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290100700273",
-      "name": "סוגת קינואה 500 גר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290003643752",
-      "name": "סוגת עדשים ירוקים 500 גר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290100704929",
-      "name": "סוגת שעועית לבנה 500 גר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290003643714",
-      "name": "סוגת חומוס 500גר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290010116348",
-      "name": "מיקס מעורב מגדים 390ג",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "8000500071083",
-      "name": "קינדר אצבעות שוקולד 200ג",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290112494313",
-      "name": "קליק קורנפלקס תפזורת 65גר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000137513",
-      "name": "קרמיסימו שוקו ניל חלבי 60יח 630גר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290116537351",
-      "name": "כריות נוגט תלמה 686 גרם",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290112494351",
-      "name": "קורנפלקס אלופים בד\"צ 850 גר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000480107",
-      "name": "קוואקר מהיר אטוס לל\"ס 500 גר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000066332",
-      "name": "אפרופו 50 גרם",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000066318",
-      "name": "במבה 80 גרם",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290008745239",
-      "name": "תפוציפס קראנץ טבעי 50 גר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290112492449",
-      "name": "פינוק שמפו לשיער רגיל 700מ\"ל",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290017812571",
-      "name": "תירוש כרמל אדום 1 ליטר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000104676",
-      "name": "אפונה 800 גרם",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000107295",
-      "name": "תפרחות ברוקולי 800ג",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000104744",
-      "name": "כרובית 800גר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290012884986",
-      "name": "תפוגן ציפס לתנור עד 4% שומן 1.5 קג",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000104836",
-      "name": "שעועית עדינה שלמה 600גר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290017947891",
-      "name": "לחם אנגל כוסמין וחיטה מלאה 750 גרם",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290014940901",
-      "name": "אנג'ל לחם פשוט מלא 750מל",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290018540329",
-      "name": "פיתה אנגל 8 יח",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290017947464",
-      "name": "אנגל פיתות כוסמין 8יח 400גר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290112495105",
-      "name": "נשנושים שמנת בצל 260 ג",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "8434165466333",
-      "name": "קריט מיני קרקרים עגולים 350גר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7622010001858",
-      "name": "אוראו 176 גרם",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "46214731552",
-      "name": "עוגיות שוקולד ציפס מובחרות % 37 שוקולד",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000181103",
-      "name": "עד חצות 200ג",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000074184",
-      "name": "אסם פתי בר בינוני 500ג",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290018091531",
-      "name": "מעדנות חטיפי פיצה 650 גרם",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000043890",
-      "name": "ריויון 1.5% 1ל",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290004584351",
-      "name": "סימפוניה חמישית 200ג",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290006492432",
-      "name": "גד בייבי מוצרלה 150גר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000554532",
-      "name": "גד צפתית מעודנת במלח ים 5% 200ג",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290102394463",
-      "name": "נעם גבינה צהובה וואקום 28% 500גרם",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290004129101",
-      "name": "נפוליאון גבינת שמנת בטעם טבעי 25% 225גר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000040974",
-      "name": "חלב תנובה קרטון דל לקטוז 2% 1ל'",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290107932080",
-      "name": "יטבתה חלב בבקבוק 3% מועשר 1ל'",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290116932033",
-      "name": "חמאה 200 גרם מהדרין",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290119380916",
-      "name": "אקטימל תות 16 * 108 גר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000408354",
-      "name": "דנונה קראנצ' פיצפוצים 175מל",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290005839078",
-      "name": "דנונה ביו מארז חסכון 3% 8*150מל",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290110565527",
-      "name": "דנונה פרו 20ג חלבון 1.5% 200גרם",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290004125721",
-      "name": "שף לבן שמנת לבישול 15% 250מל'",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290005838002",
-      "name": "דניאלה מעדן גבינה 150מל",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290104726712",
-      "name": "מילקי שמינייה מארז 8*170מל",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290115678376",
-      "name": "מעדן הגולן שוקולד 125 גר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290003029181",
-      "name": "יטבתה שוקו בקבוק 1ל",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290110324926",
-      "name": "משקה סויה ללא תוספת סוכר 1 ליטר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290004125578",
-      "name": "סויה תנובה מועשר 1ל",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290110325619",
-      "name": "תנובה משקה שיבולת שועל 1 ליטר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290004127329",
-      "name": "קוטג תנובה מהדרין 5% 250ג",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290003726615",
-      "name": "משק ווילר טופו הבית 300 גר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290005427107",
-      "name": "סנו סושי מגבות הפלא 6 גלילים",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290012823602",
-      "name": "נייר טואלט סופט סילק לבן 32 יח",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290003989539",
-      "name": "שטראוס רביולי גבינה 400ג",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290008409216",
-      "name": "מאמא עוף קפוא שניצל דק פריך 700 גרם",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "8712400802499",
-      "name": "נוטרילון שלב 1- 800 גרם",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000063140",
-      "name": "שקדי מרק רכיבים טבעיים שקית 400 גרם",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290019056973",
-      "name": "מי עדן 1.5(6) פק",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000525969",
-      "name": "פרימור מיץ תפוזים 1ל",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "5906485301012",
-      "name": "אקס אל משקה אנרגיה 250מל",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290110115227",
-      "name": "קוקה-קולה זירו 1.5 ליטר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290110115203",
-      "name": "קוקה-קולה 1.5 ליטר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000136790",
-      "name": "טמפו סודה 6*1.5ל",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290110115463",
-      "name": "פיוז טי אפרסק 1.5 ליטר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000288024",
-      "name": "סנו ז'אוול בריח לימון 4 ליטר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000211503",
-      "name": "סוכר סוגת 1 ק\"ג",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290106576537",
-      "name": "צבר חומוס מסעדה 700 גר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000068138",
-      "name": "אסם פודינג אינסטנט וניל 80 גרם",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290005201882",
-      "name": "טורקי עלית 200ג",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000072753",
-      "name": "טייסטר צ'וייס 200ג",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000176420",
-      "name": "עלית נמס אבקתי 200 גרם",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000174723",
-      "name": "שוקולית 500ג",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290010328246",
-      "name": "אחוה טחינה משומשום מלא 500 גרם",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000112220",
-      "name": "טחינה בסיסית 500 גר' בארכה",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000111186",
-      "name": "מיונז צנ500. ג",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "80176800",
-      "name": "ממרח שוקולד נוטלה 750",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000072623",
-      "name": "אסם קטשופ 750 גרם",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000178134",
-      "name": "פרה שוק.מריר לל\"ג בד\"צ 4*100ג",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290008750677",
-      "name": "פרה שוקולד מלוי תות מגדים 100ג",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290113192355",
-      "name": "בית השיטה חרוזית זית ירוק ללא גלעין",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290005287206",
-      "name": "סטארקיסט טונה בשמן ב.י 4*160ג",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290018359495",
-      "name": "יכין תירס מהשדה ללת\"ס 550 גרם",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000208114",
-      "name": "יכין אפונת גינה וגזר 550 גר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "8005110170300",
-      "name": "מוטי עגבניות חתוכות דק 3*400גר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290002019794",
-      "name": "פריניר רסק עגבניות 22% 100ג",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290010429554",
-      "name": "יד מרדכי ש.זית כתית מעולה 2 קלאסי 750מל",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000144474",
-      "name": "שמן קנולה בריאות מהטבע 1 ליטר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290000347752",
-      "name": "תה ירוק לימונית ולואיזה 25 שקיקים 1.5 גר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290016509786",
-      "name": "פרסיל גל ירוק 2.5 ליטר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    },
-    {
-      "barcode": "7290115208047",
-      "name": "ויטמינצ'יק פטל 1 ליטר",
-      "errors": [
-        "רמי לוי: HTTP Error 403: Forbidden"
-      ]
-    }
-  ]
+  "errors": []
 }

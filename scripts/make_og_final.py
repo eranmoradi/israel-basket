@@ -1,32 +1,30 @@
 #!/usr/bin/env python3
 """
-Build final og-image.png from og-v3-typo.png:
-  1. Remove bottom URL bar (natural cut at y=549)
-  2. Repaint top subtitle and bottom CTA line at larger size, accent color
-  3. Composite logo-on-dark.png (white logo) centered at bottom
-  4. Save to docs/media/assets/ and israel-basket/public/
+Generate og-image.png from scratch — Notion-card proportions:
+  large bold title, clear hierarchy, minimal chrome.
+Outputs to docs/media/assets/ and israel-basket/public/.
 """
 import os, subprocess, tempfile
 from PIL import Image, ImageDraw, ImageFont
 from bidi.algorithm import get_display
 
 BASE   = "/Users/eranmoradi/Claude/israel basket"
-SRC    = f"{BASE}/docs/media/assets/og-v3-typo.png"
 OUT    = f"{BASE}/docs/media/assets/og-image.png"
 PUBLIC = f"{BASE}/israel-basket/public/og-image.png"
 
-FONT_PATH = "/System/Library/Fonts/ArialHB.ttc"
-ACCENT    = (147, 197, 253, 255)   # Tailwind blue-300 — pops on dark navy
-WHITE     = (255, 255, 255, 255)
+FONT_PATH      = "/System/Library/Fonts/ArialHB.ttc"
+FONT_PATH_LATIN = "/System/Library/Fonts/Helvetica.ttc"
 
-# Background colors sampled from og-v3-typo.png at relevant rows
-BG_TOP    = (9,  22,  78,  255)   # y≈85-110  (top subtitle area)
-BG_BOTTOM = (18, 41, 107, 255)    # y≈455-490 (bottom CTA area)
-BG_FOOTER = (7,  15,  38,  255)   # y≈550+    (footer bar)
+W, H = 1200, 630
+
+BG        = (12, 28, 92)          # dark navy
+WHITE     = (255, 255, 255, 255)
+ACCENT    = (147, 197, 253, 255)  # Tailwind blue-300
+MUTED     = (148, 163, 184, 255)  # Tailwind slate-400
+SEPARATOR = (255, 255, 255, 40)   # subtle white line
 
 CART_X, CART_Y = 154.0, 299.0
 CART_W, CART_H = 900.0, 865.0
-
 CART_PATH_D = (
     "M1023.738,462.853H360.523l-23.554-123.555c-4.425-23.215-24.791-40.065-48.425-40.065H170.049"
     "c-8.864,0-16.049,7.185-16.049,16.049s7.185,16.049,16.049,16.049h118.495"
@@ -56,17 +54,23 @@ CART_PATH_D = (
 )
 
 
-def draw_centered_text(draw, img_w, y_center, text_he, font, color):
-    """Draw Hebrew text centered horizontally at y_center."""
-    visual = get_display(text_he)
-    bbox   = draw.textbbox((0, 0), visual, font=font)
-    tw     = bbox[2] - bbox[0]
-    th     = bbox[3] - bbox[1]
-    x      = (img_w - tw) // 2
+def bidi(text):
+    return get_display(text)
+
+
+def text_size(draw, text, font):
+    bb = draw.textbbox((0, 0), text, font=font)
+    return bb[2] - bb[0], bb[3] - bb[1]
+
+
+def draw_centered(draw, y_center, text_he, font, color, img_w=W):
+    visual = bidi(text_he)
+    tw, th = text_size(draw, visual, font)
+    x = (img_w - tw) // 2
     draw.text((x, y_center - th // 2), visual, font=font, fill=color)
 
 
-def render_cart_png(icon_size: int, color: str = "white") -> str:
+def render_cart_png(icon_size, color="white"):
     cart_h = int(icon_size * 0.78)
     cart_w = CART_W / CART_H * cart_h
     cart_x = (icon_size - cart_w) / 2
@@ -75,8 +79,7 @@ def render_cart_png(icon_size: int, color: str = "white") -> str:
     tx = cart_x - CART_X * s
     ty = cart_y - CART_Y * s
     svg = (
-        f'<svg xmlns="http://www.w3.org/2000/svg"'
-        f' width="{icon_size}" height="{icon_size}">'
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{icon_size}" height="{icon_size}">'
         f'<g transform="translate({tx:.3f},{ty:.3f}) scale({s:.6f})">'
         f'<path d="{CART_PATH_D}" fill="{color}" fill-rule="evenodd"/>'
         f'</g></svg>'
@@ -92,42 +95,64 @@ def render_cart_png(icon_size: int, color: str = "white") -> str:
 
 
 def main():
-    img  = Image.open(SRC).convert("RGBA")
-    w, h = img.size   # 1200x630
+    img  = Image.new("RGBA", (W, H), (*BG, 255))
     draw = ImageDraw.Draw(img)
 
-    # ── 1. Remove bottom footer — fill with main content bg so no dark strip ─
-    BG_MAIN = (19, 44, 112, 255)   # matches surrounding background at y≈545
-    draw.rectangle([(0, 549), (w, h)], fill=BG_MAIN)
+    # ── subtle radial glow in center (paint a lighter oval) ──────────────
+    glow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    gd   = ImageDraw.Draw(glow)
+    for r in range(320, 0, -1):
+        alpha = int(18 * (1 - r / 320))
+        gd.ellipse([(W//2 - r*2, H//2 - r), (W//2 + r*2, H//2 + r)],
+                   fill=(80, 120, 220, alpha))
+    img = Image.alpha_composite(img, glow)
+    draw = ImageDraw.Draw(img)
 
-    # ── 2. Repaint top subtitle ───────────────────────────────────────────
-    draw.rectangle([(0, 65), (w, 125)], fill=BG_TOP)
-    font_sub = ImageFont.truetype(FONT_PATH, 38)
-    draw_centered_text(draw, w, 97, "הממשלה הכריזה על הוזלת סל המזון", font_sub, ACCENT)
+    # ── top brand strip — centered ────────────────────────────────────────
+    TOP_Y = 56
+    font_brand = ImageFont.truetype(FONT_PATH, 48)
+    brand_text = bidi("הסל של ישראל")
+    bw, bh = text_size(draw, brand_text, font_brand)
 
-    # ── 3. Repaint bottom CTA line ────────────────────────────────────────
-    draw.rectangle([(0, 448), (w, 498)], fill=BG_BOTTOM)
-    font_cta = ImageFont.truetype(FONT_PATH, 42)
-    draw_centered_text(draw, w, 473, "הכוח בידיכם — בדקו וחשפו בעצמכם", font_cta, ACCENT)
+    # Cart icon 56px, centered with text
+    cart_size = 56
+    cart_png  = render_cart_png(cart_size, color="white")
+    cart_img  = Image.open(cart_png).convert("RGBA")
+    os.unlink(cart_png)
 
-    # ── 4. Logo centered at bottom strip ─────────────────────────────────
-    logo_raw = Image.open(f"{BASE}/docs/media/assets/logo-on-dark.png").convert("RGBA")
-    pixels   = logo_raw.load()
-    lw, lh   = logo_raw.size
-    for ly in range(lh):
-        for lx in range(lw):
-            r, g, b, a = pixels[lx, ly]
-            if r < 40 and g < 40 and b < 100:
-                pixels[lx, ly] = (r, g, b, 0)
+    gap      = 14
+    group_w  = cart_size + gap + bw
+    group_x  = (W - group_w) // 2
+    icon_y   = TOP_Y - cart_size // 2
+    img.paste(cart_img, (group_x, icon_y), cart_img)
+    draw.text((group_x + cart_size + gap, TOP_Y - bh // 2), brand_text,
+              font=font_brand, fill=WHITE)
 
-    target_h = 70
-    target_w = int(lw * target_h / lh)
-    logo_img = logo_raw.resize((target_w, target_h), Image.LANCZOS)
+    # ── main title "השוואת מחירים" — HUGE ────────────────────────────────
+    TITLE_Y = 270
+    font_title = ImageFont.truetype(FONT_PATH, 148)
+    draw_centered(draw, TITLE_Y, "השוואת מחירים", font_title, WHITE)
 
-    strip_h  = h - 549
-    paste_x  = (w - target_w) // 2
-    paste_y  = 549 + (strip_h - target_h) // 2
-    img.paste(logo_img, (paste_x, paste_y), logo_img)
+    # ── subtitle "ב-6 רשתות" — large accent ──────────────────────────────
+    SUB_Y = 390
+    font_sub = ImageFont.truetype(FONT_PATH, 62)
+    draw_centered(draw, SUB_Y, "ב-6 רשתות המובילות", font_sub, ACCENT)
+
+    # ── tagline — medium muted ────────────────────────────────────────────
+    TAG_Y = 468
+    font_tag = ImageFont.truetype(FONT_PATH, 36)
+    draw_centered(draw, TAG_Y, "30 שניות   |   ללא הרשמה   |   מחירים מעודכנים", font_tag, MUTED)
+
+    # ── separator ─────────────────────────────────────────────────────────
+    SEP_Y = 518
+    draw.line([(80, SEP_Y), (W - 80, SEP_Y)], fill=SEPARATOR, width=1)
+
+    # ── URL at bottom (Latin font) ─────────────────────────────────────────
+    URL_Y = 580
+    font_url = ImageFont.truetype(FONT_PATH_LATIN, 30)
+    url_text = "israelbasket.app"
+    uw, uh = text_size(draw, url_text, font_url)
+    draw.text(((W - uw) // 2, URL_Y - uh // 2), url_text, font=font_url, fill=MUTED)
 
     img.convert("RGB").save(OUT, "PNG")
     img.convert("RGB").save(PUBLIC, "PNG")

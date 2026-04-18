@@ -13,9 +13,12 @@ export default function Header({ onBotOpen }: HeaderProps) {
   return (
     <header className="sticky top-0 z-50 bg-blue-700 text-white shadow-md">
       <div className="max-w-3xl mx-auto px-4 h-14 flex items-center justify-between">
-        <NavLink to="/" className="flex items-center gap-2 font-bold text-lg tracking-wide">
+        <NavLink to="/" className="flex items-center gap-2">
           <CartIcon size={28} color="white" className="inline-block flex-shrink-0" />
-          <span>הסל המוזל בישראל</span>
+          <div className="flex flex-col leading-tight">
+            <span className="font-bold text-base tracking-wide">הסל של ישראל</span>
+            <span className="text-xs text-blue-200 font-medium">השוואת מחירים</span>
+          </div>
         </NavLink>
         {isInner && (
           <div className="flex items-center gap-2">

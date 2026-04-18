@@ -5,7 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Brand & Copy
 
 **App name (intended):** "הסל המוזל בישראל" — not yet applied to codebase (Header.tsx, index.html title, manifest.json pending).
-**30% savings figure:** Government's official claim (Minister Barkat announcement), not independently verified. Copy frames it as a question ("הממשלה מבטיחה: 30% חיסכון?"), not a fact. Never present it as our own stat.
+**Savings figures:** The 30% figure was removed from the homepage entirely (April 2026) — too vague/misleading. Real data from chain_prices.json: קארפור full basket = 1,099₪; avg savings vs שופרסל/רמי לוי/יוחננוף/ויקטורי = ~560₪. Use these for stats and copy.
 **Copy tone:** Civic, independent, no profit motive. The app returns consumer power to citizens — not affiliated with Carrefour or the government.
 
 ## Repository Layout

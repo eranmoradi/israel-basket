@@ -84,18 +84,33 @@ def main():
     bg = (7, 15, 38, 255)
 
     # Paint over the bottom footer bar (URL text + separator, ~y=562 to bottom)
-    draw.rectangle([(0, 562), (w, h)], fill=bg)
+    # Extend bottom strip to 100px to give logo room
+    strip_y = 530
+    draw.rectangle([(0, strip_y), (w, h)], fill=bg)
 
-    # Cart icon — left of "המזון" on the top subtitle line, 48px
-    icon_size = 48
-    tmp_cart  = render_cart_png(icon_size, color="white")
-    cart_img  = Image.open(tmp_cart).convert("RGBA")
-    os.unlink(tmp_cart)
+    # Logo — bottom strip, centered; strip white background first
+    logo_src = f"{BASE}/docs/media/assets/logo-on-dark.png"
+    logo_raw = Image.open(logo_src).convert("RGBA")
 
-    # subtitle line center is ~y=78; icon left-margin 60px
-    paste_x = 60
-    paste_y = 78 - icon_size // 2
-    img.paste(cart_img, (paste_x, paste_y), cart_img)
+    # Make near-white pixels transparent
+    pixels = logo_raw.load()
+    lw, lh = logo_raw.size
+    for ly in range(lh):
+        for lx in range(lw):
+            r, g, b, a = pixels[lx, ly]
+            if r < 40 and g < 40 and b < 100:
+                pixels[lx, ly] = (r, g, b, 0)
+
+    # Scale to 80px height
+    target_h = 80
+    target_w  = int(lw * target_h / lh)
+    logo_img  = logo_raw.resize((target_w, target_h), Image.LANCZOS)
+
+    # Center horizontally, vertically centered in bottom strip
+    strip_h   = h - strip_y
+    paste_x   = (w - target_w) // 2
+    paste_y   = strip_y + (strip_h - target_h) // 2
+    img.paste(logo_img, (paste_x, paste_y), logo_img)
 
     final = img.convert("RGB")
     final.save(OUT, "PNG")

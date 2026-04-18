@@ -1,17 +1,28 @@
 #!/usr/bin/env python3
 """
 Build final og-image.png from og-v3-typo.png:
-  1. Remove the bottom URL bar
-  2. Composite the cart icon (top-right corner)
-  3. Save to docs/media/assets/ and israel-basket/public/
+  1. Remove bottom URL bar (natural cut at y=549)
+  2. Repaint top subtitle and bottom CTA line at larger size, accent color
+  3. Composite logo-on-dark.png (white logo) centered at bottom
+  4. Save to docs/media/assets/ and israel-basket/public/
 """
 import os, subprocess, tempfile
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFont
+from bidi.algorithm import get_display
 
 BASE   = "/Users/eranmoradi/Claude/israel basket"
 SRC    = f"{BASE}/docs/media/assets/og-v3-typo.png"
 OUT    = f"{BASE}/docs/media/assets/og-image.png"
 PUBLIC = f"{BASE}/israel-basket/public/og-image.png"
+
+FONT_PATH = "/System/Library/Fonts/ArialHB.ttc"
+ACCENT    = (147, 197, 253, 255)   # Tailwind blue-300 — pops on dark navy
+WHITE     = (255, 255, 255, 255)
+
+# Background colors sampled from og-v3-typo.png at relevant rows
+BG_TOP    = (9,  22,  78,  255)   # y≈85-110  (top subtitle area)
+BG_BOTTOM = (18, 41, 107, 255)    # y≈455-490 (bottom CTA area)
+BG_FOOTER = (7,  15,  38,  255)   # y≈550+    (footer bar)
 
 CART_X, CART_Y = 154.0, 299.0
 CART_W, CART_H = 900.0, 865.0
@@ -45,8 +56,17 @@ CART_PATH_D = (
 )
 
 
+def draw_centered_text(draw, img_w, y_center, text_he, font, color):
+    """Draw Hebrew text centered horizontally at y_center."""
+    visual = get_display(text_he)
+    bbox   = draw.textbbox((0, 0), visual, font=font)
+    tw     = bbox[2] - bbox[0]
+    th     = bbox[3] - bbox[1]
+    x      = (img_w - tw) // 2
+    draw.text((x, y_center - th // 2), visual, font=font, fill=color)
+
+
 def render_cart_png(icon_size: int, color: str = "white") -> str:
-    """Render cart icon SVG to a temp PNG, return path."""
     cart_h = int(icon_size * 0.78)
     cart_w = CART_W / CART_H * cart_h
     cart_x = (icon_size - cart_w) / 2
@@ -59,62 +79,58 @@ def render_cart_png(icon_size: int, color: str = "white") -> str:
         f' width="{icon_size}" height="{icon_size}">'
         f'<g transform="translate({tx:.3f},{ty:.3f}) scale({s:.6f})">'
         f'<path d="{CART_PATH_D}" fill="{color}" fill-rule="evenodd"/>'
-        f'</g>'
-        f'</svg>'
+        f'</g></svg>'
     )
     with tempfile.NamedTemporaryFile(suffix=".svg", mode="w", delete=False) as f:
         f.write(svg)
         tmp_svg = f.name
     tmp_png = tmp_svg.replace(".svg", ".png")
-    subprocess.run(
-        ["rsvg-convert", "-f", "png", "-o", tmp_png, tmp_svg],
-        check=True, capture_output=True
-    )
+    subprocess.run(["rsvg-convert", "-f", "png", "-o", tmp_png, tmp_svg],
+                   check=True, capture_output=True)
     os.unlink(tmp_svg)
     return tmp_png
 
 
 def main():
-    img = Image.open(SRC).convert("RGBA")
-    w, h = img.size  # 1200x630
-
+    img  = Image.open(SRC).convert("RGBA")
+    w, h = img.size   # 1200x630
     draw = ImageDraw.Draw(img)
 
-    # Background color of the main content area
-    bg = (7, 15, 38, 255)
+    # ── 1. Remove bottom footer — fill with main content bg so no dark strip ─
+    BG_MAIN = (19, 44, 112, 255)   # matches surrounding background at y≈545
+    draw.rectangle([(0, 549), (w, h)], fill=BG_MAIN)
 
-    # Paint over the bottom footer bar (URL text + separator, ~y=562 to bottom)
-    # Extend bottom strip to 100px to give logo room
-    strip_y = 530
-    draw.rectangle([(0, strip_y), (w, h)], fill=bg)
+    # ── 2. Repaint top subtitle ───────────────────────────────────────────
+    draw.rectangle([(0, 65), (w, 125)], fill=BG_TOP)
+    font_sub = ImageFont.truetype(FONT_PATH, 38)
+    draw_centered_text(draw, w, 97, "הממשלה הכריזה על הוזלת סל המזון", font_sub, ACCENT)
 
-    # Logo — bottom strip, centered; strip white background first
-    logo_src = f"{BASE}/docs/media/assets/logo-on-dark.png"
-    logo_raw = Image.open(logo_src).convert("RGBA")
+    # ── 3. Repaint bottom CTA line ────────────────────────────────────────
+    draw.rectangle([(0, 448), (w, 498)], fill=BG_BOTTOM)
+    font_cta = ImageFont.truetype(FONT_PATH, 42)
+    draw_centered_text(draw, w, 473, "הכוח בידיכם — בדקו וחשפו בעצמכם", font_cta, ACCENT)
 
-    # Make near-white pixels transparent
-    pixels = logo_raw.load()
-    lw, lh = logo_raw.size
+    # ── 4. Logo centered at bottom strip ─────────────────────────────────
+    logo_raw = Image.open(f"{BASE}/docs/media/assets/logo-on-dark.png").convert("RGBA")
+    pixels   = logo_raw.load()
+    lw, lh   = logo_raw.size
     for ly in range(lh):
         for lx in range(lw):
             r, g, b, a = pixels[lx, ly]
             if r < 40 and g < 40 and b < 100:
                 pixels[lx, ly] = (r, g, b, 0)
 
-    # Scale to 80px height
-    target_h = 80
-    target_w  = int(lw * target_h / lh)
-    logo_img  = logo_raw.resize((target_w, target_h), Image.LANCZOS)
+    target_h = 70
+    target_w = int(lw * target_h / lh)
+    logo_img = logo_raw.resize((target_w, target_h), Image.LANCZOS)
 
-    # Center horizontally, vertically centered in bottom strip
-    strip_h   = h - strip_y
-    paste_x   = (w - target_w) // 2
-    paste_y   = strip_y + (strip_h - target_h) // 2
+    strip_h  = h - 549
+    paste_x  = (w - target_w) // 2
+    paste_y  = 549 + (strip_h - target_h) // 2
     img.paste(logo_img, (paste_x, paste_y), logo_img)
 
-    final = img.convert("RGB")
-    final.save(OUT, "PNG")
-    final.save(PUBLIC, "PNG")
+    img.convert("RGB").save(OUT, "PNG")
+    img.convert("RGB").save(PUBLIC, "PNG")
     print(f"  ✓ {OUT}")
     print(f"  ✓ {PUBLIC}")
 

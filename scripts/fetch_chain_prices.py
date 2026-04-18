@@ -41,19 +41,58 @@ RAMI_LEVY_BASE = "https://www.rami-levy.co.il"
 YOCHANANOF_GRAPHQL = "https://api.yochananof.co.il/graphql"
 
 
-def _get(url: str, headers: dict | None = None, timeout: int = 15) -> bytes:
-    """HTTP GET returning raw bytes. Raises urllib.error.HTTPError on 4xx/5xx."""
-    req = urllib.request.Request(url, headers=headers or {})
-    req.add_header("User-Agent", "Mozilla/5.0 (compatible; IsraelBasketBot/1.0)")
-    with urllib.request.urlopen(req, timeout=timeout) as resp:
-        return resp.read()
+_USER_AGENTS = [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+]
+_ua_idx = 0
 
 
-def _post(url: str, payload: bytes, headers: dict | None = None, timeout: int = 15) -> bytes:
-    req = urllib.request.Request(url, data=payload, headers=headers or {})
-    req.add_header("User-Agent", "Mozilla/5.0 (compatible; IsraelBasketBot/1.0)")
-    with urllib.request.urlopen(req, timeout=timeout) as resp:
-        return resp.read()
+def _next_ua() -> str:
+    global _ua_idx
+    ua = _USER_AGENTS[_ua_idx % len(_USER_AGENTS)]
+    _ua_idx += 1
+    return ua
+
+
+def _get(url: str, headers: dict | None = None, timeout: int = 20, retries: int = 3) -> bytes:
+    """HTTP GET with retry on 403/429/timeout. Rotates User-Agent between attempts."""
+    last_exc: Exception = RuntimeError("no attempts")
+    for attempt in range(retries):
+        if attempt:
+            time.sleep(2 ** attempt + random.uniform(0, 1))
+        req = urllib.request.Request(url, headers=headers or {})
+        req.add_header("User-Agent", _next_ua())
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                return resp.read()
+        except urllib.error.HTTPError as e:
+            last_exc = e
+            if e.code not in (403, 429, 503):
+                raise
+        except OSError as e:
+            last_exc = e
+    raise last_exc
+
+
+def _post(url: str, payload: bytes, headers: dict | None = None, timeout: int = 20, retries: int = 3) -> bytes:
+    last_exc: Exception = RuntimeError("no attempts")
+    for attempt in range(retries):
+        if attempt:
+            time.sleep(2 ** attempt + random.uniform(0, 1))
+        req = urllib.request.Request(url, data=payload, headers=headers or {})
+        req.add_header("User-Agent", _next_ua())
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                return resp.read()
+        except urllib.error.HTTPError as e:
+            last_exc = e
+            if e.code not in (403, 429, 503):
+                raise
+        except OSError as e:
+            last_exc = e
+    raise last_exc
 
 
 # ---------------------------------------------------------------------------
@@ -368,11 +407,11 @@ def build_victory_index() -> dict[str, dict]:
     """
     print("  Fetching ויקטורי file list from laibcatalog.co.il...")
 
-    def _get_json(url: str) -> list:
-        raw = _get(url, headers={"Accept": "application/json"})
+    def _get_json(url: str, timeout: int = 20) -> list:
+        raw = _get(url, headers={"Accept": "application/json"}, timeout=timeout)
         return json.loads(raw.decode("utf-8"))
 
-    files = _get_json(f"{VICTORY_BASE}/webapi/api/getfiles?edi={VICTORY_CHAIN_ID}")
+    files = _get_json(f"{VICTORY_BASE}/webapi/api/getfiles?edi={VICTORY_CHAIN_ID}", timeout=40)
     price_files = [f for f in files if "pricefull" in f.get("fileType", "").lower()]
 
     if not price_files:
@@ -393,7 +432,7 @@ def build_victory_index() -> dict[str, dict]:
         print(f"  [{i}/{len(price_files)}] {fname}")
         try:
             url = f"{VICTORY_BASE}/webapi/{VICTORY_CHAIN_ID}/{fname}"
-            raw = _get(url)
+            raw = _get(url, timeout=40)
             data = gzip.decompress(raw) if raw[:2] == b"\x1f\x8b" else raw
             root = ET.fromstring(data)
             for item in root.iter("Item"):

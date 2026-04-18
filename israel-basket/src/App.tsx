@@ -26,12 +26,12 @@ function AppInner() {
   }, [pathname])
 
   const showPageBot = pathname === '/basket' || pathname === '/products' || pathname === '/compare' || pathname === '/branches'
-  const isAdmin = pathname === '/admin'
+  const isAdmin = pathname === '/analytics'
 
   if (isAdmin) {
     return (
       <Routes>
-        <Route path="/admin" element={<AdminPage />} />
+        <Route path="/analytics" element={<AdminPage />} />
       </Routes>
     )
   }

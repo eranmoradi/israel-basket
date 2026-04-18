@@ -4,9 +4,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Brand & Copy
 
-**App name (intended):** "הסל המוזל בישראל" — not yet applied to codebase (Header.tsx, index.html title, manifest.json pending).
+**App name:** "הסל של ישראל — השוואת מחירים" — applied to Header.tsx (two-line brand), index.html title/OG tags. manifest.json still pending.
 **Savings figures:** The 30% figure was removed from the homepage entirely (April 2026) — too vague/misleading. Real data from chain_prices.json: קארפור full basket = 1,099₪; avg savings vs שופרסל/רמי לוי/יוחננוף/ויקטורי = ~560₪. Use these for stats and copy.
 **Copy tone:** Civic, independent, no profit motive. The app returns consumer power to citizens — not affiliated with Carrefour or the government.
+**HomePage features card chain list:** Must match `ComparePage`'s `CHAINS` constant (`src/pages/ComparePage.tsx:11`). Update both together when chains change.
 
 ## Repository Layout
 

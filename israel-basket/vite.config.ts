@@ -12,9 +12,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'apple-touch-icon.png'],
       manifest: {
-        name: 'הסל של ישראל',
-        short_name: 'הסל',
-        description: '100 מוצרים במחיר מוזל — יוזמת משרד הכלכלה עם קארפור',
+        name: 'הסל המוזל בישראל',
+        short_name: 'הסל המוזל',
+        description: 'בדקו כמה אתם חוסכים על הסל שלכם. 4 רשתות, 30 שניות, ללא הרשמה.',
         dir: 'rtl',
         lang: 'he',
         theme_color: '#1d4ed8',

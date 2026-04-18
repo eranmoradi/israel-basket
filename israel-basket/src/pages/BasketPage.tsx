@@ -132,7 +132,7 @@ export default function BasketPage() {
   function buildSummaryText() {
     const date = new Date().toLocaleDateString('he-IL')
     const lines: string[] = [
-      `🛒 הסל שלי — הסל של ישראל`,
+      `🛒 הסל שלי — הסל המוזל בישראל`,
       `תאריך: ${date}`,
       ``,
       `מוצרים (${count}):`,
@@ -154,7 +154,7 @@ export default function BasketPage() {
   function handleWhatsApp() {
     const text = buildSummaryText()
     if (navigator.share) {
-      navigator.share({ title: 'הסל של ישראל', text }).catch(() => {
+      navigator.share({ title: 'הסל המוזל בישראל', text }).catch(() => {
         window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank')
       })
     } else {
@@ -163,9 +163,9 @@ export default function BasketPage() {
   }
 
   function handleShareApp() {
-    const text = `שלחתי לעצמי את רשימת הקניות דרך הסל של ישראל 😮\nהאפליקציה משווה מחירים ב-4 רשתות ומראה מאיפה הכי כדאי לקנות.\nחינם, ללא הרשמה: israelbasket.app`
+    const text = `שלחתי לעצמי את רשימת הקניות דרך הסל המוזל בישראל 😮\nהאפליקציה משווה מחירים ב-4 רשתות ומראה מאיפה הכי כדאי לקנות.\nחינם, ללא הרשמה: israelbasket.app`
     if (navigator.share) {
-      navigator.share({ title: 'הסל של ישראל', text, url: 'https://israelbasket.app' }).catch(() => {
+      navigator.share({ title: 'הסל המוזל בישראל', text, url: 'https://israelbasket.app' }).catch(() => {
         window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank')
       })
     } else {

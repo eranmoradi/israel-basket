@@ -33,8 +33,8 @@ export default function HomePage() {
     return () => observer.disconnect()
   }, [])
 
-  const savingPerPurchase = useCountUp(600, 1200, counting)
-  const savingMonthly = useCountUp(2400, 1600, counting)
+  const basketPrice = useCountUp(1099, 1200, counting)
+  const avgSaving = useCountUp(560, 1600, counting)
   const branches = useCountUp(50, 900, counting)
 
   return (
@@ -42,28 +42,28 @@ export default function HomePage() {
       <main className="max-w-3xl mx-auto px-4 py-8">
         {/* Hero + CTAs */}
         <div className="rounded-3xl bg-gradient-to-bl from-blue-900 to-blue-700 text-white px-8 py-14 sm:py-20 text-center mb-6 shadow-lg">
-          <span className="bg-white/10 text-white/85 text-xs font-medium px-3 py-1.5 rounded-full inline-block mb-6 border border-white/20">
+          <span className="badge-pulse bg-white/10 text-white/90 text-sm font-semibold px-4 py-2 rounded-full mb-6 border border-white/30">
             מידע חופשי. שיתוף ציבורי. שינוי אמיתי.
           </span>
-          <p className="text-sm text-white/60 mb-1">הממשלה מבטיחה:</p>
-          <div className="text-6xl sm:text-8xl font-black text-yellow-300 leading-none mb-1">30%</div>
-          <div className="text-2xl font-black text-yellow-300 leading-none mb-6">חיסכון?</div>
-          <p className="text-base text-white/80 mb-8">בנו את הרשימה שלכם — ותדעו בדיוק כמה אתם חוסכים</p>
+          <p className="text-base sm:text-lg text-white/90 font-semibold leading-snug mb-2">
+            משרד הכלכלה השיק את מיזם <span className="text-yellow-300">"הסל של ישראל"</span>
+          </p>
+          <p className="text-sm text-white/65 mb-5 leading-relaxed">
+            בהבטחה להוזלה משמעותית במחיר סל המזון
+          </p>
+          <p className="text-2xl sm:text-3xl font-black text-yellow-300 leading-snug mb-6">
+            האם זה נכון? ובכמה אפשר באמת לחסוך?
+          </p>
+          <p className="text-sm text-white/75 mb-8 leading-relaxed">
+            הוסיפו מוצרים לסל וקבלו מיד סיכום של מחיר הסל שלכם לעומת הרשתות המובילות האחרות.
+          </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <button
-              onClick={() => navigate('/products')}
-              className="bg-yellow-400 hover:bg-yellow-300 active:scale-95 text-blue-900 font-black text-base py-3.5 rounded-xl shadow-lg shadow-black/30 transition-all"
-            >
-              📦 בדקו את הסל שלכם
-            </button>
-            <button
-              onClick={() => navigate('/branches')}
-              className="bg-white/10 hover:bg-white/20 active:scale-95 text-white font-bold text-base py-3.5 rounded-xl border-2 border-white/40 transition-all"
-            >
-              🏪 מצאו את הסניף הקרוב
-            </button>
-          </div>
+          <button
+            onClick={() => navigate('/products')}
+            className="w-full bg-yellow-400 hover:bg-yellow-300 active:scale-95 text-blue-900 font-black text-lg py-4 rounded-xl shadow-xl shadow-black/40 transition-all"
+          >
+            📦 מתחילים בבדיקה של הסל כאן
+          </button>
           <div className="flex flex-wrap justify-center gap-x-4 gap-y-1 mt-6 text-xs text-white/50">
             <span>✓ ללא הרשמה</span>
             <span>✓ מחירים מתעדכנים מדי יום</span>
@@ -83,21 +83,24 @@ export default function HomePage() {
         </div>
 
         {/* Stats cards */}
-        <p className="text-xs text-gray-500 text-center mb-3">אלו הנתונים הרשמיים שהממשלה מציגה</p>
+        <p className="text-sm text-gray-400 text-center mb-3 leading-relaxed">
+          אלו הנתונים הרשמיים שהממשלה מציגה —{' '}
+          רוצים לדעת אם זה נכון גם לסל <span className="text-white font-semibold">שלכם</span>? בדקו בכמה לחיצות ↑
+        </p>
         <div ref={statsRef} className="grid grid-cols-3 gap-3 mb-2">
           {[
             {
               Icon: Tag,
-              value: `~${savingPerPurchase.toLocaleString('he-IL')}₪`,
-              label: 'חסכון ממוצע לקנייה *',
+              value: `${basketPrice.toLocaleString('he-IL')}₪`,
+              label: 'מחיר הסל בקארפור',
               gradient: 'from-yellow-400 to-amber-500',
               iconColor: 'text-amber-400',
               to: '/products',
             },
             {
               Icon: CalendarDays,
-              value: `~${savingMonthly.toLocaleString('he-IL')}₪`,
-              label: 'חסכון ממוצע חודשי *',
+              value: `~${avgSaving.toLocaleString('he-IL')}₪`,
+              label: 'חסכון ממוצע מול הרשתות *',
               gradient: 'from-emerald-400 to-teal-500',
               iconColor: 'text-emerald-400',
               to: '/products',
@@ -114,21 +117,18 @@ export default function HomePage() {
             <button
               key={label}
               onClick={() => navigate(to)}
-              className="bg-gradient-to-b from-gray-800 to-gray-900 rounded-2xl p-4 text-center border border-gray-700/60 shadow-lg hover:border-gray-500 hover:from-gray-700 active:scale-95 transition-all"
+              className="bg-gradient-to-b from-gray-800 to-gray-900 rounded-2xl p-3 sm:p-4 text-center border border-gray-700/60 shadow-lg hover:border-gray-500 hover:from-gray-700 active:scale-95 transition-all"
             >
-              <Icon className={`${iconColor} mx-auto mb-2`} size={24} strokeWidth={1.75} />
-              <div className={`text-lg sm:text-xl font-black bg-gradient-to-b ${gradient} bg-clip-text text-transparent leading-tight`}>
+              <Icon className={`${iconColor} mx-auto mb-1.5`} size={20} strokeWidth={1.75} />
+              <div className={`text-sm sm:text-xl font-black bg-gradient-to-b ${gradient} bg-clip-text text-transparent leading-tight whitespace-nowrap`}>
                 {value}
               </div>
-              <div className="text-[11px] text-gray-500 mt-1.5 leading-tight">{label}</div>
+              <div className="text-[10px] sm:text-[11px] text-gray-500 mt-1.5 leading-tight">{label}</div>
             </button>
           ))}
         </div>
         <p className="text-[11px] text-gray-600 text-center mb-3">
-          * הנתונים מתייחסים למשפחה בת 4 נפשות · מחושב לפי קנייה שבועית של הסל המלא
-        </p>
-        <p className="text-xs text-gray-400 text-center mb-8">
-          רוצים לדעת אם זה נכון גם לסל <span className="text-white font-semibold">שלכם</span>? בדקו בכמה לחיצות ↑
+          * ממוצע בין שופרסל, רמי לוי, יוחננוף וויקטורי · עבור 100 המוצרים המלאים
         </p>
 
         {/* How-to steps */}

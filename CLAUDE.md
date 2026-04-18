@@ -98,6 +98,8 @@ Custom slash commands live in `.claude/commands/`. Type the command in Claude Co
 
 **Dark mode:** The entire UI uses a dark theme. Do not revert to light mode — this was an intentional design decision.
 
+**HomePage design:** The existing blue-gradient hero is intentional. Make targeted changes only — no full visual redesigns without explicit user request.
+
 **Geolocation (BranchesPage):** `src/utils/geo.ts` implements Haversine distance. `BranchesPage` requests the user's location via the browser API and sorts branches by proximity. Branches without `lat`/`lng` (failed geocoding) are pushed to the bottom.
 
 **RTL-specific UI patterns:** The app is globally RTL (`direction: rtl`). For horizontally-scrollable containers, hidden content is to the *left*. Sticky table columns use `sticky right-0` (not `left-0`). Scroll-hint gradient overlays go on the **left** edge: `absolute inset-y-0 left-0 bg-gradient-to-r from-gray-950 to-transparent`.

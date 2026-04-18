@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+
+declare const gtag: (...args: unknown[]) => void
 import Header from './components/Header'
 import BottomNav from './components/BottomNav'
 import BasketBar from './components/BasketBar'
@@ -15,6 +17,12 @@ function AppInner() {
   const count = useBasketStore((s) => s.count)
   const { pathname } = useLocation()
   const [botOpen, setBotOpen] = useState(false)
+
+  useEffect(() => {
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'page_view', { page_path: pathname })
+    }
+  }, [pathname])
 
   const showPageBot = pathname === '/basket' || pathname === '/products' || pathname === '/compare' || pathname === '/branches'
 

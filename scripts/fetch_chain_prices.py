@@ -487,6 +487,24 @@ def fmt_price(p: dict | None) -> str:
 # Main
 # ---------------------------------------------------------------------------
 
+def load_previous_prices() -> dict[str, dict[str, dict]]:
+    """Load existing chain_prices.json and return {chain: {barcode: price_obj}}."""
+    if not OUTPUT_JSON.exists():
+        return {}
+    try:
+        with open(OUTPUT_JSON, encoding="utf-8") as f:
+            old = json.load(f)
+        index: dict[str, dict[str, dict]] = {chain: {} for chain in CHAINS}
+        for item in old.get("products", []):
+            barcode = item["barcode"]
+            for chain, price in (item.get("prices") or {}).items():
+                if price is not None:
+                    index.setdefault(chain, {})[barcode] = price
+        return index
+    except Exception:
+        return {}
+
+
 def main() -> None:
     print(f"Loading products from {PRODUCTS_JSON}")
     with open(PRODUCTS_JSON, encoding="utf-8") as f:
@@ -495,6 +513,8 @@ def main() -> None:
     print(f"Loading CHP data from {PRICES_JSON}")
     with open(PRICES_JSON, encoding="utf-8") as f:
         chp_data = json.load(f)
+
+    previous = load_previous_prices()
 
     representatives = select_group_representatives(all_products)
     hazi_hinam_idx = build_hazi_hinam_index(chp_data)
@@ -593,8 +613,18 @@ def main() -> None:
         if i < total:
             time.sleep(random.uniform(*DELAY_BETWEEN_PRODUCTS))
 
-    # Build coverage summary
+    # For any chain that returned 0 results this run, fall back to previous data
     coverage = {chain: sum(1 for r in results if r["prices"].get(chain)) for chain in CHAINS}
+    fallback_used: list[str] = []
+    for chain in CHAINS:
+        if coverage[chain] == 0 and previous.get(chain):
+            print(f"⚠ {chain}: 0 prices fetched — keeping previous data")
+            fallback_used.append(chain)
+            for item in results:
+                if item["prices"].get(chain) is None:
+                    item["prices"][chain] = previous[chain].get(item["barcode"])
+            # Recompute coverage after fallback
+            coverage[chain] = sum(1 for r in results if r["prices"].get(chain))
 
     output = {
         "fetched_at": datetime.now(timezone.utc).isoformat(),
@@ -602,6 +632,7 @@ def main() -> None:
         "product_count": len(results),
         "error_count": len(errors),
         "coverage": coverage,
+        "fallback_chains": fallback_used,
         "products": results,
         "errors": errors,
     }

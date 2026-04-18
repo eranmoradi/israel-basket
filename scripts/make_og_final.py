@@ -86,15 +86,15 @@ def main():
     # Paint over the bottom footer bar (URL text + separator, ~y=562 to bottom)
     draw.rectangle([(0, 562), (w, h)], fill=bg)
 
-    # Cart icon — top-right corner, 72px, white, 28px margin
-    icon_size = 72
-    margin    = 28
+    # Cart icon — left of "המזון" on the top subtitle line, 48px
+    icon_size = 48
     tmp_cart  = render_cart_png(icon_size, color="white")
     cart_img  = Image.open(tmp_cart).convert("RGBA")
     os.unlink(tmp_cart)
 
-    paste_x = w - icon_size - margin
-    paste_y = margin
+    # subtitle line center is ~y=78; icon left-margin 60px
+    paste_x = 60
+    paste_y = 78 - icon_size // 2
     img.paste(cart_img, (paste_x, paste_y), cart_img)
 
     final = img.convert("RGB")

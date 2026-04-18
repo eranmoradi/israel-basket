@@ -43,7 +43,7 @@ export default function HomePage() {
         {/* Hero + CTAs */}
         <div className="rounded-3xl bg-gradient-to-bl from-blue-900 to-blue-700 text-white px-8 py-14 sm:py-20 text-center mb-6 shadow-lg">
           <span className="badge-pulse bg-white/10 text-white/90 text-sm font-semibold px-4 py-2 rounded-full mb-6 border border-white/30">
-            מידע חופשי. שיתוף ציבורי. שינוי אמיתי.
+            מידע חופשי. שקיפות. שיתוף.
           </span>
 
           <p className="text-2xl sm:text-3xl font-black text-yellow-300 leading-snug mb-8">

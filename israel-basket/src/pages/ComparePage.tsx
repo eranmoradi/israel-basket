@@ -139,35 +139,25 @@ export default function ComparePage() {
           />
         </div>
 
-        <div className="flex gap-2 flex-wrap">
-          <button
-            onClick={() => {
-              if (!basketOnly && basketCount === 0) {
-                navigate('/products')
-                return
-              }
-              setBasketOnly(v => !v)
-            }}
-            className={`relative text-sm font-bold px-4 py-2 rounded-full border transition-all ${
-              basketOnly
-                ? 'bg-amber-500 text-gray-900 border-amber-500 shadow-lg shadow-amber-500/30'
-                : 'bg-gray-800 text-amber-400 border-amber-500/60 hover:border-amber-400 hover:bg-gray-700'
-            }`}
-          >
-            {!basketOnly && (
-              <span className="absolute inset-0 rounded-full animate-ping bg-amber-400 opacity-20 pointer-events-none" />
-            )}
-            🛒 {basketCount > 0 ? `השווה את המחירים לסל שלי (${basketCount})` : 'הוסיפו מוצרים לסל להשוואת מחירים'}
-          </button>
-
-          <button
-            onClick={() => navigate('/branches')}
-            className="text-sm font-semibold px-4 py-2 rounded-full border transition-all bg-gray-700 text-blue-300 border-blue-500/50 hover:border-blue-400 hover:bg-gray-600"
-          >
-            📍 5 הסניפים הקרובים אלי
-          </button>
-
-        </div>
+        <button
+          onClick={() => {
+            if (!basketOnly && basketCount === 0) {
+              navigate('/products')
+              return
+            }
+            setBasketOnly(v => !v)
+          }}
+          className={`relative w-full font-black text-base py-3.5 rounded-xl border-2 transition-all ${
+            basketOnly
+              ? 'bg-amber-500 text-gray-900 border-amber-500 shadow-xl shadow-amber-500/30'
+              : 'bg-gray-800 text-amber-400 border-amber-500/60 hover:border-amber-400 hover:bg-gray-700'
+          }`}
+        >
+          {!basketOnly && (
+            <span className="absolute inset-0 rounded-xl animate-ping bg-amber-400 opacity-10 pointer-events-none" />
+          )}
+          🛒 {basketCount > 0 ? `השווה את המחירים לסל שלי (${basketCount})` : 'הוסיפו מוצרים לסל להשוואת מחירים'}
+        </button>
 
         {/* Department chips */}
         <div className="relative">

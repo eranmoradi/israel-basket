@@ -45,17 +45,9 @@ export default function HomePage() {
           <span className="badge-pulse bg-white/10 text-white/90 text-sm font-semibold px-4 py-2 rounded-full mb-6 border border-white/30">
             מידע חופשי. שיתוף ציבורי. שינוי אמיתי.
           </span>
-          <p className="text-base sm:text-lg text-white/90 font-semibold leading-snug mb-2">
-            משרד הכלכלה השיק את מיזם <span className="text-yellow-300">"הסל של ישראל"</span>
-          </p>
-          <p className="text-sm text-white/65 mb-5 leading-relaxed">
-            בהבטחה להוזלה משמעותית במחיר סל המזון
-          </p>
-          <p className="text-2xl sm:text-3xl font-black text-yellow-300 leading-snug mb-6">
-            האם זה נכון? ובכמה אפשר באמת לחסוך?
-          </p>
-          <p className="text-sm text-white/75 mb-8 leading-relaxed">
-            הוסיפו מוצרים לסל וקבלו מיד סיכום של מחיר הסל שלכם לעומת הרשתות המובילות האחרות.
+
+          <p className="text-2xl sm:text-3xl font-black text-yellow-300 leading-snug mb-8">
+            בעקבות המיזם הסל של ישראל פיתחנו אפליקציה שמשווה את המחירים ברשתות המזון המובילות
           </p>
 
           <button
@@ -73,12 +65,15 @@ export default function HomePage() {
 
         {/* WHY section */}
         <div className="bg-gray-900 border border-gray-800 border-r-4 border-r-green-500 rounded-2xl px-6 py-5 mb-6">
-          <div className="text-sm text-gray-300 font-semibold tracking-widest uppercase mb-3">למה נוצרה האפליקציה</div>
+          <div className="text-sm text-gray-300 font-semibold tracking-widest uppercase mb-3">למה נוצרה האפליקציה?</div>
           <p className="text-sm text-gray-300 leading-relaxed">
-            יוקר המחיה בישראל הוא אמיתי. המבצע הממשלתי הוא אמיתי. אבל 100 מוצרים לא מייצגים את כולם — וה-30% שהוכרזו הם ממוצע, לא מספר אישי.
+            קארפור מציעה כ-30% הנחה על 100 מוצרי מזון נפוצים — אבל האם ההנחה הזאת רלוונטית לכם? תלוי אילו מוצרים אתם בכלל קונים.
           </p>
           <p className="text-sm text-gray-300 leading-relaxed mt-3">
-            האפליקציה הזאת נוצרה כדי לתת לכם תשובה אחת פשוטה: <span className="text-white font-semibold">כמה אתם חוסכים — על הסל שלכם.</span> חינם, בלי הרשמה, תוך 30 שניות. ואז אפשר לשלוח לכולם.
+            האפליקציה נוצרה כדי שתוכלו לבחור את המוצרים שלכם, ולקבל מיד מספר אחד ברור: כמה חוסכים — על הסל <span className="text-white font-semibold">שלכם</span> — לעומת שופרסל, רמי לוי, יוחננוף ועוד. חינם, בלי הרשמה, תוך 30 שניות.
+          </p>
+          <p className="text-sm text-gray-300 leading-relaxed mt-3">
+            אם אהבתם, שתפו את הקרובים אליכם.
           </p>
         </div>
 
@@ -179,7 +174,7 @@ export default function HomePage() {
               {
                 emoji: '📊',
                 title: 'השוואת מחירים בזמן אמת',
-                body: 'הוסיפו מוצרים לסל — ותקבלו מיד השוואה מול שופרסל, רמי לוי, יוחננוף וחצי חינם. תראו בדיוק כמה חוסך הסל.',
+                body: 'הוסיפו מוצרים לסל — ותקבלו מיד השוואה מול שופרסל, רמי לוי, יוחננוף, אושר עד וויקטורי. תראו בדיוק כמה חוסך הסל.',
                 border: 'border-r-purple-500',
               },
               {

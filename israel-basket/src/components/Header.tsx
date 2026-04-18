@@ -1,4 +1,5 @@
 import { NavLink, useLocation, useNavigate } from 'react-router-dom'
+import CartIcon from './CartIcon'
 
 interface HeaderProps {
   onBotOpen?: () => void
@@ -12,8 +13,9 @@ export default function Header({ onBotOpen }: HeaderProps) {
   return (
     <header className="sticky top-0 z-50 bg-blue-700 text-white shadow-md">
       <div className="max-w-3xl mx-auto px-4 h-14 flex items-center justify-between">
-        <NavLink to="/" className="font-bold text-lg tracking-wide">
-          🛒 הסל של ישראל
+        <NavLink to="/" className="flex items-center gap-2 font-bold text-lg tracking-wide">
+          <CartIcon size={28} color="white" className="inline-block flex-shrink-0" />
+          <span>הסל של ישראל</span>
         </NavLink>
         {isInner && (
           <div className="flex items-center gap-2">

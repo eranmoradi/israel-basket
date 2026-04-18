@@ -11,6 +11,7 @@ import ProductsPage from './pages/ProductsPage'
 import BasketPage from './pages/BasketPage'
 import BranchesPage from './pages/BranchesPage'
 import ComparePage from './pages/ComparePage'
+import AdminPage from './pages/AdminPage'
 import { useBasketStore } from './store/basketStore'
 
 function AppInner() {
@@ -25,6 +26,15 @@ function AppInner() {
   }, [pathname])
 
   const showPageBot = pathname === '/basket' || pathname === '/products' || pathname === '/compare' || pathname === '/branches'
+  const isAdmin = pathname === '/admin'
+
+  if (isAdmin) {
+    return (
+      <Routes>
+        <Route path="/admin" element={<AdminPage />} />
+      </Routes>
+    )
+  }
 
   return (
     <div className={`min-h-screen bg-gray-950 ${count > 0 ? 'pb-32' : 'pb-16'}`}>

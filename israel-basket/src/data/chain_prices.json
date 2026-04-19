@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-18T11:52:42.872315+00:00",
+  "fetched_at": "2026-04-19T09:17:20.150339+00:00",
   "chains": [
     "קרפור",
     "שופרסל",
@@ -10,16 +10,22 @@
     "חצי חינם"
   ],
   "product_count": 100,
-  "error_count": 0,
+  "error_count": 100,
   "coverage": {
     "קרפור": 100,
     "שופרסל": 98,
     "רמי לוי": 97,
-    "יוחננוף": 96,
+    "יוחננוף": 91,
     "אושר עד": 77,
     "ויקטורי": 100,
     "חצי חינם": 31
   },
+  "fallback_chains": [
+    "שופרסל",
+    "רמי לוי",
+    "אושר עד",
+    "ויקטורי"
+  ],
   "products": [
     {
       "groupId": 1,
@@ -662,11 +668,7 @@
           "sale": null,
           "effective": 4.9
         },
-        "יוחננוף": {
-          "regular": 4.5,
-          "sale": null,
-          "effective": 4.5
-        },
+        "יוחננוף": null,
         "קרפור": {
           "regular": 3.1,
           "sale": null,
@@ -1216,11 +1218,7 @@
           "sale": null,
           "effective": 6.4
         },
-        "יוחננוף": {
-          "regular": 10.9,
-          "sale": null,
-          "effective": 10.9
-        },
+        "יוחננוף": null,
         "קרפור": {
           "regular": 6.5,
           "sale": null,
@@ -1904,11 +1902,7 @@
           "sale": null,
           "effective": 4.5
         },
-        "יוחננוף": {
-          "regular": 5.9,
-          "sale": null,
-          "effective": 5.9
-        },
+        "יוחננוף": null,
         "קרפור": {
           "regular": 4.5,
           "sale": null,
@@ -1946,11 +1940,7 @@
           "sale": null,
           "effective": 9.6
         },
-        "יוחננוף": {
-          "regular": 9.6,
-          "sale": null,
-          "effective": 9.6
-        },
+        "יוחננוף": null,
         "קרפור": {
           "regular": 6.9,
           "sale": null,
@@ -2148,7 +2138,11 @@
           "sale": null,
           "effective": 9.1
         },
-        "יוחננוף": null,
+        "יוחננוף": {
+          "regular": 10.6,
+          "sale": null,
+          "effective": 10.6
+        },
         "קרפור": {
           "regular": 7.9,
           "sale": null,
@@ -2866,11 +2860,7 @@
           "sale": null,
           "effective": 5
         },
-        "יוחננוף": {
-          "regular": 4.9,
-          "sale": null,
-          "effective": 4.9
-        },
+        "יוחננוף": null,
         "קרפור": {
           "regular": 2.9,
           "sale": null,
@@ -3714,11 +3704,7 @@
           "sale": null,
           "effective": 15.9
         },
-        "יוחננוף": {
-          "regular": 22.9,
-          "sale": null,
-          "effective": 22.9
-        },
+        "יוחננוף": null,
         "קרפור": {
           "regular": 15.9,
           "sale": null,
@@ -3818,5 +3804,706 @@
       }
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "barcode": "7290000197678",
+      "name": "האגיס פרידום פלוס שלב 6 27 יח",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000195537",
+      "name": "מגבוני האגיס דיילי קר לא מבושם 4*56",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000211442",
+      "name": "סוגת אורז פרסי קלאסי שקית 1 ק\"ג",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290100700372",
+      "name": "סוגת אורז בסמטי מלא 1 ק\"ג",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000060880",
+      "name": "פסטה אסם ספגטי 500גר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "8076809529419",
+      "name": "ברילה ספגטי מחיטה מלאה 500 גרם",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290100700273",
+      "name": "סוגת קינואה 500 גר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290003643752",
+      "name": "סוגת עדשים ירוקים 500 גר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290100704929",
+      "name": "סוגת שעועית לבנה 500 גר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290003643714",
+      "name": "סוגת חומוס 500גר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290010116348",
+      "name": "מיקס מעורב מגדים 390ג",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "8000500071083",
+      "name": "קינדר אצבעות שוקולד 200ג",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290112494313",
+      "name": "קליק קורנפלקס תפזורת 65גר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000137513",
+      "name": "קרמיסימו שוקו ניל חלבי 60יח 630גר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290116537351",
+      "name": "כריות נוגט תלמה 686 גרם",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290112494351",
+      "name": "קורנפלקס אלופים בד\"צ 850 גר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000480107",
+      "name": "קוואקר מהיר אטוס לל\"ס 500 גר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000066332",
+      "name": "אפרופו 50 גרם",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000066318",
+      "name": "במבה 80 גרם",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290008745239",
+      "name": "תפוציפס קראנץ טבעי 50 גר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290112492449",
+      "name": "פינוק שמפו לשיער רגיל 700מ\"ל",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290017812571",
+      "name": "תירוש כרמל אדום 1 ליטר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000104676",
+      "name": "אפונה 800 גרם",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000107295",
+      "name": "תפרחות ברוקולי 800ג",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000104744",
+      "name": "כרובית 800גר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290012884986",
+      "name": "תפוגן ציפס לתנור עד 4% שומן 1.5 קג",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000104836",
+      "name": "שעועית עדינה שלמה 600גר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290017947891",
+      "name": "לחם אנגל כוסמין וחיטה מלאה 750 גרם",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290014940901",
+      "name": "אנג'ל לחם פשוט מלא 750מל",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290018540329",
+      "name": "פיתה אנגל 8 יח",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290017947464",
+      "name": "אנגל פיתות כוסמין 8יח 400גר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290112495105",
+      "name": "נשנושים שמנת בצל 260 ג",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "8434165466333",
+      "name": "קריט מיני קרקרים עגולים 350גר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7622010001858",
+      "name": "אוראו 176 גרם",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "46214731552",
+      "name": "עוגיות שוקולד ציפס מובחרות % 37 שוקולד",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000181103",
+      "name": "עד חצות 200ג",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000074184",
+      "name": "אסם פתי בר בינוני 500ג",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290018091531",
+      "name": "מעדנות חטיפי פיצה 650 גרם",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000043890",
+      "name": "ריויון 1.5% 1ל",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290004584351",
+      "name": "סימפוניה חמישית 200ג",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290006492432",
+      "name": "גד בייבי מוצרלה 150גר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000554532",
+      "name": "גד צפתית מעודנת במלח ים 5% 200ג",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290102394463",
+      "name": "נעם גבינה צהובה וואקום 28% 500גרם",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290004129101",
+      "name": "נפוליאון גבינת שמנת בטעם טבעי 25% 225גר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000040974",
+      "name": "חלב תנובה קרטון דל לקטוז 2% 1ל'",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290107932080",
+      "name": "יטבתה חלב בבקבוק 3% מועשר 1ל'",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290116932033",
+      "name": "חמאה 200 גרם מהדרין",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290119380916",
+      "name": "אקטימל תות 16 * 108 גר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000408354",
+      "name": "דנונה קראנצ' פיצפוצים 175מל",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290005839078",
+      "name": "דנונה ביו מארז חסכון 3% 8*150מל",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290110565527",
+      "name": "דנונה פרו 20ג חלבון 1.5% 200גרם",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290004125721",
+      "name": "שף לבן שמנת לבישול 15% 250מל'",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290005838002",
+      "name": "דניאלה מעדן גבינה 150מל",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290104726712",
+      "name": "מילקי שמינייה מארז 8*170מל",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290115678376",
+      "name": "מעדן הגולן שוקולד 125 גר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290003029181",
+      "name": "יטבתה שוקו בקבוק 1ל",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290110324926",
+      "name": "משקה סויה ללא תוספת סוכר 1 ליטר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290004125578",
+      "name": "סויה תנובה מועשר 1ל",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290110325619",
+      "name": "תנובה משקה שיבולת שועל 1 ליטר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290004127329",
+      "name": "קוטג תנובה מהדרין 5% 250ג",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290003726615",
+      "name": "משק ווילר טופו הבית 300 גר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290005427107",
+      "name": "סנו סושי מגבות הפלא 6 גלילים",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290012823602",
+      "name": "נייר טואלט סופט סילק לבן 32 יח",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290003989539",
+      "name": "שטראוס רביולי גבינה 400ג",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290008409216",
+      "name": "מאמא עוף קפוא שניצל דק פריך 700 גרם",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "8712400802499",
+      "name": "נוטרילון שלב 1- 800 גרם",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000063140",
+      "name": "שקדי מרק רכיבים טבעיים שקית 400 גרם",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290019056973",
+      "name": "מי עדן 1.5(6) פק",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000525969",
+      "name": "פרימור מיץ תפוזים 1ל",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "5906485301012",
+      "name": "אקס אל משקה אנרגיה 250מל",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290110115227",
+      "name": "קוקה-קולה זירו 1.5 ליטר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290110115203",
+      "name": "קוקה-קולה 1.5 ליטר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000136790",
+      "name": "טמפו סודה 6*1.5ל",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290110115463",
+      "name": "פיוז טי אפרסק 1.5 ליטר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000288024",
+      "name": "סנו ז'אוול בריח לימון 4 ליטר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000211503",
+      "name": "סוכר סוגת 1 ק\"ג",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290106576537",
+      "name": "צבר חומוס מסעדה 700 גר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000068138",
+      "name": "אסם פודינג אינסטנט וניל 80 גרם",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290005201882",
+      "name": "טורקי עלית 200ג",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000072753",
+      "name": "טייסטר צ'וייס 200ג",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000176420",
+      "name": "עלית נמס אבקתי 200 גרם",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000174723",
+      "name": "שוקולית 500ג",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290010328246",
+      "name": "אחוה טחינה משומשום מלא 500 גרם",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000112220",
+      "name": "טחינה בסיסית 500 גר' בארכה",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000111186",
+      "name": "מיונז צנ500. ג",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "80176800",
+      "name": "ממרח שוקולד נוטלה 750",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000072623",
+      "name": "אסם קטשופ 750 גרם",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000178134",
+      "name": "פרה שוק.מריר לל\"ג בד\"צ 4*100ג",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290008750677",
+      "name": "פרה שוקולד מלוי תות מגדים 100ג",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290113192355",
+      "name": "בית השיטה חרוזית זית ירוק ללא גלעין",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290005287206",
+      "name": "סטארקיסט טונה בשמן ב.י 4*160ג",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290018359495",
+      "name": "יכין תירס מהשדה ללת\"ס 550 גרם",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000208114",
+      "name": "יכין אפונת גינה וגזר 550 גר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "8005110170300",
+      "name": "מוטי עגבניות חתוכות דק 3*400גר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290002019794",
+      "name": "פריניר רסק עגבניות 22% 100ג",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290010429554",
+      "name": "יד מרדכי ש.זית כתית מעולה 2 קלאסי 750מל",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000144474",
+      "name": "שמן קנולה בריאות מהטבע 1 ליטר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290000347752",
+      "name": "תה ירוק לימונית ולואיזה 25 שקיקים 1.5 גר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290016509786",
+      "name": "פרסיל גל ירוק 2.5 ליטר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "barcode": "7290115208047",
+      "name": "ויטמינצ'יק פטל 1 ליטר",
+      "errors": [
+        "רמי לוי: HTTP Error 403: Forbidden"
+      ]
+    }
+  ]
 }

@@ -4,6 +4,20 @@ import { useState, useEffect } from 'react'
 declare const gtag: (...args: unknown[]) => void
 import Header from './components/Header'
 import BottomNav from './components/BottomNav'
+import chainPricesData from './data/chain_prices.json'
+
+const priceUpdatedAt = new Date((chainPricesData as { fetched_at: string }).fetched_at)
+  .toLocaleDateString('he-IL', { day: 'numeric', month: 'numeric', year: 'numeric' })
+
+function AppFooter() {
+  return (
+    <footer className="max-w-3xl mx-auto px-4 py-6 mb-2 text-center space-y-1.5">
+      <div className="text-2xl">🛒</div>
+      <p className="text-xs text-gray-600">מחירים עודכנו: {priceUpdatedAt} · מקור הנתונים: משרד הכלכלה</p>
+      <p className="text-xs text-gray-700">נבנה בעזרת Claude Code AI · לא שייך לקרפור</p>
+    </footer>
+  )
+}
 import BasketBar from './components/BasketBar'
 import BasketPageBot from './components/BasketPageBot'
 import HomePage from './pages/HomePage'
@@ -50,6 +64,7 @@ function AppInner() {
         <Route path="/compare" element={<ComparePage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
+      <AppFooter />
       <BasketBar />
       <BottomNav />
     </div>

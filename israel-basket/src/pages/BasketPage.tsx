@@ -1,8 +1,27 @@
 import { useNavigate } from 'react-router-dom'
-import { useMemo, useEffect, useState } from 'react'
+import { useMemo, useEffect, useState, useRef } from 'react'
 import { useBasketStore } from '../store/basketStore'
 import chainPricesData from '../data/chain_prices.json'
 import type { ChainPricesData, ChainProductPrices, ChainPrice } from '../types'
+import confetti from 'canvas-confetti'
+
+function useCountUp(to: number, duration: number, active: boolean) {
+  const [value, setValue] = useState(0)
+  const rafRef = useRef<number>(0)
+  useEffect(() => {
+    if (!active) return
+    const startTime = performance.now()
+    const tick = (now: number) => {
+      const progress = Math.min((now - startTime) / duration, 1)
+      const eased = 1 - Math.pow(1 - progress, 3)
+      setValue(Math.round(eased * to * 100) / 100)
+      if (progress < 1) rafRef.current = requestAnimationFrame(tick)
+    }
+    rafRef.current = requestAnimationFrame(tick)
+    return () => cancelAnimationFrame(rafRef.current)
+  }, [active, to, duration])
+  return value
+}
 
 const chainPrices = chainPricesData as ChainPricesData
 
@@ -36,20 +55,105 @@ const CHAIN_BADGE: Record<ChainName, string> = {
   'חצי חינם': 'bg-fuchsia-900/50 text-fuchsia-300',
 }
 
+const CHAIN_CIRCLE: Record<DisplayChainName, string> = {
+  שופרסל: 'bg-orange-800 text-orange-200',
+  'רמי לוי': 'bg-blue-800 text-blue-200',
+  יוחננוף: 'bg-green-800 text-green-200',
+  'אושר עד': 'bg-yellow-800 text-yellow-200',
+  ויקטורי: 'bg-purple-800 text-purple-200',
+}
+
+type PerProduct = { product: import('../types').Product; best: { chain: ChainName; price: number } | null }
+
+function ProductList({ perProduct, onToggle, onAddMore }: {
+  perProduct: PerProduct[]
+  onToggle: (p: import('../types').Product) => void
+  onAddMore: () => void
+}) {
+  const [open, setOpen] = useState(false)
+  return (
+    <div className="mb-6">
+      <button
+        onClick={() => setOpen((v) => !v)}
+        className="w-full flex items-center justify-between bg-gray-900 border border-gray-700 rounded-2xl px-5 py-3 text-sm text-gray-300 font-medium hover:border-gray-500 transition-colors"
+      >
+        <span>✏️ עריכת הסל ({perProduct.length} מוצרים)</span>
+        <span className="text-gray-500 text-xs">{open ? '▲ סגור' : '▼ פתח'}</span>
+      </button>
+      {open && (
+        <div className="mt-2 space-y-2">
+          {perProduct.map(({ product, best }) => {
+            const priceDiff = best && product.price != null ? product.price - best.price : null
+            const isCheaper = priceDiff !== null && priceDiff > 0.01
+            return (
+              <div key={product.id + '-' + product.barcode} className="bg-gray-800 rounded-xl border border-gray-700 p-4">
+                <div className="flex items-start justify-between gap-3">
+                  <div className="flex-1 min-w-0">
+                    <p className="font-semibold text-sm text-gray-100 leading-snug">{product.name}</p>
+                    <p className="text-xs text-gray-400">{product.brand}</p>
+                  </div>
+                  <div className="flex items-center gap-2 shrink-0">
+                    <span className="font-bold text-blue-400 whitespace-nowrap text-sm">{product.price?.toFixed(2)}₪</span>
+                    <button onClick={() => onToggle(product)} className="text-gray-600 hover:text-red-400 transition-colors text-xl leading-none" aria-label="הסר מוצר">×</button>
+                  </div>
+                </div>
+                {best && (
+                  <div className="mt-2 pt-2 border-t border-gray-700 flex items-center justify-between">
+                    <div className="flex items-center gap-1.5">
+                      <span className="text-xs text-gray-500">הזול ביותר:</span>
+                      <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${CHAIN_BADGE[best.chain]}`}>{best.chain}</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className={`font-bold text-sm tabular-nums ${isCheaper ? 'text-green-400' : 'text-gray-400'}`}>{best.price.toFixed(2)}₪</span>
+                      {isCheaper && <span className="text-xs text-green-400 font-medium">חיסכון {priceDiff!.toFixed(2)}₪</span>}
+                    </div>
+                  </div>
+                )}
+              </div>
+            )
+          })}
+          <button onClick={onAddMore} className="w-full border-2 border-blue-600 text-blue-400 font-bold py-3 rounded-2xl hover:bg-gray-800 transition-colors mt-1">
+            + הוסף עוד מוצרים
+          </button>
+        </div>
+      )}
+    </div>
+  )
+}
+
 export default function BasketPage() {
   const { selected, total, count, toggle, clear } = useBasketStore()
   const navigate = useNavigate()
   const items = Array.from(selected.values())
   const [wowActive, setWowActive] = useState(false)
-
-  useEffect(() => {
-    window.scrollTo(0, 0)
-    const t = setTimeout(() => setWowActive(true), 300)
-    return () => clearTimeout(t)
-  }, [])
+  const [countBefore, setCountBefore] = useState(false)
+  const [countSaving, setCountSaving] = useState(false)
+  const [countAfter, setCountAfter] = useState(false)
 
   const totalBefore = total > 0 ? total / 0.7 : 0
   const dealSaving = totalBefore - total
+
+  const animBefore = useCountUp(totalBefore, 800, countBefore)
+  const animSaving = useCountUp(dealSaving, 700, countSaving)
+  const animAfter = useCountUp(total, 900, countAfter)
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+    const t1 = setTimeout(() => setCountBefore(true), 300)
+    const t2 = setTimeout(() => setCountSaving(true), 700)
+    const t3 = setTimeout(() => { setCountAfter(true); setWowActive(true) }, 1100)
+    const t4 = setTimeout(() => {
+      confetti({
+        particleCount: 90,
+        spread: 70,
+        origin: { y: 0.55 },
+        colors: ['#34d399', '#fbbf24', '#60a5fa', '#ffffff'],
+        scalar: 0.9,
+        ticks: 180,
+      })
+    }, 2000)
+    return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); clearTimeout(t4) }
+  }, [])
 
   const competitorData = useMemo(() => {
     const perProduct = items.map((product) => {
@@ -121,7 +225,7 @@ export default function BasketPage() {
         lines.push(`  ${chain}: ${chainTotal.toFixed(2)}₪`)
       }
     }
-    lines.push(``, `⚠️ עד 2 יחידות מכל מוצר. תקף בסניפי קארפור מרקט והיפר בלבד.`)
+    lines.push(``, `⚠️ עד 2 יחידות מכל מוצר. תקף בסניפי קרפור מרקט והיפר בלבד.`)
     lines.push(`💡 בדקו כמה תחסכו גם אתם: israelbasket.app`)
     return lines.join('\n')
   }
@@ -168,12 +272,10 @@ export default function BasketPage() {
     <div className="max-w-3xl mx-auto px-4 py-6">
 
       {/* Header */}
-      <div className="flex items-center justify-between mb-5">
-        <div>
-          <h1 className="text-xl font-extrabold text-gray-100">סיכום סל המוצרים שלי</h1>
-          <p className="text-sm text-gray-400 mt-0.5">{count} מוצרים נבחרו</p>
-        </div>
-        <button onClick={clear} className="text-sm text-red-400 hover:text-red-300 font-medium shrink-0">
+      <div className="mb-5 text-center relative">
+        <h1 className="text-xl font-extrabold text-gray-100">סיכום סל המוצרים שלי</h1>
+        <p className="text-sm text-gray-400 mt-0.5">{count} מוצרים נבחרו</p>
+        <button onClick={clear} className="absolute left-0 top-0 text-sm text-red-400 hover:text-red-300 font-medium">
           נקה הכל
         </button>
       </div>
@@ -193,52 +295,50 @@ export default function BasketPage() {
       <div className="rounded-2xl overflow-hidden mb-3 border border-gray-700/60 shadow-xl">
 
         {/* Before */}
-        <div className="bg-gray-800/60 px-5 py-4 flex items-center justify-between">
-          <div>
-            <p className="text-xs text-gray-500 mb-0.5">מחיר רגיל (לפני הנחת הסל)</p>
-            <p className="text-xs text-gray-600">בלי מכרז ממשלתי</p>
-          </div>
-          <span className="text-xl font-bold text-gray-500 tabular-nums line-through decoration-gray-600">
-            {totalBefore.toFixed(2)}₪
+        <div className="bg-gray-800/40 px-5 py-4 text-center">
+          <p className="text-xs text-gray-400 mb-1.5">מחיר רגיל (בלי הנחת הסל)</p>
+          <span className="text-2xl font-bold text-gray-300 tabular-nums line-through decoration-gray-500">
+            {animBefore.toFixed(2)}₪
           </span>
         </div>
 
         {/* Discount row */}
-        <div className="bg-amber-950/50 border-y border-amber-800/30 px-5 py-3 flex items-center justify-between">
-          <p className="text-xs text-amber-400 font-medium">↓ הנחת הסל של ישראל (30%)</p>
-          <span className="text-sm font-bold text-amber-400 tabular-nums">
-            −{dealSaving.toFixed(2)}₪
-          </span>
+        <div className="bg-amber-950/40 border-y border-amber-800/30 px-5 py-3 text-center">
+          <p className="text-xs text-amber-500 font-medium mb-1">חסכון מהנחת הסל</p>
+          <span className="text-xl font-bold text-amber-400 tabular-nums">−{animSaving.toFixed(0)}₪</span>
         </div>
 
         {/* After — WOW */}
-        <div className={`px-5 py-5 bg-gradient-to-l from-emerald-900/70 to-emerald-950/90 ${wowActive ? 'savings-wow' : 'opacity-0'}`}>
-          <p className="text-sm text-emerald-300 font-medium mb-1">✅ המחיר שלך בקרפור</p>
+        <div className={`px-5 py-6 bg-gradient-to-b from-emerald-950/80 to-emerald-900/50 text-center ${wowActive ? 'savings-wow' : 'opacity-0'}`}>
+          <p className="text-sm text-emerald-400 font-semibold mb-2">✅ המחיר שלך בקרפור</p>
           <p className="text-5xl font-extrabold text-emerald-400 tabular-nums tracking-tight leading-none">
-            {total.toFixed(2)}₪
+            {animAfter.toFixed(2)}₪
           </p>
-          <p className="text-xs text-emerald-600 mt-2">מחיר מוצע ממשלתי · {count} מוצרים</p>
+          <p className="text-xs text-emerald-700 mt-2">{count} מוצרים · מחיר מוצע ממשלתי</p>
         </div>
 
       </div>
 
       {/* Neutral disclaimer */}
-      <p className="text-xs text-gray-600 text-center mb-5 leading-relaxed">
+      <p className="text-xs text-gray-400 text-center mb-5 leading-relaxed">
         האפליקציה מציגה נתונים בלבד — ההחלטה שלכם
       </p>
 
       {/* Bonus: chain comparison */}
       {competitorData.bonusChains.length > 0 && (
         <div className="bg-gray-900 border border-gray-700/60 rounded-2xl px-5 py-5 mb-5">
-          <p className="text-xs text-gray-400 font-semibold tracking-widest uppercase mb-1">
-            לעיונך — כמה עולה הסל ברשתות אחרות
+          <p className="text-sm text-blue-300 font-bold text-center mb-1">
+            כמה עולה הסל ברשתות אחרות?
           </p>
-          <p className="text-xs text-gray-600 mb-4">אותם {count} מוצרים, בלי הנחת הסל</p>
+          <p className="text-xs text-gray-400 text-center mb-4">אותם {count} מוצרים, בלי הנחת הסל</p>
           <div className="space-y-0">
             {competitorData.bonusChains.map(({ chain, total: chainTotal }) => (
-              <div key={chain} className="flex items-center justify-between py-2.5 border-b border-gray-800 last:border-0">
-                <span className="text-sm text-gray-300 font-medium">{chain}</span>
-                <span className="text-sm font-bold text-gray-200 tabular-nums">{chainTotal.toFixed(2)}₪</span>
+              <div key={chain} className="flex items-center justify-center gap-3 py-2.5 border-b border-gray-800 last:border-0">
+                <span className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold shrink-0 ${CHAIN_CIRCLE[chain]}`}>
+                  {chain[0]}
+                </span>
+                <span className="text-sm text-gray-300 font-medium w-20 text-right">{chain}</span>
+                <span className="text-sm font-bold text-gray-200 tabular-nums w-20 text-center">{chainTotal.toFixed(2)}₪</span>
               </div>
             ))}
           </div>
@@ -256,13 +356,6 @@ export default function BasketPage() {
           <span>⚠️</span>
           <span>הנתונים שלכם לא נשמרים — כדאי לשמור לפני שתצאו</span>
         </p>
-        <button
-          onClick={handleWhatsApp}
-          className="w-full flex items-center justify-center gap-2 bg-green-800 hover:bg-green-700 active:scale-95 text-white font-semibold text-base py-4 rounded-xl transition-all mb-3"
-        >
-          <span>📲</span>
-          <span>שלח את הסיכום לוואטסאפ</span>
-        </button>
         <button
           onClick={handleShareApp}
           className="w-full flex items-center justify-center gap-2 bg-blue-700 hover:bg-blue-600 active:scale-95 text-white font-semibold text-base py-4 rounded-xl transition-all mb-3"
@@ -286,71 +379,31 @@ export default function BasketPage() {
         </button>
       </div>
 
-      {/* Product list */}
-      <div className="space-y-3 mb-6">
-        {competitorData.perProduct.map(({ product, best }) => {
-          const priceDiff = best && product.price != null ? product.price - best.price : null
-          const isCheaper = priceDiff !== null && priceDiff > 0.01
-
-          return (
-            <div
-              key={product.id + '-' + product.barcode}
-              className="bg-gray-800 rounded-xl border border-gray-700 p-4"
-            >
-              <div className="flex items-start justify-between gap-3">
-                <div className="flex-1 min-w-0">
-                  <p className="font-semibold text-sm text-gray-100 leading-snug">{product.name}</p>
-                  <p className="text-xs text-gray-400">{product.brand}</p>
-                </div>
-                <div className="flex items-center gap-2 shrink-0">
-                  <span className="font-bold text-blue-400 whitespace-nowrap text-sm">
-                    {product.price?.toFixed(2)}₪
-                  </span>
-                  <button
-                    onClick={() => toggle(product)}
-                    className="text-gray-600 hover:text-red-400 transition-colors text-xl leading-none"
-                    aria-label="הסר מוצר"
-                  >
-                    ×
-                  </button>
-                </div>
-              </div>
-
-              {best && (
-                <div className="mt-2 pt-2 border-t border-gray-700 flex items-center justify-between">
-                  <div className="flex items-center gap-1.5">
-                    <span className="text-xs text-gray-500">הזול ביותר:</span>
-                    <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${CHAIN_BADGE[best.chain]}`}>
-                      {best.chain}
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className={`font-bold text-sm tabular-nums ${isCheaper ? 'text-green-400' : 'text-gray-400'}`}>
-                      {best.price.toFixed(2)}₪
-                    </span>
-                    {isCheaper && (
-                      <span className="text-xs text-green-400 font-medium">
-                        חיסכון {priceDiff!.toFixed(2)}₪
-                      </span>
-                    )}
-                  </div>
-                </div>
-              )}
-            </div>
-          )
-        })}
+      {/* WhatsApp share promo */}
+      <div className="bg-green-950/60 border border-green-800/50 rounded-2xl px-5 py-5 mb-5">
+        <p className="text-sm font-bold text-green-300 mb-1">📲 שלחו את הרשימה לוואטסאפ</p>
+        <p className="text-xs text-green-500 leading-relaxed mb-4">
+          הסיכום כולל את כל המוצרים, המחיר לפני ואחרי ההנחה, ומחירי הרשתות — מוכן לשליחה לקבוצת הבית.
+        </p>
+        <button
+          onClick={handleWhatsApp}
+          className="w-full flex items-center justify-center gap-2 bg-green-700 hover:bg-green-600 active:scale-95 text-white font-bold text-base py-3 rounded-xl transition-all"
+        >
+          <span>📲</span>
+          <span>שלח את הסיכום לוואטסאפ</span>
+        </button>
       </div>
 
-      <button
-        onClick={() => navigate('/products')}
-        className="w-full border-2 border-blue-600 text-blue-400 font-bold py-3 rounded-2xl hover:bg-gray-800 transition-colors"
-      >
-        + הוסף עוד מוצרים
-      </button>
+      {/* Collapsible product list */}
+      <ProductList
+        perProduct={competitorData.perProduct}
+        onToggle={toggle}
+        onAddMore={() => navigate('/products')}
+      />
 
       <div className="bg-blue-900/20 border border-blue-700 rounded-2xl p-4 mt-6 text-sm text-blue-300">
         <strong>⚠️ שימו לב:</strong> ניתן לרכוש עד 2 יחידות מכל מוצר בכל קנייה.
-        המחירים תקפים בסניפי קארפור מרקט והיפר בלבד (לא בסניפי קארפור סיטי).
+        המחירים תקפים בסניפי קרפור מרקט והיפר בלבד (לא בסניפי קרפור סיטי).
       </div>
 
       <div className="bg-gray-900 border border-gray-700 rounded-2xl p-4 mt-4 mb-2 text-sm text-gray-400">

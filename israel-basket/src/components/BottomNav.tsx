@@ -3,7 +3,7 @@ import { useBasketStore } from '../store/basketStore'
 
 const tabs = [
   { to: '/products', label: 'מוצרים', icon: '📦' },
-  { to: '/basket', label: 'הסל שלי', icon: '🛒' },
+  { to: '/basket', label: 'סיכום', icon: '🛒' },
   { to: '/compare', label: 'השוואה', icon: '📊' },
   { to: '/branches', label: 'סניפים', icon: '🏪' },
 ] as const

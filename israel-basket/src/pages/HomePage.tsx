@@ -33,30 +33,30 @@ export default function HomePage() {
     return () => observer.disconnect()
   }, [])
 
-  const basketPrice = useCountUp(1099, 1200, counting)
-  const avgSaving = useCountUp(560, 1600, counting)
+  const priceRegular = useCountUp(1570, 1200, counting)
+  const priceCarrefour = useCountUp(1099, 1600, counting)
   const branches = useCountUp(50, 900, counting)
 
   return (
     <>
       <main className="max-w-3xl mx-auto px-4 py-8">
         {/* Hero + CTAs */}
-        <div className="rounded-3xl bg-gradient-to-bl from-blue-900 to-blue-700 text-white px-8 py-14 sm:py-20 text-center mb-6 shadow-lg">
-          <span className="badge-pulse bg-white/10 text-white/90 text-sm font-semibold px-4 py-2 rounded-full mb-6 border border-white/30">
+        <div className="rounded-3xl bg-gradient-to-bl from-blue-900 to-blue-700 text-white px-6 py-6 sm:py-8 text-center mb-3 shadow-lg">
+          <span className="badge-pulse bg-white/10 text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full mb-3 border border-white/30">
             מידע חופשי. שקיפות. שיתוף.
           </span>
 
-          <p className="text-2xl sm:text-3xl font-black text-yellow-300 leading-snug mb-8">
-            בעקבות המיזם הסל של ישראל פיתחנו אפליקציה שמשווה את המחירים ברשתות המזון המובילות
+          <p className="text-xl sm:text-2xl font-black text-yellow-300 leading-snug mb-4">
+            קרפור זכתה במכרז ממשלתי — 30% הנחה קבועה על 100 מוצרים. אבל כמה זה באמת שווה לסל שלך?
           </p>
 
           <button
             onClick={() => navigate('/products')}
-            className="w-full bg-yellow-400 hover:bg-yellow-300 active:scale-95 text-blue-900 font-black text-lg py-4 rounded-xl shadow-xl shadow-black/40 transition-all"
+            className="cta-pulse w-full bg-yellow-400 hover:bg-yellow-300 active:scale-95 text-blue-900 font-black text-base py-3 rounded-xl shadow-xl shadow-black/40 transition-all"
           >
-            📦 מתחילים בבדיקה של הסל כאן
+            גלו כמה שווה לכם ההנחה ←
           </button>
-          <div className="flex flex-wrap justify-center gap-x-4 gap-y-1 mt-6 text-xs text-white/50">
+          <div className="flex flex-wrap justify-center gap-x-4 gap-y-1 mt-3 text-xs text-white/50">
             <span>✓ ללא הרשמה</span>
             <span>✓ מחירים מתעדכנים מדי יום</span>
             <span style={{ color: '#25D366' }}>✓ שליחת רשימת הקניות לוואטסאפ</span>
@@ -67,10 +67,10 @@ export default function HomePage() {
         <div className="bg-gray-900 border border-gray-800 border-r-4 border-r-green-500 rounded-2xl px-6 py-5 mb-6">
           <div className="text-sm text-gray-300 font-semibold tracking-widest uppercase mb-3">למה נוצרה האפליקציה?</div>
           <p className="text-sm text-gray-300 leading-relaxed">
-            קארפור מציעה כ-30% הנחה על 100 מוצרי מזון נפוצים — אבל האם ההנחה הזאת רלוונטית לכם? תלוי אילו מוצרים אתם בכלל קונים.
+            הסל המלא עולה <span className="text-white font-semibold">1,099₪</span> במקום <span className="text-white font-semibold">~1,570₪</span> — אבל זה תלוי אילו מוצרים אתם בכלל קונים.
           </p>
           <p className="text-sm text-gray-300 leading-relaxed mt-3">
-            האפליקציה נוצרה כדי שתוכלו לבחור את המוצרים שלכם, ולקבל מיד מספר אחד ברור: כמה חוסכים — על הסל <span className="text-white font-semibold">שלכם</span> — לעומת שופרסל, רמי לוי, יוחננוף ועוד. חינם, בלי הרשמה, תוך 30 שניות.
+            האפליקציה נוצרה כדי שתוכלו לבחור את המוצרים <span className="text-white font-semibold">שלכם</span>, ולראות מיד: כמה חוסך לכם הסל הזה לפני ואחרי ההנחה — וכמה אותו סל עולה ברשתות אחרות. חינם, בלי הרשמה, תוך 30 שניות.
           </p>
           <p className="text-sm text-gray-300 leading-relaxed mt-3">
             אם אהבתם, שתפו את הקרובים אליכם.
@@ -79,23 +79,22 @@ export default function HomePage() {
 
         {/* Stats cards */}
         <p className="text-sm text-gray-400 text-center mb-3 leading-relaxed">
-          אלו הנתונים הרשמיים שהממשלה מציגה —{' '}
-          רוצים לדעת אם זה נכון גם לסל <span className="text-white font-semibold">שלכם</span>? בדקו בכמה לחיצות ↑
+          אלו נתוני הסל המלא — רוצים לדעת כמה חוסך לכם הסל הספציפי <span className="text-white font-semibold">שלכם</span>? בדקו בכמה לחיצות ↑
         </p>
         <div ref={statsRef} className="grid grid-cols-3 gap-3 mb-2">
           {[
             {
               Icon: Tag,
-              value: `${basketPrice.toLocaleString('he-IL')}₪`,
-              label: 'מחיר הסל בקארפור',
-              gradient: 'from-yellow-400 to-amber-500',
-              iconColor: 'text-amber-400',
+              value: `~${priceRegular.toLocaleString('he-IL')}₪`,
+              label: 'מחיר הסל לפני ההנחה',
+              gradient: 'from-gray-400 to-gray-500',
+              iconColor: 'text-gray-400',
               to: '/products',
             },
             {
               Icon: CalendarDays,
-              value: `~${avgSaving.toLocaleString('he-IL')}₪`,
-              label: 'חסכון ממוצע מול הרשתות *',
+              value: `${priceCarrefour.toLocaleString('he-IL')}₪`,
+              label: 'מחיר הסל בקרפור ✅',
               gradient: 'from-emerald-400 to-teal-500',
               iconColor: 'text-emerald-400',
               to: '/products',
@@ -123,7 +122,7 @@ export default function HomePage() {
           ))}
         </div>
         <p className="text-[11px] text-gray-600 text-center mb-3">
-          * ממוצע בין שופרסל, רמי לוי, יוחננוף וויקטורי · עבור 100 המוצרים המלאים
+          * עבור 100 המוצרים המלאים · מחיר לפני ההנחה מחושב לפי 30% מתוך מחיר הסל הממשלתי
         </p>
 
         {/* How-to steps */}
@@ -138,8 +137,8 @@ export default function HomePage() {
               },
               {
                 step: '2',
-                title: 'ראו את ההשוואה',
-                body: 'תקבלו מיד מחיר כולל מול שופרסל, רמי לוי ויוחננוף — וכמה חוסך הסל.',
+                title: 'ראו כמה חוסך לכם הסל',
+                body: 'תקבלו מיד: מחיר הסל לפני ואחרי הנחת הסל של ישראל — וכמה עולה אותו סל ברשתות אחרות.',
               },
               {
                 step: '3',
@@ -168,7 +167,7 @@ export default function HomePage() {
               {
                 emoji: '📌',
                 title: 'מה זה הסל של ישראל?',
-                body: 'קארפור זכתה במכרז מדינה: 100 מוצרים מובילים ב-30%+ הנחה קבועה — לפחות חצי שנה. הסל עולה 1,098₪ במקום ~1,700₪.',
+                body: 'קרפור זכתה במכרז ממשלתי: 100 מוצרים מובילים ב-30%+ הנחה קבועה. הסל עולה 1,099₪ במקום ~1,570₪ — תקף לפחות עד אוקטובר 2026.',
                 border: 'border-r-blue-500',
               },
               {

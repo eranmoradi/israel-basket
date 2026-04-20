@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import productsData from '../data/products.json'
 import type { Product } from '../types'
 import ProductCard from '../components/ProductCard'
@@ -10,6 +10,14 @@ export default function ProductsPage() {
   const [search, setSearch] = useState('')
   const [dept, setDept] = useState('הכל')
   const [showBasicOnly, setShowBasicOnly] = useState(false)
+  const [showOnboarding, setShowOnboarding] = useState(false)
+
+  useEffect(() => {
+    if (!localStorage.getItem('products-visited')) {
+      setShowOnboarding(true)
+      localStorage.setItem('products-visited', '1')
+    }
+  }, [])
 
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase()
@@ -27,7 +35,41 @@ export default function ProductsPage() {
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-6">
-      <h1 className="text-2xl font-extrabold text-gray-100 mb-5">מוצרי הסל ({products.length})</h1>
+
+      {/* First-time onboarding bottom sheet */}
+      {showOnboarding && (
+        <div className="fixed inset-0 z-50 flex items-end" onClick={() => setShowOnboarding(false)}>
+          <div
+            className="w-full max-w-3xl mx-auto bg-gray-900 border border-gray-700 rounded-t-3xl px-6 pt-6 pb-10 shadow-2xl savings-wow overflow-y-auto max-h-[85vh]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="w-10 h-1 bg-gray-600 rounded-full mx-auto mb-5" />
+            <div className="text-base font-bold text-gray-100 mb-4">לפני שמתחילים 👋</div>
+            <div className="flex flex-col gap-3 mb-6">
+              <div className="flex gap-3 items-start">
+                <span className="text-lg">📋</span>
+                <p className="text-sm text-gray-300 leading-relaxed">הרשימה הזאת הוכנה על-ידי <span className="text-white font-semibold">משרד הכלכלה</span> — {products.length} מוצרים עם הנחת 30% קבועה. המימוש הוא בסניפי <span className="text-white font-semibold">קרפור מרקט והיפר בלבד</span>.</p>
+              </div>
+              <div className="flex gap-3 items-start">
+                <span className="text-lg">✅</span>
+                <p className="text-sm text-gray-300 leading-relaxed">סמנו את המוצרים שאתם <span className="text-white font-semibold">קונים בדרך כלל</span> — לא חייבים לסמן הכל.</p>
+              </div>
+              <div className="flex gap-3 items-start">
+                <span className="text-lg">📊</span>
+                <p className="text-sm text-gray-300 leading-relaxed">בסיום — לחצו על <span className="text-white font-semibold">״סיכום״</span> בתחתית ותראו כמה ההנחה שווה לכם על הסל הספציפי שלכם.</p>
+              </div>
+            </div>
+            <button
+              onClick={() => setShowOnboarding(false)}
+              className="w-full bg-blue-700 hover:bg-blue-600 active:scale-95 text-white font-bold py-3 rounded-xl transition-all"
+            >
+              הבנתי, בואו נתחיל ←
+            </button>
+          </div>
+        </div>
+      )}
+
+      <h1 className="text-lg font-extrabold text-gray-100 mb-5">כל מוצרי הסל המשתתפים במבצע ({products.length})</h1>
 
       {/* Search */}
       <div className="relative mb-4">

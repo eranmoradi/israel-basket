@@ -5,7 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Brand & Copy
 
 **App name:** "הסל של ישראל — השוואת מחירים" — applied to Header.tsx (two-line brand), index.html title/OG tags. manifest.json still pending.
-**Savings figures:** The 30% figure was removed from the homepage entirely (April 2026) — too vague/misleading. Real data from chain_prices.json: קארפור full basket = 1,099₪; avg savings vs שופרסל/רמי לוי/יוחננוף/ויקטורי = ~560₪. Use these for stats and copy.
+**Savings figures:** Narrative updated (April 2026) to "before/after Carrefour" framing. `product.price` IS the discounted Carrefour price. "Before" price = `price / 0.7`. Full basket: 1,099₪ after discount, ~1,570₪ before. Homepage stats use these two numbers (not the ~560₪ vs-competitors figure). The 560₪ figure is accurate but no longer displayed — it confused users.
 **Copy tone:** Civic, independent, no profit motive. The app returns consumer power to citizens — not affiliated with Carrefour or the government.
 **HomePage features card chain list:** Must match `ComparePage`'s `CHAINS` constant (`src/pages/ComparePage.tsx:11`). Update both together when chains change.
 
@@ -81,7 +81,7 @@ Custom slash commands live in `.claude/commands/`. Type the command in Claude Co
 |------|------|---------|
 | `/` | `HomePage` | Landing |
 | `/products` | `ProductsPage` | Browse + add to basket |
-| `/basket` | `BasketPage` | Review basket + single cheapest chain comparison |
+| `/basket` | `BasketPage` | "סיכום סל המוצרים שלי" — before/after Carrefour price + bonus chain comparison |
 | `/compare` | `ComparePage` | Full price comparison table (קרפור, שופרסל, רמי לוי, יוחננוף, אושר עד, ויקטורי) |
 | `/branches` | `BranchesPage` | 50 Carrefour locations |
 
@@ -89,7 +89,7 @@ Custom slash commands live in `.claude/commands/`. Type the command in Claude Co
 
 **Bot pattern — critical:** Page-specific bots use `position: fixed` for their bottom-sheet drawer. The trigger button lives **inside `Header`** (not in the bot component) to avoid z-index conflicts with `position: sticky` creating a stacking context. `AppInner` in `App.tsx` manages `botOpen` state and passes `onBotOpen={() => setBotOpen(true)}` to `<Header>` and `externalOpen={botOpen} / onExternalClose` to `<BasketPageBot>`. `BasketPageBot` is rendered in `AppInner` for all inner routes (`/basket`, `/products`, `/compare`, `/branches`). `FirstTimeBot` is the exception — it lives inside `HomePage` and manages its own two-phase FAB (large pulsing → small amber pill after first interaction).
 
-**BasketPage comparison logic:** Finds the cheapest *single chain* for the full basket. First pass: chains with 100% product coverage, pick lowest total. Second pass (fallback): if no chain covers all items, show the best-coverage chain with a gray "partial" indicator and no savings row.
+**BasketPage comparison logic (updated April 2026):** Narrative is "before/after Carrefour". Primary card: `totalBefore = total / 0.7` (struck-through) → discount row → final Carrefour price (wow card slides in). Bonus section: all chains in `DISPLAY_CHAINS` (excludes חצי חינם) with 100% basket coverage, sorted alphabetically. Chains with partial coverage are hidden; a footnote counts them. The old "cheapest single chain" framing was removed — it confused users into thinking the competitor was the recommendation.
 
 **State:** Zustand store (`src/store/basketStore.ts`) holds `Map<id, Product>`. `total` and `count` are eagerly recomputed on every `toggle`. No persistence — basket is lost on page close or refresh. Users are prompted to download or share the summary before leaving the basket page.
 

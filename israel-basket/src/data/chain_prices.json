@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-19T09:17:20.150339+00:00",
+  "fetched_at": "2026-04-20T10:21:55.592896+00:00",
   "chains": [
     "קרפור",
     "שופרסל",
@@ -15,7 +15,7 @@
     "קרפור": 100,
     "שופרסל": 98,
     "רמי לוי": 97,
-    "יוחננוף": 91,
+    "יוחננוף": 97,
     "אושר עד": 77,
     "ויקטורי": 100,
     "חצי חינם": 31
@@ -668,7 +668,11 @@
           "sale": null,
           "effective": 4.9
         },
-        "יוחננוף": null,
+        "יוחננוף": {
+          "regular": 4.5,
+          "sale": null,
+          "effective": 4.5
+        },
         "קרפור": {
           "regular": 3.1,
           "sale": null,
@@ -1218,7 +1222,11 @@
           "sale": null,
           "effective": 6.4
         },
-        "יוחננוף": null,
+        "יוחננוף": {
+          "regular": 10.9,
+          "sale": null,
+          "effective": 10.9
+        },
         "קרפור": {
           "regular": 6.5,
           "sale": null,
@@ -1902,7 +1910,11 @@
           "sale": null,
           "effective": 4.5
         },
-        "יוחננוף": null,
+        "יוחננוף": {
+          "regular": 5.9,
+          "sale": null,
+          "effective": 5.9
+        },
         "קרפור": {
           "regular": 4.5,
           "sale": null,
@@ -1940,7 +1952,11 @@
           "sale": null,
           "effective": 9.6
         },
-        "יוחננוף": null,
+        "יוחננוף": {
+          "regular": 9.6,
+          "sale": null,
+          "effective": 9.6
+        },
         "קרפור": {
           "regular": 6.9,
           "sale": null,
@@ -2860,7 +2876,11 @@
           "sale": null,
           "effective": 5
         },
-        "יוחננוף": null,
+        "יוחננוף": {
+          "regular": 4.9,
+          "sale": null,
+          "effective": 4.9
+        },
         "קרפור": {
           "regular": 2.9,
           "sale": null,
@@ -3704,7 +3724,11 @@
           "sale": null,
           "effective": 15.9
         },
-        "יוחננוף": null,
+        "יוחננוף": {
+          "regular": 22.9,
+          "sale": null,
+          "effective": 22.9
+        },
         "קרפור": {
           "regular": 15.9,
           "sale": null,

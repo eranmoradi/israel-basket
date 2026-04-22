@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import { QRCodeSVG } from 'qrcode.react'
 
 declare const gtag: (...args: unknown[]) => void
 import Header from './components/Header'
@@ -51,7 +52,26 @@ function AppInner() {
   }
 
   return (
-    <div className={`min-h-screen bg-gray-950 ${count > 0 ? 'pb-32' : 'pb-16'}`}>
+    <>
+      {/* Desktop blocker — only shown on screens wider than mobile */}
+      <div
+        className="hidden md:flex fixed inset-0 z-[200] flex-col items-center justify-center bg-gray-950 text-center px-8 gap-6"
+        dir="rtl"
+      >
+        <h1 className="text-white font-black text-2xl">האפליקציה זמינה למובייל בלבד</h1>
+        <div className="rounded-2xl p-4 bg-white">
+          <QRCodeSVG value="https://israelbasket.app" size={180} bgColor="#ffffff" fgColor="#0f172a" />
+        </div>
+        <p className="text-gray-400 text-sm leading-relaxed">
+          סרקו את הברקוד עם הטלפון<br />
+          <span className="text-blue-400 font-medium">israelbasket.app</span>
+        </p>
+      </div>
+
+    <div
+      className="min-h-screen bg-gray-950"
+      style={{ paddingBottom: count > 0 ? 'calc(8rem + env(safe-area-inset-bottom, 0px))' : 'calc(4rem + env(safe-area-inset-bottom, 0px))' }}
+    >
       <Header onBotOpen={showPageBot ? () => setBotOpen(true) : undefined} />
       {showPageBot && (
         <BasketPageBot externalOpen={botOpen} onExternalClose={() => setBotOpen(false)} />
@@ -68,6 +88,7 @@ function AppInner() {
       <BasketBar />
       <BottomNav />
     </div>
+    </>
   )
 }
 

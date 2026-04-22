@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Tag, CalendarDays, MapPin } from 'lucide-react'
+import { Tag, CalendarDays, MapPin, ShoppingCart } from 'lucide-react'
 import FirstTimeBot from '../components/FirstTimeBot'
 
 function useCountUp(to: number, duration: number, active: boolean) {
@@ -37,28 +37,80 @@ export default function HomePage() {
   return (
     <>
       {/* ─── FIRST SCREEN ─── */}
-      <section className="flex flex-col" style={{ minHeight: 'calc(100dvh - 3.5rem - 60px)' }}>
+      <section
+        className="flex flex-col overflow-hidden"
+        style={{ height: 'calc(100dvh - 3.5rem - env(safe-area-inset-top, 0px) - 60px - env(safe-area-inset-bottom, 0px))' }}
+      >
 
-        {/* Top 60% — hero */}
-        <div
-          className="flex flex-col items-center text-center px-5 pt-8 pb-5 bg-gradient-to-bl from-blue-900 to-blue-700"
-          style={{ flex: '6' }}
-        >
+        {/* Hero — fills remaining space */}
+        <div className="flex-1 flex flex-col items-center text-center px-5 pt-8 pb-5 bg-gradient-to-bl from-blue-900 to-blue-700">
           <div className="w-full max-w-sm flex flex-col items-center flex-1">
             <span className="badge-pulse bg-blue-500/20 text-blue-200 text-xs font-semibold px-3 py-1.5 rounded-full mb-4 border border-blue-400/30">
               מידע חופשי. שקיפות. שיתוף.
             </span>
 
-            <p className="flex-1 flex items-center justify-center text-xl sm:text-2xl font-black text-yellow-300 leading-snug">
-              קרפור זכתה במכרז ממשלתי — 30% הנחה קבועה על 100 מוצרים. אבל כמה זה באמת שווה לסל שלכם?
-            </p>
+            {/* Headline card */}
+            <div className="flex-1 flex items-center justify-center w-full">
+              <div className="bg-white/8 border border-white/12 rounded-2xl px-4 py-5 w-full shadow-inner">
+                <p className="text-2xl font-black text-yellow-300 leading-snug">
+                  קרפור זכתה במכרז ממשלתי — 30% הנחה קבועה על 100 מוצרים.<br />כמה זה באמת שווה לסל שלך?
+                </p>
+              </div>
+            </div>
 
-            <div className="w-full mt-4">
+            {/* Stats — inside hero, between headline and CTA */}
+            <div className="grid grid-cols-3 gap-2.5 w-full my-4">
+              {[
+                {
+                  Icon: Tag,
+                  value: `~${priceRegular.toLocaleString('he-IL')}₪`,
+                  label: 'לפני הנחה',
+                  numColor: 'text-orange-300',
+                  bg: 'bg-orange-950/90 border-orange-500/60',
+                  iconColor: 'text-orange-400',
+                  to: '/products',
+                },
+                {
+                  Icon: CalendarDays,
+                  value: `${priceCarrefour.toLocaleString('he-IL')}₪`,
+                  label: 'בקרפור ✅',
+                  numColor: 'text-emerald-300',
+                  bg: 'bg-emerald-950/90 border-emerald-400/70',
+                  iconColor: 'text-emerald-400',
+                  to: '/products',
+                },
+                {
+                  Icon: MapPin,
+                  value: `כ-${branches}`,
+                  label: 'סניפים משתתפים',
+                  numColor: 'text-violet-300',
+                  bg: 'bg-violet-950/90 border-violet-400/60',
+                  iconColor: 'text-violet-400',
+                  to: '/branches',
+                },
+              ].map(({ Icon, value, label, numColor, bg, iconColor, to }) => (
+                <button
+                  key={label}
+                  onClick={() => navigate(to)}
+                  className={`${bg} rounded-2xl p-3 text-center border shadow-lg hover:brightness-125 active:scale-95 transition-all`}
+                >
+                  <Icon className={`${iconColor} mx-auto mb-1.5`} size={18} strokeWidth={1.75} />
+                  <div className={`text-base font-black ${numColor} leading-tight whitespace-nowrap`}>
+                    {value}
+                  </div>
+                  <div className="text-[10px] text-white/50 mt-1 leading-tight">{label}</div>
+                </button>
+              ))}
+            </div>
+
+            <div className="w-full">
               <button
                 onClick={() => navigate('/products')}
-                className="cta-pulse w-full bg-yellow-400 hover:bg-yellow-300 active:scale-95 text-blue-900 font-black text-base py-3 rounded-xl shadow-xl shadow-black/40 transition-all"
+                className="cta-pulse w-full bg-yellow-400 hover:bg-yellow-300 active:scale-95 text-blue-900 font-black text-base py-2 px-2 rounded-xl shadow-xl shadow-black/40 transition-all flex items-center justify-center gap-2"
               >
-                גלו כמה שווה לכם ההנחה ←
+                כמה שווה לך ההנחה
+                <ShoppingCart size={20} className="cart-nudge flex-shrink-0 scale-x-[-1]" />
+                <span>←</span>
               </button>
               <div className="flex flex-wrap justify-center gap-x-4 gap-y-1 mt-3 text-xs text-blue-200/50">
                 <span>✓ ללא הרשמה</span>
@@ -69,66 +121,18 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Bottom 40% — stats + why */}
-        <div
-          className="bg-gray-950 px-4 pt-3 pb-4 flex flex-col gap-3"
-          style={{ flex: '4' }}
-        >
-          {/* Stats */}
-          <div className="grid grid-cols-3 gap-3">
-            {[
-              {
-                Icon: Tag,
-                value: `~${priceRegular.toLocaleString('he-IL')}₪`,
-                label: 'מחיר הסל לפני ההנחה',
-                gradient: 'from-gray-400 to-gray-500',
-                iconColor: 'text-gray-400',
-                to: '/products',
-              },
-              {
-                Icon: CalendarDays,
-                value: `${priceCarrefour.toLocaleString('he-IL')}₪`,
-                label: 'מחיר הסל בקרפור ✅',
-                gradient: 'from-emerald-400 to-teal-500',
-                iconColor: 'text-emerald-400',
-                to: '/products',
-              },
-              {
-                Icon: MapPin,
-                value: branches.toString(),
-                label: 'סניפים משתתפים',
-                gradient: 'from-blue-400 to-violet-500',
-                iconColor: 'text-blue-400',
-                to: '/branches',
-              },
-            ].map(({ Icon, value, label, gradient, iconColor, to }) => (
-              <button
-                key={label}
-                onClick={() => navigate(to)}
-                className="bg-gradient-to-b from-gray-800 to-gray-900 rounded-2xl p-3 text-center border border-gray-700/60 shadow-lg hover:border-gray-500 hover:from-gray-700 active:scale-95 transition-all"
-              >
-                <Icon className={`${iconColor} mx-auto mb-1.5`} size={18} strokeWidth={1.75} />
-                <div className={`text-sm font-black bg-gradient-to-b ${gradient} bg-clip-text text-transparent leading-tight whitespace-nowrap`}>
-                  {value}
-                </div>
-                <div className="text-[10px] text-gray-500 mt-1 leading-tight">{label}</div>
-              </button>
-            ))}
-          </div>
-
-          {/* Why card */}
-          <div className="flex-1 bg-gray-900 border border-gray-800 border-r-4 border-r-green-500 rounded-2xl px-4 py-3 flex flex-col justify-center">
-            <div className="text-sm text-white font-bold mb-1.5">למה נוצרה האפליקציה?</div>
-            <p className="text-xs text-gray-300 leading-relaxed">
-              בחרו את המוצרים <span className="text-white font-semibold">שלכם</span> וראו מיד כמה חוסך הסל — לפני ואחרי ההנחה, מול שופרסל, רמי לוי ועוד. <span className="text-white font-semibold">חינם, ב-30 שניות.</span>
-            </p>
-          </div>
-        </div>
-
       </section>
 
       {/* ─── BELOW THE FOLD ─── */}
       <div ref={belowFoldRef} className="max-w-3xl mx-auto px-4">
+
+        {/* Why card */}
+        <div className="bg-gray-900 border border-gray-800 border-r-4 border-r-green-500 rounded-2xl px-4 py-4 flex flex-col justify-center mt-6 mb-6">
+          <div className="text-sm text-white font-bold mb-1.5">למה נוצרה האפליקציה?</div>
+          <p className="text-xs text-gray-300 leading-relaxed">
+            בחרו את המוצרים <span className="text-white font-semibold">שלכם</span> וראו מיד כמה חוסך הסל — לפני ואחרי ההנחה, מול שופרסל, רמי לוי ועוד. <span className="text-white font-semibold">חינם, ב-30 שניות.</span>
+          </p>
+        </div>
 
         {/* How-to steps */}
         <div className="bg-gray-900 rounded-2xl px-6 py-8 mb-8">

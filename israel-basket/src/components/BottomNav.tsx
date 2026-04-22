@@ -12,7 +12,7 @@ export default function BottomNav() {
   const count = useBasketStore((s) => s.count)
 
   return (
-    <nav className="fixed bottom-0 inset-x-0 z-50 bg-gray-900 border-t border-gray-700">
+    <nav className="fixed bottom-0 inset-x-0 z-50 bg-gray-900 border-t border-gray-700" style={{ paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}>
       <div className="max-w-3xl mx-auto flex">
         {tabs.map((tab) => (
           <NavLink

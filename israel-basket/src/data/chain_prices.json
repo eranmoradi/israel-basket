@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-23T09:51:33.113783+00:00",
+  "fetched_at": "2026-04-24T10:08:22.846694+00:00",
   "chains": [
     "קרפור",
     "שופרסל",
@@ -15,7 +15,7 @@
     "קרפור": 100,
     "שופרסל": 98,
     "רמי לוי": 97,
-    "יוחננוף": 90,
+    "יוחננוף": 85,
     "אושר עד": 77,
     "ויקטורי": 100,
     "חצי חינם": 31
@@ -1430,11 +1430,7 @@
           "sale": 12.9,
           "effective": 12.9
         },
-        "יוחננוף": {
-          "regular": 12.9,
-          "sale": null,
-          "effective": 12.9
-        },
+        "יוחננוף": null,
         "קרפור": {
           "regular": 9.5,
           "sale": null,
@@ -1586,11 +1582,7 @@
           "sale": 30.9,
           "effective": 30.9
         },
-        "יוחננוף": {
-          "regular": 30.9,
-          "sale": null,
-          "effective": 30.9
-        },
+        "יוחננוף": null,
         "קרפור": {
           "regular": 22.6,
           "sale": null,
@@ -1852,11 +1844,7 @@
           "sale": null,
           "effective": 17.9
         },
-        "יוחננוף": {
-          "regular": 18.9,
-          "sale": null,
-          "effective": 18.9
-        },
+        "יוחננוף": null,
         "קרפור": {
           "regular": 13.9,
           "sale": null,
@@ -2092,11 +2080,7 @@
           "sale": null,
           "effective": 13.5
         },
-        "יוחננוף": {
-          "regular": 12.3,
-          "sale": null,
-          "effective": 12.3
-        },
+        "יוחננוף": null,
         "קרפור": {
           "regular": 8.9,
           "sale": null,
@@ -2248,11 +2232,7 @@
           "sale": null,
           "effective": 5.4
         },
-        "יוחננוף": {
-          "regular": 6.1,
-          "sale": null,
-          "effective": 6.1
-        },
+        "יוחננוף": null,
         "קרפור": {
           "regular": 5.4,
           "sale": null,
@@ -2970,11 +2950,7 @@
           "sale": 18.9,
           "effective": 18.9
         },
-        "יוחננוף": {
-          "regular": 18.9,
-          "sale": null,
-          "effective": 18.9
-        },
+        "יוחננוף": null,
         "קרפור": {
           "regular": 12.9,
           "sale": null,
@@ -3118,7 +3094,11 @@
           "effective": 18.3
         },
         "רמי לוי": null,
-        "יוחננוף": null,
+        "יוחננוף": {
+          "regular": 12.9,
+          "sale": null,
+          "effective": 12.9
+        },
         "קרפור": {
           "regular": 7.9,
           "sale": null,

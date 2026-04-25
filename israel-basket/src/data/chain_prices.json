@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-24T10:08:22.846694+00:00",
+  "fetched_at": "2026-04-25T09:15:32.577474+00:00",
   "chains": [
     "קרפור",
     "שופרסל",
@@ -1730,11 +1730,7 @@
           "sale": null,
           "effective": 7.9
         },
-        "יוחננוף": {
-          "regular": 9.5,
-          "sale": null,
-          "effective": 9.5
-        },
+        "יוחננוף": null,
         "קרפור": {
           "regular": 7.9,
           "sale": null,
@@ -1844,7 +1840,11 @@
           "sale": null,
           "effective": 17.9
         },
-        "יוחננוף": null,
+        "יוחננוף": {
+          "regular": 18.9,
+          "sale": null,
+          "effective": 18.9
+        },
         "קרפור": {
           "regular": 13.9,
           "sale": null,
@@ -2452,11 +2452,7 @@
           "sale": null,
           "effective": 63.2
         },
-        "יוחננוף": {
-          "regular": 64.9,
-          "sale": null,
-          "effective": 64.9
-        },
+        "יוחננוף": null,
         "קרפור": {
           "regular": 9.9,
           "sale": null,
@@ -2950,7 +2946,11 @@
           "sale": 18.9,
           "effective": 18.9
         },
-        "יוחננוף": null,
+        "יוחננוף": {
+          "regular": 18.9,
+          "sale": null,
+          "effective": 18.9
+        },
         "קרפור": {
           "regular": 12.9,
           "sale": null,

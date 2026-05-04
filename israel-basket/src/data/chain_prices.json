@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-03T09:55:27.061225+00:00",
+  "fetched_at": "2026-05-04T10:46:40.506783+00:00",
   "chains": [
     "קרפור",
     "שופרסל",
@@ -3819,7 +3819,7 @@
       "name": "האגיס פרידום פלוס שלב 6 27 יח",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -3827,7 +3827,7 @@
       "name": "מגבוני האגיס דיילי קר לא מבושם 4*56",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -3835,7 +3835,7 @@
       "name": "סוגת אורז פרסי קלאסי שקית 1 ק\"ג",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -3843,7 +3843,7 @@
       "name": "סוגת אורז בסמטי מלא 1 ק\"ג",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -3851,7 +3851,7 @@
       "name": "פסטה אסם ספגטי 500גר",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -3859,7 +3859,7 @@
       "name": "ברילה ספגטי מחיטה מלאה 500 גרם",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -3867,7 +3867,7 @@
       "name": "סוגת קינואה 500 גר",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -3875,7 +3875,7 @@
       "name": "סוגת עדשים ירוקים 500 גר",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -3883,7 +3883,7 @@
       "name": "סוגת שעועית לבנה 500 גר",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -3891,7 +3891,7 @@
       "name": "סוגת חומוס 500גר",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -3899,7 +3899,7 @@
       "name": "מיקס מעורב מגדים 390ג",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -3907,7 +3907,7 @@
       "name": "קינדר אצבעות שוקולד 200ג",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -3915,7 +3915,7 @@
       "name": "קליק קורנפלקס תפזורת 65גר",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -3923,7 +3923,7 @@
       "name": "קרמיסימו שוקו ניל חלבי 60יח 630גר",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -3931,7 +3931,7 @@
       "name": "כריות נוגט תלמה 686 גרם",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -3939,7 +3939,7 @@
       "name": "קורנפלקס אלופים בד\"צ 850 גר",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -3947,7 +3947,7 @@
       "name": "קוואקר מהיר אטוס לל\"ס 500 גר",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -3955,7 +3955,7 @@
       "name": "אפרופו 50 גרם",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -3963,7 +3963,7 @@
       "name": "במבה 80 גרם",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -3971,7 +3971,7 @@
       "name": "תפוציפס קראנץ טבעי 50 גר",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -3979,7 +3979,7 @@
       "name": "פינוק שמפו לשיער רגיל 700מ\"ל",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -3987,7 +3987,7 @@
       "name": "תירוש כרמל אדום 1 ליטר",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -3995,7 +3995,7 @@
       "name": "אפונה 800 גרם",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4003,7 +4003,7 @@
       "name": "תפרחות ברוקולי 800ג",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4011,7 +4011,7 @@
       "name": "כרובית 800גר",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4019,7 +4019,7 @@
       "name": "תפוגן ציפס לתנור עד 4% שומן 1.5 קג",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4027,7 +4027,7 @@
       "name": "שעועית עדינה שלמה 600גר",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4035,7 +4035,7 @@
       "name": "לחם אנגל כוסמין וחיטה מלאה 750 גרם",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4043,7 +4043,7 @@
       "name": "אנג'ל לחם פשוט מלא 750מל",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4051,7 +4051,7 @@
       "name": "פיתה אנגל 8 יח",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4059,7 +4059,7 @@
       "name": "אנגל פיתות כוסמין 8יח 400גר",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4067,7 +4067,7 @@
       "name": "נשנושים שמנת בצל 260 ג",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4075,7 +4075,7 @@
       "name": "קריט מיני קרקרים עגולים 350גר",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4083,7 +4083,7 @@
       "name": "אוראו 176 גרם",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4091,7 +4091,7 @@
       "name": "עוגיות שוקולד ציפס מובחרות % 37 שוקולד",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4099,7 +4099,7 @@
       "name": "עד חצות 200ג",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4107,7 +4107,7 @@
       "name": "אסם פתי בר בינוני 500ג",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4115,7 +4115,7 @@
       "name": "מעדנות חטיפי פיצה 650 גרם",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4123,7 +4123,7 @@
       "name": "ריויון 1.5% 1ל",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4131,7 +4131,7 @@
       "name": "סימפוניה חמישית 200ג",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4139,7 +4139,7 @@
       "name": "גד בייבי מוצרלה 150גר",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4147,7 +4147,7 @@
       "name": "גד צפתית מעודנת במלח ים 5% 200ג",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4155,7 +4155,7 @@
       "name": "נעם גבינה צהובה וואקום 28% 500גרם",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4163,7 +4163,7 @@
       "name": "נפוליאון גבינת שמנת בטעם טבעי 25% 225גר",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4171,7 +4171,7 @@
       "name": "חלב תנובה קרטון דל לקטוז 2% 1ל'",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4179,7 +4179,7 @@
       "name": "יטבתה חלב בבקבוק 3% מועשר 1ל'",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4187,7 +4187,7 @@
       "name": "חמאה 200 גרם מהדרין",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4195,7 +4195,7 @@
       "name": "אקטימל תות 16 * 108 גר",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4203,7 +4203,7 @@
       "name": "דנונה קראנצ' פיצפוצים 175מל",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4211,7 +4211,7 @@
       "name": "דנונה ביו מארז חסכון 3% 8*150מל",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4219,7 +4219,7 @@
       "name": "דנונה פרו 20ג חלבון 1.5% 200גרם",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4227,7 +4227,7 @@
       "name": "שף לבן שמנת לבישול 15% 250מל'",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4235,7 +4235,7 @@
       "name": "דניאלה מעדן גבינה 150מל",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4243,7 +4243,7 @@
       "name": "מילקי שמינייה מארז 8*170מל",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4251,7 +4251,7 @@
       "name": "מעדן הגולן שוקולד 125 גר",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4259,7 +4259,7 @@
       "name": "יטבתה שוקו בקבוק 1ל",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4267,7 +4267,7 @@
       "name": "משקה סויה ללא תוספת סוכר 1 ליטר",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4275,7 +4275,7 @@
       "name": "סויה תנובה מועשר 1ל",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4283,7 +4283,7 @@
       "name": "תנובה משקה שיבולת שועל 1 ליטר",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4291,7 +4291,7 @@
       "name": "קוטג תנובה מהדרין 5% 250ג",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4299,7 +4299,7 @@
       "name": "משק ווילר טופו הבית 300 גר",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4307,7 +4307,7 @@
       "name": "סנו סושי מגבות הפלא 6 גלילים",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4315,7 +4315,7 @@
       "name": "נייר טואלט סופט סילק לבן 32 יח",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4323,7 +4323,7 @@
       "name": "שטראוס רביולי גבינה 400ג",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4331,7 +4331,7 @@
       "name": "מאמא עוף קפוא שניצל דק פריך 700 גרם",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4339,7 +4339,7 @@
       "name": "נוטרילון שלב 1- 800 גרם",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4347,7 +4347,7 @@
       "name": "שקדי מרק רכיבים טבעיים שקית 400 גרם",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4355,7 +4355,7 @@
       "name": "מי עדן 1.5(6) פק",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4363,7 +4363,7 @@
       "name": "פרימור מיץ תפוזים 1ל",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4371,7 +4371,7 @@
       "name": "אקס אל משקה אנרגיה 250מל",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4379,7 +4379,7 @@
       "name": "קוקה-קולה זירו 1.5 ליטר",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4387,7 +4387,7 @@
       "name": "קוקה-קולה 1.5 ליטר",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4395,7 +4395,7 @@
       "name": "טמפו סודה 6*1.5ל",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4403,7 +4403,7 @@
       "name": "פיוז טי אפרסק 1.5 ליטר",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4411,7 +4411,7 @@
       "name": "סנו ז'אוול בריח לימון 4 ליטר",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4419,7 +4419,7 @@
       "name": "סוכר סוגת 1 ק\"ג",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {
@@ -4427,7 +4427,7 @@
       "name": "צבר חומוס מסעדה 700 גר",
       "errors": [
         "רמי לוי: HTTP Error 403: Forbidden",
-        "יוחננוף: HTTP Error 503: Service Unavailable"
+        "יוחננוף: HTTP Error 403: Forbidden"
       ]
     },
     {

@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-17T10:41:15.005127+00:00",
+  "fetched_at": "2026-05-18T12:17:45.754649+00:00",
   "chains": [
     "קרפור",
     "שופרסל",
@@ -3842,7 +3842,6 @@
       "barcode": "7290100700372",
       "name": "סוגת אורז בסמטי מלא 1 ק\"ג",
       "errors": [
-        "שופרסל: <urlopen error [Errno -3] Temporary failure in name resolution>",
         "רמי לוי: HTTP Error 403: Forbidden",
         "יוחננוף: HTTP Error 403: Forbidden"
       ]
@@ -3851,7 +3850,6 @@
       "barcode": "7290000060880",
       "name": "פסטה אסם ספגטי 500גר",
       "errors": [
-        "שופרסל: <urlopen error [Errno -3] Temporary failure in name resolution>",
         "רמי לוי: HTTP Error 403: Forbidden",
         "יוחננוף: HTTP Error 403: Forbidden"
       ]
@@ -3860,7 +3858,6 @@
       "barcode": "8076809529419",
       "name": "ברילה ספגטי מחיטה מלאה 500 גרם",
       "errors": [
-        "שופרסל: <urlopen error [Errno -3] Temporary failure in name resolution>",
         "רמי לוי: HTTP Error 403: Forbidden",
         "יוחננוף: HTTP Error 403: Forbidden"
       ]
@@ -3893,7 +3890,6 @@
       "barcode": "7290003643714",
       "name": "סוגת חומוס 500גר",
       "errors": [
-        "שופרסל: <urlopen error [Errno -3] Temporary failure in name resolution>",
         "רמי לוי: HTTP Error 403: Forbidden",
         "יוחננוף: HTTP Error 403: Forbidden"
       ]
@@ -3902,7 +3898,6 @@
       "barcode": "7290010116348",
       "name": "מיקס מעורב מגדים 390ג",
       "errors": [
-        "שופרסל: <urlopen error [Errno -3] Temporary failure in name resolution>",
         "רמי לוי: HTTP Error 403: Forbidden",
         "יוחננוף: HTTP Error 403: Forbidden"
       ]
@@ -4023,7 +4018,6 @@
       "barcode": "7290012884986",
       "name": "תפוגן ציפס לתנור עד 4% שומן 1.5 קג",
       "errors": [
-        "שופרסל: <urlopen error [Errno -3] Temporary failure in name resolution>",
         "רמי לוי: HTTP Error 403: Forbidden",
         "יוחננוף: HTTP Error 403: Forbidden"
       ]
@@ -4032,7 +4026,6 @@
       "barcode": "7290000104836",
       "name": "שעועית עדינה שלמה 600גר",
       "errors": [
-        "שופרסל: <urlopen error [Errno -3] Temporary failure in name resolution>",
         "רמי לוי: HTTP Error 403: Forbidden",
         "יוחננוף: HTTP Error 403: Forbidden"
       ]
@@ -4161,7 +4154,6 @@
       "barcode": "7290102394463",
       "name": "נעם גבינה צהובה וואקום 28% 500גרם",
       "errors": [
-        "שופרסל: <urlopen error [Errno -3] Temporary failure in name resolution>",
         "רמי לוי: HTTP Error 403: Forbidden",
         "יוחננוף: HTTP Error 403: Forbidden"
       ]
@@ -4170,7 +4162,6 @@
       "barcode": "7290004129101",
       "name": "נפוליאון גבינת שמנת בטעם טבעי 25% 225גר",
       "errors": [
-        "שופרסל: <urlopen error [Errno -3] Temporary failure in name resolution>",
         "רמי לוי: HTTP Error 403: Forbidden",
         "יוחננוף: HTTP Error 403: Forbidden"
       ]
@@ -4195,7 +4186,6 @@
       "barcode": "7290116932033",
       "name": "חמאה 200 גרם מהדרין",
       "errors": [
-        "שופרסל: <urlopen error [Errno -3] Temporary failure in name resolution>",
         "רמי לוי: HTTP Error 403: Forbidden",
         "יוחננוף: HTTP Error 403: Forbidden"
       ]
@@ -4228,7 +4218,6 @@
       "barcode": "7290110565527",
       "name": "דנונה פרו 20ג חלבון 1.5% 200גרם",
       "errors": [
-        "שופרסל: <urlopen error [Errno -3] Temporary failure in name resolution>",
         "רמי לוי: HTTP Error 403: Forbidden",
         "יוחננוף: HTTP Error 403: Forbidden"
       ]
@@ -4285,7 +4274,6 @@
       "barcode": "7290004125578",
       "name": "סויה תנובה מועשר 1ל",
       "errors": [
-        "שופרסל: <urlopen error [Errno -3] Temporary failure in name resolution>",
         "רמי לוי: HTTP Error 403: Forbidden",
         "יוחננוף: HTTP Error 403: Forbidden"
       ]
@@ -4526,7 +4514,6 @@
       "barcode": "7290000178134",
       "name": "פרה שוק.מריר לל\"ג בד\"צ 4*100ג",
       "errors": [
-        "שופרסל: <urlopen error [Errno -3] Temporary failure in name resolution>",
         "רמי לוי: HTTP Error 403: Forbidden",
         "יוחננוף: HTTP Error 403: Forbidden"
       ]
@@ -4607,7 +4594,6 @@
       "barcode": "7290000347752",
       "name": "תה ירוק לימונית ולואיזה 25 שקיקים 1.5 גר",
       "errors": [
-        "שופרסל: <urlopen error [Errno -3] Temporary failure in name resolution>",
         "רמי לוי: HTTP Error 403: Forbidden",
         "יוחננוף: HTTP Error 403: Forbidden"
       ]

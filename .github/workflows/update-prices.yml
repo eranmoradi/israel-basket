@@ -11,6 +11,7 @@ jobs:
 
     permissions:
       contents: write
+      actions: write
 
     steps:
       - name: Checkout repo
@@ -25,9 +26,23 @@ jobs:
         run: python3 -u scripts/fetch_chain_prices.py
 
       - name: Commit updated prices
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add israel-basket/src/data/chain_prices.json
-          git diff --cached --quiet || git commit -m "chore: update chain prices [$(date -u '+%Y-%m-%d')]"
-          git push
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "chore: update chain prices [$(date -u '+%Y-%m-%d')]"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # A push made with GITHUB_TOKEN does not fire deploy.yml's push trigger,
+      # so the site must be redeployed explicitly after a price change.
+      - name: Trigger site deploy
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run deploy.yml --ref main

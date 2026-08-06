@@ -12,7 +12,7 @@ const QA = [
     id: 'what',
     question: 'מה זה הסל של ישראל',
     answer:
-      'יוזמת ממשלה משותפת עם קארפור: 107 מוצרים מובילים + 9 תחליפים זולים — כולם ב-30%+ הנחה קבועה. בתוקף מ-15.4.2026 למשך 6 חודשים לפחות.',
+      'יוזמת ממשלה משותפת עם קרפור: 107 מוצרים מובילים + 9 תחליפים זולים — כולם ב-30%+ הנחה קבועה. בתוקף מ-15.4.2026 למשך 6 חודשים לפחות.',
   },
   {
     id: 'privacy',
@@ -36,19 +36,19 @@ const QA = [
     id: 'limits',
     question: 'מה ההגבלות',
     answer:
-      'עד 2 יחידות מכל מוצר בכל קנייה. תקף בסניפי קארפור מרקט והיפר בלבד — לא בסניפי קארפור סיטי.',
+      'עד 2 יחידות מכל מוצר בכל קנייה. תקף בסניפי קרפור מרקט והיפר בלבד — לא בסניפי קרפור סיטי.',
   },
   {
     id: 'trust',
     question: 'האם הנתונים אמינים',
     answer:
-      'מחירי קארפור מגיעים מהאקסל הרשמי של משרד הכלכלה. מחירי הרשתות האחרות נשלפים מהאתרים שלהן ומתעדכנים מדי יום.',
+      'מחירי קרפור מגיעים מהאקסל הרשמי של משרד הכלכלה. מחירי הרשתות האחרות נשלפים מהאתרים שלהן ומתעדכנים מדי יום.',
   },
   {
     id: 'why',
     question: 'למה נוצרה האפליקציה',
     answer:
-      'כי הסל הוכרז אבל לא היה כלי נוח להשתמש בו. האפליקציה עצמאית — לא של קארפור — ונוצרה מתוך רצון כן לעזור לכולם לחסוך.',
+      'כי הסל הוכרז אבל לא היה כלי נוח להשתמש בו. האפליקציה עצמאית — לא של קרפור — ונוצרה מתוך רצון כן לעזור לכולם לחסוך.',
   },
 ]
 
@@ -87,7 +87,7 @@ export default function FirstTimeBot() {
     <>
       {/* FAB — first visit */}
       {!hasInteracted && !open && (
-        <div className="fixed top-16 left-1/2 -translate-x-1/2 z-40">
+        <div className="fixed top-16 left-1/2 -translate-x-1/2 z-40 md:hidden">
           <span className="absolute inset-0 rounded-full animate-ping bg-amber-400 opacity-30 pointer-events-none" />
           <button
             onClick={() => { setOpen(true); setHasInteracted(true) }}
@@ -104,7 +104,7 @@ export default function FirstTimeBot() {
         <button
           onClick={() => setOpen(true)}
           style={{ zIndex: 9999 }}
-        className="fixed top-3 left-4 flex items-center gap-1.5 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 active:scale-95 text-white text-sm font-bold px-4 py-2 rounded-full shadow-lg ring-2 ring-white/40 transition-all whitespace-nowrap"
+        className="fixed top-3 left-4 md:hidden flex items-center gap-1.5 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 active:scale-95 text-white text-sm font-bold px-4 py-2 rounded-full shadow-lg ring-2 ring-white/40 transition-all whitespace-nowrap"
         >
           <span>💬</span>
           <span>עזרה</span>

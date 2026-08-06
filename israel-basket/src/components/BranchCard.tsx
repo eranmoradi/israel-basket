@@ -27,7 +27,7 @@ export default function BranchCard({ branch, distance }: Props) {
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 mb-1 flex-wrap">
             <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${colorClass}`}>
-              קארפור {branch.format}
+              קרפור {branch.format}
             </span>
             {distanceLabel && (
               <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300">
